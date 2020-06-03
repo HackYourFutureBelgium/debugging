@@ -32,13 +32,14 @@ Software Development is a many layered skill. One simple way to break it down is
     - Being able to read your code out loud, or write the code that someone else is describing
     - Fixing syntax errors that occur when you try to run your code
     - Writing code that does not have syntax errors, and spotting syntax errors when you do
-    - _The **Debugging** Module will focus on these skills_
+    - > _The **Debugging** Module will focus on these skills_
 1. **Machine Instructions**: _The basic mechanics of programming_
-    - Understanding the life-cycle of your program: how the computer will interpret your source code to create a running program
+    - Understanding the life-cycle of your program
+    - how the computer will interpret your source code to create a running program
     - Predicting which lines of code will be executed in which order
     - Predicting how each line of code will change what is stored in program memory
     - Reading error messages & callstacks to fix fix semantic errors that occur when you run your code
-    - _The **Debugging** Module will focus on these skills_
+    - > _The **Debugging** Module will focus on these skills_
 1. **Problem Solving & Algorithms**: _Breaking down large problems to be solved in small steps_
     - Understanding a coding challenge and being able to break it down in different ways
     - Determining which solution strategies are correct for which types of problems
@@ -48,10 +49,10 @@ Software Development is a many layered skill. One simple way to break it down is
     - Using Test Cases to structure your solution design process (Test Driven Development)
     - Identifying and isolating mistakes in your code by reading failing test cases
     - Demonstrating your code does what you think it does by passing test cases
-    - _The **Testing** Module will focus on these skills_
+    - > _The **Testing** Module will focus on these skills_
 1. **Software Design**: _Organizing smaller pieces of code into full software solutions_
     - All in good time ;)
-    - _Every other module starting with **Separation of Concerns** will focus on these skills_
+    - > _Every other module starting with **Separation of Concerns** will focus on these skills_
 
 [TOP](#debugging)
 
