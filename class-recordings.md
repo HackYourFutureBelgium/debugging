@@ -10,10 +10,8 @@ Screen recordings of class.  Coaches, when sending your PR's with links please .
 
 ---
 
-## Class X
+## class-9-10
 
-1. week X:
+1. week 1:
    - Sunday Part 1: [description](video-link) - [coach name](github-link)
    - Sunday Part 2: [description](video-link) - [coach name](github-link)
-   - Sunday Wrap-up: [description](video-link) - [coach name](github-link)
-   - Wednesday Review: [description](video-link) - [coach name](github-link)

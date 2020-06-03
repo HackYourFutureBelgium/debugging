@@ -1,24 +1,16 @@
 const codeAlongGuide = {
-  "evaluate code": `will run the code in the current editor ---
-    ... capture asserts to display pass/fail
-    ... try to stop your code after 1000+ loop iterations
-    ... generate a search link for your errors
-    ... indicate if errors were Creation or Execution phase
-    ... remove all debugger statements`,
-  "step through in debugger": `will run the current editor ---
-    ... insert a debugger statement before the first line`,
-  "with infinite loop guard": `will run the current editor ---
-    ... like above, but will format your code
-    ... try to insert an infinite loop guard at every loop`,
-  "Open In Js Tutor": `will open the current code in JS Tutor ---
-    ... use this button ALL THE TIME!`,
-  "Open In JSHint": `opens your code in an online Linter that will ---
-    ... point out syntax errors
-    ... warn about some bad practices
-    ... warn about possible runtime errors
-    ... evaluate the complexity of your code`,
-  "Format Code": `will make code in the current editor prettier ---
-    ... makes your code easier to read`
+  "evaluate code": `will run the code in the current editor:
+    ... captures console.asserts to display pass/fail
+    ... captures console.logs for debugging
+    ... tries to stop your code after 1000+ loop iterations
+    ... generates a search link for any errors
+    ... indicate if errors were Creation or Execution phase`,
+  "step through in debugger": `will insert a debugger statement before the first line, and run your code (your devtools should be open for this)`,
+  "with max iterations": `trys to insert an infinite loop detector at every loop, then runs your code in the debugger (your devtools should be open for this)`,
+  "Open In Js Tutor": `opens the current code in JS Tutor`,
+  "First Syntax Error": `identifies the first syntax error in your code`,
+  "Format Code": `will make code in the current editor prettier`,
+  "Open In JSHint": `opens your code in an online Linter`,
 };
 
 // - your code will be colored for easy reading
@@ -26,11 +18,9 @@ const codeAlongGuide = {
 // - ctr-shift-z will redo the changes
 // - ctr-c will copy any highlighted text
 // - ctr-v will paste the copied text
-// - icons to the left of your code help with errors & syntax
+// - icons to the right of your code help with errors & syntax
 // - changes ARE NOT saved when you refresh the web page
 // - changes ARE saved when switching between exercises
-
-// async errors - instancing will fix this
 
 async function codeAlong(config) {
 
@@ -71,7 +61,7 @@ async function codeAlong(config) {
     try {
       await new Promise((resolve, reject) => {
         const aceScript = document.createElement('script');
-        aceScript.src = config.acePath ? config.acePath : "../dependencies/ace/ace.js";
+        aceScript.src = (config.relativity || "../") + "dependencies/ace/ace.js";
         aceScript.type = "text/javascript";
         aceScript.charset = "utf-8";
 
@@ -101,6 +91,11 @@ async function codeAlong(config) {
   }
 
   container.appendChild(iframe);
+
+  // hack
+  if (config.preLoad) {
+    loadButton.dispatchEvent(new Event('click'))
+  }
 
   return { steps, container };
 
@@ -149,7 +144,7 @@ codeAlong.theRest = async (config, steps, iframe) => {
             return {
               path,
               code: fetchSource(path.path),
-              name: path.name || 'step ' + ind
+              name: path.name || path.title || 'step ' + ind
             }
           } else {
             throw new Error('invalid step');
@@ -166,9 +161,9 @@ codeAlong.theRest = async (config, steps, iframe) => {
 
 
   // async total side-effect
-  if (config.type === 'document') {
+  if (config.type.toLowerCase() === 'document' || config.type.toLowerCase() === 'html' || config.type.toLowerCase() === 'dom') {
     codeAlong.document(iframe, steps, config);
-  } else if (config.type === 'js' || config.type === 'javascript') {
+  } else if (config.type.toLowerCase() === 'js' || config.type.toLowerCase() === 'javascript') {
     config.type = 'js';
     codeAlong.js(iframe, steps, config);
   } else {
@@ -328,7 +323,7 @@ codeAlong.md = (iframe, steps, config) => {
     const ghMdStyle = document.createElement('link');
     ghMdStyle.type = 'text/css';
     ghMdStyle.setAttribute('rel', 'stylesheet');
-    ghMdStyle.setAttribute('href', '../dependencies/github-markdown.css');
+    ghMdStyle.setAttribute('href', (config.relativity || "../") + 'dependencies/github-markdown.css');
 
     ghMdStyle.addEventListener('load', () => resolve());
     ghMdStyle.addEventListener('error', (e) => reject(e.message))
@@ -338,7 +333,7 @@ codeAlong.md = (iframe, steps, config) => {
 
   const loadingMarked = new Promise((resolve, reject) => {
     const markedScript = document.createElement('script');
-    markedScript.src = "../dependencies/marked.js";
+    markedScript.src = (config.relativity || "../") + "dependencies/marked.js";
     markedScript.type = "text/javascript";
     markedScript.charset = "utf-8";
 
@@ -472,26 +467,42 @@ codeAlong.js = (iframe, steps, config) => {
 
       const statusString = arguments[0] ? 'PASS: ' : 'FAIL: ';
       const statusEl = document.createElement('p');
-      statusEl.innerHTML = statusString;
+      statusEl.innerText = statusString;
       statusEl.style.display = 'inline';
       // revisit color choices
       statusEl.style.color = arguments[0] ? 'green' : 'orange';
 
-      const messages = document.createElement('code');
-      // render first only for compatibility with itShould
-      messages.innerHTML = '  ' + Array.from(arguments)[1];
-      // messages.innerHTML = '  ' + Array.from(arguments)
-      //   .slice(1, arguments.length)
-      //   .toString()
-      //   .replace(',', ', ');
 
       const newLi = document.createElement('li');
       newLi.style = 'padding-top:1%;'
       newLi.appendChild(statusEl);
-      newLi.appendChild(messages);
+
+      const messages = Array.from(arguments).slice(1);
+      for (let thing of messages) {
+
+        newLi.appendChild(codeAlong.toElement(thing))
+
+        newLi.appendChild(document.createTextNode('\u00a0 \u00a0'))
+      }
 
       resultsContainer.appendChild(newLi);
       // resultsEl.appendChild(newLi);
+
+    }
+
+    console.log = function () {
+      nativeConsole.log(...Array.from(arguments));
+
+
+      const newLi = document.createElement('li');
+      for (let thing of Array.from(arguments)) {
+
+        newLi.appendChild(codeAlong.toElement(thing))
+
+        newLi.appendChild(document.createTextNode('\u00a0 \u00a0'))
+      }
+
+      resultsContainer.appendChild(newLi);
 
     }
 
@@ -524,36 +535,64 @@ codeAlong.js = (iframe, steps, config) => {
       return phaseEl;
     }
 
+
+    window.onerror = function (msg, url, lineNo, columnNo, error) {
+      console.log('hi')
+      // console.log(msg); // error name + message
+      // console.log(url); // empty for exercises
+      // console.log(lineNo); // number out of context
+      // console.log(columnNo); // number out of context
+      // console.error(error); // duplication of what happens anyway
+      const errOrWarning = error.message === 'Loop exceeded 1000 iterations'
+        ? renderHaltingWarning(error)
+        : renderError(error);
+      resultsContainer.appendChild(errOrWarning);
+      resultsContainer.appendChild(renderPhase(true));
+      const isAsync = document.createElement('pre');
+      isAsync.innerHTML = '   asynchronous error';
+      resultsContainer.appendChild(isAsync);
+      return false;
+    };
+
     const didExecute = { status: false };
     try {
-      const deDebuggered = codeAlong.deDebugger(your_source_code);
       // https://github.com/xieranmaya/infinite-loop-detector
-      const loopDetected = deDebuggered.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
+      const loopDetected = your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
         const id = parseInt(Math.random() * Number.MAX_SAFE_INTEGER) // not guaranteed unique, but good enough
         return `let __${id} = 0;${loopHead}if (++__${id} > 1000) throw new Error('Loop exceeded 1000 iterations');`
       });
-      eval(loopDetected);
+      const executionDetectored = 'didExecute.status = true; ' + loopDetected;
+      eval(executionDetectored);
     } catch (err) {
-      if (err instanceof SyntaxError) {
-        didExecute.status = false;
-      }
+      console.error(err);
+
       const errOrWarning = err.message === 'Loop exceeded 1000 iterations'
         ? renderHaltingWarning(err)
         : renderError(err);
       resultsContainer.appendChild(errOrWarning);
       resultsContainer.appendChild(renderPhase(didExecute));
-      console.error(err);
     }
 
   });
 
-  function step_through_in_debugger() {
+  // binding evaluation function to window
+  //   for 'this' correctness
+  //   globaling function & var
+  //   much simpler callstack in the debugger
+  //   and still does arrows correctly
+  const step_through_in_debugger = (function step_through_in_debugger() {
     resultsContainer.innerHTML = '';
-    const allDone = codeAlong.step_through_in_debugger(editor.getValue());
+    const your_source_code = editor.getValue();
+    const executing_your_code = eval; // for global scope
+    executing_your_code(
+      'debugger; // injected by codeAlong\n'
+      + '\n'
+      + your_source_code
+    );
     const debuggeredEl = document.createElement('pre');
-    debuggeredEl.innerHTML = allDone;
+    debuggeredEl.innerHTML = "    All done! \n\n    (psst. try again with devtools open if they aren't already)";;
     resultsContainer.appendChild(debuggeredEl);
-  }
+  }).bind(window);
   const evaluateInDebugger = document.createElement('button');
   evaluateInDebugger.innerHTML = 'step through in debugger';
   evaluateInDebugger.addEventListener('click', step_through_in_debugger);
@@ -738,7 +777,7 @@ codeAlong.js = (iframe, steps, config) => {
   const renderUnCollapsed = () => {
     outputContainer.innerHTML = '';
     outputContainer.appendChild(visibleContainer);
-    outputContainer.style = 'height: 96vh; width: 45vw;';
+    outputContainer.style = 'height: 86vh; width: 45vw; scroll: auto;';
     editorContainer.style = 'height:92vh;width:55vw;';
     editor.resize();
   };
@@ -807,39 +846,6 @@ codeAlong.js = (iframe, steps, config) => {
 
 }
 
-// binding evaluation function to window for arrow function correctness
-//   ! annoyingly (but correctly) globals hoisted variables
-//   much simpler callstack in the debugger
-//   and still does arrows correctly
-codeAlong.step_through_in_debugger = (function in_debugger(your_source_code) {
-  const executing_your_code = eval;
-  // try {
-  executing_your_code(
-    'debugger; // injected by codeAlong\n'
-    + '\n'
-    + your_source_code
-  );
-  // } catch (err) {
-  //   console.log(err);
-  // };
-  return "    All done! \n\n    (psst. try again with devtools open if they aren't already)";
-}).bind(window);
-// codeAlong.step_through_in_debugger = (function in_debugger(your_source_code) {
-//   try {
-//     const executing_your_code = () => {
-//       eval(
-//         'debugger; // injected by codeAlong\n'
-//         + '\n'
-//         + your_source_code
-//       );
-//     };
-//     executing_your_code();
-//   } catch (err) {
-//     console.log(err);
-//   };
-//   return "    All done! \n\n    (psst. try again with devtools open if they aren't already)";
-// }).bind(window);
-
 codeAlong.format_and_loop_guard = (function with_infinite_loop_guard(your_source_code, max_iterations) {
   let number_of_loops = 0;
   try {
@@ -881,22 +887,201 @@ codeAlong.with_infinite_loop_guard = (function with_infinite_loop_guard(your_sou
   return "     All done! \n\n     (psst. your devtools must be open)";
 }).bind(window);
 
+codeAlong.toElement = (() => {
 
+  const toElement = (thing, depth) => {
 
-codeAlong.deDebugger = code => code
-  .replace(';debugger;', ';;')
-  .replace(' debugger;', ' ;')
-  .replace('\tdebugger;', '\t;')
-  .replace('\ndebugger;', '\n;')
-  .replace(';debugger ', '; ')
-  .replace(' debugger ', '  ')
-  .replace('\tdebugger ', '\t ')
-  .replace('\ndebugger ', '\n ')
-  .replace(';debugger\t', ';\t')
-  .replace(' debugger\t', ' \t')
-  .replace('\tdebugger\t', '\t\t')
-  .replace('\ndebugger\t', '\n\t')
-  .replace(';debugger\n', ';\n')
-  .replace(' debugger\n', ' \n')
-  .replace('\tdebugger\n', '\t\n')
-  .replace('\ndebugger\n', '\n\n');
+    depth = (depth === undefined)
+      ? 1
+      : depth;
+
+    let elemented;
+    if (thing instanceof Error) {
+      elemented = toElement.error(thing, depth);
+
+    } else if (thing instanceof Element) {
+      elemented = toElement.element(thing, depth);
+
+    } else if (typeof thing === 'function') {
+      elemented = toElement.function(thing, depth);
+
+    } else if (typeof thing === 'string') {
+      elemented = toElement.string(thing, depth);
+
+    } else if (typeof thing === 'number') {
+      elemented = toElement.number(thing, depth);
+
+    } else if (typeof thing === 'boolean') {
+      elemented = toElement.boolean(thing, depth);
+
+    } else if (typeof thing === 'symbol') {
+      elemented = toElement.symbol(thing, depth);
+
+    } else if (thing === undefined) {
+      elemented = toElement.undefined(thing, depth);
+
+    } else if (thing === null) {
+      elemented = toElement.null(thing, depth);
+
+    } else if (Array.isArray(thing)) {
+      elemented = toElement.array(thing, depth);
+
+      // } else if (thing.constructor.name === 'Object') {
+    } else if (thing === Object(thing)) {
+      elemented = toElement.object(thing, depth);
+
+    } else {
+      elemented = '"un-toElement-able type"';
+    }
+
+    return elemented;
+  }
+
+  toElement.indent = (depth) => {
+    let indent = '';
+    for (let i = 0; i < depth; i++) indent += '  ';
+    return indent;
+  }
+
+  toElement.object = (obj, depth) => {
+
+    if (Object.keys(obj).length === 0) {
+      const el = document.createElement('text');
+      el.textContent = '{ }';
+      return el;
+    };
+
+    const objEl = document.createElement('div');
+    objEl.style.display = 'inline';
+    objEl.appendChild(document.createTextNode('{'));
+    for (let key in obj) {
+
+      const descriptor = Object.getOwnPropertyDescriptor(obj, key);
+
+      if (descriptor.hasOwnProperty('value')) {
+        const keyEl = document.createElement('pre');
+        keyEl.style.display = 'inline';
+        keyEl.textContent = `\n${toElement.indent(depth)}${key}: `;
+        const valEl = toElement(obj[key], depth + 1);
+        objEl.appendChild(keyEl);
+        objEl.appendChild(valEl);
+        objEl.appendChild(document.createTextNode(','));
+      }
+
+      if (descriptor.set || descriptor.get) {
+        const valEl = toElement(obj[key]);
+        objEl.appendChild(valEl);
+        objEl.appendChild(document.createTextNode(','));
+      }
+    }
+    objEl.appendChild(document.createElement('br'));
+    const closeEl = document.createElement('pre');
+    closeEl.style.display = 'inline';
+    closeEl.textContent = toElement.indent(depth - 1) + '}';
+    objEl.appendChild(closeEl);
+
+    return objEl;
+  };
+
+  toElement.array = (arr, depth) => {
+
+    if (arr.length === 0) {
+      const el = document.createElement('text');
+      el.textContent = '[ ]';
+      return el;
+    }
+
+    const arrEl = document.createElement('div');
+    arrEl.style.display = 'inline';
+    arrEl.appendChild(document.createTextNode('['));
+    for (let item of arr) {
+
+      const indentEl = document.createElement('pre');
+      indentEl.style.display = 'inline';
+      indentEl.textContent = `\n${toElement.indent(depth)}`;
+      const valEl = toElement(item, depth + 1);
+      arrEl.appendChild(indentEl);
+      arrEl.appendChild(valEl);
+      arrEl.appendChild(document.createTextNode(','));
+
+    }
+    arrEl.appendChild(document.createElement('br'));
+    const closeEl = document.createElement('pre');
+    closeEl.style.display = 'inline';
+    closeEl.textContent = toElement.indent(depth - 1) + ']';
+    arrEl.appendChild(closeEl);
+
+    return arrEl;
+  };
+
+  toElement.function = (func, depth) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = func
+      .toString()
+      .split('\n')
+      .join('\n' + toElement.indent(depth - 1));
+    return el;
+  };
+
+  toElement.string = (val, depth) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.textContent = '"' + val + '"'
+    // .split('\n')
+    // .join('\n' + toElement.indent(depth));
+    return el;
+  };
+
+  toElement.boolean = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = String(val);
+    el.style.color = 'darkgreen';
+    return el;
+  };
+
+  toElement.number = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = String(val);
+    el.style.color = 'blue';
+    return el;
+  };
+
+  toElement.symbol = String;
+
+  toElement.null = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = String(val);
+    el.style.color = 'grey';
+    return el;
+  };
+
+  toElement.undefined = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = String(val);
+    el.style.color = 'grey';
+    return el;
+  };
+
+  toElement.error = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.innerHTML = `${val.name}: ${val.message}`;
+    return el;
+  };
+
+  toElement.element = (val) => {
+    const el = document.createElement('pre');
+    el.style.display = 'inline';
+    el.textContent = val.outerHTML;
+    return el;
+  };
+
+  Object.freeze(toElement);
+
+  return toElement
+})()

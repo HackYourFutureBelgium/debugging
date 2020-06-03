@@ -1,1 +1,1 @@
-examples and exercises used in class
+examples and exercises of how JavaScript works in isolation: away from HTML & CSS
