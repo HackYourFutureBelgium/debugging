@@ -183,7 +183,6 @@ Learn how create basic user interaction in your web pages
   - [Type Conversions](https://javascript.info/type-conversions)
   - [Logical Operators](https://javascript.info/logical-operators)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 5
-- [errors & program life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
 - More resources at [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
 ---

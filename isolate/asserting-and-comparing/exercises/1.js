@@ -4,7 +4,7 @@ const isTrue1 = true === _;
 console.log(typeof isTrue1, isTrue1);
 console.assert(isTrue1, 'Assertion 1');
 
-const isTrue2 = 0 === _;
+const isTrue2 = 0.0 === _;
 console.log(typeof isTrue2, isTrue2);
 console.assert(isTrue2, 'Assertion 2');
 

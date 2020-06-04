@@ -10,10 +10,10 @@ function handleUserInput() {
 
   // log the action for developers
   console.log('-- handled input --');
-  console.log('input:', typeof input, input);
-  console.log('repeatedInput:r', typeof repeatedInput, repeatedInput);
+  console.log('input: ', typeof input, input);
+  console.log('repeatedInput: ', typeof repeatedInput, repeatedInput);
 }
 
 handleUserInput();
 
-handleUserInput();
+// handleUserInput();

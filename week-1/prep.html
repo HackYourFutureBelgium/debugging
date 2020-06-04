@@ -109,10 +109,10 @@
                   title: "strict equality",
                   path: "../isolate/asserting-and-comparing/examples/strict-equality.js"
                 },
-                {
-                  title: "assignment vs. comparison",
-                  path: "../isolate/asserting-and-comparing/examples/assignment-vs-comparison.js"
-                },
+                // {
+                //   title: "assignment vs. comparison",
+                //   path: "../isolate/asserting-and-comparing/examples/assignment-vs-comparison.js"
+                // },
                 {
                   title: "console.assert",
                   path: "../isolate/asserting-and-comparing/examples/console-assert.js"
@@ -238,16 +238,22 @@
           })
         </script>
       </section>
+
       <section id='handler-functions'>
         <script>
           codeAlong({
             title: 'Handler Functions',
             container: 'handler-functions',
             type: 'js',
+            openIn: [],
             source: [
               {
                 title: 'example',
                 path: '../isolate/handler-functions/example.js'
+              },
+              {
+                title: 'exercise',
+                path: '../isolate/handler-functions/exercise.js'
               },
             ],
 
@@ -256,39 +262,34 @@
       </section>
 
       <section>
-        <section id='onclick-attribute-examples'>
+        <section id='onclick-attribute'>
           <script>
             codeAlong({
-              title: 'onclick attribute (examples)',
-              container: 'onclick-attribute-examples',
+              title: 'onclick attribute',
+              container: 'onclick-attribute',
               type: 'html',
               source: [
                 {
-                  title: 'a basic example',
-                  path: '../integrate/onclick-attribute/examples/basic.html'
+                  title: 'example 1',
+                  path: '../integrate/onclick-attribute/examples/1.html'
                 },
+                {
+                  title: 'example 2',
+                  path: '../integrate/onclick-attribute/examples/2.html'
+                },
+                // {
+                //   title: 'exercise 1',
+                //   path: '../integrate/onclick-attribute/exercises/1.html'
+                // },
+                // {
+                //   title: 'exercise 2',
+                //   path: '../integrate/onclick-attribute/exercises/2.html'
+                // },
               ],
 
             })
           </script>
         </section>
-        <section id='onclick-attribute-exercises'>
-          <script>
-            codeAlong({
-              title: 'onclick attribute (exercises)',
-              container: 'onclick-attribute-exercises',
-              type: 'html',
-              source: [
-                {
-                  title: 'a basic example',
-                  path: '../integrate/onclick-attribute/examples/basic.html'
-                },
-              ],
-
-            })
-          </script>
-        </section>
-      </section>
     </div>
   </div>
 

@@ -1,5 +1,5 @@
 // replace the _'s to complete the challenges
-// your logs should print the same thing as the one above it
+//  you know it's right when your log matches the one below it
 
 
 console.log('-- example --');
