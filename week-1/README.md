@@ -122,7 +122,6 @@ The topics you should focus on during your study this week.
   - [Code Quality](https://javascript.info/code-quality): 1 -> 3
 - Guo: [Variables & Values of Primitive Types](https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2) (a video)
 - [mmtuts: How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1): 1 -> 8 (videos)
-- [errors & program life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
 - [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-1/prep)
 
 ## VSCode Extensions
@@ -184,6 +183,7 @@ Learn how create basic user interaction in your web pages
   - [Type Conversions](https://javascript.info/type-conversions)
   - [Logical Operators](https://javascript.info/logical-operators)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 5
+- [errors & program life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
 - More resources at [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
 ---

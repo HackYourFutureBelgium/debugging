@@ -137,6 +137,7 @@ Practice accepting different types of user input, and using loops/conditionals t
 - [javascript.info](https://javascript.info)
   - [All of JavaScript Fundamentals](https://javascript.info/first-steps)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 7
+- [errors & program life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
 - More resources at [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
 ---
