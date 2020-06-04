@@ -5,6 +5,16 @@
   <meta charset='utf-8'>
   <title>onclick example 2</title>
 
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+
   <script>
     function handler() {
       debugger;
@@ -22,16 +32,16 @@
 
       // log action for developers
       console.log('-- handled input ---');
-      console.log('input:', `(${typeof input})\n`, input);
-      console.log('inputConfirmed:', `(${typeof inputConfirmed})\n`, inputConfirmed);
-      console.log('finalMessage:', `(${typeof finalMessage})\n`, finalMessage);
+      console.log('input', `(${typeof input})\n`, input);
+      console.log('inputConfirmed', `(${typeof inputConfirmed})\n`, inputConfirmed);
+      console.log('finalMessage', `(${typeof finalMessage})\n`, finalMessage);
     }
   </script>
 
 </head>
 
 <body>
-  <section id='user-interface'>
+  <section id='user-interface' class='centered'>
     <button onclick='handler()'>type and comfirm</button>
   </section>
 </body>
