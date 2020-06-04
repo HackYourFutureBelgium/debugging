@@ -89,6 +89,7 @@ Software Development is a many layered skill. One simple way to break it down is
   - `Boolean`, `String`, `Number`
 - Operators & Comparisons
   - `===`, `!==`
+  - `isNaN` and `Number.isNaN`
   - `>`, `<`, `>=`, `<=`
   - `&&`, `||`, `??`, `!`
   - `x++`, `++x`, `x--`, `--x`

@@ -44,6 +44,7 @@ The topics you should focus on during your study this week.
   - `&&`, `||`, `??`, `!`
 - Strict Comparison
   - `===`
+  - `isNaN` and `Number.isNaN`
 - Functions
   - Arguments, Parameters, Return Values
   - Lexical Scope
