@@ -10,9 +10,8 @@
 - [Study Tips](#study-tips)
 - [Module Projects](#module-projects)
 - Weekly Details:
-  - [Week 1](./week-1/README.md)
-  - [Week 2](./week-2/README.md)
-  - [Week 3](./week-3/README.md)
+  - Week 1: [Assignments](./week-1/README.md), [Lesson Plan](https://hackyourfuture.be/debugging/week-1)
+  - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](https://hackyourfuture.be/debugging/week-2)
 - Study Materials:
   - [Isolate](./isolate/README.md) - examples and exercises
   - [Integrate](./integrate/README.md) - projects to study
@@ -35,7 +34,8 @@ Software Development is a many layered skill. One simple way to break it down is
     - > _The **Debugging** Module will focus on these skills_
 1. **Machine Instructions**: _The basic mechanics of programming_
     - Understanding the life-cycle of your program
-    - how the computer will interpret your source code to create a running program
+    - Understand how the computer will interpret your source code to create a running program
+    - Understand what about your code matters to the computer, and what matters to people
     - Predicting which lines of code will be executed in which order
     - Predicting how each line of code will change what is stored in program memory
     - Reading error messages & callstacks to fix fix semantic errors that occur when you run your code
@@ -106,6 +106,8 @@ Software Development is a many layered skill. One simple way to break it down is
 - Control Flow
   - Conditionals
   - Loops
+- `prompt`, `alert`, and `confirm`
+  - Reading different types from users
 - Statements vs. Expressions
 - JS Program Life-Cycle:
   1. _Source code_: The `.js` text file you write.  These are just instructions saved as text in your computer, not a live program!
@@ -120,8 +122,6 @@ Software Development is a many layered skill. One simple way to break it down is
 - Document Life-Cycle
   - `<head>`: Scripts & styles are loaded top to bottom, before the `<body>`
   - `<body>`: Everything is executed/loaded top to bottom
-- `prompt`, `alert`, and `confirm`
-  - Reading different types from users
 - Event-Driven Programming (Handling user input)
   - HTML `onclick` attribute
   - well-organized click handlers
