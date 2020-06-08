@@ -182,6 +182,7 @@ Learn how create basic user interaction in your web pages
   - [Function Basics](https://javascript.info/function-basics)
   - [Type Conversions](https://javascript.info/type-conversions)
   - [Logical Operators](https://javascript.info/logical-operators)
+  - [Nullish Operator](https://javascript.info/nullish-coalescing-operator)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 5
 - More resources at [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
