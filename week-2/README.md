@@ -144,6 +144,9 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 ### Exercises
 
+- [using-primitive-types](https://github.com/HackYourFutureBelgium/using-primitive-types)
+  - :egg: Levels 1 -> 4
+  - :hatching_chick: : Level 5
 
 ---
 

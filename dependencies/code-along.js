@@ -1027,7 +1027,7 @@ codeAlong.toElement = (() => {
   toElement.string = (val, depth) => {
     const el = document.createElement('pre');
     el.style.display = 'inline';
-    el.textContent = '"' + val + '"'
+    el.textContent = val
     // .split('\n')
     // .join('\n' + toElement.indent(depth));
     return el;

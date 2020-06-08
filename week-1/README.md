@@ -56,6 +56,9 @@ The topics you should focus on during your study this week.
     - Strings: `prompt` - _ok_ or _enter_
     - Null value: `prompt` - _cancel_ or _escape_
   - structured handler functions
+- Control Flow
+  - `if`, `else if`, `else` Statements
+  - `for` and `while` loops
 - Program Life-Cycle
   1. Source Code
   1. Creation Phase
@@ -141,6 +144,10 @@ The topics you should focus on during your study this week.
 
 Learn how create basic user interaction in your web pages
 
+### About Browsers
+
+During the week we encourage you to experiment with different browsers, but during class we ask you all to use Chrome or Chromium so everyone has the same DevTools.
+
 ### Isolate
 
 - handler functions: [examples](../isolate/variables-examples), [exercises](../isolate/variables-exercises)
@@ -166,6 +173,10 @@ Learn how create basic user interaction in your web pages
 - [Hello World 2](https://www.youtube.com/watch?v=dvXEAs-00AA)
 - [The Docs](https://code.visualstudio.com/Docs/editor/debugging)
 
+#### Writing JSDoc Strings
+
+- [VSCode support](https://code.visualstudio.com/Docs/languages/javascript#_jsdoc-support)
+
 #### JavaScript Tutorials
 
 - mmtuts: [How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1)
@@ -190,7 +201,9 @@ Learn how create basic user interaction in your web pages
 
 ### Exercises
 
--
+- [using-primitive-types](https://github.com/HackYourFutureBelgium/using-primitive-types)
+  - :egg: Level 1 & Level 2
+  - :hatching_chick: : Level 3 & Level 4
 
 ---
 
