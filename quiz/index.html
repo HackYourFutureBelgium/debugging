@@ -1,0 +1,155 @@
+<!-- Try this example at https://alpsquid.github.io/quizlib -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <script type="text/javascript" src="../dependencies/quizlib/dist/script.js"></script>
+  <script type="text/javascript" src="../dependencies/quizlib/assessment/main.js"></script>
+  <script type="text/javascript" src="./key.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../dependencies/prism/style.css" media="screen">
+  <script type="text/javascript" src="../dependencies/prism/script.js"> </script>
+
+  <link rel="stylesheet" type="text/css" href="../dependencies/quizlib/dist/style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="../dependencies/quizlib/assessment/stylesheet.css" media="screen">
+
+  <title>Quizlib Multi-Quiz Example</title>
+</head>
+
+<body>
+
+  <!-- Quiz Results -->
+  <!-- For this multi quiz, we'll use the same result element and move it to active quiz when the answer button is pressed. -->
+  <div id="quiz-result" class="card">
+    You Scored <span id="quiz-percent"></span>% - <span id="quiz-score"></span>/<span id="quiz-max-score"></span><br />
+  </div>
+
+  <h1>Quiz: Debugging</h1>
+
+  <!-- Quiz 1 -->
+  <details>
+    <summary>
+      <h2 style='display:inline;'>Variables</h2>
+    </summary>
+    <div id="quiz-1">
+      <!-- Question 1 -->
+      <div class="card quizlib-question">
+        <div class="quizlib-question-title">1. What will be logged to the console?</div>
+        <pre class='line-numbers'><code class="language-javascript">let x = 'a', y = 'b', temp = '';
+temp = x;
+x = y;
+y = temp;
+console.log(temp);</code></pre>
+        <div class="quizlib-question-answers">
+          <input type="text" name="q1">
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">2. Your enemy's father...</div>
+        <div class="quizlib-question-answers">
+          <ul>
+            <li><label><input type="radio" name="q2" value="a"> is a hamster</label></li>
+            <li><label><input type="radio" name="q2" value="b"> smells of elderberries</label></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Question 3 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">3. Which factors will contribute to the end of humanity as we know it?</div>
+        <div class="quizlib-question-answers">
+          <ul>
+            <li><label><input type="checkbox" name="q3" value="a"> Global warming</label></li>
+            <li><label><input type="checkbox" name="q3" value="b"> The release of Linux 4.1.15</label></li>
+            <li><label><input type="checkbox" name="q3" value="c"> Cats</label></li>
+            <li><label><input type="checkbox" name="q3" value="d"> Advancements in artificial intelligence</label></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
+      <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
+    </div>
+  </details>
+
+  <hr>
+
+  <!-- Quiz 2 -->
+  <details>
+    <summary>
+      <h2 style='display:inline;'>Primitive Types</h2>
+    </summary>
+    <div id="quiz-2">
+      <!-- Question 1 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">1. Some question</div>
+        <div class="quizlib-question-answers">
+          <ul>
+            <li><label><input type="radio" name="q1" value="a"> some answer</label></li>
+            <li><label><input type="radio" name="q1" value="b"> or is it this one?</label></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Question 2 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">2. Guess the word!</div>
+        <div class="quizlib-question-answers">
+          <input type="text" name="q2">
+        </div>
+      </div> -->
+      <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+      <!-- <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button> -->
+    </div>
+  </details>
+
+  <hr>
+
+  <!-- Quiz 3 -->
+  <details>
+    <summary>
+      <h2 style='display:inline;'>Functions</h2>
+    </summary>
+    <div id="quiz-3">
+      <!-- Question 1 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">1. What is 2 + 2?</div>
+        <div class="quizlib-question-answers">
+          <input type="text" name="q1">
+        </div>
+      </div> -->
+      <!-- Question 2 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">2. Guess my number!</div>
+        <div class="quizlib-question-answers">
+          <ul>
+            <li><label><input type="radio" name="q2" value="a"> 3</label></li>
+            <li><label><input type="radio" name="q2" value="b"> 7</label></li>
+            <li><label><input type="radio" name="q2" value="c"> 9</label></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Question 3 -->
+      <!-- <div class="card quizlib-question">
+        <div class="quizlib-question-title">3. What are the steps in a handler function?</div>
+        <div class="quizlib-question-answers">
+          <ul>
+            <li><label><input type="radio" name="q3" value="a">
+                log the action -> read user input -> do the logic -> alert the user</label></li>
+            <li><label><input type="radio" name="q3" value="b">
+                read user input -> alert the user -> do the logic -> log the action</label></li>
+            <li><label><input type="radio" name="q3" value="c">
+                read user input -> do the logic -> alert the user -> log the action</label></li>
+            <li><label><input type="radio" name="q3" value="d">
+                alert the user -> read user input -> do the logic -> log the action </label></li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- Answer Button. Note that the showResults call is exactly the same as question 1. Nice!  -->
+      <!-- <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button> -->
+    </div>
+  </details>
+
+</body>
+
+</html>

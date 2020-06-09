@@ -13,6 +13,7 @@
   - Week 1: [Assignments](./week-1/README.md), [Lesson Plan](https://hackyourfuture.be/debugging/week-1)
   - Week 2: [Assignments](./week-2/README.md), [Lesson Plan](https://hackyourfuture.be/debugging/week-2)
 - Study Materials:
+  - [Quiz](https://hackyourfuture.be/debugging/quiz)
   - [Isolate](./isolate/README.md) - examples and exercises
   - [Integrate](./integrate/README.md) - projects to study
   - [Class Recordings](./class-recordings.md)

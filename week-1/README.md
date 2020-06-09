@@ -121,7 +121,8 @@ The topics you should focus on during your study this week.
 ### JavaScript Prep Work
 
 - [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-1/prep)
-- javascript.info (articles)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript): 1 - 4
+- javascript.info
   - [An introduction](https://javascript.info/getting-started)
   - [JavaScript Fundamentals](https://javascript.info/first-steps): 1 -> 11
   - [Function Basics](https://javascript.info/function-basics)
@@ -134,6 +135,7 @@ The topics you should focus on during your study this week.
 - [ESlint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - [instructions](http://shripalsoni.com/blog/configure-eslint-in-visual-studio-code/)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (if you haven't installed it yet)
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) (if you haven't installed it yet)
+- [Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
 ---
 ---
@@ -196,6 +198,7 @@ During the week we encourage you to experiment with different browsers, but duri
   - [Type Conversions](https://javascript.info/type-conversions)
   - [Logical Operators](https://javascript.info/logical-operators)
   - [Nullish Operator](https://javascript.info/nullish-coalescing-operator)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 5
 - More resources at [study.hackyourfuture.be/javascript](https://study.hackyourfuture.be/javascript)
 
