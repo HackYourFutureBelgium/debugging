@@ -1,3 +1,5 @@
+'use strict';
+
 // const is short for "constant".  a variable that never changes
 
 

@@ -8,6 +8,8 @@
 */
 
 function handleUserInput() {
+  'use strict';
+
   // read user input
   _;
   _;

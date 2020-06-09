@@ -1,3 +1,5 @@
+'use strict';
+
 // console.assert is a good way to test your understanding of code
 //  the idea is to write what you expect the value to be
 //  then check your guess with console.assert

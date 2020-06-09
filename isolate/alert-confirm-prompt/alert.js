@@ -1,3 +1,5 @@
+'use strict';
+
 // alert displays whatever you pass as an argument
 const alertMessage = 'alerted!';
 const alertValue = alert(alertMessage);

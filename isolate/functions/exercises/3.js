@@ -1,3 +1,5 @@
+'use strict';
+
 function scramble(param1, param2, param3) {
   const result = _ + _ + _;
   return result;

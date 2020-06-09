@@ -1,3 +1,5 @@
+'use strict';
+
 // replace the _'s to pass the isTrues
 
 const isTrue1 = true === _;

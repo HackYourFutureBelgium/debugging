@@ -1,3 +1,5 @@
+'use strict';
+
 /* console.assert takes two arguments
 
 the first argument is called the ASSERTION

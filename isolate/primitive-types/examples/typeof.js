@@ -1,4 +1,6 @@
-// there are 5 primitive types in JavaScript
+'use strict';
+
+// there are 5 main primitive types in JavaScript
 // the typeof operator will tell you what type a value is
 
 // types are one of the most foundational concepts in programming

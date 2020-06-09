@@ -1,3 +1,5 @@
+'use strict';
+
 // replace the _'s to complete the challenges
 //  you know it's right when your log matches the one below it
 

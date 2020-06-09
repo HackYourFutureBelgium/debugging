@@ -1,3 +1,5 @@
+'use strict';
+
 // Psst ... "open in JS Tutor" might be helpful
 
 // DECLARING a variable creates a new named entry in memory:

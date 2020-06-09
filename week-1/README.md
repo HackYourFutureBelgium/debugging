@@ -56,6 +56,7 @@ The topics you should focus on during your study this week.
     - Strings: `prompt` - _ok_ or _enter_
     - Null value: `prompt` - _cancel_ or _escape_
   - structured handler functions
+- Strict Mode
 - Control Flow
   - `if`, `else if`, `else` Statements
   - `for` and `while` loops
@@ -119,14 +120,14 @@ The topics you should focus on during your study this week.
 
 ### JavaScript Prep Work
 
+- [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-1/prep)
 - javascript.info (articles)
-  - [An introduction](https://javascript.info/getting-started): 1 -> 4
-  - [JavaScript Fundamentals](https://javascript.info/first-steps): 1 -> 6
+  - [An introduction](https://javascript.info/getting-started)
+  - [JavaScript Fundamentals](https://javascript.info/first-steps): 1 -> 11
   - [Function Basics](https://javascript.info/function-basics)
   - [Code Quality](https://javascript.info/code-quality): 1 -> 3
-- Guo: [Variables & Values of Primitive Types](https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2) (a video)
-- [mmtuts: How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1): 1 -> 8 (videos)
-- [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-1/prep)
+  - [Strict Mode](https://javascript.info/strict-mode)
+- JS Tutor Video: [Variables & Values of Primitive Types](https://www.youtube.com/watch?v=pHt_tKYUgbo&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=2)
 
 ## VSCode Extensions
 

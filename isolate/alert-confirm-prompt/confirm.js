@@ -1,3 +1,5 @@
+'use strict';
+
 // confirm returns either true or false
 const confirmMessage = 'Click "ok", or "cancel".';
 const confirmValue = confirm(confirmMessage);

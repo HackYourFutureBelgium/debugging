@@ -1,3 +1,5 @@
+'use strict';
+
 // prompt returns a string or null
 const promptMessage = 'Type something, or nothing. Click "ok", or "cancel".';
 const promptValue = prompt(promptMessage);

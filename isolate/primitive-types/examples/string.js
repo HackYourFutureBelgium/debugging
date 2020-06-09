@@ -1,3 +1,5 @@
+'use strict';
+
 // strs are anything between quotations
 
 const str1 = '';
@@ -14,6 +16,12 @@ console.log(typeof str4, str4);
 
 const str5 = 'null';
 console.log(typeof str5, str5);
+
+const str6 = 'boolean';
+console.log(typeof str6, str6);
+
+const str7 = 'number';
+console.log(typeof str7, str7);
 
 
 // you can concatenate strings with +

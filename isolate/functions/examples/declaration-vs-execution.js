@@ -1,3 +1,5 @@
+'use strict';
+
 // Be sure to study this in JS Tutor or debugger
 
 // DECLARING a function creates it in memory

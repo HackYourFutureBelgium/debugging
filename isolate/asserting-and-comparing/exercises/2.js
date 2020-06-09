@@ -1,3 +1,5 @@
+'use strict';
+
 // replace the _ to pass the asserts
 
 const comparison1 = 4 === '4';

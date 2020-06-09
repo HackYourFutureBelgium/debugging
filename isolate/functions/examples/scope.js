@@ -1,3 +1,5 @@
+'use strict';
+
 // PS. study this in JS Tutor!
 
 // variables declared in a function body are SCOPED to that function

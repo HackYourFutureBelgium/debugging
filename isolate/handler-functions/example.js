@@ -1,4 +1,6 @@
 function handleUserInput() {
+  'use strict';
+
   // read user input
   const input = prompt('type something');
 

@@ -1,3 +1,5 @@
+'use strict';
+
 // PS. study this in JS Tutor!
 
 // functions allow you to reuse the same code with different values

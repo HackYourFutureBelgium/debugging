@@ -1,3 +1,5 @@
+'use strict';
+
 // !==, this operator will always evaluate to a boolean
 //  false: if the type & value are the same
 //  true: if either the type or value are different
