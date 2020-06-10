@@ -110,6 +110,7 @@ The topics you should focus on during your study this week.
 - [Code School](https://www.youtube.com/watch?v=nItSSTwBvSU)
 - [MDN: First Steps](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
 - [javascript.info](https://javascript.info/intro)
+- [Danielle Thé](https://www.youtube.com/watch?v=gT0Lh1eYk78)
 
 ### Debugging Tools
 
