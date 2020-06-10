@@ -1,5 +1,11 @@
 <!-- Try this example at https://alpsquid.github.io/quizlib -->
 
+<!-- usage notes
+  you need an empty title if you want Unanswerd Question to appear
+  answers can also be functions that return true/false, or eval code with console.assert
+  multiple choice arrays can also contain predicate evaluators
+ -->
+
 <!DOCTYPE html>
 <html>
 
@@ -29,23 +35,31 @@
 
   <h1>Quiz: Debugging</h1>
 
-  <!-- Quiz 1 -->
+  <!-- Variables -->
   <details>
     <summary>
       <h2 style='display:inline;'>Variables</h2>
     </summary>
     <div id="quiz-1">
       <!-- Question 1 -->
-      <div class="card quizlib-question">
-        <div class="quizlib-question-title">1. Write the missing line of code</div>
-        <pre class='line-numbers'><code class="language-javascript">let x = 'b', y = 'a', temp = '';
-temp = x;
+      <h3>1. Write the missing lines of code</h3>
+      <pre class='line-numbers'><code id='swapem' class="language-javascript">let x = 'b', y = 'a', temp = '';
+/* line 2 */
 x = y;
-_;
+/* line 4 */
+console.assert(x === 'a');
 console.assert(y === 'b');</code></pre>
+
+      <div class="card quizlib-question">
+        <div class="quizlib-question-title"></div>
         <div class="quizlib-question-answers">
-          <!-- <input type="text" style='height: 100px; width: 300px;' name="q1"> -->
-          <input type="text" name="q1">
+          <input type="text" placeholder='line 2' name="q1">
+        </div>
+      </div>
+      <div class="card quizlib-question">
+        <div class="quizlib-question-title"></div>
+        <div class="quizlib-question-answers">
+          <input type="text" placeholder='line 4' name="q2">
         </div>
       </div>
       <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
@@ -53,28 +67,32 @@ console.assert(y === 'b');</code></pre>
     </div>
     <script>
       quizzes['quiz-1'] = new Quiz('quiz-1', [
-        // (ans) => ans === 'b' || ans === '"b"' || ans === "'b'" || ans === '`b`',
-        (ans) => ans.includes('b')
-          ? false
-          : 'b' === eval(`
-            try {
-              let x = 'b', y = 'a', temp = '';
-              temp = x;
-              x = y;
-              ${ans};
-              y;
-            } catch (err) {
-              false;
-            }`)
-        // 'b',
-        // ['b', 'c', 'd']
+        (ans) => {
+          if (ans.includes('b')) {
+            return false;
+          } else {
+            const preSrc = document.getElementById('swapem').textContent;
+            const src = preSrc.replace('/* line 2 */', ans).replace('/* line 4 */', 'y = temp;');
+            eval(src);
+          }
+        },
+        (ans) => {
+          if (ans.includes('b')) {
+            return false;
+          } else {
+            const preSrc = document.getElementById('swapem').textContent;
+            const src = preSrc.replace('/* line 4 */', ans).replace('/* line 2 */', 'temp = x;');
+            eval(src);
+          }
+        },
       ]);
     </script>
+
   </details>
 
   <hr>
 
-  <!-- Quiz 2 -->
+  <!-- Primitive Types -->
   <details>
     <summary>
       <h2 style='display:inline;'>Primitive Types</h2>
@@ -104,7 +122,7 @@ console.assert(y === 'b');</code></pre>
 
   <hr>
 
-  <!-- Quiz 3 -->
+  <!-- Functions -->
   <details>
     <summary>
       <h2 style='display:inline;'>Functions</h2>

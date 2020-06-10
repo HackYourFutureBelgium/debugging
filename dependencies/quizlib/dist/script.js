@@ -1,6 +1,17 @@
 /* changes made
   // hack 1
     answers can be a predicate function
+    predicate evaluation has error handling
+      no need to add it in the predicated
+      an error will cause the question to fail
+    if using eval in the predicated
+      calling console.assert will cause the evaluation to ignore the predicate return value
+        pass/fail will be determined by the assertions
+      if console.assert is not called, the return value will be used
+      there will be no console output
+      prompt/alert/confirm are also overwritten by empty functions
+
+  does not, and probably never will, support async evaluation
 */
 
 /**
@@ -148,7 +159,6 @@ Quiz.prototype.checkAnswers = function (flagUnanswered) {
     var question = this.questions[i];
     var answer = this.answers[i];
     var userAnswer = [];
-
     this.clearHighlights(question);
 
     // Get answers
@@ -162,7 +172,6 @@ Quiz.prototype.checkAnswers = function (flagUnanswered) {
         userAnswer.push(input.value);
       }
     }
-    // console.log(userAnswer)
 
     // Remove single answer from array to match provided answer format
     if (userAnswer.length == 1 && !Array.isArray(answer)) {
@@ -189,14 +198,7 @@ Quiz.prototype.checkAnswers = function (flagUnanswered) {
     }
     // For multiple-choice questions (type "checkbox") and free-text questions, all correct answers must be given.
     else {
-
-      // hack 1
-      if (typeof answer === 'function') {
-        questionResults.push(answer(userAnswer));
-      }
-      else {
-        questionResults.push(Utils.compare(userAnswer, answer));
-      }
+      questionResults.push(Utils.compare(userAnswer, answer));
     }
   }
 
@@ -359,14 +361,65 @@ var Utils = function () { };
  * @param {Object} obj2 object to compare obj1 against
  * @return {boolean} True if objects are equal
  */
-Utils.compare = function (obj1, obj2) {
-  if (obj1.length != obj2.length) return false;
+Utils.compare = function (userAns, correctAns) {
+  if (typeof correctAns === 'function') {
+    return Utils.evaluatePredicate(userAns, correctAns);
+  }
 
-  if (Array.isArray(obj1) && Array.isArray(obj2)) {
-    for (var i = 0; i < obj1.length; i++) {
-      if (obj1[i] !== obj2[i]) return false;
+  if (userAns.length != correctAns.length) return false;
+
+  if (Array.isArray(userAns) && Array.isArray(correctAns)) {
+    for (var i = 0; i < userAns.length; i++) {
+      // hack 1
+      if (typeof correctAns[i] === 'function') {
+        if (!Utils.evaluatePredicate(userAns[i], correctAns[i])) {
+          return false
+        }
+      }
+      else if (userAns[i] !== correctAns[i]) {
+        return false;
+      }
     }
     return true;
   }
-  return obj1 === obj2;
+  return userAns === correctAns;
 };
+
+Utils.evaluatePredicate = function (ans, pred) {
+  let pass = true;
+  let assertions = false;
+
+  const nativeConsole = window.console;
+  for (let key in window.console) {
+    console[key] = function () { };
+  }
+  console.assert = function () {
+    assertions = true;
+    if (!arguments[0]) {
+      pass = false;
+    }
+  }
+
+  const nativeAlert = alert;
+  const nativePrompt = prompt;
+  const nativeConfirm = confirm;
+  alert = function () { };
+  prompt = function () { };
+  confirm = function () { };
+
+  try {
+    const predicateResult = pred(ans);
+    pass = assertions
+      ? pass
+      : predicateResult;
+  } catch (err) {
+    pass = false;
+  }
+
+  console = nativeConsole;
+  alert = nativeAlert;
+  prompt = nativePrompt;
+  confirm = nativeConfirm;
+
+  return pass;
+}
