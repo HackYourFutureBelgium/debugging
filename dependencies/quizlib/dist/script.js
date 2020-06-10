@@ -389,8 +389,8 @@ Utils.evaluatePredicate = function (ans, pred) {
   let pass = true;
   let assertions = false;
 
-  const nativeConsole = window.console;
-  for (let key in window.console) {
+  const nativeConsoleMethods = Object.assign({}, console);
+  for (let key in console) {
     console[key] = function () { };
   }
   console.assert = function () {
@@ -416,7 +416,7 @@ Utils.evaluatePredicate = function (ans, pred) {
     pass = false;
   }
 
-  console = nativeConsole;
+  Object.assign(console, nativeConsoleMethods);
   alert = nativeAlert;
   prompt = nativePrompt;
   confirm = nativeConfirm;
