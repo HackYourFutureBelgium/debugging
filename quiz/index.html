@@ -7,7 +7,6 @@
   <meta charset='utf-8'>
   <script type="text/javascript" src="../dependencies/quizlib/dist/script.js"></script>
   <script type="text/javascript" src="../dependencies/quizlib/assessment/main.js"></script>
-  <script type="text/javascript" src="./key.js"></script>
 
   <link rel="stylesheet" type="text/css" href="../dependencies/prism/style.css" media="screen">
   <script type="text/javascript" src="../dependencies/prism/script.js"> </script>
@@ -16,6 +15,8 @@
   <link rel="stylesheet" type="text/css" href="../dependencies/quizlib/assessment/stylesheet.css" media="screen">
 
   <title>Quizlib Multi-Quiz Example</title>
+
+  <script>var quizzes = {};</script>
 </head>
 
 <body>
@@ -36,41 +37,39 @@
     <div id="quiz-1">
       <!-- Question 1 -->
       <div class="card quizlib-question">
-        <div class="quizlib-question-title">1. What will be logged to the console?</div>
-        <pre class='line-numbers'><code class="language-javascript">let x = 'a', y = 'b', temp = '';
+        <div class="quizlib-question-title">1. Write the missing line of code</div>
+        <pre class='line-numbers'><code class="language-javascript">let x = 'b', y = 'a', temp = '';
 temp = x;
 x = y;
-y = temp;
-console.log(temp);</code></pre>
+_;
+console.assert(y === 'b');</code></pre>
         <div class="quizlib-question-answers">
+          <!-- <input type="text" style='height: 100px; width: 300px;' name="q1"> -->
           <input type="text" name="q1">
         </div>
       </div>
-      <!-- Question 2 -->
-      <!-- <div class="card quizlib-question">
-        <div class="quizlib-question-title">2. Your enemy's father...</div>
-        <div class="quizlib-question-answers">
-          <ul>
-            <li><label><input type="radio" name="q2" value="a"> is a hamster</label></li>
-            <li><label><input type="radio" name="q2" value="b"> smells of elderberries</label></li>
-          </ul>
-        </div>
-      </div> -->
-      <!-- Question 3 -->
-      <!-- <div class="card quizlib-question">
-        <div class="quizlib-question-title">3. Which factors will contribute to the end of humanity as we know it?</div>
-        <div class="quizlib-question-answers">
-          <ul>
-            <li><label><input type="checkbox" name="q3" value="a"> Global warming</label></li>
-            <li><label><input type="checkbox" name="q3" value="b"> The release of Linux 4.1.15</label></li>
-            <li><label><input type="checkbox" name="q3" value="c"> Cats</label></li>
-            <li><label><input type="checkbox" name="q3" value="d"> Advancements in artificial intelligence</label></li>
-          </ul>
-        </div>
-      </div> -->
       <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
       <button type="button" onclick="showResults(this.parentNode.id);">Check Answers</button>
     </div>
+    <script>
+      quizzes['quiz-1'] = new Quiz('quiz-1', [
+        // (ans) => ans === 'b' || ans === '"b"' || ans === "'b'" || ans === '`b`',
+        (ans) => ans.includes('b')
+          ? false
+          : 'b' === eval(`
+            try {
+              let x = 'b', y = 'a', temp = '';
+              temp = x;
+              x = y;
+              ${ans};
+              y;
+            } catch (err) {
+              false;
+            }`)
+        // 'b',
+        // ['b', 'c', 'd']
+      ]);
+    </script>
   </details>
 
   <hr>

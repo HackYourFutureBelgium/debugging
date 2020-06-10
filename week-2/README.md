@@ -153,5 +153,7 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 ### Project
 
+#### Checklist
+
 #### `repo-name`
 

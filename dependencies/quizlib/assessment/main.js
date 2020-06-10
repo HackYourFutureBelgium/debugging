@@ -32,6 +32,7 @@ function showResults(quizID) {
 
     // Highlight questions according to whether they were correctly answered. The callback allows us to highlight/show the correct answer
     activeQuiz.highlightResults(handleAnswers);
+    // activeQuiz.highlightResults();
   }
 }
 
@@ -44,17 +45,24 @@ function handleAnswers(quiz, question, no, correct) {
     for (var i = 0; i < answers.length; i++) {
       if (answers[i].type === "checkbox" || answers[i].type === "radio") {
         // If the current input element is part of the correct answer, highlight it
-        if (quiz.answers[no].indexOf(answers[i].value) > -1) {
-          answers[i].parentNode.classList.add(Quiz.Classes.CORRECT);
-        }
+        // if (quiz.answers[no].indexOf(answers[i].value) > -1) {
+        // answers[i].parentNode.classList.add(Quiz.Classes.CORRECT);
+        // }
       } else {
         // If the input is anything other than a checkbox or radio button, show the correct answer next to the element
-        var correctAnswer = document.createElement('span');
-        correctAnswer.classList.add(Quiz.Classes.CORRECT);
-        correctAnswer.classList.add(Quiz.Classes.TEMP); // quiz.checkAnswers will automatically remove elements with the temp class
-        correctAnswer.innerHTML = quiz.answers[no];
-        correctAnswer.style.marginLeft = '10px';
-        answers[i].parentNode.insertBefore(correctAnswer, answers[i].nextSibling);
+        // var correctAnswer = document.createElement('span');
+        // correctAnswer.classList.add(Quiz.Classes.CORRECT);
+        // correctAnswer.classList.add(Quiz.Classes.TEMP); // quiz.checkAnswers will automatically remove elements with the temp class
+        // correctAnswer.innerHTML = quiz.answers[no];
+        // correctAnswer.style.marginLeft = '10px';
+        // answers[i].parentNode.insertBefore(correctAnswer, answers[i].nextSibling);
+        var redX = document.createElement('span');
+        redX.classList.add(Quiz.Classes.CORRECT);
+        redX.classList.add(Quiz.Classes.TEMP); // quiz.checkAnswers will automatically remove elements with the temp class
+        redX.innerHTML = ' X';
+        redX.style.marginLeft = '10px';
+        redX.style.color = 'red';
+        answers[i].parentNode.insertBefore(redX, answers[i].nextSibling);
       }
     }
   }

@@ -214,7 +214,7 @@ During the week we encourage you to experiment with different browsers, but duri
 
 ### Project
 
-#### Check-List
+#### Checklist
 
 ```md
 
