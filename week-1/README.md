@@ -154,13 +154,20 @@ During the week we encourage you to experiment with different browsers, but duri
 
 ### Isolate
 
-- handler functions: [examples](../isolate/variables-examples), [exercises](../isolate/variables-exercises)
+- Functions: [examples](../isolate/functions/examples), [exercises](../isolate/functions/exercises)
+- Explicit Coercion: [examples](../isolate/explicit-coercion/examples), [exercises](../isolate/explicit-coercion/exercises)
+- Logical Operators: [examples](../isolate/logical-operators/examples), [exercises](../isolate/logical-operators/exercises)
 
 ### Integrate
 
-- `onclick` attribute: [examples](), [exercises]()
-- all together:  [examples](../isolate/variables-examples), [exercises](../isolate/variables-exercises)
-- [\_](https://github.com/hackyourfuturebelgium/coming-soon) (starter repo)
+The project this week is not collaborative.  You work together in your small groups, but should not be working on the same repository.
+
+- [Week 1 in-class project](https://github.com/HackYourFutureBelgium/debugging-integrate-week-1) (starter repo)
+
+Helpful code to study:
+
+- [`onclick` attribute](../integrate/onclick-attribute/examples)
+- [capturing user input: primitives](../integrate/caputring-user-input/primitive-types.html)
 
 ---
 ---
