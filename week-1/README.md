@@ -59,7 +59,6 @@ The topics you should focus on during your study this week.
 - Strict Mode
 - Control Flow
   - `if`, `else if`, `else` Statements
-  - `for` and `while` loops
 - Program Life-Cycle
   1. Source Code
   1. Creation Phase
