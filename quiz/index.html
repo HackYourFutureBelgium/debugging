@@ -73,7 +73,7 @@ console.assert(y === 'b', 'Test 2');</code></pre>
             return false;
           } else {
             const preSrc = document.getElementById('swapem').textContent;
-            const src = preSrc.replace('/* line 2 */', ans).replace('/* line 4 */', 'y = temp;');
+            const src = preSrc.replace('/* line 3 */', ans).replace('/* line 5 */', 'y = temp;');
             eval(src);
           }
         },
@@ -82,7 +82,7 @@ console.assert(y === 'b', 'Test 2');</code></pre>
             return false;
           } else {
             const preSrc = document.getElementById('swapem').textContent;
-            const src = preSrc.replace('/* line 2 */', 'temp = x;').replace('/* line 4 */', ans);
+            const src = preSrc.replace('/* line 3 */', 'temp = x;').replace('/* line 5 */', ans);
             eval(src);
           }
         },
