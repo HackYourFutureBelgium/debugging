@@ -112,12 +112,12 @@ Software Development is a many layered skill. One simple way to break it down is
   - Reading different types from users
 - Statements vs. Expressions
 - JS Program Life-Cycle:
-  1. _Source code_: The `.js` text file you write.  These are just instructions saved as text in your computer, not a live program!
-  2. _Creation Phase_: When the JavaScript interpreter first reads your instructions.  At this point it will prepare the program memory and check for some types of errors.
-  3. _Execution Phase_: This is the real deal! The JavaScript interpreter will now step through your instructions _one line at at time_, updating program memory according to your instructions.
+  1. _Source code_: The `.js` text file you write.  These are just instructions saved as text in your computer, not a live process (a process is an active instance of a program)!
+  2. _Creation Phase_: When the JavaScript interpreter first reads your instructions from the program.  At this point it will load the program into memory (thus making a process) and check for some types of errors.
+  3. _Execution Phase_: This is the real deal! The JavaScript interpreter will now step through your instructions _one line at a time_, updating the (process) memory according to your instructions.
 - Errors:
   - _Syntax vs. Semantic_: Some errors happen because you wrote JavaScript that the interpreter couldn't interpret (syntax), other errors happen when you try to do something that isn't allowed (semantic).
-  - _Creation vs. Execution_: Some errors are thrown before the program actually starts (creation phase), others are thrown during program execution when a line of code is reached (execution phase).
+  - _Creation vs. Execution_: Some errors are thrown before the program actually becomes a process (creation phase), others are thrown during program execution when a line of code is reached (execution phase).
 
 ### Integrating JavaScript
 

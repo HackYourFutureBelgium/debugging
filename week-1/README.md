@@ -25,7 +25,7 @@ The topics you should focus on during your study this week.
 
 - `console`
   - `.log` for describing what _did_ happen in your program
-  - `.assert` for predicting what _will_ happen in your program
+  - `.assert` for writing the expectation of what  _should_ happen in your program
 - Variables
   - Declaration & Assignment
   - `const`
@@ -80,7 +80,7 @@ The topics you should focus on during your study this week.
   - Printing values to understand what _did_ happen in your code
   - _Always print the **type** AND the **value**_
 - `console.assert`
-  - Asserting values to _predict_ what will happen in your code
+  - Asserting values to _expect_ what _should_ happen in your code
   - Understand how to use `===` to assert values in memory
 - Stepping through code execution
   - Using debugging tools to execute your code one step at a time
