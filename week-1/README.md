@@ -95,6 +95,8 @@ The topics you should focus on during your study this week.
 - Using learning-focused debugging tools
   - JS Tutor
 
+[TOP](#debugging)
+
 ---
 ---
 
@@ -138,6 +140,8 @@ The topics you should focus on during your study this week.
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) (if you haven't installed it yet)
 - [Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
 
+[TOP](#debugging)
+
 ---
 ---
 
@@ -168,6 +172,8 @@ Helpful code to study:
 
 - [`onclick` attribute](../integrate/onclick-attribute/examples)
 - [capturing user input: primitives](../integrate/caputring-user-input/primitive-types.html)
+
+[TOP](#debugging)
 
 ---
 ---
@@ -229,3 +235,6 @@ Helpful code to study:
 ```
 
 #### `repo-name`
+
+
+[TOP](#debugging)
