@@ -239,10 +239,39 @@ Helpful code to study:
 #### Checklist
 
 ```md
-
+- [ ] [repo](https://github.com/user-name/project-name)
+- [ ] [live](https://user-name.github.io/project-name)
+- [ ] [development-strategy](https://github.com/user-name/project-name/tree/master/development-strategy.md)
+- [ ] [One branch per step in `development-strategy.md`](https://github.com/user-name/repo-name/network)
+- [ ] [One closed Issue per step in `development-strategy.md`](https://github.com/user-name/repo-name/issues?q=is%3Aissue+is%3Aclosed)
+- [ ] [One closed PR per step in `development-strategy.md`](https://github.com/user-name/repo-name/pulls?q=is%3Apr+is%3Aclosed)
+- [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
+- [ ] A complete README
 ```
 
-#### `repo-name`
+#### `debugging-project-week-1`
 
+> [Starter Code](https://home.hackyourfuture.be/students/weekly-assignments#projects)
 
-[TOP](#debugging)
+Collaboration!  This project should be completed in groups of 3-4.  Generate a new repo for your team using [debugging-project-week-1](https://github.com/HackYourFutureBelgium/debugging-project-week-1) and have at it.
+
+Some things to think about when writing your development strategy:
+
+- Is one challenge one step? ie.
+  1. _Convert to F_: HTML, CSS, JS
+  2. _Reverse a String_: HTML, CSS, JS
+  3. ...
+- Or are there longer phases to development (milestones)?
+  1. _Finish the entire UI_
+  2. _Pass all the tests_: convert to c, convert to f, ...
+  3. _Write all the handlers_: convert to c, convert to f, ...
+- How much work should go on each issue?
+- How do you want to divide the work?
+  - Does one person write the entire UI?
+  - Does each person write the UI for their challenge?
+  - Does one person pass all the tests, and another writes the handlers?
+
+There are no wrong answers!  What matters is that you agree as a team, and that your plan is clear in the `development-strategy`.
+
+:shipit:
+
