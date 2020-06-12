@@ -6,9 +6,6 @@
    ===
 */
 function mystery(x, y) {
-  if (typeof x === 'number') { throw new TypeError('x cannot be a number'); }
-  if (typeof y === 'number') { throw new TypeError('y cannot be a number'); }
-
   // write some code!
 }
 
