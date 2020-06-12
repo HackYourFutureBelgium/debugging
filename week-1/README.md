@@ -27,8 +27,8 @@ The topics you should focus on during your study this week.
   - `.log` for describing what _did_ happen in your program
   - `.assert` for writing the expectation of what  _should_ happen in your program
 - Variables
-  - Declaration & Assignment
-  - `const`
+  - Declaration, Assignment, Reassignment
+  - `const`, `let`
 - Primitive Types
   - `"string"`
   - `"number"`
@@ -44,11 +44,15 @@ The topics you should focus on during your study this week.
   - `&&`, `||`, `??`, `!`
 - Strict Comparison
   - `===`
+  - `Object.is(x, y)`
   - `isNaN` and `Number.isNaN`
 - Functions
   - Arguments, Parameters, Return Values
   - Lexical Scope
   - `function` functions
+- Block Scope
+- Control Flow
+  - `if`, `else if`, `else` Statements
 - Input/Output
   - `prompt`, `alert`, `confirm`
   - Reading different types from users
@@ -56,9 +60,6 @@ The topics you should focus on during your study this week.
     - Strings: `prompt` - _ok_ or _enter_
     - Null value: `prompt` - _cancel_ or _escape_
   - structured handler functions
-- Strict Mode
-- Control Flow
-  - `if`, `else if`, `else` Statements
 - Program Life-Cycle
   1. Source Code
   1. Creation Phase
@@ -219,9 +220,14 @@ Helpful code to study:
 
 ### Exercises
 
+- [debuggercises](https://github.com/hackyourfuturebelgium/debuggercises)
+  - :egg: 1 -> 6
+  - :hatching_chick: 7 -> 9
+  - :hatched_chick: 10
 - [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
-  - :egg: Level 1 & Level 2
-  - :hatching_chick: : Level 3
+  - :egg: 1, 2
+  - :hatching_chick: 3
+  - :hatched_chick: 4
 
 ---
 
