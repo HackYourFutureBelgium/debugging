@@ -190,10 +190,6 @@ Helpful code to study:
 - [Hello World 2](https://www.youtube.com/watch?v=dvXEAs-00AA)
 - [The Docs](https://code.visualstudio.com/Docs/editor/debugging)
 
-#### Writing JSDoc Strings
-
-- [VSCode support](https://code.visualstudio.com/Docs/languages/javascript#_jsdoc-support)
-
 #### JavaScript Tutorials
 
 - mmtuts: [How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1)
