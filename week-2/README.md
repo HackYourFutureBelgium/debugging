@@ -145,9 +145,13 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 ### Exercises
 
+- [debuggercises](https://github.com/hackyourfuturebelgium/debuggercises)
+  - :egg: 1. Primitive Types -> 5. Logical Operators
+  - :hatching_chick: 6. Block Scope -> 7. Conditionals
+  - :hatched_chick: 8. Functions 201
 - [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
   - :egg: Levels 3 and 4
-  - :hatching_chick: : Level 5
+  - :hatching_chick: Level 5
 
 ---
 
