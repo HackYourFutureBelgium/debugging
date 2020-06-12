@@ -219,9 +219,9 @@ Helpful code to study:
 
 ### Exercises
 
-- [using-primitive-types](https://github.com/HackYourFutureBelgium/using-primitive-types)
+- [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
   - :egg: Level 1 & Level 2
-  - :hatching_chick: : Level 3 & Level 4
+  - :hatching_chick: : Level 3
 
 ---
 

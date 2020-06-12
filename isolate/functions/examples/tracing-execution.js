@@ -1,5 +1,3 @@
-'use strict';
-
 // PS. Study this in JS Tutor and the debugger
 
 // 0: Creation Phase, function is declared
