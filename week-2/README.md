@@ -130,6 +130,9 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 #### JavaScript Practice
 
+- [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone) (repository)
+- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) (repository)
+- [Introduction to JavaScript](https://github.com/nerdschoolbergen/introduction-to-javascript) (repository)
 - FreeCodeCamp: [debugging](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/debugging/), [basics](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
 
 #### Study References

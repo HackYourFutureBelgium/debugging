@@ -168,6 +168,6 @@ Software Development is a many layered skill. One simple way to break it down is
 
 ## Module Projects
 
-
+Projects in this module will be simple websites with `onclick` attributes that call a handler function.  User interactions will be handled with `prompt`, `confirm` and `alert`
 
 [TOP](#debugging)
