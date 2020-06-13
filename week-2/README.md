@@ -122,6 +122,10 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 ### Suggested Study
 
+#### Writing JSDoc Strings
+
+- [VSCode support](https://code.visualstudio.com/Docs/languages/javascript#_jsdoc-support)
+
 #### JavaScript Tutorials
 
 - mmtuts: [How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1)
@@ -130,10 +134,13 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 #### JavaScript Practice
 
+- These are all good, pick your favorite and go for it!
 - [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone) (repository)
 - [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) (repository)
 - [Introduction to JavaScript](https://github.com/nerdschoolbergen/introduction-to-javascript) (repository)
-- FreeCodeCamp: [debugging](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/debugging/), [basics](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
+- [JS Exercises](https://github.com/hackyourfuturebelgium/js-exercises) (repository)
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
+
 
 #### Study References
 

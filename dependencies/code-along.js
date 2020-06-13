@@ -1027,7 +1027,7 @@ codeAlong.toElement = (() => {
   toElement.string = (val, depth) => {
     const el = document.createElement('pre');
     el.style.display = 'inline';
-    el.textContent = val
+    el.textContent = '"' + val + '"'
     // .split('\n')
     // .join('\n' + toElement.indent(depth));
     return el;
@@ -1069,8 +1069,8 @@ codeAlong.toElement = (() => {
 
   toElement.error = (val) => {
     const el = document.createElement('pre');
-    el.style.display = 'inline';
-    el.innerHTML = `${val.name}: ${val.message}`;
+    el.style = 'display:inline; color:red;';
+    el.innerHTML = val.stack;
     return el;
   };
 

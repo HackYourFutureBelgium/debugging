@@ -202,10 +202,12 @@ Helpful code to study:
 
 #### JavaScript Practice
 
+- These are all good, pick your favorite and go for it!
 - [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone) (repository)
 - [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) (repository)
 - [Introduction to JavaScript](https://github.com/nerdschoolbergen/introduction-to-javascript) (repository)
-- FreeCodeCamp: [debugging](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/debugging/), [basics](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/)
+- [JS Exercises](https://github.com/hackyourfuturebelgium/js-exercises) (repository)
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
 
 #### Study References
 
