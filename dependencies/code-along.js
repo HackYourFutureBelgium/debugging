@@ -531,7 +531,7 @@ codeAlong.js = (iframe, steps, config) => {
     const renderPhase = didExecute => {
       const phaseEl = document.createElement('pre');
       const phase = didExecute.status ? 'Execution Phase' : "Creation Phase"
-      phaseEl.innerHTML = '   caught during ' + phase;
+      phaseEl.innerHTML = '   thrown during ' + phase;
       return phaseEl;
     }
 
