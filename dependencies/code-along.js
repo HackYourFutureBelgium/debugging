@@ -1020,7 +1020,7 @@ codeAlong.toElement = (() => {
     el.innerHTML = func
       .toString()
       .split('\n')
-      .join('\n' + toElement.indent(depth - 1));
+      .join('\n' + toElement.indent(depth - 2));
     return el;
   };
 
