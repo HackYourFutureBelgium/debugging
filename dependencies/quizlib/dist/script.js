@@ -340,7 +340,7 @@ QuizResult.prototype.setResults = function (questionResults) {
   this.totalQuestions = this.results.length;
   this.score = 0;
   for (var i = 0; i < this.results.length; i++) {
-    if (this.results[i]) this.score++;
+    if (this.results[i] && typeof this.results[i] !== 'string') this.score++;
   }
   this.scorePercent = this.score / this.totalQuestions;
   this.scorePercentFormatted = Math.floor(this.scorePercent * 100);
@@ -372,7 +372,10 @@ Utils.compare = function (userAns, correctAns) {
     for (var i = 0; i < userAns.length; i++) {
       // hack 1
       if (typeof correctAns[i] === 'function') {
-        if (!Utils.evaluatePredicate(userAns[i], correctAns[i])) {
+        const evaluation = Utils.evaluatePredicate(userAns[i], correctAns[i]);
+        if (typeof evaluation === 'string') {
+          return evaluation
+        } else if (!evaluation) {
           return false
         }
       }
@@ -409,11 +412,11 @@ Utils.evaluatePredicate = function (ans, pred) {
 
   try {
     const predicateResult = pred(ans);
-    pass = assertions
-      ? pass
-      : predicateResult;
+    if (predicateResult !== undefined) {
+      pass = predicateResult;
+    }
   } catch (err) {
-    pass = false;
+    pass = `${err.name}: ${err.message}`;
   }
 
   Object.assign(console, nativeConsoleMethods);

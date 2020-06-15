@@ -43,24 +43,27 @@
     <div id="quiz-1">
       <!-- Question 1 -->
       <h3>1. Write the missing lines of code</h3>
-      <pre class='line-numbers'><code id='swapem' class="language-javascript">'use strict';
-let x = 'b', y = 'a', temp = null;
-/* line 3 */
-x = y;
+      <pre class='line-numbers'><code id='swapem' class="language-javascript">let x = 'b';
+let y = 'a';
+let temp = null;
+
 /* line 5 */
+x = y;
+/* line 7 */
+
 console.assert(x === 'a', 'Test 1');
 console.assert(y === 'b', 'Test 2');</code></pre>
 
       <div class="card quizlib-question">
         <div class="quizlib-question-title"></div>
         <div class="quizlib-question-answers">
-          <input type="text" placeholder='line 3' name="q1">
+          <input type="text" placeholder='line 5' name="q1">
         </div>
       </div>
       <div class="card quizlib-question">
         <div class="quizlib-question-title"></div>
         <div class="quizlib-question-answers">
-          <input type="text" placeholder='line 4' name="q2">
+          <input type="text" placeholder='line 7' name="q2">
         </div>
       </div>
       <!-- Answer Button. Here, we pass the ID of the quiz element (the parent of this button) to the showResults function.  -->
@@ -70,19 +73,19 @@ console.assert(y === 'b', 'Test 2');</code></pre>
       quizzes['quiz-1'] = new Quiz('quiz-1', [
         (ans) => {
           if (ans.includes('b') || ans.includes('a')) {
-            return false;
+            return 'answer cannot contain "a" or "b"';
           } else {
             const preSrc = document.getElementById('swapem').textContent;
-            const src = preSrc.replace('/* line 3 */', ans).replace('/* line 5 */', 'y = temp;');
+            const src = preSrc.replace('/* line 5 */', ans).replace('/* line 7 */', 'y = temp;');
             eval(src);
           }
         },
         (ans) => {
           if (ans.includes('b') || ans.includes('a')) {
-            return false;
+            return 'answer cannot contain "a" or "b"';
           } else {
             const preSrc = document.getElementById('swapem').textContent;
-            const src = preSrc.replace('/* line 3 */', 'temp = x;').replace('/* line 5 */', ans);
+            const src = preSrc.replace('/* line 5 */', 'temp = x;').replace('/* line 7 */', ans);
             eval(src);
           }
         },

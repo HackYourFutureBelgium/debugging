@@ -39,8 +39,8 @@ function showResults(quizID) {
 /** Callback for Quiz.highlightResults. Highlights the correct answers of incorrectly answered questions
  * Parameters are: the quiz object, the question element, question number, correctly answered flag
  */
-function handleAnswers(quiz, question, no, correct) {
-  if (!correct) {
+function handleAnswers(quiz, question, number, correct) {
+  if (!correct || typeof correct === 'string') {
     var answers = question.getElementsByTagName('input');
     for (var i = 0; i < answers.length; i++) {
       if (answers[i].type === "checkbox" || answers[i].type === "radio") {
@@ -59,7 +59,7 @@ function handleAnswers(quiz, question, no, correct) {
         var redX = document.createElement('span');
         redX.classList.add(Quiz.Classes.CORRECT);
         redX.classList.add(Quiz.Classes.TEMP); // quiz.checkAnswers will automatically remove elements with the temp class
-        redX.innerHTML = ' X';
+        redX.textContent = typeof correct === 'string' ? correct : ' X';
         redX.style.marginLeft = '10px';
         redX.style.color = 'red';
         answers[i].parentNode.insertBefore(redX, answers[i].nextSibling);
