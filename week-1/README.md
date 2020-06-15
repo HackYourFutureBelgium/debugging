@@ -251,7 +251,7 @@ Helpful code to study:
 
 > [Starter Code](https://home.hackyourfuture.be/students/weekly-assignments#projects)
 
-Collaboration!  This project should be completed in groups of 3-4.  Generate a new repo for your team using [debugging-project-week-1](https://github.com/HackYourFutureBelgium/debugging-project-week-1) and have at it.
+Collaboration!  This project should be completed in groups.  Generate a new repo for your team using [debugging-project-week-1](https://github.com/HackYourFutureBelgium/debugging-project-week-1) and have at it.
 
 Some things to think about when writing your development strategy:
 
