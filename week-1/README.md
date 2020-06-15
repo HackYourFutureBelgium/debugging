@@ -171,7 +171,7 @@ The project this week is not collaborative.  You work together in your small gro
 Helpful code to study:
 
 - [`onclick` attribute](../integrate/onclick-attribute/examples)
-- [capturing user input: primitives](../integrate/caputring-user-input/primitive-types.html)
+- [capturing user input: primitives](../integrate/capturing-user-input/primitive-types.html)
 
 [TOP](#debugging)
 
