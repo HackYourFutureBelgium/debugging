@@ -38,7 +38,7 @@ const returned7 = mystery(-1);
 const isTrue7 = returned7 === _;
 console.assert(isTrue7, 'Test 7');
 
-const returned8 = mystery(true);
+const returned8 = mystery('true');
 const isTrue8 = returned8 === _;
 console.assert(isTrue8, 'Test 8');
 
