@@ -1,0 +1,24 @@
+Server running at http://localhost:3000/
+1. req: GET / 
+1. res: ./index.html
+2. req: GET /app/index.js 
+2. res: /app/index.js
+3. req: GET /app/live-study.js 
+3. res: /app/live-study.js
+4. req: GET /app/exercise.js 
+4. res: /app/exercise.js
+5. req: GET /index.json 
+5. res: /index.json
+6. req: GET //increment-and-decrement/examples/postfix-increment.js {"study":"debugger"}
+6. res: //increment-and-decrement/examples/postfix-increment.js
+7. req: GET //increment-and-decrement/examples/postfix-increment.js {"study":"debugger"}
+7. res: //increment-and-decrement/examples/postfix-increment.js
+8. req: GET //increment-and-decrement/examples/postfix-increment.js {"study":"jsTutor"}
+8. res: //increment-and-decrement/examples/postfix-increment.js
+9. req: GET //increment-and-decrement/examples/postfix-increment.js {"study":"debugger"}
+9. res: //increment-and-decrement/examples/postfix-increment.js
+10. req: GET //increment-and-decrement/examples/postfix-decrement.js {"study":"debugger"}
+10. res: //increment-and-decrement/examples/postfix-decrement.js
+
+stopping server ...
+process.exit with code 0

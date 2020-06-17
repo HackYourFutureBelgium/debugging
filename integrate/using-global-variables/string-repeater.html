@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>string repeater</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='data'>
+    let repetitions = 0;
+    let string = '';
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    function setRepetitionsHandler() {
+      debugger;
+      console.log('-- action: set repetitions --');
+      console.log('repetitions (before):', typeof repetitions, '\n', repetitions);
+
+      // read user input
+      const userInput = prompt('enter a number of repetitions');
+      console.log('userInput:', typeof userInput, '\n', userInput);
+      if (userInput === null) {
+        return; // early return if the input is canceled
+      }
+
+      const newReps = Number(userInput);
+      console.log('newReps:', typeof newReps, '\n', newReps);
+      if (Number.isNaN(newReps)) {
+        alert('please enter a valid number');
+        return; // early return if the input is not valid
+      }
+
+      // update the global variable
+      repetitions = newReps;
+      console.log('repetitions (after):', typeof repetitions, '\n', repetitions);
+
+      // alert the user
+      alert('your repetitions is saved!');
+    }
+
+    function setStringHandler() {
+      debugger;
+      console.log('-- action: set string --');
+      console.log('string (before):', typeof string, '\n', string);
+
+      // read user input
+      const userInput = prompt('enter a new string');
+      console.log('userInput:', typeof userInput, '\n', userInput);
+      if (userInput === null) {
+        return; // early return if the input is canceled
+      }
+
+      // update the global variable
+      string = userInput;
+      console.log('string (after):', typeof string, '\n', string);
+
+      // alert the user
+      alert('your string is saved!');
+    }
+
+    function repeatStringHandler() {
+      debugger;
+      console.log('-- action: repeat --');
+      console.log('repetitions:', typeof repetitions, '\n', repetitions);
+      console.log('string:', typeof string, '\n', string);
+
+      // repeat string
+      let repeatedString = '';
+      for (let i = 0; i < repetitions; i++) {
+        repeatedString += string + '\n';
+      }
+      console.log('repeatedString:', typeof repeatedString, '\n', repeatedString);
+
+      // show the user
+      alert(repeatedString);
+    }
+  </script>
+</head>
+
+<body>
+  <div id='user-interface' class='centered'>
+    <button onclick='setRepetitionsHandler()'>set repetitions</button> <br>
+    <button onclick='setStringHandler()'>set string</button> <br>
+    <button onclick='repeatStringHandler()'>repeat!</button>
+  </div>
+</body>
+
+</html>

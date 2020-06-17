@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>guessing game</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='data'>
+    let secret = '';
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    function setSecretHandler() {
+      debugger;
+      console.log('-- action: set secret --');
+      console.log('secret (before):', typeof secret, '\n', secret);
+
+      // read user input
+      const newSecret = prompt('enter a new secret');
+      console.log('newSecret:', typeof newSecret, '\n', newSecret);
+      if (newSecret === null) {
+        return; // early return if the input is canceled
+      }
+
+      // update global variable
+      secret = newSecret;
+      console.log('secret (after):', typeof secret, '\n', secret);
+
+      // let the user know the secret is safe
+      alert('your secret is safe with me ;)');
+    }
+
+    function guessSecretHandler() {
+      debugger;
+      console.log('-- action: guess secret --');
+      console.log('secret:', typeof secret, '\n', secret);
+
+      // read user input
+      const guess = prompt('guess the secret');
+      console.log('guess:', typeof guess, '\n', guess);
+      if (guess === null) {
+        return; // early return if the input is canceled
+      }
+
+      // check their guess
+      const isCorrect = guess === secret;
+      console.log('isCorrect:', typeof isCorrect, '\n', isCorrect);
+
+      // let the user know if they were correct
+      if (isCorrect) {
+        alert('correct!');
+      } else {
+        alert('nope.');
+      }
+    }
+
+    function cheatHandler() {
+      debugger;
+      console.log('-- action: cheat --');
+
+      // read user input
+      const isACheater = confirm('are you sure you want to cheat?');
+      console.log('isACheater:', typeof isACheater, '\n', isACheater);
+
+      // communicate to the user
+      if (isACheater) {
+        alert(`the secret is: \n ${secret}`);
+      } else {
+        alert('good choice :)');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div id='user-interface' class='centered'>
+    <button onclick='setSecretHandler()'>set secret</button> <br>
+    <button onclick='guessSecretHandler()'>guess secret</button> <br>
+    <button onclick='cheatHandler()'>cheat</button>
+  </div>
+</body>
+
+</html>

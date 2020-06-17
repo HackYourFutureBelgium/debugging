@@ -192,21 +192,11 @@ Helpful code to study:
 
 #### JavaScript Tutorials
 
-- mmtuts: [How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1)
-- Mosh: [Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
-- Net Ninja: [JS Tutorial For Beginners](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET)
-
-#### JavaScript Practice
-
-- These are all good, pick your favorite and go for it!
-- [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone) (repository)
-- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) (repository)
-- [Introduction to JavaScript](https://github.com/nerdschoolbergen/introduction-to-javascript) (repository)
-- [JS Exercises](https://github.com/hackyourfuturebelgium/js-exercises) (repository)
-- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
+- [study.hackyourfuture.be](https://study.hackyourfuture.be/javascript#awesome-tutorials)
 
 #### Study References
 
+- [Errors & Debugging](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/index.html)
 - [javascript.info](https://javascript.info)
   - [Ninja Code](https://javascript.info/ninja-code)
   - [Function Basics](https://javascript.info/function-basics)
@@ -224,7 +214,7 @@ Helpful code to study:
 - [debuggercises](https://github.com/hackyourfuturebelgium/debuggercises)
   - :egg: 1 -> 6
   - :hatching_chick: 7 -> 9
-  - :hatched_chick: 10
+  - :hatched_chick: 10+
 - [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
   - :egg: 1, 2
   - :hatching_chick: 3

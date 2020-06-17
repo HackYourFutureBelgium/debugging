@@ -85,33 +85,48 @@ The topics you should focus on during your study this week.
 
 ### JavaScript Prep Work
 
-- [Truthiness](https://itnext.io/javascript-101-truthiness-7cfe8b89d1be)
+- [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-2/prep)
 - javascript.info (articles)
-  - [Type Conversions](https://javascript.info/type-conversions)
-  - [Conditionals & Ternary](https://javascript.info/ifelse)
-  - [Logical Operators](https://javascript.info/logical-operators)
-  - [Nullish Coalescing Operator](https://javascript.info/nullish-coalescing-operator)
   - [Loops](https://javascript.info/while-for)
 - Guo: [Variable Scoping](https://www.youtube.com/watch?v=9O-PCTfT6Rs&list=PLzV58Zm8FuBJFfQN5il3ujx6FDAY8Ds3u&index=3)
 - Mosh: (videos)
   - [Conditionals](https://www.youtube.com/watch?v=IsG4Xd6LlsM&list=PLTjRvDozrdlxEIuOBZkMAK5uiqp8rHUax&index=6)
   - [Loops](https://www.youtube.com/watch?v=s9wW2PpJsmQ&list=PLTjRvDozrdlxEIuOBZkMAK5uiqp8rHUax&index=7)
-- [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-2/prep)
 
 ---
 ---
 
 ## Lesson Plan
 
-> [Lesson Plan Slides](https://hackyourfuture.be/module-name/week-X)
+> during Sunday class
+> - [Lesson Plan Slides](https://hackyourfuture.be/debugging/week-2)
 
-Practice accepting different types of user input, and using loops/conditionals to create more interesting user interactions.
+Learn how create basic user interaction in your web pages
+
+### About Browsers
+
+During the week we encourage you to experiment with different browsers, but during class we ask you all to use Chrome or Chromium so everyone has the same DevTools.
 
 ### Isolate
 
-- Casting User Input: [examples](), [exercises]()
+- While Loops: [examples](../isolate/loops-while/examples), [exercises](../isolate/loops-while/exercises)
+- For Loops: [examples](../isolate/loops-for/examples), [exercises](../isolate/loops-for/exercises)
 
 ### Integrate
+
+Learn to use global variables inside your handler functions to save data between user interactions.
+
+The project this week is not collaborative.  You work together in your small groups, but should not be working on the same repository.
+
+- [Week 2 in-class project](https://github.com/HackYourFutureBelgium/debugging-integrate-week-2) (starter repo)
+
+Helpful code to study:
+
+- [Set, Display](../integrate/using-global-variables/set-display.html)
+- [String Repeater](../integrate/using-global-variables/string-repeater.html)
+- [guessing game](../integrate/using-global-variables/guessing-game.html)
+
+[TOP](#debugging)
 
 ---
 ---
@@ -126,26 +141,14 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 - [VSCode support](https://code.visualstudio.com/Docs/languages/javascript#_jsdoc-support)
 
-#### JavaScript Tutorials
+#### Awesome JavaScript Tutorials
 
-- mmtuts: [How to Get Started with JS](https://www.youtube.com/watch?v=ItYye9h_RXg&list=PL0eyrZgxdwhxNGMWROnaY35NLyEjTqcgB&index=1)
-- Mosh: [Learn JavaScript in 1 Hour](https://www.youtube.com/watch?v=W6NZfCO5SIk)
-- Net Ninja: [JS Tutorial For Beginners](https://www.youtube.com/watch?v=qoSksQ4s_hg&list=PL4cUxeGkcC9i9Ae2D9Ee1RvylH38dKuET)
-
-#### JavaScript Practice
-
-- These are all good, pick your favorite and go for it!
-- [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone) (repository)
-- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript) (repository)
-- [Introduction to JavaScript](https://github.com/nerdschoolbergen/introduction-to-javascript) (repository)
-- [JS Exercises](https://github.com/hackyourfuturebelgium/js-exercises) (repository)
-- [FreeCodeCamp](https://www.freecodecamp.org/learn/)
-
+- [study.hackyourfuture.be](https://study.hackyourfuture.be/javascript#awesome-tutorials)
 
 #### Study References
 
-- [javascript.info](https://javascript.info)
-  - [All of JavaScript Fundamentals](https://javascript.info/first-steps)
+- [Errors & Debugging](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/index.html)
+- [javascript.info: JS Fundamentals](https://javascript.info/first-steps)
 - [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript)
 - [Practical JavaScript](https://shawnr.gitbooks.io/practical-introduction-to-javascript/): 1 -> 7
 - [errors & program life-cycle](https://github.com/janke-learning/errors-and-life-cycle)
@@ -155,6 +158,10 @@ Practice accepting different types of user input, and using loops/conditionals t
 
 ### Exercises
 
+- [debuggercises](https://github.com/hackyourfuturebelgium/debuggercises)
+  - :egg: 7 -> 10
+  - :hatching_chick: 11 -> 15
+  - :hatched_chick: 15+
 - [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
   - :egg: Levels 3 and 4
   - :hatching_chick: Level 5

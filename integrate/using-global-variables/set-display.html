@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset='utf-8'>
+  <title>set, display</title>
+
+  <style>
+    .centered {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <script id='data'>
+    let string = '';
+  </script>
+
+  <script id='handlers'>
+    'use strict';
+
+    function setStringHandler() {
+      debugger;
+      console.log('-- action: set string --');
+      console.log('string (before):', typeof string, '\n', string);
+
+      // read user input
+      const userInput = prompt('enter a new string');
+      console.log('userInput:', typeof userInput, '\n', userInput);
+      if (userInput === null) {
+        return; // early return if the input is canceled
+      }
+
+      // update global variable
+      string = userInput;
+      console.log('string (after):', typeof string, '\n', string);
+
+      // let the user know the string is saved
+      alert('your string is saved');
+    }
+
+    function displayStringHandler() {
+      debugger;
+      console.log('-- action: display string --');
+      console.log('string:', typeof string, '\n', string);
+
+      // alert the string
+      alert(string);
+    }
+
+  </script>
+</head>
+
+<body>
+  <div id='user-interface' class='centered'>
+    <button onclick='setStringHandler()'>set string</button> <br>
+    <button onclick='displayStringHandler()'>display string</button>
+  </div>
+</body>
+
+</html>

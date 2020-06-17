@@ -74,7 +74,7 @@ async function codeAlong(config) {
         iframe.contentDocument.head.appendChild(aceScript);
       });
     } catch (err) {
-      console.log(err);
+      console.error(err);
       const error = document.createElement('code');
       error.innerHTML = 'could not reach internet or liveServer, unable to load code-along';
       error.style = 'position:absolute; position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;';
@@ -506,6 +506,22 @@ codeAlong.js = (iframe, steps, config) => {
 
     }
 
+    console.error = function () {
+      nativeConsole.error(...Array.from(arguments));
+
+
+      const newLi = document.createElement('li');
+      for (let thing of Array.from(arguments)) {
+
+        newLi.appendChild(codeAlong.toElement(thing))
+
+        newLi.appendChild(document.createTextNode('\u00a0 \u00a0'))
+      }
+
+      resultsContainer.appendChild(newLi);
+
+    }
+
     const renderError = (err, noCallstackMessage) => {
       const errorEl = document.createElement('pre');
       errorEl.style.color = "red";
@@ -543,9 +559,10 @@ codeAlong.js = (iframe, steps, config) => {
       // console.log(lineNo); // number out of context
       // console.log(columnNo); // number out of context
       // console.error(error); // duplication of what happens anyway
-      const errOrWarning = error.message === 'Loop exceeded 1000 iterations'
-        ? renderHaltingWarning(error)
-        : renderError(error);
+      // const errOrWarning = error.message === 'Loop exceeded 1000 iterations'
+      //   ? renderHaltingWarning(error)
+      //   : renderError(error);
+      const errOrWarning = renderError(error);
       resultsContainer.appendChild(errOrWarning);
       resultsContainer.appendChild(renderPhase(true));
       const isAsync = document.createElement('pre');
@@ -566,9 +583,10 @@ codeAlong.js = (iframe, steps, config) => {
     } catch (err) {
       console.error(err);
 
-      const errOrWarning = err.message === 'Loop exceeded 1000 iterations'
-        ? renderHaltingWarning(err)
-        : renderError(err);
+      // const errOrWarning = err.message === 'Loop exceeded 1000 iterations'
+      //   ? renderHaltingWarning(err)
+      //   : renderError(err);
+      const errOrWarning = renderError(err);
       resultsContainer.appendChild(errOrWarning);
       resultsContainer.appendChild(renderPhase(didExecute));
     }
@@ -625,7 +643,7 @@ codeAlong.js = (iframe, steps, config) => {
   withLoopGuard.value = '... with max_iterations = ';
   withLoopGuard.addEventListener('click', with_infinite_loop_guard);
   const maxIterationsInput = document.createElement('input');
-  maxIterationsInput.value = 20;
+  maxIterationsInput.value = 10;
   maxIterationsInput.name = 'max';
   maxIterationsInput.style = 'width:3em';
 
@@ -790,7 +808,7 @@ codeAlong.js = (iframe, steps, config) => {
     try {
       eval(editor.getValue())
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
   }).bind(window));
 
@@ -855,7 +873,7 @@ codeAlong.format_and_loop_guard = (function with_infinite_loop_guard(your_source
       + js_beautify(
         your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
           number_of_loops++;
-          return `let loop_${number_of_loops}_iterations = 0; // injected by codeAlong\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw 'Loop ${number_of_loops} exceeded ${max_iterations} iterations';} // injected by codeAlong\n`
+          return `let loop_${number_of_loops}_iterations = 0;\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
         }),
         {
           indent_size: '  ',
@@ -864,7 +882,7 @@ codeAlong.format_and_loop_guard = (function with_infinite_loop_guard(your_source
       )
     );
   } catch (err) {
-    console.log(err);
+    console.error(err);
   };
   return "     All done! \n\n     (psst. your devtools must be open)";
 }).bind(window);
@@ -878,11 +896,11 @@ codeAlong.with_infinite_loop_guard = (function with_infinite_loop_guard(your_sou
       +
       your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
         number_of_loops++;
-        return `let loop_${number_of_loops}_iterations = 0; // injected by codeAlong\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw 'Loop ${number_of_loops} exceeded ${max_iterations} iterations';} // injected by codeAlong\n`
+        return `let loop_${number_of_loops}_iterations = 0;\n ${loopHead}\n if (++loop_${number_of_loops}_iterations > ${max_iterations}) {throw new Error('Loop ${number_of_loops} exceeded ${max_iterations} iterations');}\n`
       })
     );
   } catch (err) {
-    console.log(err);
+    console.error(err);
   };
   return "     All done! \n\n     (psst. your devtools must be open)";
 }).bind(window);

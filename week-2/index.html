@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Module Name: Week X</title>
+  <title>Debugging: Week 2</title>
 
   <script src='../dependencies/code-along.js'></script>
 
@@ -41,9 +41,9 @@
     <div class='footer'>
       <ul id='footer-links' style='visibility: hidden;'>
         <li>
-          <a id='to-repo' href="https://github.com/hackyourfuturebelgium/module-name/tree/master/week-X"
+          <a id='to-repo' href="https://github.com/hackyourfuturebelgium/debugging/tree/master/week-2/README.md"
             target="_blank">
-            <code>week X details</code>
+            <code>week 2 details</code>
           </a>
         </li>
         <li>
@@ -65,27 +65,23 @@
     <div class="slides">
 
       <section id='cover-slide'>
-        <h2>Module Name</h2>
+        <h2>Debugging</h2>
         <br>
-        <h3>Week X</h3>
+        <h3>week 2</h3>
         <br>
         <code>"s"</code> for speaker notes
         <br>
         <br>
-        <a href="https://github.com/hackyourfuturebelgium/module-name/tree/master/week-X" target='_blank'>
+        <a href="https://github.com/hackyourfuturebelgium/debugging/tree/master/week-2" target='_blank'>
           -- back to repo --
         </a>
       </section>
 
       <section id='check-in-1'>
         <section>
-          <h2>Check-In: Last Week</h2>
+          <h2>Roll Call!</h2>
           <br>
-          <ul>
-            <li>What went well?</li>
-            <li>What was challenging?</li>
-            <li>Any tips to share?</li>
-          </ul>
+          <p>Leave a comment in this week's <code>roll-call</code> issue</p>
         </section>
       </section>
 
@@ -107,8 +103,8 @@
               source: []
             })
           </script>
-        </section>
-        <section id="document-code-along">
+        </section> -->
+        <!--   <section id="document-code-along">
           <script>
             codeAlong({
               title: '',
@@ -121,66 +117,134 @@
       </section>
 
 
-      <section id='today-s-objectives'>
+
+
+      <section id=' isolate'>
         <section>
-          <h2>Today's Objectives</h2>
+          <h2>Isolate</h2>
           <br>
-          <p>_</p>
+          <p>
+            Loops
+          </p>
+          <br>
+          <code>(small groups)</code>
         </section>
         <section>
-          <h3>Isolate</h3>
+          <h3>Main Objectives</h3>
           <br>
           <ul>
+            <li>
+              <code>Step through While Loops</code>
+            </li>
+            <li>
+              <code>Step through For Loops</code>
+            </li>
+            <li>
+              <code>Same tests, different loops</code>
+            </li>
           </ul>
-        </section>
-        <section>
-          <h3>Integrate</h3>
-          <br>
-          <ul>
-          </ul>
-        </section>
-        <section>
-          <h3>Project Demo</h3>
-          <iframe style='background-color:white; height: 75vh; width: 100%;'
-            src='../integrate/_-separated/index.html'></iframe>
         </section>
       </section>
 
-
-
-      <section id='isolate'>
+      <section>
         <section>
-          <h2>_</h2>
+          <h3>While Loops</h3>
           <br>
-          <code>(pair programming)</code>
+          <code>while (_) { _; }</code>
         </section>
-        <section id='_-examples'>
+        <section id='while-loops-examples'>
           <script>
             codeAlong({
-              title: '_: Examples',
-              container: '_-examples',
+              title: 'While Loops (examples)',
+              container: 'while-loops-examples',
               type: 'js',
               source: [
                 {
-                  name: '_',
-                  path: '../isolate/_',
+                  title: "while",
+                  path: "../isolate/loops-while/examples/while.js"
                 },
-              ]
+                {
+                  title: "infinite while",
+                  path: "../isolate/loops-while/examples/while-infinite.js"
+                },
+              ],
             })
           </script>
         </section>
-        <section id='_-exercises'>
+        <section id='while-loops-exercises'>
           <script>
             codeAlong({
-              title: '_: Exercises',
-              container: '_-exercises',
+              title: 'While Loops (exercises)',
+              container: 'while-loops-exercises',
               type: 'js',
               source: [
                 {
-                  name: '_',
-                  path: '../isolate/_',
+                  title: "write tests",
+                  path: "../isolate/loops-while/exercises/write-tests.js"
                 },
-              ]
+                {
+                  title: "pass tests 1",
+                  path: "../isolate/loops-while/exercises/pass-tests-1.js"
+                },
+                {
+                  title: "pass tests 2",
+                  path: "../isolate/loops-while/exercises/pass-tests-2.js"
+                },
+              ],
+            })
+          </script>
+        </section>
+      </section>
+
+      <section>
+        <section>
+          <h3>For Loops</h3>
+          <br>
+          <code>for (_; _; _) { _; }</code>
+        </section>
+        <section id='for-loops-examples'>
+          <script>
+            codeAlong({
+              title: 'For Loops (examples)',
+              container: 'for-loops-examples',
+              type: 'js',
+              source: [
+                {
+                  title: "for (many lines)",
+                  path: "../isolate/loops-for/examples/for-many-lines.js"
+                },
+                {
+                  title: "for (one line)",
+                  path: "../isolate/loops-for/examples/for-one-line.js"
+                },
+                {
+                  title: "infinite for",
+                  path: "../isolate/loops-for/examples/for-infinite.js"
+                },
+              ],
+            })
+          </script>
+        </section>
+        <section id='for-loops-exercises'>
+          <script>
+            codeAlong({
+              title: 'For Loops (exercises)',
+              container: 'for-loops-exercises',
+              type: 'js',
+              source: [
+                {
+                  title: "write tests",
+                  path: "../isolate/loops-for/exercises/write-tests.js"
+                },
+                {
+                  title: "pass tests 1",
+                  path: "../isolate/loops-for/exercises/pass-tests-1.js"
+                },
+                {
+                  title: "pass tests 2",
+                  path: "../isolate/loops-for/exercises/pass-tests-2.js"
+                },
+              ],
             })
           </script>
         </section>
@@ -188,11 +252,13 @@
 
       <section id='check-in-2'>
         <section>
-          <h2>Check-In: Exercises</h2>
+          <h2>Check-In</h2>
           <br>
+          <p>~30 sec per group</p>
           <ul>
             <li>What went well?</li>
             <li>What was challenging?</li>
+            <li>Any tips to share?</li>
           </ul>
         </section>
       </section>
@@ -203,68 +269,75 @@
         <code>(~20 min)</code>
       </section>
 
-      <section id='project-prep'>
-        <h2>Project Prep</h2>
-      </section>
-
       <section id='integrate'>
         <section>
-          <h2>Project Name</h2>
+          <h2>Integrate</h2>
           <br>
           <p>
-            <a href='https://github.com/HackYourFutureBelgium/coming-soon' target='_blank'>
-              Starter Code
-            </a>
+            Re-using data between user actions
           </p>
           <br>
           <code>(small groups)</code>
         </section>
         <section>
-          <h3>Examples to Study</h3>
-        </section>
-        <section>
-          <h2>_</h2>
-          <br>
-          <p>
-            <a href='https://github.com/HackYourFutureBelgium/coming-soon' target='_blank'>
-              Starter Repository Link
-            </a>
-          </p>
-        </section>
-        <section id='_-stepped'>
-          <script>
-            codeAlong({
-              title: '_: stepped',
-              container: '_-stepped',
-              type: 'document',
-              source: [
-                {
-                  name: '0. Setup',
-                  path: '../integrate/_-stepped/0-setup.html'
-                },
-              ]
-            })
-          </script>
-        </section>
-        <section>
-          <h2>_: Separated</h2>
+          <h3>Main Objectives</h3>
           <br>
           <ul>
-            <li><a href='../integrate/_/index.html' target='_blank'>live project</a>
+            <li>
+              Using global variables in handlers to save user input
             </li>
-            <li><a href='https://github.com/hackyourfuturebelgium/asynchronous-programming/tree/master/integrate/_'
-                target='_blank'>source code</a></li>
           </ul>
         </section>
       </section>
 
+      <section id='using-global-variables'>
+        <script>
+          codeAlong({
+            title: 'Using Globals: Examples',
+            container: 'using-global-variables',
+            type: 'html',
+            source: [
+              {
+                title: "Set & Display",
+                path: "../integrate/using-global-variables/set-display.html"
+              },
+              {
+                title: "String Repeater",
+                path: "../integrate/using-global-variables/string-repeater.html"
+              },
+              {
+                title: "Guessing Game",
+                path: "../integrate/using-global-variables/guessing-game.html"
+              },
+            ],
+          })
+        </script>
+      </section>
+
+      <section>
+        <section>
+          <p>
+            Generate from this template and get studying!
+          </p>
+          <br>
+          <h3>
+            <a href='https://github.com/HackYourFutureBelgium/debugging-integrate-week-2' target='_blank'>
+              Template Repo</a>
+          </h3>
+        </section>
+      </section>
+
+
+
       <section id='check-in-3'>
         <section>
-          <h2>Check-In: Project</h2>
+          <h2>Check-In</h2>
           <br>
+          <p>~30 sec per group</p>
           <ul>
             <li>What went well?</li>
             <li>What was challenging?</li>
+            <li>Any tips to share?</li>
           </ul>
         </section>
       </section>
@@ -273,20 +346,20 @@
         <section>
           <h2>Homework Launch</h2>
           <br>
-          <a href='https://github.com/hackyourfuturebelgium/module-name/tree/master/week-X#assignments' target='_blank'>
+          <a href='https://github.com/hackyourfuturebelgium/debugging/tree/master/week-2#assignments' target='_blank'>
             The Assignments</a></h2>
         </section>
       </section>
 
       <section id='cover-slide'>
-        <h2>Module Name</h2>
+        <h2>Debugging</h2>
         <br>
-        <h3>Week X</h3>
+        <h3>Week 2</h3>
         <br>
         <code>"s"</code> for speaker notes
         <br>
         <br>
-        <a href="https://github.com/hackyourfuturebelgium/module-name/tree/master/week-X" target='_blank'>
+        <a href="https://github.com/hackyourfuturebelgium/debugging/tree/master/week-2" target='_blank'>
           -- back to repo --
         </a>
       </section>
