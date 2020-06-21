@@ -16,7 +16,7 @@
   </style>
 
   <script id='data'>
-    let string = '';
+    let userString = '';
   </script>
 
   <script id='handlers'>
@@ -24,31 +24,31 @@
 
     function setStringHandler() {
       debugger;
-      console.log('-- action: set string --');
-      console.log('string (before):', typeof string, '\n', string);
+      console.log('-- action: set userString --');
+      console.log('userString (before):', typeof userString, '\n', userString);
 
       // read user input
-      const userInput = prompt('enter a new string');
+      const userInput = prompt('enter a new userString');
       console.log('userInput:', typeof userInput, '\n', userInput);
       if (userInput === null) {
         return; // early return if the input is canceled
       }
 
       // update global variable
-      string = userInput;
-      console.log('string (after):', typeof string, '\n', string);
+      userString = userInput;
+      console.log('userString (after):', typeof userString, '\n', userString);
 
-      // let the user know the string is saved
+      // let the user know the userString is saved
       alert('your string is saved');
     }
 
     function displayStringHandler() {
       debugger;
-      console.log('-- action: display string --');
-      console.log('string:', typeof string, '\n', string);
+      console.log('-- action: display userString --');
+      console.log('userString:', typeof userString, '\n', userString);
 
-      // alert the string
-      alert(string);
+      // alert the userString
+      alert(userString);
     }
 
   </script>
@@ -56,8 +56,8 @@
 
 <body>
   <div id='user-interface' class='centered'>
-    <button onclick='setStringHandler()'>set string</button> <br>
-    <button onclick='displayStringHandler()'>display string</button>
+    <button onclick='setStringHandler()'>set userString</button> <br>
+    <button onclick='displayStringHandler()'>display userString</button>
   </div>
 </body>
 
