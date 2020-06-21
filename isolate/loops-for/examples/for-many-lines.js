@@ -13,11 +13,11 @@ for (
 ) {
 
   // 4, 7, 10, 13: run the body
-  result += i;
+  result += 2;
 }
 
 // step: 16
-console.assert(result === 6, 'Test 1');
+console.assert(result === 8, 'Test 1');
 
 
 /* anatomy of a for loop: https://javascript.info/while-for#the-for-loop

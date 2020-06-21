@@ -576,7 +576,7 @@ codeAlong.js = (iframe, steps, config) => {
       // https://github.com/xieranmaya/infinite-loop-detector
       const loopDetected = your_source_code.replace(/for *\(.*\{|while *\(.*\{|do *\{/g, loopHead => {
         const id = parseInt(Math.random() * Number.MAX_SAFE_INTEGER) // not guaranteed unique, but good enough
-        return `let __${id} = 0;${loopHead}if (++__${id} > 1000) throw new Error('Loop exceeded 1000 iterations');`
+        return `let __${id} = 0;${loopHead}if (++__${id} > 1000) { throw new Error('Loop exceeded 1000 iterations'); }`
       });
       const executionDetectored = 'didExecute.status = true; ' + loopDetected;
       eval(executionDetectored);

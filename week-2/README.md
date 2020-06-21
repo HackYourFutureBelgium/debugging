@@ -83,6 +83,10 @@ The topics you should focus on during your study this week.
 > - [Review the Weekly Assignments guide](https://home.hackyourfuture.be/students/weekly-assignments)
 > - [Create your Homework Issue](https://home.hackyourfuture.be/students/homework-submission#homework-issues)
 
+### Breakpoints Stepping
+
+- [Chrome Debugger Reference](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)
+
 ### JavaScript Prep Work
 
 - [Prep Work Practice Problems](https://hackyourfuture.be/debugging/week-2/prep)
