@@ -118,7 +118,7 @@ During the week we encourage you to experiment with different browsers, but duri
 
 ### Integrate
 
-Learn to use global variables inside your handler functions to save data between user interactions.
+Learn to use shared-script variables inside your handler functions to save data between user interactions.
 
 The project this week is not collaborative.  You work together in your small groups, but should not be working on the same repository.
 
@@ -126,9 +126,9 @@ The project this week is not collaborative.  You work together in your small gro
 
 Helpful code to study:
 
-- [Set, Display](../integrate/using-global-variables/set-display.html)
-- [String Repeater](../integrate/using-global-variables/string-repeater.html)
-- [guessing game](../integrate/using-global-variables/guessing-game.html)
+- [Set, Display](../integrate/using-shared-script-variables/set-display.html)
+- [String Repeater](../integrate/using-shared-script-variables/string-repeater.html)
+- [guessing game](../integrate/using-shared-script-variables/guessing-game.html)
 
 [TOP](#debugging)
 
