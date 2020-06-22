@@ -176,5 +176,24 @@ Helpful code to study:
 
 #### Checklist
 
-#### `repo-name`
+```md
+- [ ] [repo](https://github.com/user-name/project-name)
+- [ ] [live](https://user-name.github.io/project-name)
+- [ ] [development-strategy](https://github.com/user-name/project-name/tree/master/development-strategy.md)
+- [ ] [One branch per step in `development-strategy.md`](https://github.com/user-name/repo-name/network)
+- [ ] [One closed Issue per step in `development-strategy.md`](https://github.com/user-name/repo-name/issues?q=is%3Aissue+is%3Aclosed)
+- [ ] [One closed PR per step in `development-strategy.md`](https://github.com/user-name/repo-name/pulls?q=is%3Apr+is%3Aclosed)
+- [ ] [A project board](https://github.com/user-name/repo-name/projects/X) with all issues moved to "Done"
+- [ ] A complete README
+```
+
+#### `prompt-alert-calculate`
+
+> [Starter Code](https://home.hackyourfuture.be/students/weekly-assignments#projects)
+
+Collaboration!  This project should be completed in groups.  Generate a new repo for your team using [debugging-project-week-1](https://github.com/HackYourFutureBelgium/prompt-alert-calculate) and have at it.
+
+There are is no right or wrong development strategy, and there is no right or wrong user interface!  What matters is that you agree as a team, and that your plan is clearly communicated in your repository.
+
+:shipit:
 
