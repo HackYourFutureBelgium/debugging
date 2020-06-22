@@ -163,9 +163,9 @@ Helpful code to study:
 ### Exercises
 
 - [debuggercises](https://github.com/hackyourfuturebelgium/debuggercises)
-  - :egg: 7 -> 10
-  - :hatching_chick: 11 -> 15
-  - :hatched_chick: 15+
+  - :egg: 8 -> 10
+  - :hatching_chick: 11 -> 17
+  - :hatched_chick: 18+
 - [using-user-input](https://github.com/HackYourFutureBelgium/using-user-input)
   - :egg: Levels 3 and 4
   - :hatching_chick: Level 5
