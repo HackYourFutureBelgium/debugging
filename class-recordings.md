@@ -13,6 +13,9 @@ Screen recordings of class.  Coaches, when sending your PR's with links please .
 ## class-9-10
 
 1. Week 1:
-   - Sunday Part 1: [Isolation](https://vimeo.com/428979153) - by [Maël](https://github.com/maeligg)
-   - Sunday Part 2: [Integration](https://vimeo.com/428982613) - by [Unmesh](github-link)
+   - Sunday Part 1: [Functions, Primitive Types, Coercion](https://vimeo.com/428979153) - by [Maël](https://github.com/maeligg)
+   - Sunday Part 2: [`onclick`, Prompt, Alert, Confirm](https://vimeo.com/428982613) - by [Unmesh](https://github.com/unmeshvrije)
    - Sunday Part 3: [Wrap-up & Homework](https://vimeo.com/428992050) - by [Evan](https://github.com/colevandersWands)
+1. Week 2:
+   - Sunday Part 1: [`for` and `while` loops](https://vimeo.com/431703195) - by [Maël](https://github.com/maeligg)
+   - Sunday Part 2: [Shared Script Variables](https://vimeo.com/431703540) - by [Unmesh](https://github.com/unmeshvrije)
