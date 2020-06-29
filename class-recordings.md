@@ -19,3 +19,6 @@ Screen recordings of class.  Coaches, when sending your PR's with links please .
 1. Week 2:
    - Sunday Part 1: [`for` and `while` loops](https://vimeo.com/431703195) - by [Maël](https://github.com/maeligg)
    - Sunday Part 2: [Shared Script Variables](https://vimeo.com/431703540) - by [Unmesh](https://github.com/unmeshvrije)
+   
+ 1. Process week:
+   - [Sunday Review Call with Unmesh](https://vimeo.com/433635577)
