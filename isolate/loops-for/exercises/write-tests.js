@@ -1,14 +1,14 @@
 'use strict';
 
 function mystery(x) {
-  if (typeof x !== 'number') { throw new TypeError(); }
+  if (typeof x !== 'number') { throw new TypeError('x is not a number'); }
 
   let result = 0;
   for (let i = 0; i !== Math.abs(x); i++) {
     result += (x > 0) ? 1 : -1;
   }
 
-  if (typeof result !== 'number') { throw new TypeError(); }
+  if (typeof result !== 'number') { throw new TypeError('result is not a number'); }
   return result;
 }
 

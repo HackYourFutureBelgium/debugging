@@ -1,15 +1,15 @@
 'use strict';
 
 function alternator(range, str1, str2) {
-  if (typeof range !== 'number') { throw new TypeError(); }
-  if (typeof str1 !== 'string') { throw new TypeError(); }
-  if (typeof str2 !== 'string') { throw new TypeError(); }
+  if (typeof range !== 'number') { throw new TypeError('range is not a number'); }
+  if (typeof str1 !== 'string') { throw new TypeError('str1 is not a string'); }
+  if (typeof str2 !== 'string') { throw new TypeError('str2 is not a string'); }
 
   for (_; _; _) {
 
   }
 
-  if (typeof result !== 'string') { throw new TypeError(); }
+  if (typeof result !== 'string') { throw new TypeError('result is not a string'); }
   return result;
 }
 

@@ -1,14 +1,14 @@
 'use strict';
 
 function repeater(text, repeats) {
-  if (typeof text !== 'string') { throw new TypeError(); }
-  if (typeof repeats !== 'number') { throw new TypeError(); }
+  if (typeof text !== 'string') { throw new TypeError('text is not a string'); }
+  if (typeof repeats !== 'number') { throw new TypeError('repeats is not a number'); }
 
   for (_; _; _) {
 
   }
 
-  if (typeof result !== 'string') { throw new TypeError(); }
+  if (typeof result !== 'string') { throw new TypeError('result is not a string'); }
   return result;
 }
 
