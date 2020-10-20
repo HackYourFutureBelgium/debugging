@@ -1,0 +1,16 @@
+{
+  "buttons": [
+    {
+      "console": true
+    },
+    {
+      "debugger": true
+    },
+    {
+      "flowViz": true
+    },
+    {
+      "jsTutor": true
+    }
+  ]
+}
