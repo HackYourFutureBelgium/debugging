@@ -1,5 +1,7 @@
 'use strict';
 
+// are there any unreachable paths?
+
 const value1 = true;
 const value2 = true;
 let path = '';

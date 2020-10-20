@@ -1,7 +1,8 @@
 'use strict';
 
-// there may be more than one correct answer
-// or maybe the asserted path is unreachable!
+// can you find at least one solution to reach each path?
+//  what do all solutions to the same path have in common?
+// or maybe there are unreachable paths!
 
 const value1 = _;
 const value2 = _;
@@ -20,4 +21,4 @@ if (value1 && !value2) {
   path = 'else';
 }
 
-console.assert(path === 'else if 2');
+console.log(path);

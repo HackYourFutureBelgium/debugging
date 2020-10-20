@@ -1,18 +1,8 @@
-// 1: declare and assign result
+// 1: use strict
+'use strict';
+
+// 2: declare and assign result
 let result = 0;
-
-
-// 2: declare and assign i
-// 3, 6, 9, 12, 15: check the condition
-// 5, 8, 11, 14: increment i
-for (let i = 0; i < 4; i++) {
-  // 4, 7, 10, 13: run the body
-  result += i;
-}
-
-// step: 16
-console.assert(result === 6, 'Test 1');
-
 
 /* anatomy of a for loop: https://javascript.info/while-for#the-for-loop
 
@@ -20,7 +10,21 @@ console.assert(result === 6, 'Test 1');
     // ... loop body ...
   }
 
+  hint: the step numbers will not be correct when the loopGuard is on
+
 */
+
+// 3: declare and assign i
+// 4, 7, 8, 12: evaluate the condition
+// 6, 9, 12, 14: increment i
+for (let i = 0; i < 3; i++) {
+  // 5, 8, 11: evaluate the body
+  result = result + 1;
+}
+
+// step: 1
+console.assert(result === 3, 'Test 1');
+
 
 /* variables analysis:
 

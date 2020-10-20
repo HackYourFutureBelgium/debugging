@@ -1,25 +1,27 @@
 // 1: use strict
 'use strict';
 
-// 2: declare and assign a
-let a = 0;
-// 3: declare and assign b
-const b = 8;
-
-// 4, 6, 8, 10, 12: check the condition
-while (a !== b) {
-  // 5, 7, 9, 11: increment a
-  a += b / 4;
-}
-
-// 13: assert a
-console.assert(a === 8, 'Test 1');
-
 /* anatomy of a while loop: https://javascript.info/while-for#the-while-loop
   while (condition) {
     // ... loop body ...
   }
+
+  hint: the step numbers will not be correct when the loopGuard is on
 */
+
+// 2: declare and assign a
+let a = 0;
+
+// 3, 5, 7, 9, 11: evaluate the condition
+while (a < 4) {
+  // 4, 6, 8, 10: increment a
+  a = a + 1;
+}
+
+// 12: assert a
+console.assert(a === 4, 'a should be 4');
+
+
 
 /* variables analysis:
 

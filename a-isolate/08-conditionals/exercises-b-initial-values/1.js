@@ -1,6 +1,8 @@
 'use strict';
 
 // there may be more than one correct answer
+//  try finding as many as you can
+//  what do all the solutions have in common?
 // or maybe the asserted path is unreachable!
 
 const value1 = _;
@@ -11,13 +13,7 @@ if (value1 && !value2) {
   path = 'if';
 
 } else if (!value1 || !value2) {
-  path = 'else if 1';
-
-} else if (value2 && !value1) {
-  path = 'else if 2';
-
-} else {
-  path = 'else';
+  path = 'else if';
 }
 
-console.assert(path === 'else if 2');
+console.assert(path === 'else if');
