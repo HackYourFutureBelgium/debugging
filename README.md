@@ -35,6 +35,8 @@ Software Development is a many layered skill. One simple way to break it down is
 
 ## Contents
 
+- [Getting Started](#getting-started)
+- [Study Tips](#study-tips)
 - [Learning Objectives](#learning-objectives)
 - [Suggested Study](#suggested-study)
 - Break-Down
@@ -44,6 +46,39 @@ Software Development is a many layered skill. One simple way to break it down is
 - [Class Recordings](#class-recordings)
 - [study.hackyourfuture.be](https://study.hackyourfuture.be)
 - [home.hackyourfuture.be](https://home.hackyourfuture.be/)
+
+---
+
+## Getting Started
+
+> - You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Node.js](https://nodejs.org/en/download/) on your computer to study this material
+> - Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
+
+0. Install the `study-lenses` package globally if you don't have it already
+  - `$ npm install -g study-lenses`
+1. Clone this repository
+  - `$ git clone git@github.com:HackYourFutureBelgium/debugging.git`
+2. `cd` into the repository
+  - `$ cd debugging`
+3. Open the repository using `study`
+  - `$ study`
+4. The material will open in your default browser, you're good to go!
+
+[TOP](#debugging)
+
+---
+
+## Study Tips
+
+- Don't rush, understand!  Programming is hard.
+  - The examples and exercises will still be there to study later.
+  - It's better to fail tests slowly and learn from your mistakes than to pass tests quickly and not understand why.
+- Don't skip the examples!  Understanding and experimenting with working code is a very effective way to learn programming.
+- Write lots of good comments, learn more about this in [./studying-javascript](./studying-javascript)
+- Practice [Pair Programming](https://study.hackyourfuture.be/collaborating/pair-programming): two people, one computer.
+- Take a look through the [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code) guide for more study tips
+
+[TOP](#debugging)
 
 ---
 
