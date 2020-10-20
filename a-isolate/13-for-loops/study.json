@@ -1,9 +1,0 @@
-{
-  "study": {
-    "loopGuard": {
-      "active": true,
-      "max": 10
-    },
-    "flowchart": true
-  }
-}

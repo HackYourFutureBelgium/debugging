@@ -1,4 +1,0 @@
-the best way to fix a bug is to avoid it in the first place.
-
-learning to throw your own errors will help you not be afraid of them and learn how to read the messages
-  - the number at the end of the first line tells you where to look
