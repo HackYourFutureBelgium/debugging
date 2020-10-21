@@ -213,7 +213,7 @@ What can you expect to learn in this module?
 
 Helpful resources for this module
 
-<details>
+<details open>
 <summary>expand/collapse</summary>
 <br>
 
@@ -243,7 +243,9 @@ Helpful resources for this module
 
 ### Examples and Exercises
 
-There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/a-isolate/01-variables` before `/a-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/b-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/a-isolate`. Anyway, this is just our suggestion.  Experiment and find what works for you:
+There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/a-isolate/01-variables` before `/a-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/b-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/a-isolate`.
+
+Many of these exercises will come with a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution should behave.
 
 - **[./errors](./errors)**: JavaScript errors - get over the initial fear by throwing your own errors. Then learn how to pause on errors in the debugger, to read callstack messages, and to handle errors with `try`/`catch`.
 - **[./a-isolate](./a-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
