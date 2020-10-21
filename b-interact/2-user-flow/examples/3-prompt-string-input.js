@@ -1,6 +1,6 @@
 'use strict';
 
-/* Strings
+/* Prompting for Strings
 
   you can ask users for more specific input
 

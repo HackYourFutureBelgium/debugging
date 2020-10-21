@@ -12,8 +12,8 @@
 
   try predicting how this game works just by reading the code
     how many prompts are there?
-    how many choices can each use make?
-    how many paths are there?
+    how many choices does each user have?
+    how many paths are there total?
     how would you draw a diagram of this game?
 
   (this example is very long, you aren't expected to write something like this just yet)

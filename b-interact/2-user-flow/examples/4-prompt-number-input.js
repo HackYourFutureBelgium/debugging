@@ -1,6 +1,6 @@
 'use strict';
 
-/* Numbers
+/* Prompting for Numbers
 
   asking users to input numbers is a bit more complicated
 

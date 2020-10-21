@@ -31,6 +31,7 @@ for (
 
   // 5, 8, 11: run the body
   result = result + 1;
+  console.log(result);
 }
 
 // step: 14

@@ -16,6 +16,7 @@ let a = 0;
 while (a < 4) {
   // 4, 6, 8, 10: increment a
   a = a + 1;
+  console.log(a);
 }
 
 // 12: assert a

@@ -20,6 +20,7 @@ let result = 0;
 for (let i = 0; i < 3; i++) {
   // 5, 8, 11: evaluate the body
   result = result + 1;
+  console.log(result);
 }
 
 // step: 1

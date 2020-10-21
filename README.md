@@ -245,11 +245,11 @@ Helpful resources for this module
 
 There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/a-isolate/01-variables` before `/a-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/b-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/a-isolate`. Anyway, this is just our suggestion.  Experiment and find what works for you:
 
+- **[./errors](./errors)**: JavaScript errors - get over the initial fear by throwing your own errors. Then learn how to pause on errors in the debugger, to read callstack messages, and to handle errors with `try`/`catch`.
 - **[./a-isolate](./a-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
 - **[./b-interact](./b-interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
 - **[./c-integrate](./c-integrate)**: Learn how to write your JavaScript in an HTML file using `<script>` tags.  Add `on_something_` attributes to your DOM elements so users can trigger your scripts by taking different actions.
 - **[./d-separate](./d-separate)**: Bring it all together! Learn to write full projects using HTML, CSS & JS stored in separate files.  You will learn to organize your code into a folder structure and to load your scripts using the `<script src="./folder/file.js">` syntax
-- **[./errors](./errors)**: JavaScript errors - get over the initial fear by throwing your own errors. Then learn how to pause on errors in the debugger, to read callstack messages, and to handle errors with `try`/`catch`.
 
 ### More Examples and Exercises
 
@@ -326,7 +326,7 @@ Write scripts that check and coerce the type of user input.
 #### After Break
 
 - [./a-isolate](./a-isolate/?hyf): `05-explicit-coercion`
-- [./b-interact](./b-interact/?hyf): `02-validate-user-input`
+- [./b-interact](./b-interact/?hyf): `02-user-flow`
 
 ### After Class
 
@@ -416,4 +416,4 @@ Create modular and reusable code with functions. Write well-named functions and 
 3. Process week:
    - [Sunday Review Call with Unmesh](https://vimeo.com/433635577)
 
-## [Class-11-12](https://github.com/hackyourfuturebelgium/class-11-12)
+### [Class-11-12](https://github.com/hackyourfuturebelgium/class-11-12)

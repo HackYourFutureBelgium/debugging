@@ -1,8 +1,6 @@
 'use strict';
 
-/* Something or Nothing
-
-  (these examples will focus on input from prompt)
+/* Prompt: Something or Nothing
 
   the most basic validation you will need to make:
 

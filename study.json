@@ -1,6 +1,7 @@
 {
   "study": {
     "loopGuard": true,
-    "eval": true
+    "eval": true,
+    "flowchart": true
   }
 }
