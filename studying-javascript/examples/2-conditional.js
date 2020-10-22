@@ -8,8 +8,8 @@
 */
 let exampling;
 
-/* 3: reassign exampling
-  make sure it goes down the correct path
+/* 3: assign to exampling
+  make sure the correct path is executed
 */
 exampling = true;
 
