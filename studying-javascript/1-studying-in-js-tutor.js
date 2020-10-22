@@ -33,9 +33,9 @@
 
 
 let hello = "world";
-console.assert(hello === 'world', 'hello should be "world"')
+console.assert(hello === 'world', 'hello should be "world"');
 
-hello = "good bye"
-console.assert(hello === 'good bye', 'hello should be "good bye"')
+hello = "good bye";
+console.assert(hello === 'good bye', 'hello should be "good bye"');
 
-console.log("world")
+console.log("world");

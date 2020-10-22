@@ -9,7 +9,7 @@ const _1_native = '1' * 1;
 console.assert(Object.is(_1_expect, _1_native), 'Test 1');
 
 const _2_expect = Infinity;
-const _2_native = _ * null
+const _2_native = _ * true;
 console.assert(Object.is(_2_expect, _2_native), 'Test 2');
 
 const _3_expect = _;
