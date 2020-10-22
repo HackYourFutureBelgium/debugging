@@ -213,7 +213,7 @@ What can you expect to learn in this module?
 
 Helpful resources for this module
 
-<details open>
+<details>
 <summary>expand/collapse</summary>
 <br>
 
@@ -320,19 +320,25 @@ Write scripts that check and coerce the type of user input.
 
 #### Before Break
 
+Your coach will present the examples for the following chapters of `./a-isolate`, then you will break into small groups and work on the exercises
+
 - [./a-isolate](./a-isolate?hyf)
   - 4: Comparing and Asserting
+  - 5: Explicit coercion
   - 6: Logical Operators
   - 8: Conditionals
 
 #### After Break
 
-- [./a-isolate](./a-isolate/?hyf): `05-explicit-coercion`
-- [./b-interact](./b-interact/?hyf): `02-user-flow`
+These exercises each have a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution (in the file without `.re.`) should behave.
+
+- [./b-interact/02-user-flow](./b-interact/02-user-flow?hyf)
 
 ### After Class
 
-> coming soon
+No project this week!
+
+Continue working on your portfolio from the UX/UI module and have as many group study sessions as possible. It's important that you start out comfortable and confident in these first weeks of JS.
 
 </details>
 <br>
