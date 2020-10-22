@@ -21,6 +21,7 @@ if (exampling) {
     reassign the final value for asserting
   */
   exampling = 'path 1';
+
 } else {
   exampling = 'path 2';
 }

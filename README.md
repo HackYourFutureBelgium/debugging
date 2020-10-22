@@ -26,15 +26,16 @@
 >
 > Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
 
-0. Install the `study-lenses` package globally (if you don't have it already)
-    - `$ npm install -g study-lenses`
-1. Clone this repository
+1. Install or update the `study-lenses` package globally
+    - `$ npm install -g study-lenses` (if you do not have it already)
+    - `$ npm update -g study-lenses` (if you already have it installed)
+2. Clone this repository
     - `$ git clone git@github.com:HackYourFutureBelgium/debugging.git`
-2. `cd` into the repository
+3. `cd` into the repository
     - `$ cd debugging`
-3. Open the repository using `study`
+4. Open the repository using `study`
     - `$ study`
-4. The material will open in your default browser, you're good to go!
+5. The material will open in your default browser, you're good to go!
 
 > If you have a windows computer and get this error:
 >
@@ -243,15 +244,15 @@ Helpful resources for this module
 
 ### Examples and Exercises
 
-There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/a-isolate/01-variables` before `/a-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/b-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/a-isolate`.
+There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/1-isolate/01-variables` before `/1-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/2-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/1-isolate`.
 
 Many of these exercises will come with a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution should behave.
 
 - **[./errors](./errors)**: JavaScript errors - get over the initial fear by throwing your own errors. Then learn how to pause on errors in the debugger, to read callstack messages, and to handle errors with `try`/`catch`.
-- **[./a-isolate](./a-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
-- **[./b-interact](./b-interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- **[./c-integrate](./c-integrate)**: Learn how to write your JavaScript in an HTML file using `<script>` tags.  Add `on_something_` attributes to your DOM elements so users can trigger your scripts by taking different actions.
-- **[./d-separate](./d-separate)**: Bring it all together! Learn to write full projects using HTML, CSS & JS stored in separate files.  You will learn to organize your code into a folder structure and to load your scripts using the `<script src="./folder/file.js">` syntax
+- **[./1-isolate](./1-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
+- **[./2-interact](./2-interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
+- **[./3-integrate](./3-integrate)**: Learn how to write your JavaScript in an HTML file using `<script>` tags.  Add `on_something_` attributes to your DOM elements so users can trigger your scripts by taking different actions.
+- **[./4-separate](./4-separate)**: Bring it all together! Learn to write full projects using HTML, CSS & JS stored in separate files.  You will learn to organize your code into a folder structure and to load your scripts using the `<script src="./folder/file.js">` syntax
 
 ### More Examples and Exercises
 
@@ -304,13 +305,13 @@ You don't need to understand this material perfectly, it's just important you ar
 
 - Read through [./studying-javascript](./studying-javascript?hyf)
 - Spend ~30 minutes playing [compute-it.toxicode](http://compute-it.toxicode.fr/)
-- [./a-isolate](./a-isolate?hyf) (examples only)
+- [./1-isolate](./1-isolate?hyf) (examples only)
   - 1: Variables
   - 3: Primitive Types
   - 4: Comparing and Asserting
   - 5: Explicit Coercion
   - 7: Block Scope
-- [./b-interact](./b-interact?hyf) (examples only)
+- [./2-interact](./2-interact?hyf) (examples only)
   - 1: Prompt, Alert, Confirm
   - 2: Validating User Input
 
@@ -320,9 +321,9 @@ Write scripts that check and coerce the type of user input.
 
 #### Before Break
 
-Your coach will present the examples for the following chapters of `./a-isolate`, then you will break into small groups and work on the exercises
+Your coach will present the examples for the following chapters of `./1-isolate`, then you will break into small groups and work on the exercises
 
-- [./a-isolate](./a-isolate?hyf)
+- [./1-isolate](./1-isolate?hyf)
   - 4: Comparing and Asserting
   - 5: Explicit coercion
   - 6: Logical Operators
@@ -332,7 +333,7 @@ Your coach will present the examples for the following chapters of `./a-isolate`
 
 These exercises each have a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution (in the file without `.re.`) should behave.
 
-- [./b-interact/02-user-flow](./b-interact/02-user-flow?hyf)
+- [./2-interact/02-user-flow](./2-interact/02-user-flow?hyf)
 
 ### After Class
 
