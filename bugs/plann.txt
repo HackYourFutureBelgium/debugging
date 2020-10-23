@@ -1,0 +1,3 @@
+https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/how-to-avoid-debugging.html
+
+https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/exercises.html
