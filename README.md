@@ -22,7 +22,7 @@
 
 ## Getting Started
 
-> You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [Node.js](https://nodejs.org/en/download/) on your computer to study this material
+> You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer to study this material
 >
 > Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
 

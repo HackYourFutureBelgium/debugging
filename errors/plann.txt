@@ -2,15 +2,13 @@
   .log
   .error
   .trace
-/tracing-errors ?
+/identifying-errors
   /anatomy-of-an-error-message
     about reading errors in the console
     - name
     - message
     - line & column
     - vm link
-/error-or-bug
-
 /throwing-errors
 /using-errors
   validating user input
