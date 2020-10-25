@@ -15,20 +15,22 @@
 
 */
 
+// try changing this variable's value and see what happens
 const value = 123;
+
 let path = '';
 
-// implicitly behind the scenes
+// evaluate the comparison behind the scenes
 if (typeof value === 'number') {
-  console.log(' value is a number (implicit)');
+  console.log(' value is a number (behind the scenes)');
   path = 'if';
 }
 
-// behind the scenes it's something like this:
+// show each step that's happening behind the scenes
 const valueIsANumber = typeof value === 'number';
 const conditionIsTruthy = valueIsANumber === true;
 if (conditionIsTruthy) {
-  console.log(' value is a number (explicit)');
+  console.log(' value is a number (step-by-step)');
   path = 'if';
 }
 

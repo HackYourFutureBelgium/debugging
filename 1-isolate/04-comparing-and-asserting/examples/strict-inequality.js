@@ -16,6 +16,10 @@ console.log(typeof isFalse2, isFalse2);
 const isFalse3 = '4' !== '4';
 console.log(typeof isFalse3, isFalse3);
 
+const isFalse4 = 'Case Sensitive' !== 'cASE sENSITIVE';
+console.log(typeof isFalse4, isFalse4);
+
+
 
 // if two values are the same, !== evaluates to true:
 console.log('-- true comparisons --');
