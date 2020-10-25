@@ -20,9 +20,10 @@ if (userInput === null || userInput === '') {
 
 } else {
 
-  // curious to learn more about this?
-  //  Regular Expressions!
-  if (userInput.match('a')) {
+  // search will return the index of your search value in the string
+  //  if the search value does not exist, it returns -1
+  // here we are checking to make sure 'a' is in the user input
+  if (userInput.search('a') !== -1) {
     const hasAnAMessage = `"${userInput}" is perfect!`;
     alert(hasAnAMessage);
 
