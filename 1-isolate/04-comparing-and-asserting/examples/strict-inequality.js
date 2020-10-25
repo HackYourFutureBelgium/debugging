@@ -7,28 +7,28 @@
 // if two values are the same, !== evaluates to true:
 console.log('-- false comparisons --');
 
-const isTrue1 = true !== true;
-console.log(typeof isTrue1, isTrue1);
+const isFalse1 = true !== true;
+console.log(typeof isFalse1, isFalse1);
 
-const isTrue2 = null !== null;
-console.log(typeof isTrue2, isTrue2);
+const isFalse2 = null !== null;
+console.log(typeof isFalse2, isFalse2);
 
-const isTrue3 = '4' !== '4';
-console.log(typeof isTrue3, isTrue3);
+const isFalse3 = '4' !== '4';
+console.log(typeof isFalse3, isFalse3);
 
 
 // if two values are the same, !== evaluates to true:
 console.log('-- true comparisons --');
 
 // if they are not, it evaluates to false
-const isFalse1 = true !== false;
-console.log(typeof isFalse1, isFalse1);
+const isTrue1 = true !== false;
+console.log(typeof isTrue1, isTrue1);
 
-const isFalse2 = '4' !== 4;
-console.log(typeof isFalse2, isFalse2);
+const isTrue2 = '4' !== 4;
+console.log(typeof isTrue2, isTrue2);
 
-const isFalse3 = 4 !== 4.1;
-console.log(typeof isFalse3, isFalse3);
+const isTrue3 = 4 !== 4.1;
+console.log(typeof isTrue3, isTrue3);
 
 
 
