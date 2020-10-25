@@ -325,14 +325,14 @@ Your coach will present the examples for the following chapters of `./1-isolate`
 
 - [./1-isolate](./1-isolate?hyf)
   - 4: Comparing and Asserting
-  - 5: Explicit coercion
-  - 6: Logical Operators
+  - 5: Explicit coercion (`Boolean` -> truthiness)
   - 8: Conditionals
 
 #### After Break
 
 These exercises each have a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution (in the file without `.re.`) should behave.
 
+- [./1-isolate/05-explicit-coercion](./1-isolate/05-explicit-coercion?hyf) `Number`
 - [./2-interact/02-user-flow](./2-interact/02-user-flow?hyf)
 
 ### After Class
