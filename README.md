@@ -426,3 +426,7 @@ Create modular and reusable code with functions. Write well-named functions and 
    - [Sunday Review Call with Unmesh](https://vimeo.com/433635577)
 
 ### [Class-11-12](https://github.com/hackyourfuturebelgium/class-11-12)
+
+1. Week 1:
+  - [Part 1](
+  - [Part 2](https://vimeo.com/472190972) - By Maël
