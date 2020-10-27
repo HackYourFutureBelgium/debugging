@@ -20,8 +20,9 @@ if (userInput === null || userInput === '') {
 
 } else {
 
-  // check if the user input has an "a" in it
-  //  you will learn more about this in the next chapter
+  // search will return the index of your search value in the string
+  //  if the search value does not exist, it returns -1
+  // here we are checking to make sure 'a' is in the user input
   if (userInput.search('a') !== -1) {
     const hasAnAMessage = `"${userInput}" is perfect!`;
     alert(hasAnAMessage);

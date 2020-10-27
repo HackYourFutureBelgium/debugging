@@ -15,12 +15,12 @@
 // rule 3.a: modify outer `let` variables from inside the block
 
 let food = 'broccoli';
-console.assert(food === 'broccoli', 'outside the block: food should be "broccoli" 1');
+console.assert(food === 'broccoli', 'outside the block 1: food should be "broccoli"');
 {
   food = 'spinach';
   console.assert(food === 'spinach', 'inside the block: food should be "spinach"');
 }
-console.assert(food === 'broccoli', 'outside the block: food should be "broccoli" 2')
+console.assert(food === 'spinach', 'outside the block 2: food should be "spinach"')
 
 
 // rule 3.b: can not modify replaced outer variables from inside the block

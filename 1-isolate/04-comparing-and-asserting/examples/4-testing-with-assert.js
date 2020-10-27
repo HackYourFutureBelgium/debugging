@@ -7,16 +7,16 @@
 console.log('-- examples --');
 
 const comparison1 = 4 === 4.0;
-const isTrue1 = comparison1 === true;
-console.assert(isTrue1, 'Assertion 1');
+const test1 = comparison1 === true;
+console.assert(test1, 'Assertion 1');
 
 const comparison2 = 4 === '4';
-const isTrue2 = comparison2 === false;
-console.assert(isTrue2, 'Assertion 2');
+const test2 = comparison2 === false;
+console.assert(test2, 'Assertion 2');
 
 const comparison3 = "xyz" === `xyz`;
-const isTrue3 = comparison3 === true;
-console.assert(isTrue3, 'Assertion 3');
+const test3 = comparison3 === true;
+console.assert(test3, 'Assertion 3');
 
 
 // exercises at HYF will use comparison and assert
@@ -25,11 +25,11 @@ console.assert(isTrue3, 'Assertion 3');
 console.log('-- practice exercises --');
 
 const comparison4 = NaN === NaN;
-// const isTrue4 = comparison4 === _; // exercise
-const isTrue4 = comparison4 === false; // solution
-console.assert(isTrue4, 'Assertion 4');
+// const test4 = comparison4 === _; // exercise
+const test4 = comparison4 === false; // solution
+console.assert(test4, 'Assertion 4');
 
 const comparison5 = (typeof 4) === (typeof '4');
-// const isTrue5 = comparison5 === _; // exercise
-const isTrue5 = comparison5 === false; // solution
-console.assert(isTrue5, 'Assertion 5');
+// const test5 = comparison5 === _; // exercise
+const test5 = comparison5 === false; // solution
+console.assert(test5, 'Assertion 5');
