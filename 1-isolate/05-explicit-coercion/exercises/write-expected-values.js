@@ -11,7 +11,7 @@ console.assert(_1_number === _1_expect, 'Test 1');
 
 const _2_expect = _;
 const _2_boolean = Boolean(null);
-const _2_number = Number(_1_boolean);
+const _2_number = Number(_2_boolean);
 console.assert(_2_number === _2_expect, 'Test 2');
 
 const _3_expect = _;
