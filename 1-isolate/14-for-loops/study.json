@@ -1,6 +1,5 @@
 {
   "study": {
-    "loopGuard": true,
-    "flowchart": true
+    "flowchart": false
   }
 }

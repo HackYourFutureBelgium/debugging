@@ -10,7 +10,10 @@ let result = 0;
     // ... loop body ...
   }
 
-  hint: the step numbers will not be correct when the loopGuard is on
+  hint 1: don't use the flow chart for for loops!
+    it does not show incrementing at the correct step in the flow
+
+  hint 2: the step numbers will not be correct when the loopGuard is on
 
 */
 
@@ -19,13 +22,8 @@ let result = 0;
 // 6, 9, 12, 14: increment i
 for (let i = 0; i < 3; i++) {
   // 5, 8, 11: evaluate the body
-  result = result + 1;
-  console.log(result);
+  console.log(i);
 }
-
-// step: 1
-console.assert(result === 3, 'Test 1');
-
 
 /* variables analysis:
 

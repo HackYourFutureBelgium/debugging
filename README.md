@@ -358,16 +358,41 @@ Use _iteration_ to validate user input and to enable more interesting interactio
 
 ### Before Class
 
+The topics for this Sunday will be `while` loops, `for` loops, and a little bit of String manipulation.  Below are a few resources to get you started but don't stop here. Take a look through the resources in [study.hackyourfuture.be](https://study.hackyourfuture.be/javascript/) to find the links that help you the most.  Got a suggestion for this list? send a PR!
+
+- Loops
+  - [javascript.info](https://javascript.info/while-for)
+  - [Mosh](https://www.youtube.com/watch?v=s9wW2PpJsmQ) (for)
+- Strings
+  - [javascript.info](https://javascript.info/string) (through "changing the case")
+  - [launchcode.org](https://education.launchcode.org/intro-to-professional-web-dev/chapters/strings/index.html)
+- [./1-isolate](./1-isolate?hyf) (examples only)
+  - Comparisons
+  - While Loops
+  - Break & Continue
+  - Increment & Decrement
+  - For Loops
 
 ### During Class
 
-
 #### Before Break
+
+- Isolate
+  - `while` Loops
+  - `break` & `continue`
+- Interact
+  - Input/Output Loops
 
 #### After Break
 
+- Isolate
+  - `for` loops
+- Interact
+  - Iterating user input
+
 ### After Class
 
+> project coming soon
 
 </details>
 <br>
