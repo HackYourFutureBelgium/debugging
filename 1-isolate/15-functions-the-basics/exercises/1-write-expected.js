@@ -3,14 +3,8 @@
 // fill in the blanks to pass the assertions
 // fill in the documentation to describe the function
 
-/**
- *
- * @param {*} param1
- * @param {*} param2
- * @param {*} param3
- * @returns
- */
-const scramble = (param1 = '', param2 = '', param3 = '') => {
+
+const scramble = (param1, param2, param3) => {
   const result = `${param3}${param1}${param2}`;
   return result;
 };

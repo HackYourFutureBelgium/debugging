@@ -4,13 +4,7 @@
 // add default parameters of the correct type
 // fill in the documentation to describe the functions
 
-/**
- *
- * @param {*} param1
- * @param {*} param2
- * @param {*} param3
- * @returns
- */
+
 const scramble = (param1, param2, param3) => {
   const result = param1 + param2 + param3;
   return result;

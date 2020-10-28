@@ -8,6 +8,10 @@
  * console.assert(eert === 'eert');
  */
 const reverser = (text = '') => {
+  if (typeof text !== 'string') {
+    throw new TypeError('text is not a string');
+  }
+
   let reversedText = '';
   for (let i = text.length - 1; i >= 0; i--) {
     reversedText += text[i];
@@ -30,3 +34,18 @@ const _3_expected = 'racecar';
 const _3_actual = reverser('racecar');
 const _3_test = _3_actual === _3_expected;
 console.assert(_3_test, 'Test 3');
+
+try {
+
+  reverser(4);
+  console.assert(false, '4 should throw an error');
+
+} catch (err) {
+
+  const expectedName = 'TypeError';
+  console.assert(err.name === expectedName, 'name should be TypeError');
+
+  const expectedMessage = 'text is not a string';
+  console.assert(err.message === expectedMessage, 'message should be "text is not a string"');
+
+}

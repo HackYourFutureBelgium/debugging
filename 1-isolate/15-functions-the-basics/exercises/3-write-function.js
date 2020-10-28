@@ -3,9 +3,7 @@
 // write the function to pass the assertions
 // fill in the documentation to describe the function
 
-/**
- *
- */
+
 const scramble = () => {
 
 };

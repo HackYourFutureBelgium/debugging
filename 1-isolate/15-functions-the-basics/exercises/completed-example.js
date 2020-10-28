@@ -1,14 +1,7 @@
 'use strict';
 
-/**
- * this returns a single string containing it's parameters
- * but rearranged into a different order
- * @param {string} param1 - becomes the last string in the result
- * @param {string} param2 - becomes the first string in the result
- * @param {string} param3 - becomes the second string in the result
- * @returns {string} a string with p1 -> r3, p2 -> r1, p3 -> r2
- */
-const scramble = (param1 = '', param2 = '', param3 = '') => {
+
+const scramble = (param1, param2, param3) => {
   const result = param2 + param3 + param1;
   return result;
 };
