@@ -1,0 +1,13 @@
+{
+  "--defaults": {
+    ".js": "parsons"
+  },
+  "parsons": {
+    "eval": true,
+    "loopGuard": {
+      "active": false,
+      "max": 20
+    },
+    "openIn": "jsTutor"
+  }
+}

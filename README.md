@@ -248,11 +248,12 @@ There are 5 directories of examples & exercises in this repo. Each directory has
 
 Many of these exercises will come with a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution should behave.
 
-- **[./errors](./errors)**: JavaScript errors - get over the initial fear by throwing your own errors. Then learn how to pause on errors in the debugger, to read callstack messages, and to handle errors with `try`/`catch`.
 - **[./1-isolate](./1-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
 - **[./2-interact](./2-interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
 - **[./3-integrate](./3-integrate)**: Learn how to write your JavaScript in an HTML file using `<script>` tags.  Add `on_something_` attributes to your DOM elements so users can trigger your scripts by taking different actions.
 - **[./4-separate](./4-separate)**: Bring it all together! Learn to write full projects using HTML, CSS & JS stored in separate files.  You will learn to organize your code into a folder structure and to load your scripts using the `<script src="./folder/file.js">` syntax
+- **[./errors](./errors)**: JavaScript errors - get over the initial fear by learning to identify errors in your code. Then learn how to pause on errors in the debugger, to read callstack messages, to throw your own Errors and to handle errors with `try`/`catch`.
+- **[./parsons](./parsons)**: A collection of Parsons Problems to practice constructing solutions without the headache of syntax errors and needing to remember each and every JS keyword.  Careful, there will be extra lines of code!
 
 ### More Examples and Exercises
 
