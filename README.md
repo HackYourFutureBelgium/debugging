@@ -395,7 +395,26 @@ The topics for this Sunday will be `while` loops, `for` loops, and a little bit 
 
 ### After Class
 
-> project coming soon
+> Group Project, 2 weeks
+
+This is the beginning of a two-week project. Each group will plan and build their own JS Study Guide using this [starter repository](https://github.com/HackYourFutureBelgium/js-study-guide). The project will be written using only HTML & CSS. You will need to write some JavaScript for this project, but all the code you write will be examples and exercises like in this _Debugging_ repository.  You are not expected to use JavaScript for DOM Manipulation, or any other type of interactivity.
+
+To help you build an interactive study guide, the repository comes with a custom HTML element `<js-snippet src='./path/to/file.js'>`. Using this component you will be able to embed interactive code snippets much like the `study-lenses` exercises.
+
+It's time for some UX & UI! Take your time in the first week to plan and design your study guide for the best study experience possible.
+
+#### Checklist
+
+```markdown
+- [ ] [repo](https://github.com/_/_) (with a complete README)
+- [ ] [live demo](https://_.github.io/_)
+- [ ] [backlog](https://github.com/_/_/tree/master/planning/backlog.md)
+- [ ] [Figma planning document](_)
+- [ ] [development strategy](https://github.com/_/_/tree/master/planning/development-strategy.md)
+- [ ] [project board](https://github.com/_/_/projects/_)
+- [ ] [one branch per step](https://github.com/_/_/branches)
+- [ ] [one closed PR per step](https://github.com/_/_/pulls)
+```
 
 </details>
 <br>
@@ -422,6 +441,7 @@ Create modular and reusable code with functions. Write well-named functions and 
 
 ### After Class
 
+Keep working on your JS Study Guide! By the end of this week your group should have a working site covering at least 3 challenging topis in JavaScript.
 
 </details>
 <br>
