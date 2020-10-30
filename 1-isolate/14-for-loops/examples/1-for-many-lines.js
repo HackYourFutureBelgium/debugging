@@ -1,7 +1,7 @@
 // 1: use strict
 'use strict';
 
-/* anatomy of a for loop: https://javascript.info/while-for#the-for-loop
+/*
 
   for (
     begin;
@@ -15,6 +15,8 @@
     it does not show incrementing at the correct step in the flow
 
   hint 2: the step numbers will not be correct when the loopGuard is on
+
+  anatomy of a for loop: https://javascript.info/while-for#the-for-loop
 
 */
 
