@@ -58,10 +58,10 @@ const divideByZero_6 = 0 / 0;
 
 const zeroDivided_1 = 0 / 12;
 const zeroDivided_2 = 0 / true;
-const zeroDivided_2 = 0 / '-12';
-const zeroDivided_2 = 0 / Infinity;
+const zeroDivided_3 = 0 / '-12';
+const zeroDivided_4 = 0 / Infinity;
 // exception
-const zeroDivided_2 = 0 / NaN;
+const zeroDivided_5 = 0 / NaN;
 
 
 /* Dividing by Infinity
@@ -73,7 +73,7 @@ const divideByInfinity_1 = 100 / Infinity;
 const divideByInfinity_2 = 12.44 / -Infinity;
 const divideByInfinity_3 = -12 / '-Infinity';
 // exceptions
-const divideByInfinity_4 = 0 / Infinity;
+const divideByInfinity_4 = Infinity / Infinity;
 const divideByInfinity_5 = NaN / Infinity;
 
 
