@@ -401,7 +401,14 @@ This is the beginning of a two-week project. Each group will plan and build thei
 
 To help you build an interactive study guide, the repository comes with a custom HTML element `<js-snippet src='./path/to/file.js'>`. Using this component you will be able to embed interactive code snippets much like the `study-lenses` exercises.
 
-It's time for some UX & UI! Take your time in the first week to plan and design your study guide for the best study experience possible.
+It's time for some UX & UI! Take your time in the first week to plan and design your study guide for the best study experience possible. Your study guide can include anything you think will be helpful:
+
+- Explanations
+- Diagrams
+- Links
+- Code Snippets
+- [Embedded Videos](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Video_and_audio_APIs)
+- ... Anything goes!
 
 #### Checklist
 
