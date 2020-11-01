@@ -373,7 +373,6 @@ The topics for this Sunday will be `while` loops, `for` loops, and a little bit 
   - Break & Continue
   - Increment & Decrement
   - For Loops
-  - `for`/`of` string
 
 ### During Class
 
@@ -389,8 +388,8 @@ The topics for this Sunday will be `while` loops, `for` loops, and a little bit 
 
 - Isolate
   - `for` loops
-  - `for`/`of` strings
 - Interact
+  - `for`/`of` strings
   - Iterating user input
 
 ### After Class
