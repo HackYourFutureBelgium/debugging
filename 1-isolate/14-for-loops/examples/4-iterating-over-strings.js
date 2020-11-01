@@ -34,15 +34,15 @@ console.log('aString[4]:', typeof aString[4], aString[4]);
 
 console.log('-- iterating forwards');
 
-for (let i = 0; i < aString.length; i++) {
-  const nextCharacter = aString[i];
-  console.log(i, nextCharacter);
+for (let index = 0; index < aString.length; index++) {
+  const nextCharacter = aString[index];
+  console.log(index, nextCharacter);
 }
 
 
 console.log('-- iterating backwards');
 
-for (let i = aString.length - 1; i >= 0; i--) {
-  const nextCharacter = aString[i];
-  console.log(i, nextCharacter);
+for (let index = aString.length - 1; index >= 0; index--) {
+  const nextCharacter = aString[index];
+  console.log(index, nextCharacter);
 }

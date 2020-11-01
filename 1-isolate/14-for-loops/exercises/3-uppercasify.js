@@ -19,7 +19,7 @@ for (_; _; _) {
   const letterUpperCased = _._();
   upperCaseString = _;
 
-  console.log(i);
+  console.log(_); // your stepper variable
   console.log('upperCaseString:', upperCaseString);
 }
 

@@ -28,7 +28,7 @@ while (!userConfirmed) {
 }
 
 
-for (let i = 0; i < userInput.length; i++) {
-  const nextLetter = userInput[i];
+for (let index = 0; index < userInput.length; index++) {
+  const nextLetter = userInput[index];
   alert('"' + nextLetter + '"');
 }

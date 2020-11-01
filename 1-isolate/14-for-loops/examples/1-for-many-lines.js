@@ -20,22 +20,19 @@
 
 */
 
-// 2: declare and assign result
-let result = 0;
-
 for (
-  // 3: declare and assign i
-  let i = 0; // begin
+  // 2: declare and assign `step`
+  let step = 0; // begin
 
-  // 4, 7, 10, 13: check the condition
-  i < 3; // condition
+  // 3, 6, 9, 12: check the condition
+  step < 3; // condition
 
-  // 6, 9, 12: increment i
-  i++ // step
+  // 5, 8, 11: increment i
+  step++ // step
 ) {
 
-  // 5, 8, 11: run the body
-  console.log(i);
+  // 4, 7, 10: run the body
+  console.log(step);
 }
 
 

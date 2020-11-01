@@ -18,7 +18,7 @@ for (_; _; _) {
   const nextLetter = _;
   reversedString = _;
 
-  console.log(i);
+  console.log(_); // your stepper variable
   console.log('reversedString:', reversedString);
 }
 

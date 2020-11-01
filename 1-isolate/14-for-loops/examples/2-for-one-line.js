@@ -1,8 +1,6 @@
 // 1: use strict
 'use strict';
 
-// 2: declare and assign result
-let result = 0;
 
 /* anatomy of a for loop: https://javascript.info/while-for#the-for-loop
 
@@ -17,12 +15,12 @@ let result = 0;
 
 */
 
-// 3: declare and assign i
-// 4, 7, 8, 12: evaluate the condition
-// 6, 9, 12, 14: increment i
-for (let i = 0; i < 3; i++) {
-  // 5, 8, 11: evaluate the body
-  console.log(i);
+// 2: declare and assign i
+// 3, 6, 7, 11: evaluate the condition
+// 5, 10, 11, 13: increment i
+for (let step = 0; step < 3; step++) {
+  // 4, 7, 10: evaluate the body
+  console.log(step);
 }
 
 /* variables analysis:

@@ -33,6 +33,6 @@ while (!inputIsNumber) {
 }
 
 
-for (let i = 0; i <= userNumber; i++) {
-  alert(i);
+for (let numberToAlert = 0; numberToAlert <= userNumber; numberToAlert++) {
+  alert(numberToAlert);
 }
