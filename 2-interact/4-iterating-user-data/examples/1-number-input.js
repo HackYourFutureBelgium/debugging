@@ -10,8 +10,7 @@
 
 
 let userNumber = NaN;
-let inputIsNumber = false;
-while (!inputIsNumber) {
+while (Number.isNaN(userNumber)) {
 
   const userInput = prompt('count from 0 to ...');
   console.log('userInput:', typeof userInput, userInput);
@@ -26,8 +25,6 @@ while (!inputIsNumber) {
 
   if (Number.isNaN(userNumber)) {
     alert('"' + userInput + '" is not a number');
-  } else {
-    inputIsNumber = true;
   }
 
 }
