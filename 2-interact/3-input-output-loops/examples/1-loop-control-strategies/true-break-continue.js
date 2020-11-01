@@ -12,7 +12,7 @@
 
 while (true) {
 
-  const userInput = confirm('enter something to leave this loop');
+  const userInput = prompt('enter something to leave this loop');
 
   if (userInput !== null && userInput !== '') {
     break;
