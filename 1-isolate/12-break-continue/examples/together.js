@@ -23,10 +23,10 @@ while (true) {
 
   if (iterations >= max) {
     console.log('break loop');
-    break
+    break;
   }
 
-  console.log(iterations); s
+  console.log(iterations);
 
   console.log('end loop');
 
