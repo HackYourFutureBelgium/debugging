@@ -24,7 +24,7 @@ const instructions = `A Guessing Game
 2. Player 2 reads the clue and guesses the phrase`;
 alert(instructions);
 
-// -- player 1 enters the phrase and clue --
+// -- Chunk 1: player 1 enters the phrase and clue --
 
 /* declare & assign phrase & clue
   these variables are used to collect the main program data
@@ -63,7 +63,7 @@ while (!userConfirmedInput) {
 }
 
 
-// -- player 2 guesses the phrase --
+// -- Chunk 2: player 2 guesses the phrase --
 
 
 /* delcare and assign phraseGuess
@@ -130,6 +130,8 @@ while (phraseGuess !== phrase) {
 
 }
 
+
+// -- Chunk 3: evaluate the game and alert the results --
 
 if (didForfeit) {
   /* did the player forfeit the game? tell them the correct answer */
