@@ -326,7 +326,9 @@ Your coach will present the examples for the following chapters of `./1-isolate`
 
 - [./1-isolate](./1-isolate?hyf)
   - 4: Comparing and Asserting
-  - 5: Explicit coercion (`Boolean` -> truthiness)
+  - 5: Explicit coercion
+    - `Boolean(x)` is truthiness!
+    - Will not cover `about-nan`, that's for home study
   - 8: Conditionals
 
 #### After Break
