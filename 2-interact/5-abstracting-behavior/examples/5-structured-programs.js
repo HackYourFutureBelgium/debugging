@@ -33,7 +33,7 @@
     get the big picture of what it does and how it works
   2. read the part of the program where the functions are used
     piece together the logic of the program, without all the details
-  3. second collapse all the functions and read their documentation
+  3. collapse all the functions and read their documentation
     how does each function behave? arguments? return value?
     compare the documentation to how the functions are used at the bottom
   4. open the function bodies and understand how they work
