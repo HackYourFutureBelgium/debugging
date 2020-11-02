@@ -244,16 +244,14 @@ Helpful resources for this module
 
 ### Examples and Exercises
 
-There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/1-isolate/01-variables` before `/1-isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/2-interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/1-isolate`.
+There are 5 directories of examples & exercises in this repo. Each directory has a bunch of chapters that should be studied in order (ie. `/isolate/01-variables` before `/isolate/02-value-swaps`).  However you can study the main directories at the same time, for example `/interact/01-prompt-alert-confirm` builds on top of only the first few chapters in `/isolate`.
 
 Many of these exercises will come with a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution should behave.
 
-- **[./1-isolate](./1-isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
-- **[./2-interact](./2-interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- **[./3-integrate](./3-integrate)**: Learn how to write your JavaScript in an HTML file using `<script>` tags.  Add `on_something_` attributes to your DOM elements so users can trigger your scripts by taking different actions.
-- **[./4-separate](./4-separate)**: Bring it all together! Learn to write full projects using HTML, CSS & JS stored in separate files.  You will learn to organize your code into a folder structure and to load your scripts using the `<script src="./folder/file.js">` syntax
+- **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
+- **[./interact](./interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
 - **[./errors](./errors)**: JavaScript errors - get over the initial fear by learning to identify errors in your code. Then learn how to pause on errors in the debugger, to read callstack messages, to throw your own Errors and to handle errors with `try`/`catch`.
-- **[./parsons](./parsons)**: A collection of Parsons Problems to practice constructing solutions without the headache of syntax errors and needing to remember each and every JS keyword.  Careful, there will be extra lines of code!
+- **[./parsons-practice](./parsons-practice)**: A collection of Parsons Problems to practice constructing solutions without the headache of syntax errors and needing to remember each and every JS keyword.  Careful, there will be extra lines of code!
 
 ### More Examples and Exercises
 
@@ -306,13 +304,13 @@ You don't need to understand this material perfectly, it's just important you ar
 
 - Read through [./studying-javascript](./studying-javascript?hyf)
 - Spend ~30 minutes playing [compute-it.toxicode](http://compute-it.toxicode.fr/)
-- [./1-isolate](./1-isolate?hyf) (examples only)
+- [./isolate](./isolate?hyf) (examples only)
   - 1: Variables
   - 3: Primitive Types
   - 4: Comparing and Asserting
   - 5: Explicit Coercion
   - 7: Block Scope
-- [./2-interact](./2-interact?hyf) (examples only)
+- [./interact](./interact?hyf) (examples only)
   - 1: Prompt, Alert, Confirm
   - 2: Validating User Input
 
@@ -322,9 +320,9 @@ Write scripts that check and coerce the type of user input.
 
 #### Before Break
 
-Your coach will present the examples for the following chapters of `./1-isolate`, then you will break into small groups and work on the exercises
+Your coach will present the examples for the following chapters of `./isolate`, then you will break into small groups and work on the exercises
 
-- [./1-isolate](./1-isolate?hyf)
+- [./isolate](./isolate?hyf)
   - 4: Comparing and Asserting
   - 5: Explicit coercion (`Boolean` -> truthiness)
   - 8: Conditionals
@@ -333,8 +331,8 @@ Your coach will present the examples for the following chapters of `./1-isolate`
 
 These exercises each have a solution, for example:  `exercise.js` & `exercise.re.js`. The `.re.` stands for _**reverse engineering**_, the practice of rebuilding a program by studying it's behavior (user experience) without reading the source code. Your aren't expected to write the same code as the solution, there are many right answers!  When you open one of these `.re.` files from the table of contents, their code will be minified and unreadable. Instead of reading the code you should run the script and examine the flowchart to understand how your solution (in the file without `.re.`) should behave.
 
-- [./1-isolate/05-explicit-coercion](./1-isolate/05-explicit-coercion?hyf) `Number`
-- [./2-interact/02-user-flow](./2-interact/02-user-flow?hyf)
+- [./isolate/05-explicit-coercion](./isolate/05-explicit-coercion?hyf) `Number`
+- [./interact/02-user-flow](./interact/02-user-flow?hyf)
 
 ### After Class
 
@@ -367,7 +365,7 @@ The topics for this Sunday will be `while` loops, `for` loops, and a little bit 
 - Strings
   - [javascript.info](https://javascript.info/string) (through "changing the case")
   - [launchcode.org](https://education.launchcode.org/intro-to-professional-web-dev/chapters/strings/index.html)
-- [./1-isolate](./1-isolate?hyf) (examples only)
+- [./isolate](./isolate?hyf) (examples only)
   - Comparisons
   - While Loops
   - Break & Continue
@@ -484,7 +482,7 @@ Keep working on your JS Study Guide! By the end of this week your group should h
 > [Maël](https://github.com/maeligg), [Nawang](https://github.com/nawatend), [Thibault](https://github.com/ThibaultLesuisse)
 
 1. Week 1:
-  - [Part 1](https://vimeo.com/472213092) 
-  - [Part 2](https://vimeo.com/472190972) 
-2. Week 2: 
+  - [Part 1](https://vimeo.com/472213092)
+  - [Part 2](https://vimeo.com/472190972)
+2. Week 2:
   - [Loops, I/O & iterating data](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604228270944)

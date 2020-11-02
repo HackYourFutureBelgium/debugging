@@ -1,3 +1,0 @@
-const alertHello = () => {
-  alert('hello');
-};

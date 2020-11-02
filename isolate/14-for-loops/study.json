@@ -1,8 +1,8 @@
 {
   "study": {
-    "eval": true,
+    "flowchart": false,
     "loopGuard": {
-      "active": false,
+      "active": true,
       "max": 20
     }
   }

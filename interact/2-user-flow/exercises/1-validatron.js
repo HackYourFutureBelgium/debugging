@@ -18,7 +18,7 @@ const userString = _('enter a number:');
 const userNumber = _(userString);
 
 // is the number NaN or not?
-// see: 1-isolate/05-explicit-coercion/examples/4-about-nan.js
+// see: isolate/05-explicit-coercion/examples/4-about-nan.js
 const inputIsANumber = !_._(userNumber);
 
 // does the user think their String becomes a Number?
@@ -29,7 +29,7 @@ const userThinksItsANumber = _(confirmMessage);
 
 // compare userThinksItsANumber and inputIsANumber
 // does the user think the same thing as JavaScript?
-// see: 1-isolate/04-comparing-and-assertion/examples/1-strict-equality.js
+// see: isolate/04-comparing-and-assertion/examples/1-strict-equality.js
 const userIsCorrect = _;
 
 
