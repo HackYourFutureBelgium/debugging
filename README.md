@@ -481,6 +481,10 @@ Keep working on your JS Study Guide! By the end of this week your group should h
 
 ### [Class-11-12](https://github.com/hackyourfuturebelgium/class-11-12)
 
+> [Maël](https://github.com/maeligg), [Nawang](https://github.com/nawatend), [Thibault](https://github.com/ThibaultLesuisse)
+
 1. Week 1:
-  - [Part 1](https://vimeo.com/472213092) - by Maël
-  - [Part 2](https://vimeo.com/472190972) - By Maël
+  - [Part 1](https://vimeo.com/472213092) 
+  - [Part 2](https://vimeo.com/472190972) 
+2. Week 2: 
+  - [Loops, I/O & iterating data](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604228270944)
