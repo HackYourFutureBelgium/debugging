@@ -396,7 +396,12 @@ The topics for this Sunday will be `while` loops, `for` loops, and a little bit 
 
 This is the beginning of a two-week project. Each group will plan and build their own JS Study Guide using this [starter repository](https://github.com/HackYourFutureBelgium/js-study-guide). The project will be written using only HTML & CSS. You will need to write some JavaScript for this project, but all the code you write will be examples and exercises like in this _Debugging_ repository.  You are not expected to use JavaScript for DOM Manipulation, or any other type of interactivity.
 
-To help you build an interactive study guide, the repository comes with a custom HTML element `<code-along src='./path/to/file.js'></code-along>`. Using this component you will be able to embed interactive code snippets much like the `study-lenses` exercises.
+To help you build an interactive study guide, the repository comes with a custom HTML element `<code-along src='./path/to/file.js'></code-along>`. Using this component you will be able to embed interactive code snippets much like the `study-lenses` exercises.  If you're looking for a good way to organize your topics, consider having these 4 sections for each:
+
+1. **Essence**: present in 2-3 sentences what you will cover and why you need to know it.
+2. **Examples**: present a couple examples of this concept with simple code snippets
+3. **Explanation**: explain how the code examples work, and the rules behind them
+4. **Exercises**: provide a few exercises to practice applying the concept
 
 It's time for some UX & UI! Take your time in the first week to plan and design your study guide for the best study experience possible. Your study guide can include anything you think will be helpful:
 
