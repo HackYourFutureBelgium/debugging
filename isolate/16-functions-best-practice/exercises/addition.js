@@ -46,28 +46,3 @@ const _6_expect = 0;
 const _6_actual = add();
 console.assert(_6_actual === _6_expect, 'Test 6: both default parameters');
 
-
-// test type guards
-try {
-  add(true, 1);
-  console.assert(false, 'Test 7: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'x is not a number', 'Test 7 b: error message');
-}
-
-try {
-  add(1, null);
-  console.assert(false, 'Test 8: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'y is not a number', 'Test 7 b: error message');
-}
-
-try {
-  add('', false);
-  console.assert(false, 'Test 9: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'x is not a number', 'Test 7 b: error message');
-}

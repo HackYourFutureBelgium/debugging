@@ -438,17 +438,44 @@ It's time for some UX & UI! Take your time in the first week to plan and design 
 
 Create modular and reusable code with functions. Write well-named functions and call them as many times as you like from your programs.
 
-<details>
+<details open>
 <summary>expand/collapse</summary>
 <br>
 
 ### Before Class
 
+The examples and exercises in this repository all use `() => {}` functions, while many resources out in the wild cover `function` functions.  Both types of functions are similar enough that for now you can think of them as being the same for now.  This repository focuses on arrow functions because:
+
+- the syntax is cleaner and less distracting to read
+- there are fewer quirks in how arrow functions work, so they're a little cleaner to learn
+- function expressions are easier to study in the debugger than function declarations (though this can also be done with `function` functions, more on that later)
+
+We will spend a few minutes in class covering both types of functions, but will mostly use `() => {}`.
+
+Prep work:
+
+- [Functions in 90 Seconds](https://www.youtube.com/watch?v=UY182o4J5_Y)
+- [javascript.info](https://javascript.info/function-basics)
+- Coding Train:
+  - [Function Basics](https://www.youtube.com/watch?v=wRHAitGzBrg)
+  - [Parameters & Arguments](https://www.youtube.com/watch?v=zkc417YapfE)
+  - [Functions & Return](https://www.youtube.com/watch?v=qRnUBiTJ66Y)
+- Examples
+  - [./isolate](./isolate): `the-basics` & `best-practice`
+  - [./interact](./interact): `abstracting-behavior`
+
 ### During Class
 
 #### Before Break
 
+- `isolate/`
+  - Function: The Basics
+  - Functions: Best Practice
+  - Functions: Variations (coming soon)
+
 #### After Break
+
+- `interact/`: Abstracting Behavior
 
 ### After Class
 

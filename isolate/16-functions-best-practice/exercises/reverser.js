@@ -43,28 +43,3 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 const _6_expect = '';
 const _6_actual = reverse();
 console.assert(_6_actual === _6_expect, 'Test 6: default parameter');
-
-// test type guards
-try {
-  reverse(true);
-  console.assert(false, 'Test 7: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'text is not a string', 'Test 7 b: error message');
-}
-
-try {
-  reverse(null);
-  console.assert(false, 'Test 8: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'text is not a string', 'Test 7 b: error message');
-}
-
-try {
-  reverse(14);
-  console.assert(false, 'Test 9: did not throw an error');
-} catch (err) {
-  console.assert(err.name === 'TypeError', 'Test 7 a: error name');
-  console.assert(err.message === 'text is not a string', 'Test 7 b: error message');
-}
