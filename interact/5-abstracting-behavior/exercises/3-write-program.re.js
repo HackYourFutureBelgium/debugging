@@ -76,6 +76,22 @@ const numberPrompt = (message = 'enter a number:') => {
 // -- logic --
 
 /**
+ * repeats a string a given number of times
+ * @param {string} text - the string to repeat
+ * @param {number} repeats - how many times to repeat the string
+ * @returns {string} the text repeated
+ */
+const repeatText = (text = '', repeats = 1) => {
+
+  let repeatedText = '';
+  for (let i = 0; i < repeats; i++) {
+    repeatedText += text;
+  }
+
+  return repeatedText;
+};
+
+/**
  * repeats each character in a string, the default is 1 repetition
  * @param {string} text - the string with characters to repeat
  * @param {number} repetitions - how many times to repeat each character
@@ -98,40 +114,63 @@ const repeatCharacters = (text = '', repetitions = 1) => {
 // -- renders --
 
 /**
- * renders a reader-friendly log of the program's input & output
+ * renders a reader-friendly log of the program's execution
  * @param {string} input - the initial user input
- * @param {string} output - the output with each character repeated
- * @param {number} repetitions - how many times was each character repeated?
+ * @param {string} output - the final output
+ * @param {boolean} textOrCharacters - was the text repeated or the characters?
+ *  true: text, false: characters
  * @returns {string} a formatted string
  */
-const renderReport = (input = '', output = '', repetitions = 1) => {
+const renderProgramLog = (input = '', output = '', textOrCharacters = true) => {
 
-  const programReport = 'This happened:\n\n'
-    + 'input: "' + input + '"\n'
-    + 'repetitions: "' + repetitions + '"\n'
-    + 'output: "' + output + '"\n';
+  let programLog = 'before: "' + input + '"\n'
+    + 'after: "' + output + '"\n\n';
 
-  return programReport;
+  if (textOrCharacters) {
+    programLog += '- repeated the whole text';
+  } else {
+    programLog += '- reversed each character';
+  }
+
+  return programLog;
 };
 
 
 // --- --- use the functions --- ---
 
 
-// prompt the user for the initial program data
+// alert the user for the initial program data
+const initialString = promptAndConfirmSomething('enter some text to repeatify:');
+
+// prompt the user for extra options
+const repeatWholeText = confirm(
+  'would you like to repeat the whole text or each character?\n\n'
+  + 'ok: whole text\n'
+  + 'cancel: each character');
+
+let repetitionsMessage = 'how many times would you like to repeat ';
+if (repeatWholeText) {
+  repetitionsMessage += 'the whole text';
+} else {
+  repetitionsMessage += 'each character';
+}
+const repetitions = numberPrompt(repetitionsMessage);
+
+// carry out the core logic of your program
+let finalString = '';
+
+if (repeatWholeText) {
+  finalString = repeatText(initialString, repetitions);
+} else {
+  finalString = repeatCharacters(initialString, repetitions);
+}
 
 
-// prompt the user for some text
+// render & alert the final program output
+const programLog = renderProgramLog(initialString, finalString, repeatWholeText);
+alert(programLog);
 
 
-// prompt the user for a number
-
-
-// pass the text & number through the logic function
-// capture the return value in a new variable
-
-
-// render & alert the final message
 
 
 

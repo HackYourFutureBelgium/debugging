@@ -250,8 +250,8 @@ Many of these exercises will come with a solution, for example:  `exercise.js` &
 
 - **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input and have no HTML/CSS.
 - **[./interact](./interact)**: Learn to work with _primitive types_ and _control flow_ by writing interactive scripts. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- **[./errors](./errors)**: JavaScript errors - get over the initial fear by learning to identify errors in your code. Then learn how to pause on errors in the debugger, to read callstack messages, to throw your own Errors and to handle errors with `try`/`catch`.
 - **[./parsons-practice](./parsons-practice)**: A collection of Parsons Problems to practice constructing solutions without the headache of syntax errors and needing to remember each and every JS keyword.  Careful, there will be extra lines of code!
+- **[./errors-and-program-life-cycle](./errors-and-program-life-cycle)**: JavaScript errors - get over the initial fear by learning to identify errors in your code. Then learn how to pause on errors in the debugger, to read callstack messages, to throw your own Errors and to handle errors with `try`/`catch`.
 
 ### More Examples and Exercises
 

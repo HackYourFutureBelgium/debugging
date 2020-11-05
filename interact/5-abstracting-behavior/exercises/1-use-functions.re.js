@@ -119,19 +119,22 @@ const renderReport = (input = '', output = '', repetitions = 1) => {
 
 
 // prompt the user for the initial program data
-
+const instructions = 'you will enter some text and a number.\n'
+  + 'Each character in your text will be repeated that many times';
+alert(instructions);
 
 // prompt the user for some text
-
+const userInput = promptAndConfirmSomething('enter your text:');
 
 // prompt the user for a number
-
+const userNumber = numberPrompt('how many times should each character be repeated?');
 
 // pass the text & number through the logic function
 // capture the return value in a new variable
-
+const processedInput = repeatCharacters(userInput, userNumber);
 
 // render & alert the final message
-
+const finalMessage = renderReport(userInput, processedInput, userNumber);
+alert(finalMessage);
 
 

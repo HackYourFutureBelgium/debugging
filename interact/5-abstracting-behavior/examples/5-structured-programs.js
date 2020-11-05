@@ -216,7 +216,7 @@ const repeatOption = confirm(
 
 
 // carry out the core logic of your program
-let finalString = initialString;
+let finalString = '';
 
 if (removeVowelsOption) {
   const withoutVowels = removeVowels(finalString);

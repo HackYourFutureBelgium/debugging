@@ -1,0 +1,11 @@
+function name() {
+
+}
+
+const name = function() {
+
+}
+
+const name = function internalName() {
+
+}
