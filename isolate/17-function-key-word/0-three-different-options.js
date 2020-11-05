@@ -8,36 +8,36 @@
   the two main differences to keep in mind are:
   - function name:
     - where does the function's name come from?
-    - what happens when a new variable points to the function?
-  - hoisting
+    - what happens to the name the function is assigned to a new variable?
+    - what happens if a new variable is declared with the same name?
+  - hoisting:
     - function statements are available before the line where they are declared
+
+  here are some nice videos to help you find your way
+  - Statements vs. Expressions: https://www.youtube.com/watch?v=WVyCrI1cHi8
+  - Dev Material: https://www.youtube.com/watch?v=qz7Nq1tV7Io
+  - Harry Wolf: https://www.youtube.com/watch?v=VAYIPSNXHhw
+  - Codeacademy: https://www.youtube.com/watch?v=oB5rH_9bqAI
 
 */
 
 
-// like arrow functions, but with different syntax
+// like the arrow functions you've learned, just with different syntax
 const functionExpression = function () {
-  return 'function expression';
+
 };
-console.log(functionExpression.name);
-const functionExpression2 = functionExpression;
-console.log(functionExpression2.name);
 
 
-// this will be hoisted, more on that later
+// functionStatement is available like a global variable
+// the variable name is like a let variable
+// this will also be hoisted, more on that later
+// (also called a function declaration)
 function functionStatement() {
-  return 'function statement';
+
 }
-console.log(functionStatement.name);
-const functionStatement2 = functionStatement;
-console.log(functionStatement2.name);
 
-
-// the function name will be different from the variable
+// internalName is only defined inside the function body
+// otherwise this will behave like a function expression
 const namedFunctionExpression = function internalName() {
-  return 'named function expression'
-};
-console.log(namedFunctionExpression.name);
-const namedFunctionExpression2 = namedFunctionExpression;
-console.log(namedFunctionExpression2.name);
 
+};

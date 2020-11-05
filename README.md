@@ -233,6 +233,10 @@ Helpful resources for this module
 - [javascript.info](https://javascript.info/intro)
 - [Danielle Thé](https://www.youtube.com/watch?v=gT0Lh1eYk78)
 
+### Statements vs. Expressions
+
+- [codeexpanse](https://www.youtube.com/watch?v=WVyCrI1cHi8)
+
 ### Debugging Tools
 
 - [Errors & Debugging](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/index.html)
