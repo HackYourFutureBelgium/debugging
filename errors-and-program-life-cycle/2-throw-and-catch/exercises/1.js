@@ -1,7 +1,21 @@
 'use strict';
 
+/*
+  browser:
+
+  name:
+  message:
+
+  callstack:
+
+  life cycle:
+
+  the mistake:
+  the fix(es):
+*/
+
 console.log('- broken JS -');
-try {
+try { // comment the error and mistake in this code
 
   console.assert(false, 'it should throw');
 } catch (err) {
