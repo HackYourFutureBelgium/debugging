@@ -1,5 +1,5 @@
 {
-  "study": {
-    "openIn": "esprima"
+  "--defaults": {
+    ".js": "ast-explorer"
   }
 }
