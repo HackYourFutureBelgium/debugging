@@ -5,8 +5,14 @@
 
   function statements get their name from whatever you type after 'function'
 
-  Study this example in JS Tutor, hoisting will be much more clear
+  Studying this example in JS Tutor, hoisting will be visually clear
   notice how the function exists in memory before step 1 has executed?
+
+  another tricky thing about hoisting is that the function will be in global scope
+    not in Script scope like you are used to
+  the function will not appear where you normally see it
+  you will need to expand the global scope in your debugger
+    and scroll all the way down to your function's name
 
   some helpful links
   - Vishal: https://www.youtube.com/watch?v=ZmTNfVYlcOE
