@@ -22,6 +22,13 @@
 */
 
 
+// this is what you have seen so far
+const arrowFunction = () => {
+
+};
+
+// the following examples are new
+
 // like the arrow functions you've learned, just with different syntax
 const functionExpression = function () {
 
