@@ -5,12 +5,12 @@
 
 
 const scramble = (param1, param2, param3) => {
-  const result = `${param3}${param1}${param2}`;
+  const result = param3 + param1 + param2;
   return result;
 };
 
-const _1_expect = _;
 const _1_actual = scramble('a', 'c', 'b');
+const _1_expect = _;
 const _1_test = _1_actual === _1_expect;
 console.assert(_1_test, 'Test 1');
 
