@@ -475,7 +475,7 @@ Prep work:
 - `isolate/`
   - Function: The Basics
   - Functions: Best Practice
-  - Functions: Variations (coming soon)
+  - The `function` key word
 
 #### After Break
 
