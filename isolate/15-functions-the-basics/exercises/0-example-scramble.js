@@ -18,13 +18,13 @@ const _2_test = _2_actual === _2_expected;
 console.assert(_2_test, 'Test 2');
 
 
-const _3_expected = "yzx";
+const _3_expected = "yzx"; // what should this value be?
 const _3_actual = scramble("z", "y", "x");
 const _3_test = _3_actual === _3_expected;
 console.assert(_3_test, 'Test 3');
 
 
-const _4_expected = "zyx";
+const _4_expected = "zyx"; // what should this value be?
 const _4_actual = scramble("y", "x", "z");
 const _4_test = _4_actual === _4_expected;
 console.assert(_4_test, 'Test 4');
