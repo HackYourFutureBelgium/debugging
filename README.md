@@ -524,3 +524,5 @@ Keep working on your JS Study Guide! By the end of this week your group should h
   - [Part 2](https://vimeo.com/472190972)
 2. Week 2:
   - [Loops, I/O & iterating data](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604228270944)
+3. Week 3:
+  - [functions and structured programs](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604832955426)
