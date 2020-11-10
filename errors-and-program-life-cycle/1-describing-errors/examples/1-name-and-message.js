@@ -26,7 +26,7 @@
 
   callstack:
 
-  strict error:
+  life cycle:
 
   the mistake:
   the fix(es):

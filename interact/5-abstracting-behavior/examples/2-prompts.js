@@ -79,7 +79,10 @@ const emailPrompt = (message = 'enter an email address:') => {
       continue;
     }
 
-    // https://stackoverflow.com/a/9204568
+    // you aren't expected to write this yourself
+    // to learn how it works:
+    //  https://stackoverflow.com/a/9204568
+    //  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
     const emailRegex = /\S+@\S+\.\S+/;
     const isValidEmail = emailRegex.test(userInput);
     if (!isValidEmail) {

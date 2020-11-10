@@ -4,6 +4,7 @@
     "loopGuard": {
       "active": false,
       "max": 20
-    }
+    },
+    "save": true
   }
 }
