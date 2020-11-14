@@ -37,7 +37,7 @@ Learning to understand the difference between your source code (simply a text fi
 
 ## Logic Errors
 
-Logic errors (or "bugs") are when your code runs without an error, but does not do what you wanted it to. This is a different topic from Language Errors (when your code simply breaks).  Bugs and errors are often taught together, but are actually.  Take a look at this funny video [comparing syntax & logic errors](https://www.youtube.com/watch?v=tV0tQisuxPo) to understand the difference by analogy.
+Logic errors (or "bugs") are when your code runs without an error, but does not do what you wanted it to. This is a different topic from Language Errors (when your code simply breaks).  Bugs and errors are often taught together, but are actually different.  Take a look at this funny video [comparing syntax & logic errors](https://www.youtube.com/watch?v=tV0tQisuxPo) to understand the difference by analogy.
 
 While fixing errors requires only a solid understanding of the JS Syntax and Semantics, plus some experience with the debugger. Fixing logic mistakes also requires an understanding of debugging strategies, testing and strategic thinking.  This chapter only covers Language Errors.
 
