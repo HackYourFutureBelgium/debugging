@@ -15,7 +15,7 @@
   there are actually a few pretty easy ways to tell when your error occurred:
 
   1. open your code in jsTutor
-    did your code make it the page where you can step through?
+    did your code make it to the page where you can step through?
     if it did not, you had a creation phase error
   2. open your code in jsTutorLive
     does the error line have an [x] AND is highlighted red? execution!
@@ -28,7 +28,7 @@
     if it does, you have an execution phase error
 
 
-  no go ahead and fill in the life-cycle field of your error description
+  now go ahead and fill in the life-cycle field of your error description
 
 */
 
