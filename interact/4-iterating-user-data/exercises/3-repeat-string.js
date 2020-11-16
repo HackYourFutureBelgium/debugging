@@ -45,7 +45,7 @@ while (_) {
 let repeatedInput = '';
 
 /* repeat the user input `repetitions` number of times */
-for (_) {
+for (_; _; _) {
 
 }
 

@@ -14,8 +14,10 @@
   3. at what step(s) of execution are this line executed?
 
   “What questions would be asked by someone looking at this code for the first time?”
-    - Scottford
-    - https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
+    - Scottford, https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
+
+    https://medium.com/better-programming/javascript-clean-code-comments-c926d5aae2cb
+    https://www.elegantthemes.com/blog/wordpress/how-to-comment-your-code-like-a-pro-best-practices-and-good-habits
 
 */
 
