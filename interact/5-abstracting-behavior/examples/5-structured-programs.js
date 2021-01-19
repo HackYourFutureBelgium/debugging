@@ -42,9 +42,6 @@
 
 */
 
-
-
-
 // --- --- declare functions --- ---
 
 // -- prompts --
@@ -61,7 +58,6 @@ const promptAndConfirmSomething = (message = 'enter something:') => {
   let userInput = '';
   let userConfirmed = false;
   while (!userConfirmed) {
-
     userInput = prompt(message);
     console.log('userInput:', typeof userInput, userInput);
 
@@ -72,7 +68,6 @@ const promptAndConfirmSomething = (message = 'enter something:') => {
 
     userConfirmed = confirm(`is this correct: "${userInput}"`);
     console.log('userConfirmed:', typeof userConfirmed, userConfirmed);
-
   }
 
   return userInput;
@@ -90,7 +85,6 @@ const numberPrompt = (message = 'enter a number:') => {
   let userNumber = NaN;
   let userConfirmed = false;
   while (!userConfirmed) {
-
     const userInput = prompt(message);
     console.log('userInput:', typeof userInput, userInput);
 
@@ -110,7 +104,6 @@ const numberPrompt = (message = 'enter a number:') => {
     const confirmMessage = 'is this correct?\n\n' + userInput;
     userConfirmed = confirm(confirmMessage);
     console.log('userConfirmed:', typeof userConfirmed, userConfirmed);
-
   }
 
   return userNumber;
@@ -124,7 +117,6 @@ const numberPrompt = (message = 'enter a number:') => {
  * @returns {string} the reversed argument
  */
 const reverse = (text = '') => {
-
   let reversedText = '';
   for (let index = text.length - 1; index > -1; index--) {
     const nextCharacter = text[index];
@@ -141,7 +133,6 @@ const reverse = (text = '') => {
  * @returns {string} the text repeated
  */
 const repeat = (text = '', repeats = 0) => {
-
   let repeatedText = '';
   for (let i = 0; i < repeats; i++) {
     repeatedText += text;
@@ -179,10 +170,13 @@ const removeVowels = (text = '') => {
  * @param {boolean} devowel - were the vowels removed?
  * @returns {string} a formatted string
  */
-const renderProgramLog = (input = '', output = '', devoweled = false, repeatOrReverse = false) => {
-
-  let programLog = 'before: "' + input + '"\n'
-    + 'after: "' + output + '"\n\n';
+const renderProgramLog = (
+  input = '',
+  output = '',
+  devoweled = false,
+  repeatOrReverse = false
+) => {
+  let programLog = 'before: "' + input + '"\n' + 'after: "' + output + '"\n\n';
 
   if (devoweled) {
     programLog += '- removed all vowels\n';
@@ -197,34 +191,35 @@ const renderProgramLog = (input = '', output = '', devoweled = false, repeatOrRe
   return programLog;
 };
 
-
 // --- --- use the functions --- ---
-
 
 // prompt the user for the initial program data
 const initialString = promptAndConfirmSomething('enter some text to process:');
 
 // prompt the user for extra options
 const removeVowelsOption = confirm(
-  'would you like to remove all vowels?\n\n'
-  + 'ok: yes\n'
-  + 'cancel: no');
+  'would you like to remove all vowels?\n\n' + 'ok: yes\n' + 'cancel: no'
+);
 const repeatOption = confirm(
-  'would you like to repeat the string or reverse it?\n\n'
-  + 'ok: repeat\n'
-  + 'cancel: reverse');
-
+  'would you like to repeat the string or reverse it?\n\n' +
+    'ok: repeat\n' +
+    'cancel: reverse'
+);
 
 // carry out the core logic of your program
 let finalString = '';
 
 if (removeVowelsOption) {
-  const withoutVowels = removeVowels(finalString);
+  const withoutVowels = removeVowels(initialString);
   finalString = withoutVowels;
+} else {
+  finalString = initialString;
 }
 
 if (repeatOption) {
-  const repetitions = numberPrompt('how many times would you like to repeat the text?');
+  const repetitions = numberPrompt(
+    'how many times would you like to repeat the text?'
+  );
   const repeated = repeat(finalString, repetitions);
   finalString = repeated;
 } else {
@@ -232,12 +227,11 @@ if (repeatOption) {
   finalString = reversed;
 }
 
-
 // render & alert the final program output
-const programLog = renderProgramLog(initialString, finalString, removeVowelsOption, repeatOption);
+const programLog = renderProgramLog(
+  initialString,
+  finalString,
+  removeVowelsOption,
+  repeatOption
+);
 alert(programLog);
-
-
-
-
-
