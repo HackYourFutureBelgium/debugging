@@ -65,7 +65,7 @@ const zeroDivided_5 = 0 / NaN;
 
 
 /* Dividing by Infinity
-  anything (except 0 or NaN) divided by Infinity will give Infinity
+  anything (except Infinity or NaN) divided by Infinity will give Infinity
   careful, this is also true of values that coerce to Infinity!
 */
 
