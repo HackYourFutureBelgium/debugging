@@ -1,0 +1,11 @@
+- merge with stepping through code
+
+the "predict -> step -> verify" method for studying examples
+
+find a comment format for this?
+  - it should
+    be line-by-line
+    account for loops
+  - theoretical block
+    cannot comment code while it's running
+

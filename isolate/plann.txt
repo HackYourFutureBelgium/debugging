@@ -1,0 +1,34 @@
+variables
+swaps
+primitive types
+comparing and asserting
+explicit coercion
+logical operators
+comparisons
+arithmetic
+operator precedence
+template literals
+block scope
+conditionals
+increment decrement
+while loops
+do while loops
+break continue
+for of strings
+for loops
+reference vs. value
+functions the basics
+local param global
+functions best practices
+implicit return
+arrays
+for-of-arrays
+objects
+for-in-object
+side-effects
+hoisting-var
+function-key-word
+
+
+the callstack
+- move to higher order functions in BSI ?

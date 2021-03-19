@@ -1,0 +1,29 @@
+0. prompt-alert-confirm
+1. user flow
+2. i/o loops
+3. numbers
+4. abstracting behavior
+  use functions
+    given: programs with blanks for function calls
+    do: fill the blanks with function calls
+  working program with empty function
+    given: correct program that uses empty functions
+    do: fill in the function bodies
+  working program with commented chunks to refactor
+    given: working program with a commented chunk
+      /* -- BEGIN refactor, data in: string, number -- */
+      ...
+      /* -- END refactor, data out: boolean -- */
+    do: refactor the chunk to a function
+  working programs
+
+
+
+exercise folder
+  - 1, 2, 3 have different implementations
+  0-working.re.js
+  1-blanks.js
+    comments and logs provided
+  2-bugs.js
+  3-chunks.js
+  4-empty.js

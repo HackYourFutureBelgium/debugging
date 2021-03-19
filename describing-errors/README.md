@@ -27,7 +27,7 @@ Learning to understand the difference between your source code (simply a text fi
    - Just because your code has correct syntax doesn't mean everything is ok! It is still possible for you to use correct syntax in incorrect ways. The rules that define correct and incorrect usage are JS semantics.
    - You can think of it like normal language, a sentence can have good grammar but still make no sense: "Dogs talk most, coral does recess."
 
-4) **Errors**
+4. **Errors**
 
    - **creation phase errors** Bad "spelling" or bad "grammar". Your program can either not be understood by the JS interpreter, or made a mistake that the interpreter was able to find without running your code. Your program will not continue to the execution phase.
    - **execution phase errors** Commonly called "runtime errors". You made no syntax errors and no semantic errors the interpreter could catch, so your program entered execution phase. But somewhere in your program you instructed JavaScript to do something that is not possible.
