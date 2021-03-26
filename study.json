@@ -3,11 +3,11 @@
   "--port": 4002,
   "study": {
     "eval": true,
-    "loopGuard": true,
     "trace": true,
     "save": true,
     "strict": true,
-    "variables": true
+    "variables": true,
+    "flowchart": true
   },
   "highlight": {
     "eval": true,

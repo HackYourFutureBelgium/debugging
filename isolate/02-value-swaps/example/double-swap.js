@@ -1,29 +1,28 @@
-'use strict';
-{
-  // this file shows the final line of code, with all tests passing
+"use strict";
 
-  // declare & assign variables
-  let a = 'y';
-  let b = 'x';
-  let temp = null;
+// this file shows the final line of code, with all tests passing
 
-  // swap the values stored by a and b ...
+// declare & assign variables
+let a = "y";
+let b = "x";
+let temp = null;
 
-  // 1: store a's value for later
-  temp = a;
-  // 2: assign b's value to a
-  a = b;
-  // 3: assign the saved value to b
-  b = temp;
+// swap the values stored by a and b ...
 
-  // assert expected values
+// 1: store a's value for later
+temp = a;
+// 2: assign b's value to a
+a = b;
+// 3: assign the saved value to b
+b = temp;
 
-  const isTrue1 = a === 'x';
-  console.assert(isTrue1, 'Test 1');
+// assert expected values
 
-  const isTrue2 = b === 'y';
-  console.assert(isTrue2, 'Test 2');
+const isTrue1 = a === "x";
+console.assert(isTrue1, "Test 1");
 
-  const isTrue3 = temp === 'y';
-  console.assert(isTrue3, 'Test 3');
-}
+const isTrue2 = b === "y";
+console.assert(isTrue2, "Test 2");
+
+const isTrue3 = temp === "y";
+console.assert(isTrue3, "Test 3");

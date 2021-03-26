@@ -22,8 +22,6 @@ while (a < 4) {
 // 12: assert a
 console.assert(a === 4, 'a should be 4');
 
-
-
 /* variables analysis:
 
   a: accumulator, number, strategy

@@ -8,9 +8,10 @@
 
   callstack:
 
-  life-cycle:
+  life cycle:
 
   the mistake:
+
   the fix(es):
 */
 

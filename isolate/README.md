@@ -29,7 +29,7 @@ Your first goal is learning to see what is happening inside your program at each
 
 ## General Study Tips
 
-> For more info, check out: [Learning From Code](https://study.hackyourfuture.be/learning/learning-from-code)
+> For more info, check out: [Learning From Code](https://home.hackyourfuture.be/students/study-tips/learning-from-code)
 
 Look through the rest of the files in this folder to learn a good study workflow
 
@@ -45,7 +45,7 @@ Look through the rest of the files in this folder to learn a good study workflow
   - what random thoughts did you have while studying this?
   - ... you know you best, write whatever helps!
 
-Hint: the solutions to many of the \_'s in the exercises are written in the debugger ... if you know how to look for them ;)
+Hint: the solution for many of the \_'s in are written in the debugger ... if you know how to look for them ;)
 
 ---
 
