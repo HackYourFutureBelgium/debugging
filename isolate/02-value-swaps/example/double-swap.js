@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // this file shows the final line of code, with all tests passing
 
@@ -15,7 +15,6 @@ temp = a;
 a = b;
 // 3: assign the saved value to b
 b = temp;
-
 
 // assert expected values
 

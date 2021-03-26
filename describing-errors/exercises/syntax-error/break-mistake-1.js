@@ -1,6 +1,5 @@
 'use strict';
 
-
 /*
   browser:
 
@@ -9,7 +8,10 @@
 
   callstack:
 
+  life cycle:
+
   the mistake:
+
   the fix(es):
 */
 

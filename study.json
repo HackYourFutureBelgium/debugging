@@ -1,11 +1,22 @@
 {
+  "--force": true,
+  "--port": 4002,
   "study": {
     "eval": true,
-    "loopGuard": {
-      "active": false,
-      "max": 20
-    },
-    "save": true
+    "trace": true,
+    "save": true,
+    "strict": true,
+    "variables": true,
+    "flowchart": true
   },
-  "--port": 4005
+  "highlight": {
+    "eval": true,
+    "trace": true,
+    "flowchart": true,
+    "variables": true
+  },
+  "variables": {
+    "trace": true,
+    "eval": true
+  }
 }
