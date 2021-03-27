@@ -5,7 +5,6 @@
     "eval": true,
     "trace": true,
     "save": true,
-    "strict": true,
     "variables": true,
     "flowchart": true
   },
