@@ -472,3 +472,15 @@ Try make at least one contribution per day to the class `/javascript` study guid
    - [Loops, I/O & iterating data](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604228270944)
 3. Week 3:
    - [functions and structured programs](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604832955426)
+
+### [Class-13-14](https://github.com/hackyourfuturebelgium/class-13-14)
+
+> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+
+1. Week 1:
+- [Part 1](https://vimeo.com/530235541)
+- [Part 2](https://vimeo.com/530238311)
+Before break
+
+- [Part 3](https://vimeo.com/530238051)
+After break
