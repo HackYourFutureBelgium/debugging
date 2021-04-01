@@ -6,7 +6,9 @@
 
   these rules only apply to `let`
 
-  reassigning `const` will still throw an error even in blocks
+  reassigning `const` will still throw an error
+    no matter where it was declared
+    no matter where it is assigned
 
 */
 
