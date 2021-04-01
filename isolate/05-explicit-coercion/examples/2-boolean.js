@@ -2,6 +2,8 @@
 
 // casting to boolean is key to mastering JavaScript
 //  it's the heart of TRUTHINESS, a key JS concept
+// most values are truthy, meaning they coerce to true
+// there are only a few falsy values: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
 const _1_toCast = undefined;
 const _1_boolean = Boolean(_1_toCast);
