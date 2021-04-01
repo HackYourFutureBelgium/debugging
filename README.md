@@ -478,9 +478,5 @@ Try make at least one contribution per day to the class `/javascript` study guid
 > [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
 
 1. Week 1:
-- [Part 1](https://vimeo.com/530235541)
-- [Part 2](https://vimeo.com/530238311)
-Before break
-
-- [Part 3](https://vimeo.com/530238051)
-After break
+  - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
+  - [Describing Errors](https://vimeo.com/530238051)
