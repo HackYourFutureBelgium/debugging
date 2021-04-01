@@ -327,12 +327,12 @@ The topics for this Sunday will be `while` and `for` loops, and a little bit of 
 
 #### Before Break
 
-- [./isolate](./isolate): for loops
+- [./isolate](./isolate): explicit coercion
 
 #### After Break
 
-- [./isolate](./isolate): explicit coercion
-- [./interact](./interact): numbers
+- Practice debugging programs that use numbers
+  - [./interact](./interact): numbers
 
 ### After Class
 

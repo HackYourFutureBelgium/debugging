@@ -1,7 +1,7 @@
 'use strict';
 
 /*
-  browser:
+  environment:
 
   name:
   message:

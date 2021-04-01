@@ -60,7 +60,7 @@ console.log('userGuess:', typeof userGuess, userGuess);
 const guessIsCorrect = _;
 console.log('guessMessage:', typeof guessMessage, guessMessage);
 
-if (guessMessage) {
+if (guessIsCorrect) {
   const successMessage = 'correct! phrase ' + randomFrom1To3 + ' was "' + phraseToGuess + '"';
   alert(successMessage);
 } else {

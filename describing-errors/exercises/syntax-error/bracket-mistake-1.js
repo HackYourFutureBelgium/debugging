@@ -2,7 +2,7 @@
 
 
 /*
-  browser:
+  environment:
 
   name:
   message:
