@@ -212,9 +212,11 @@ Helpful resources for this module
 - 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
 - 🥚 **[./describing-errors](./describing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
 - 🥚 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
-- 🥚 **[./interact](./interact)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- 🥚 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. Finally the mysteries of `var` and `function` will be clear.
-- 🐣 **[./break-these](./break-these)**: Some small sites and games built using HTML, CSS and JavaScript. Break them and fix them to learn how they work! All of the projects have comments helping you find the most interesting parts to break, and some ideas for how to break them.
+- 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
+- 🥚 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
+- 🐣 **[./interact](./interact)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
+- 🐣 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. Finally the mysteries of `var` and `function` will be clear.
+- 🐥 **[./break-these](./break-these)**: Some small sites and games built using HTML, CSS and JavaScript. Break them and fix them to learn how they work! All of the projects have comments helping you find the most interesting parts to break, and some ideas for how to break them.
 - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
 
 ### More Examples and Exercises
@@ -478,5 +480,6 @@ Try make at least one contribution per day to the class `/javascript` study guid
 > [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
 
 1. Week 1:
-  - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
-  - [Describing Errors](https://vimeo.com/530238051)
+
+- Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
+- [Describing Errors](https://vimeo.com/530238051)
