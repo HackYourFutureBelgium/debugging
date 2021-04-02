@@ -1,7 +1,16 @@
 'use strict';
 
-let userInput = '';
-let isLongEnough = false;
+/* look out for:
+
+  - loop checks
+  - conditional checks
+  - variable declarations
+  - assignment vs. comparison
+
+*/
+
+const userInput = '';
+const isLongEnough = false;
 while (isLongEnough) {
   userInput = prompt('enter anything longer than 5 characters');
 

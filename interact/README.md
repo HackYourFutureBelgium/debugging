@@ -23,14 +23,14 @@ A important skill you develop in these exercises is **reverse-engineering**. Rev
    - describe the program behavior in a block comment at the top of your empty file
    - write a comment describing each of your main goals
    - find some starter code for each goal from similar programs
-3. implement one chunk at a time, from the beginning to the end!
+3. implement one goal at a time, from the beginning to the end!
 
 Each exercise will be one program with 5 files. Files 1, 2 and 3 will contain different implementations of the same program so you won't be able to solve them just by checking the others:
 
 - **`0-complete.re.js`**: A fully working program with the behavior you need to reverse-engineer. The `.re.` extension in the file name is for `study-lenses`, it does not change how the browser will interpret your code. When you click on a link to open a `.re.js` file the code will be _obfuscated_ so that it still works but is impossible to read. You can remove the `?obf&min` lenses to study the source code, but don't copy the solution!
 - **`1-blanks.js`**: A _nearly_ working program with some `_`s for you to fill in, everything that is not a `_` is correct. A single `_` means a piece of a line is missing, a longer `___` means more than a line is missing.
 - **`2-bugs.js`**: A _nearly_ working program with a few bugs. These bugs might be a spelling mistake, a bad condition, the wrong type of variable declaration, or many other little mistakes!
-- **`3-chunks.js`**: Part of a working program. There will several lines of code missing that you need to fill in, without changing anything else in the file! There will be a comment describing the goal of the missing code. See if you can write code that is different from the previous exercises, without looking!
+- **`3-goals.js`**: Part of a working program. There will lines of code missing that you need to fill in, without changing anything else in the file! There will be a comment describing the goal of the missing code. See if you can write code that is different from the previous exercises, without looking!
 - **`4-empty.js`**: Nothing! An empty file :) Write a program with the same behavior, but different code. Hint: try to build your solution by remixing parts of the previous exercises, copy-pasting snippets of code and modifying them so they work together.
 
 ---

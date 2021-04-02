@@ -1,5 +1,12 @@
 'use strict';
 
+/* look out for:
+
+  - conditional checks
+  - break vs. continue
+
+*/
+
 const instructions =
   'calculate the average of many numbers:\n\n' +
   '- you must input something\n' +

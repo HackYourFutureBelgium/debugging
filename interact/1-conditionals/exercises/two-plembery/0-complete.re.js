@@ -1,11 +1,5 @@
 'use strict';
 
-/* Two-Player Remembery
-
-  fill in the blanks to complete the logic
-
-*/
-
 const instructions = `Two-Player Remembery
 
   Player 1:

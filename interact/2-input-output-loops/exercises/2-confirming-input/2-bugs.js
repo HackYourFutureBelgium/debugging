@@ -1,5 +1,13 @@
 'use strict';
 
+/* look out for:
+
+  - look condition
+  - conditional checks
+  - which interaction functions are used
+
+*/
+
 let userInput = '';
 let userConfirmed = false;
 while (userConfirmed) {

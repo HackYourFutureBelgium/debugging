@@ -1,5 +1,11 @@
 'use strict';
 
+/* look out for:
+
+  - unnecessary variable declarations
+
+*/
+
 let userInput = '';
 let asciiShift = NaN;
 
