@@ -13,6 +13,9 @@
 
   here's a nice intro: https://www.youtube.com/watch?v=H0XScE08hy8
 
+  Hint: try using the `run` and `debug` buttons, what's the difference?
+    what happens to your breakpoints when you close your tab and open it again?
+
 */
 
 const firstName = 'Brobes';
