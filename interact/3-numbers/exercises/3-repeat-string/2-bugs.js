@@ -1,7 +1,7 @@
 'use strict';
 
-let userInput = '';
-let repetitions = NaN;
+const userInput = '';
+const repetitions = NaN;
 while (true) {
   userInput = prompt('enter a phrase to repeat:');
 

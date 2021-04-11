@@ -11,6 +11,8 @@
 
   there are no exercises, just practice in the coming chapters!
 
+  Hint: try using the `run` and `debug` buttons, what's the difference?
+
 */
 
 const firstName = 'Brobes';

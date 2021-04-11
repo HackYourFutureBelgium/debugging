@@ -1,5 +1,13 @@
 # Isolating JavaScript
 
+> Careful! The goal of these exercises is to help you master JavaScript execution, and to become familiar reading, writing and refactoring some core JS language features. The goal of these exercises _is not_ to teach you best practices.
+>
+> In fact, some of the exercises in this folder are _bad_ practices. For example you will be learning how type coercion works with primitives and operators, you _should not_ write code that uses type coercion on purpose. But you will come across code that does and you will have bugs related type coercion, so it's good to learn how it works.
+>
+> Some of the exercises in this folder will be difficult and abstract. you do not need to finish everything at once, you can always start a set of exercises and come back to finish them later.
+
+---
+
 Studying JavaScript will be challenging. The HYF way of learning is not glamorous. You will need to learn how you study JS, and very importantly
 
 - you will need to adjust your learning expectations
@@ -17,7 +25,7 @@ Programming is all about inner processes. You should focus 100% on what happens 
 _Program Memory_ is a term that refers to the values stored in memory at EACH SPECIFIC moment of execution. These values can change often, sometimes at every step of your program! Learning to program requires you to understand:
 
 - how does the JS engine represent memory?
-- how does the JS engine interpret your code line-by-line?
+- how does the JS engine interpret your code step-by-step?
 - how does each instruction interact with program memory?
 
 Your first goal is learning to see what is happening inside your program at each step:

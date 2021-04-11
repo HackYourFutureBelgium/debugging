@@ -13,7 +13,12 @@ console.assert(isTrue, 'NaN is not equal to NaN');
 const isFalse = NaN === NaN;
 console.assert(isFalse, 'NaN is equal to NaN');
 
-
+/* There are two common ways to test NaN values. First one is isNaN(),
+ * and the second is Number.isNaN().
+ * isNaN() method first converts any value provided to a number and then compares it with NaN.
+ * Unlike the global isNaN(), second method Number.isNaN() doesn't forcefully convert
+ * the parameter to a number. Only values of the type number, that are also NaN, result in true.
+ */
 console.log('--- Number.isNaN(x) returns true if a value is NaN ');
 // this is the best practice for checking if a value is NaN
 
@@ -29,8 +34,11 @@ console.log(typeof numIsNan3, numIsNan3);
 const numIsNan4 = Number.isNaN('4');
 console.log(typeof numIsNan4, numIsNan4);
 
-
-console.log('--- isNaN(x) returns true if a value casts to NaN ');
+console.log(
+  '--- isNaN(x) returns true if a the converted number value equals to NaN '
+);
+// isNaN() method first converts any value provided to a number
+// and then checks if it is NaN.
 
 const isNan1 = isNaN(NaN);
 console.log(typeof isNan1, isNan1);
@@ -44,8 +52,7 @@ console.log(typeof isNan3, isNan3);
 const isNan4 = isNaN('4');
 console.log(typeof isNan4, isNan4);
 
-
-console.log('--- isNaN is the same as Number then Number.isNaN');
+console.log('--- isNaN is the same as Number() then Number.isNaN');
 
 const numA = Number(NaN);
 const isNanA = isNaN(numA);

@@ -7,7 +7,7 @@ while (!inputIsAboutFrogs) {
 
   if (inputIsAboutFrogs === '' && inputIsAboutFrogs === null) {
     alert('that is not something');
-  } else if (userInput.search(/frog/i) === true) {
+  } else if (/frog/i.test('frog') === true) {
     inputIsAboutFrogs = false;
   } else {
     alert('nope, not about frogs.  try again.');

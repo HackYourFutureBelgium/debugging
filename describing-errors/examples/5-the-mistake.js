@@ -9,13 +9,14 @@
   instead of putting a line number on the mistake you will mark it with a comment
     line numbers change, the comment will always be there
 
-  no go ahead and mark the mistake then describe it in your description:
+  no go ahead and mark the mistake then describe it in your description
+  this might take a few tries, keep note of all the different things you checked
 
 */
 
 
 /*
-  browser: Chrome
+  environment: Chrome
 
   name: SyntaxError
   message:  Unexpected token '}'
@@ -28,6 +29,7 @@
   life cycle: creation phase
 
   the mistake: there is no opening curly brace around the for loop
+    it wasn't: a problem with the for loop conditions
 
   the fix(es):
 */

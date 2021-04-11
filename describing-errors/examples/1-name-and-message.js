@@ -10,7 +10,28 @@
 
   your errors will probably say Uncaught, you can ignore that for now
 
-  go ahead and fill in the "name" and "message fields in your error description"
+  go ahead and fill in the "name" and "message" fields in your error description
+
+  About Searching for Help:
+
+  When searching online for help with your errors, it's important to include:
+  - environment
+  - name
+  - message
+
+  the more information you include in you search the better ...
+  ... except for your program's variable names and file names!
+
+  Some error messages will contain information that is specific to your program
+  you do not need to include this in your search, for example:
+
+    ReferenceError: redApples is not defined
+
+  redApples is a variable name in your program, not general information about your error:
+
+    ReferenceError: _ is not defined
+
+  leaving out the variable name will give you the same search results
 
 */
 
@@ -19,7 +40,7 @@
 
 
 /*
-  browser: Chrome
+  environment: Chrome
 
   name: SyntaxError
   message:  Unexpected token '}'

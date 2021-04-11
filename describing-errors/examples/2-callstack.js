@@ -20,7 +20,7 @@
 
 
 /*
-  browser: Chrome
+  environment: Chrome
 
   name: SyntaxError
   message:  Unexpected token '}'
