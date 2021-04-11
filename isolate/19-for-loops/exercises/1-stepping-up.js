@@ -23,7 +23,6 @@ const totalRepetitions = 4;
 let repeatedString = '';
 
 
-// fill in the _ of the loophead using an existing variable
 for (_; i < _; _) {
   repeatedString += _;
   console.log(repeatedString);
