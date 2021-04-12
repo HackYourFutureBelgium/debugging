@@ -480,3 +480,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
 1. Week 1:
   - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
   - [Describing Errors](https://vimeo.com/530238051)
+
+1. Week 2:
+  - Part 1 hasn't been recorded due to a technical issue. Our apologies.
+  - [Part 2](https://vimeo.com/535777690)
