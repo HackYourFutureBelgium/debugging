@@ -494,9 +494,11 @@ Try make at least one contribution per day to the class `/javascript` study guid
 
 ### [Class-13-14](https://github.com/hackyourfuturebelgium/class-13-14)
 
-> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb), [Emilien](https://github.com/EmilienD)
 
 1. Week 1:
-
-- Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
-- [Describing Errors](https://vimeo.com/530238051)
+   - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
+   - [Describing Errors](https://vimeo.com/530238051)
+2. Week 2:
+   - Part 1 hasn't been recorded due to a technical issue. Our apologies.
+   - [Part 2](https://vimeo.com/535777690)
