@@ -2,9 +2,10 @@
 
 /* ||
   the or operator does not evaluate to true or false!
-  it returns the left value or the right value
-  - if the left is truthy, it returns the left value
-  - if the left is falsy, it returns the right value
+  it reads from left to right and evaluates to the first truthy value
+  (if there is a truthy value)
+  - if the left is truthy, it evaluates to the left value
+  - if the left is falsy, it evaluates to the right value
 */
 
 const or1 = 0 || 0;

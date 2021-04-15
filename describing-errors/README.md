@@ -32,6 +32,13 @@ Learning to recognize the difference between your source code (simply a text fil
    - **creation phase errors**: Bad "spelling" or bad "grammar". Your program can either not be understood by the JS interpreter, or made a mistake that the interpreter was able to find without running your code. Your program will not continue to the execution phase.
    - **execution phase errors**: Commonly called "runtime errors". You made no syntax errors and no semantic errors the interpreter could catch, so your program entered execution phase. But somewhere in your program you instructed JavaScript to do something that is not possible, maybe trying to use a variable that wasn't declared.
 
+### All together:
+
+| _Error Classifications_ |                                                                                               syntax error                                                                                                |                                                                                                         semantic error                                                                                                         |
+| :---------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   **creation phase**    |                                   Bad spelling, the compiler can't understand (or "parse") what you've written. Your program will not continue to the execution phase.                                    |                 The compiler was able to parse your code, but you tried doing something the compiler will not allow. An error is thrown before entering execution phase. (ie. reassigning a constant variable)                 |
+|   **execution phase**   | These are less common, generally by the time your program is running there are no syntax errors. But in some cases it is possible to have run-time syntax errors in JS, worry about that when it happens. | "runtime errors". You made no syntax errors, and no semantic errors the compiler can catch. Instead you wrote a command JS doesn't allow and won't notice untill it tries to execute that line. (these are the hardest to fix) |
+
 ---
 
 ## The Exercises
