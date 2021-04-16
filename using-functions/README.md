@@ -13,6 +13,8 @@ Enough of that, let's get started.
 
 ## Reading Programs with Functions
 
+Other developers should be able to know WHAT your code does without needing to read every line. Functions and JSDocs are a great way to do this. When you write your programs using well-named functions and a clear JSDoc comment, other people can understand your main program without needing to read the code inside your functions!
+
 Reading programs that use functions is not the same as what you've seen before, you will need to start thinking of your programs as having two different phases:
 
 1. declaring functions
@@ -29,10 +31,8 @@ The programs in this folder are divided by comments to make this difference clea
 6. read the function bodies - look inside each function and understand how they were implemented
 7. use the program one last time, this time noting when the user is interacting with the main program and when the main program is calling a function.
 
-Your turn:
-
 <details>
-<summary>A little practice program</summary>
+<summary>A little example program</summary>
 
 ```js
 'use strict';
@@ -107,7 +107,7 @@ The next level up from calling functions is writing them. In the `write-function
 
 Time for tests! Besides documentation, each empty function will have a few tests to give you confidence that they do what you think they do. Tests are your friends, they catch your mistakes so you don't have to : )
 
-You will be writing some code in the empty body of the functions to pass the tests and make the program work.
+You will be writing some code in the empty body of the functions to pass the tests and make the program work. There is more than one file for each exercise, that's because you need to write more than one function that passes the same tests!
 
 ### 3. Refactor Logic
 
@@ -117,4 +117,4 @@ Refactoring functions isn't as easy as it sounds! And it's more important than y
 
 ### 4. Avoid Side-Effects
 
-> coming soon
+Practice using, writing and refactoring functions that process arrays. Be careful of side-effects! Your functions should return new arrays and not modify the original one.

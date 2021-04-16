@@ -443,7 +443,7 @@ This week's class will focus almost entirely on how arrays/objects are stored in
 ### After Class
 
 - 🥚 [./isolate](./isolate): through Side Effects. Reference vs. Value and Side Effects are another "invisible" thing about JS, you can't see it in the source code! You need to understand how JS program memory works and to learn how debugging tools can help you see this
-- 🐣 [./interact](./interact): Arrays and Objects
+- 🐣 [./interact](./interact): Arrays
 - 🐣 [./using-functions](./using-functions): Avoid Side-Effects
 
 Keep working through your favorite tutorials and the exercises in this repository. It's important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
