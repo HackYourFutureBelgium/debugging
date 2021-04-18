@@ -1,5 +1,12 @@
 'use strict';
 
+/* look out for:
+
+  - conditional checks
+  - bad addition (incorrect assignment operator)
+
+*/
+
 const instructions =
   'calculate the sum of many numbers:\n\n' +
   '- you must input something\n' +

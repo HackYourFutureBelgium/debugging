@@ -22,7 +22,7 @@ const instructions = `A Guessing Game
 2. Player 2 reads the clue and guesses the phrase`;
 alert(instructions);
 
-// -- Chunk 1: player 1 enters the phrase and clue --
+// -- goal 1: player 1 enters the phrase and clue --
 
 /* declare & assign phrase & clue
   these variables are used to collect the main program data
@@ -53,11 +53,17 @@ while (!userConfirmedInput) {
     give player 2 a chance to make changes to the phrase or clue
   */
   const confirmMessage =
-    'Player 1, is this correct?\n\n' + '- phrase: "' + phrase + '"\n' + '- clue: "' + clue + '"\n';
+    'Player 1, is this correct?\n\n' +
+    '- phrase: "' +
+    phrase +
+    '"\n' +
+    '- clue: "' +
+    clue +
+    '"\n';
   userConfirmedInput = confirm(confirmMessage);
 }
 
-// -- Chunk 2: player 2 guesses the phrase --
+// -- goal 2: player 2 guesses the phrase --
 
 /* delcare and assign phraseGuess
   used to store player 2's guess and compare with the actual phrase
@@ -125,7 +131,7 @@ while (phraseGuess !== phrase) {
   guessHistory = guessHistory + '- "' + phraseGuess + '"\n';
 }
 
-// -- Chunk 3: evaluate the game and alert the results --
+// -- goal 3: evaluate the game and alert the results --
 
 if (didForfeit) {
   /* did the player forfeit the game? tell them the correct answer */
@@ -134,7 +140,12 @@ if (didForfeit) {
 } else if (phraseGuess === phrase) {
   /* did the player guess correctly? let them know! */
   const successMessage =
-    'Success in ' + guessCount + ' tries! \n\n' + 'you guessed "' + phrase + '" ';
+    'Success in ' +
+    guessCount +
+    ' tries! \n\n' +
+    'you guessed "' +
+    phrase +
+    '" ';
   alert(successMessage);
 } else {
   /* unreachable! the only ways to exit the loop are:

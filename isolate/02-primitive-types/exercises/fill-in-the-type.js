@@ -3,7 +3,6 @@
 // replace the _'s to complete the challenges
 //  you know it's right when your log matches the one below it
 
-
 console.log('-- example --');
 const example = null;
 console.log('object', null);
@@ -30,7 +29,16 @@ console.log(_, _);
 console.log(typeof challenge4, challenge4);
 
 console.log('-- challenge5 --');
-const challenge5 = (typeof (typeof false));
+const challenge5 = false;
 console.log(_, _);
 console.log(typeof challenge5, challenge5);
 
+console.log('-- challenge6 --');
+const challenge6 = undefined;
+console.log(_, _);
+console.log(typeof challenge6, challenge6);
+
+console.log('-- challenge7 --');
+const challenge7 = NaN;
+console.log(_, _);
+console.log(typeof challenge7, challenge7);

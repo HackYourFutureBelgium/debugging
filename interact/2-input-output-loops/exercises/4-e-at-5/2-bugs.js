@@ -1,5 +1,13 @@
 'use strict';
 
+/* look out for
+
+  - comparison vs. assignment
+  - off-by-one character index
+  - reversing boolean flag
+
+*/
+
 let validInput = '';
 let isValid = false;
 while (!isValid) {

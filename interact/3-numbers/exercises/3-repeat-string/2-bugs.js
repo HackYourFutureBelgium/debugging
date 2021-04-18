@@ -1,5 +1,14 @@
 'use strict';
 
+/* look out for:
+
+  - variable declarations
+  - missing condition in while loop
+  - off-by-one in for loop
+  - missing string concatenation
+
+*/
+
 const userInput = '';
 const repetitions = NaN;
 while (true) {

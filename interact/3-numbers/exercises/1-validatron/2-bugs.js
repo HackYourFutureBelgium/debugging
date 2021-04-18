@@ -1,5 +1,13 @@
 'use strict';
 
+/* look out for:
+
+  - an incorrect way to check for NaN
+  - incorrect interaction function
+  - comparison vs. assignment
+
+*/
+
 const userString = prompt('enter a number:');
 const userNumber = Number(userString);
 

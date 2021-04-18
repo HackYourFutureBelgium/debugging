@@ -1,5 +1,11 @@
 'use strict';
 
+/* look out for:
+
+  - you're on your own!
+
+*/
+
 let userString = '';
 let repetitions = NaN;
 

@@ -1,5 +1,12 @@
 'use strict';
 
+/* look out for:
+
+  - logical operators
+  - boolean flag values
+
+*/
+
 let userInput = '';
 let inputIsAboutFrogs = true;
 while (!inputIsAboutFrogs) {
@@ -7,7 +14,9 @@ while (!inputIsAboutFrogs) {
 
   if (inputIsAboutFrogs === '' && inputIsAboutFrogs === null) {
     alert('that is not something');
-  } else if (/frog/i.test('frog') === true) {
+  }
+  // regular expression: this works!
+  else if (/frog/i.test(userInput) === true) {
     inputIsAboutFrogs = false;
   } else {
     alert('nope, not about frogs.  try again.');

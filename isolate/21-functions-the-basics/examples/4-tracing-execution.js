@@ -1,4 +1,9 @@
-// PS. Study this in JS Tutor and the debugger
+/* 
+  hint. the step numbers in this file are for JS Tutor
+  the debugger and trace button will be a little different
+  the program works the same everywhere
+    each tool just visualizes things differently
+*/  
 
 // 1: use strict
 'use strict';
