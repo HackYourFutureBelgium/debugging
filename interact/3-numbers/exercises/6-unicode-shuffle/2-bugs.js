@@ -7,7 +7,7 @@
 */
 
 let userInput = '';
-let asciiShift = NaN;
+let unicodeShift = NaN;
 
 while (true) {
   const userInput = prompt(
@@ -18,24 +18,24 @@ while (true) {
     alert('nope, enter something');
   } else {
     while (true) {
-      const asciiShiftInput = prompt(
-        'how many ascii numbers do you want the characters to shift?'
+      const unicodeShiftInput = prompt(
+        'how many unicode numbers do you want the characters to shift?'
       );
 
-      if (asciiShiftInput === null || asciiShiftInput === '') {
+      if (unicodeShiftInput === null || unicodeShiftInput === '') {
         alert('enter something');
       } else {
-        const asciiShift = Number(asciiShiftInput);
+        const unicodeShift = Number(unicodeShiftInput);
 
-        if (Number.isNaN(asciiShift)) {
-          alert('"' + asciiShiftInput + '" is not a number');
+        if (Number.isNaN(unicodeShift)) {
+          alert('"' + unicodeShiftInput + '" is not a number');
         } else {
           break;
         }
       }
     }
     const confirmMessage =
-      'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + asciiShift;
+      'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + unicodeShift;
     const confirmation = confirm(confirmMessage);
     if (confirmation) {
       break;
@@ -47,7 +47,7 @@ let encodedString = '';
 
 for (const character of userInput) {
   const characterCode = character.charCodeAt();
-  const newCharCode = characterCode + asciiShift;
+  const newCharCode = characterCode + unicodeShift;
   const encodedCharacter = String.fromCharCode(newCharCode);
   encodedString += encodedCharacter;
 }

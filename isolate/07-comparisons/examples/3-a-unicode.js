@@ -24,7 +24,6 @@
 
 */
 
-
 // the .charCodeAt() method will tell you the number of a character
 // you'll need to keep this in mind to understand the next files
 
@@ -34,7 +33,13 @@ console.log(typeof e, e, '->', typeof eUnicodeNumber, eUnicodeNumber);
 
 const hashtag = '#';
 const hashtagUnicodeNumber = hashtag.charCodeAt();
-console.log(typeof hashtag, hashtag, '->', typeof hashtagUnicodeNumber, hashtagUnicodeNumber);
+console.log(
+  typeof hashtag,
+  hashtag,
+  '->',
+  typeof hashtagUnicodeNumber,
+  hashtagUnicodeNumber
+);
 
 const two = '2';
 const twoUnicodeNumber = two.charCodeAt();
@@ -42,4 +47,10 @@ console.log(typeof two, two, '->', typeof twoUnicodeNumber, twoUnicodeNumber);
 
 const space = ' ';
 const spaceUnicodeNumber = space.charCodeAt();
-console.log(typeof space, space, '->', typeof spaceUnicodeNumber, spaceUnicodeNumber);
+console.log(
+  typeof space,
+  space,
+  '->',
+  typeof spaceUnicodeNumber,
+  spaceUnicodeNumber
+);

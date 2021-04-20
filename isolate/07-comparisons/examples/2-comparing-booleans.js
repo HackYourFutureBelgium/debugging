@@ -15,30 +15,26 @@
 
 */
 
-
 // this is equivalent to writing:  1 > 0
-const _1_a_compareImplicit = true > false;
-const _1_b_compareExplicit = Number(true) > Number(false);
-console.log('_1_a_compareImplicit:', typeof _1_a_compareImplicit, _1_a_compareImplicit);
-console.log('_1_b_compareExplicit:', typeof _1_b_compareExplicit, _1_b_compareExplicit);
-
+const _1_a_implicit = true > false;
+const _1_b_explicit = Number(true) > Number(false);
+console.log('_1_a_implicit:', typeof _1_a_implicit, _1_a_implicit);
+console.log('_1_b_explicit:', typeof _1_b_explicit, _1_b_explicit);
 
 // this is equivalent to writing:  0 < 0
-const _2_a_compareImplicit = false < false;
-const _2_b_compareExplicit = Number(false) < Number(false);
-console.log('_2_a_compareImplicit:', typeof _2_a_compareImplicit, _2_a_compareImplicit);
-console.log('_2_b_compareExplicit:', typeof _2_b_compareExplicit, _2_b_compareExplicit);
-
+const _2_a_implicit = false < false;
+const _2_b_explicit = Number(false) < Number(false);
+console.log('_2_a_implicit:', typeof _2_a_implicit, _2_a_implicit);
+console.log('_2_b_explicit:', typeof _2_b_explicit, _2_b_explicit);
 
 // this is equivalent to writing:  0 >= 1
-const _3_a_compareImplicit = false >= true;
-const _3_b_compareExplicit = Number(false) >= Number(true);
-console.log('_3_a_compareImplicit:', typeof _3_a_compareImplicit, _3_a_compareImplicit);
-console.log('_3_b_compareExplicit:', typeof _3_b_compareExplicit, _3_b_compareExplicit);
-
+const _3_a_implicit = false >= true;
+const _3_b_explicit = Number(false) >= Number(true);
+console.log('_3_a_implicit:', typeof _3_a_implicit, _3_a_implicit);
+console.log('_3_b_explicit:', typeof _3_b_explicit, _3_b_explicit);
 
 // this is equivalent to writing:  1 <= 1
-const _4_a_compareImplicit = true <= true;
-const _4_b_compareExplicit = Number(true) <= Number(true);
-console.log('_4_a_compareImplicit:', typeof _4_a_compareImplicit, _4_a_compareImplicit);
-console.log('_4_b_compareExplicit:', typeof _4_b_compareExplicit, _4_b_compareExplicit);
+const _4_a_implicit = true <= true;
+const _4_b_explicit = Number(true) <= Number(true);
+console.log('_4_a_implicit:', typeof _4_a_implicit, _4_a_implicit);
+console.log('_4_b_explicit:', typeof _4_b_explicit, _4_b_explicit);
