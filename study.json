@@ -1,5 +1,4 @@
 {
-  "--force": true,
   "--port": 4002,
   "study": {
     "eval": true,

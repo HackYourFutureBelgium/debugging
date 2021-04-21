@@ -1,5 +1,14 @@
 'use strict';
 
+/* look out for:
+
+  - variable declarations
+  - conditional checks
+  - break vs. continue
+  - incorrect casting to Number
+
+*/
+
 const userNumber = NaN;
 while (Number.isNaN(userNumber)) {
   const userInput = prompt('enter a number');

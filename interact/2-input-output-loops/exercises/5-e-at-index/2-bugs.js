@@ -1,5 +1,13 @@
 'use strict';
 
+/* look out for:
+
+  - math operators
+  - break vs. continue
+  - off-by-one string index
+
+*/
+
 let validInput = '';
 
 let index = 0;

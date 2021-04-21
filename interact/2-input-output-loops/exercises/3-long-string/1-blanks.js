@@ -19,5 +19,6 @@ while (isTooShort) {
   isTooShort = _;
 }
 
-const finalMessage = '"' + userInput + '" is ' + userInput.length + ' characters long';
+const finalMessage =
+  '"' + userInput + '" is ' + userInput.length + ' characters long';
 alert(finalMessage);

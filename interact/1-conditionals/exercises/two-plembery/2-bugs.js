@@ -1,8 +1,8 @@
 'use strict';
 
-/* Two-Player Remembery
+/* look out fo:
 
-  fill in the blanks to complete the logic
+  - variable names
 
 */
 

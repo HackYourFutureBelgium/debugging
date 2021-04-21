@@ -1,5 +1,12 @@
 'use strict';
 
+/* look out for:
+
+  - using the wrong variable name
+  - checking different random numbers instead of the same one
+
+*/
+
 const instructions =
   'Remembery, the game of remembering.\n\n' +
   'You will be prompted to enter 3 phrases.\n' +
@@ -23,6 +30,7 @@ while (input1 !== '' && input1 !== null) {
 
 alert('all saved! get ready to remember');
 
+const randomFrom1To3 = Math.ceil(Math.random() * 3);
 const userGuess = prompt('enter phrase number ', randomFrom1To3);
 
 let phraseToGuess = '';

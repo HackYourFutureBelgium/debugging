@@ -25,7 +25,7 @@ let repeatedString = '';
 let currentRepetitions = 0;
 while (_) {
   repeatedString = _;
-  currentRepetitions = _;
+  _; // currentRepetitions should grow by 1
   console.log(repeatedString);
 }
 

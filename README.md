@@ -61,11 +61,23 @@
 - Read the code out loud
 - Take a look through the [HYF Study Tips](https://home.hackyourfuture.be/students/study-tips) for more inspiration
 
+### Priorities
+
 If you can't finish all the material in this repository, that's expected! Anything you don't finish now will always be waiting for you to review when you need it. These 3 emoji's will help you prioritize your study time and to measure your progress:
 
 - 🥚 `:egg:` - Understanding this material is required, it covers the base skills you'll need for this module and the next. You do not need to finish all of them but should feel comfortable that you could with enough time.
 - 🐣 `:hatching_chick:` - Do your best to start this material. you don't need to master it or finish it but getting the main idea will be helpful for taking the next steps.
 - 🐥 `:hatched_chick:` - Have you finished all the 🥚's and started all the 🐣's? push yourself with these challenges.
+
+### Hashtags
+
+There's sooo many examples and exercises in this repository, it's easy to forget of what you still need to finish or what you want to review again. Luckily VSCode is really good at searching through folders of code.
+
+You can write hashtags in your comments while you're studying, then search for those hashtags later so you don't miss anything. Here's some ideas:
+
+- `// #not-done, still a few blanks left` - search for `#not-done` in VScode to find all the exercises you've started and not finished
+- `// coercion is confusing, #review this again next week` - search for `#review` to find the files you need to study again
+- ... anything goes! Find the hashtags that work for you
 
 [TOP](#debugging)
 
@@ -120,14 +132,12 @@ What can you expect to learn in this module?
   - `let` & `const`
   - Declaration, Assignment & Re-Assignment.
   - Block Scope
-  - `var` and hoisting
 - Functions
   - `() => {}`:
   - Declaring vs. Calling
   - Arguments vs. Parameters
   - Return Values
   - Lexical scope
-  - `function`: hoisting
 - Control Flow
   - Conditionals
   - Loops
@@ -212,9 +222,10 @@ Helpful resources for this module
 - 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
 - 🥚 **[./describing-errors](./describing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
 - 🥚 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
-- 🥚 **[./interact](./interact)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- 🥚 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad once you get it, the key to understanding hoisting is to understand the program life-cycle: _creation phase_ and _execution phase_. Finally the mysteries of `var` and `function` will be clear.
-- 🐣 **[./break-these](./break-these)**: Some small sites and games built using HTML, CSS and JavaScript. Break them and fix them to learn how they work! All of the projects have comments helping you find the most interesting parts to break, and some ideas for how to break them.
+- 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
+- 🥚 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
+- 🐣 **[./interact](./interact)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
+- 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions to organize and and reuse your code.
 - 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
 
 ### More Examples and Exercises
@@ -226,9 +237,9 @@ Helpful resources for this module
 - dinanathsj29: [Tutorial](https://github.com/dinanathsj29/javascript-beginners-tutorial), [Exercises](https://github.com/dinanathsj29/javascript-exercise-beginners)
 - [deep-js-foundations](https://github.com/valterex/deep-js-foundations)
 
-### Regular Expressions
+### 🐥 Regular Expressions
 
-You can get by without them, but when they're helpful they're really helpful.
+You can get by without them, but when they're helpful they're very helpful.
 
 - Interactives
   - [regex.guide](https://regex.guide/): learn to build regular expressions one question at a time
@@ -282,10 +293,11 @@ Dig deeper into program execution and the debugger by learning how to describe e
 
 Learning to program with JavaScript is a marathon. This week you can keep working through your favorite tutorials, and be sure make time to get comfortable stepping through and predicting small programs in your debugger. Try starting with:
 
-- [./stepping-through](./stepping-through)
-- [./describing-errors](./describing-errors): until it's _almost_ easy
-- [./interact](./interact): through conditionals
-- [./isolate](./isolate): through conditionals
+- 🥚 [./stepping-through](./stepping-through)
+- 🥚 [./describing-errors](./describing-errors): until it's _almost_ easy
+- 🐣 [./isolate](./isolate): through conditionals
+- 🥚 [./logging](./logging): until it starts to make sense, you'll get plenty of time to practice in /interact
+- 🐣 [./interact](./interact): through conditionals
 
 Isolate goes in depth on type coercion and primitive operators. You aren't expected to master these topics in one week, it will take lots of practice for this to sink in.
 
@@ -336,6 +348,10 @@ The topics for this Sunday will be `while` and `for` loops, and a little bit of 
 
 ### After Class
 
+- 🥚 [./isolate](./isolate): through Refactoring Loops
+- 🐣 [./naming-variables](./naming-variables): until it starts to make sense, you'll get plenty of time to practice in /interact
+- 🐣 [./interact](./interact): through Numbers
+
 Keep working your way through your favorite tutorials and the exercises in this repository.
 
 Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
@@ -349,7 +365,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
 
 ## Week 3
 
-Create readable and reusable code with functions.
+Learn to trace function execution, and to use function in small programs.
 
 <details>
 <summary>expand/collapse</summary>
@@ -373,7 +389,6 @@ Prep work:
   - [Functions & Return](https://www.youtube.com/watch?v=qRnUBiTJ66Y)
 - Examples
   - [./isolate](./isolate): functions, the basics
-  - [./interact](./interact): using-functions/1-call-functions
 
 ### During Class
 
@@ -383,14 +398,14 @@ Prep work:
 
 #### After Break
 
-- [./interact](./interact): using-functions/2-write-functions
+- [./isolate](./isolate): functions, the basics + documenting
 
 ### After Class
 
 Keep working your way through your favorite tutorials and the exercises in this repository. If you haven't already, take a look at:
 
-- [./hoisting](./hoisting)
-- [./break-these](./break-these), you might be surprised by how much you've learned already!
+- 🥚 [./isolate](./isolate): through The Callstack
+- 🐣 [./using-functions](./using-functions): through Refactor Logic
 
 Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
 
@@ -427,7 +442,11 @@ This week's class will focus almost entirely on how arrays/objects are stored in
 
 ### After Class
 
-Keep working your way through your favorite tutorials and the exercises in this repository. It's very important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
+- 🥚 [./isolate](./isolate): through Side Effects. Reference vs. Value and Side Effects are another "invisible" thing about JS, you can't see it in the source code! You need to understand how JS program memory works and to learn how debugging tools can help you see this
+- 🐣 [./interact](./interact): Arrays
+- 🐣 [./using-functions](./using-functions): Avoid Side-Effects
+
+Keep working through your favorite tutorials and the exercises in this repository. It's important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
 
 Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
 
@@ -475,8 +494,15 @@ Try make at least one contribution per day to the class `/javascript` study guid
 
 ### [Class-13-14](https://github.com/hackyourfuturebelgium/class-13-14)
 
-> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb), [Emilien](https://github.com/EmilienD)
 
 1. Week 1:
-  - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
-  - [Describing Errors](https://vimeo.com/530238051)
+   - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
+   - [Describing Errors](https://vimeo.com/530238051)
+2. Week 2:
+   - Part 1 hasn't been recorded due to a technical issue. Our apologies.
+   - [Part 2](https://vimeo.com/535777690)
+
+3. Week 3:
+   - [Part 1](https://vimeo.com/538659747)
+   - [Part 2](https://vimeo.com/538671285)

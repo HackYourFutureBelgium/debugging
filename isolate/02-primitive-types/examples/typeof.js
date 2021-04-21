@@ -22,3 +22,21 @@ console.log(typeof undefinedValue, undefinedValue);
 
 const nullValue = null;
 console.log(typeof nullValue, nullValue);
+
+// typeof will always evaluate to a string
+//  this means the typeof any type is "string"
+
+const typeofTypeofNumber = typeof typeof 1;
+console.log(typeof typeofTypeofNumber, typeofTypeofNumber);
+
+const typeofTypeofBoolean = typeof typeof true;
+console.log(typeof typeofTypeofBoolean, typeofTypeofBoolean);
+
+const typeofTypeofString = typeof typeof 'hi';
+console.log(typeof typeofTypeofString, typeofTypeofString);
+
+const typeofTypeofUndefined = typeof typeof undefined;
+console.log(typeof typeofTypeofUndefined, typeofTypeofUndefined);
+
+const typeofTypeofNull = typeof typeof null;
+console.log(typeof typeofTypeofNull, typeofTypeofNull);
