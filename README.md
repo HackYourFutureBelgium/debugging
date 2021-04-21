@@ -502,3 +502,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
 2. Week 2:
    - Part 1 hasn't been recorded due to a technical issue. Our apologies.
    - [Part 2](https://vimeo.com/535777690)
+
+3. Week 3:
+   - [Part 1](https://vimeo.com/538659747)
+   - [Part 2](https://vimeo.com/538671285)
