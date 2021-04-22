@@ -1,6 +1,6 @@
 'use strict';
 
-/* Uppercaseify
+/* Reverse strings
 
   you can use for loops to do some logic for each element in a string
 
