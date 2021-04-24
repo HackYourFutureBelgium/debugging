@@ -1,22 +1,9 @@
 'use strict';
 
-/* Reverser
-
-  write a function that reverses a string, with all the good practices
-
-  - documentation
-  - default parameters
-
-*/
-
 /**
- * ___
- * ___
- * ___
+ *
  */
-const reverse = (text = '') => {
-
-};
+const reverse = () => {};
 
 const _1_expect = 'aaaa';
 const _1_actual = reverse('aaaa');
@@ -38,7 +25,7 @@ const _5_expect = '-+-';
 const _5_actual = reverse('-+-');
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-// test default parameter
+// test the default parameter
 const _6_expect = '';
 const _6_actual = reverse();
 console.assert(_6_actual === _6_expect, 'Test 6: default parameter');

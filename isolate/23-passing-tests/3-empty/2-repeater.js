@@ -1,23 +1,12 @@
 'use strict';
 
-/* Repeater
-
-  write a function that repeats a string, with all the good practices
-
-  - documentation
-  - default parameters
-
-*/
-
 /**
  * ___
  * @param {string} text - ___
  * @param {number} repeats - ___
  * @returns {string} ___
  */
-const repeat = () => {
-
-};
+const repeat = () => {};
 
 const _1_expect = 'aaaa';
 const _1_actual = repeat('aaaa', 1);
@@ -35,8 +24,7 @@ const _4_expect = 'abcabcabc';
 const _4_actual = repeat('abc', 3);
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-
-// test default parameters
+// test the default parameters
 const _5_expect = '-+-';
 const _5_actual = repeat('-+-');
 console.assert(_5_actual === _5_expect, 'Test 5: second default parameter');
@@ -44,4 +32,3 @@ console.assert(_5_actual === _5_expect, 'Test 5: second default parameter');
 const _6_expect = '';
 const _6_actual = repeat();
 console.assert(_6_actual === _6_expect, 'Test 6: both default parameters');
-

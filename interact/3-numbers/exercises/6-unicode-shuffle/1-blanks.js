@@ -1,7 +1,7 @@
 'use strict';
 
 let userInput = '';
-let asciiShift = NaN;
+let unicodeShift = NaN;
 
 let userConfirmed = false;
 while (_) {
@@ -15,25 +15,25 @@ while (_) {
   }
 
   while (_) {
-    const asciiShiftInput = prompt(
-      'how many ascii numbers do you want the characters to shift?'
+    const unicodeShiftInput = prompt(
+      'how many unicode numbers do you want the characters to shift?'
     );
 
-    if (asciiShiftInput === null || asciiShiftInput === '') {
+    if (unicodeShiftInput === null || unicodeShiftInput === '') {
       alert('enter something');
       continue;
     }
 
-    _ = Number(asciiShiftInput);
+    _ = Number(unicodeShiftInput);
 
     if (_) {
-      alert('"' + asciiShiftInput + '" is not a number');
+      alert('"' + unicodeShiftInput + '" is not a number');
     } else {
       break;
     }
   }
   const confirmMessage =
-    'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + asciiShift;
+    'is this correct?\n\n' + '- "' + userInput + '"\n' + '- ' + unicodeShift;
   _ = confirm(confirmMessage);
 }
 
@@ -41,7 +41,7 @@ let encodedString = '';
 
 for (const character of userInput) {
   const characterCode = character._();
-  const newCharCode = characterCode + asciiShift;
+  const newCharCode = characterCode + unicodeShift;
   const encodedCharacter = String._(newCharCode);
   encodedString += encodedCharacter;
 }
