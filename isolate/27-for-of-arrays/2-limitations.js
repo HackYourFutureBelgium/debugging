@@ -23,7 +23,7 @@ for (let i = trees.length - 1; i >= 0; i--) {
 }
 
 // log every other item in the array
-for (let i = trees.length - 1; i >= 0; i += 2) {
+for (let i = 1; i <= trees.length - 1; i += 2) {
   const tree = trees[i];
   console.log('- ' + tree);
 }
