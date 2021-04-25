@@ -1,6 +1,6 @@
 'use strict';
 
-// two different objects with the same values
+// two different objects with different values
 //  how many solutions can you find?
 // psst.  use JS Tutor & the debugger
 
