@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const word = 'pitsicola';
 
@@ -17,3 +18,6 @@ while (index < _._) {
 }
 
 console.assert(index === _._, 'there are this many letters in the word');
+
+
+console.log('-- end --');

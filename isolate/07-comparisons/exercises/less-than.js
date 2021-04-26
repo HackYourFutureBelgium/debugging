@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // a < b
 // if both args are strings, compare the unicode characters
@@ -6,7 +7,6 @@
 
 // fill in the blanks to pass the assertions
 // there may be more than one correct answer!
-
 
 const _1_expect = _;
 const _1_native = '1' < 1;
@@ -43,3 +43,6 @@ console.assert(_8_expect === _8_native, 'Test 8');
 const _9_expect = _;
 const _9_native = 0 < '';
 console.assert(_9_expect === _9_native, 'Test 9');
+
+
+console.log('-- end --');

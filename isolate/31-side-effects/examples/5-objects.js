@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // objects work the same as arrays:
 
@@ -33,3 +34,6 @@ console.assert(user.name === 'robert', 'Test 2 b');
 // we chose a loop to show the idea of creating and filling a new array
 //  https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array/
 //  https://futurestud.io/tutorials/clone-copy-an-array-in-javascript-and-node-js
+
+
+console.log('-- end --');

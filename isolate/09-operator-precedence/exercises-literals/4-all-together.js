@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write lots of comments!  explain your thinking at each step
 
@@ -9,3 +10,6 @@ const step0 = 12 % '3' || !!NaN;
 console.assert(step0 === expected, 'Step 0');
 
 // how may steps are there?
+
+
+console.log('-- end --');

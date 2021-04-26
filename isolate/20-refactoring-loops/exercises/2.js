@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const minutesLeft = 9;
 
@@ -8,3 +9,6 @@ for (let i = minutesLeft; i > 0; i--) {
 }
 
 // refactor this for loop to a while loop
+
+
+console.log('-- end --');

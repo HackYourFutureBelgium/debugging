@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -22,3 +23,6 @@ console.log(computedPropertyNames.firstName); // 'Brendan'
 console.log(computedPropertyNames.lastName); // 'Eich'
 
 // https://ui.dev/computed-property-names/
+
+
+console.log('-- end --');

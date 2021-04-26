@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   for...in give you access to each key in the object
@@ -30,3 +31,6 @@ for (const key in menagerie) {
   const value = menagerie[key];
   console.log('-' + value);
 }
+
+
+console.log('-- end --');

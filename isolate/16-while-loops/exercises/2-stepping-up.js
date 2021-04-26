@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Stepping Up
 
@@ -29,5 +30,10 @@ while (_) {
   console.log(repeatedString);
 }
 
-console.assert(repeatedString === 'howdyhowdyhowdyhowdy', '"howdy" should be repeated 4 times');
+console.assert(
+  repeatedString === 'howdyhowdyhowdyhowdy',
+  '"howdy" should be repeated 4 times'
+);
 
+
+console.log('-- end --');

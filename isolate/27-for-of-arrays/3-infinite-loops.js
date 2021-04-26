@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
 
@@ -11,3 +12,6 @@ for (const number of allNumbers) {
   allNumbers.push(number + 1);
   console.log(allNumbers);
 }
+
+
+console.log('-- end --');

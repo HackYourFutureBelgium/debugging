@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /**
  *
@@ -29,3 +30,6 @@ console.assert(_5_actual === _5_expect, 'Test 5');
 const _6_expect = '';
 const _6_actual = reverse();
 console.assert(_6_actual === _6_expect, 'Test 6: default parameter');
+
+
+console.log('-- end --');

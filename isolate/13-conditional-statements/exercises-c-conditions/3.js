@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write a condition to take the correct path
 //  use both value1 & value2 in your expressions
@@ -12,12 +13,13 @@ let path = '';
 
 if (_) {
   path = 'if';
-
 } else if (_) {
   path = 'else if';
-
 } else {
   path = 'else';
 }
 
 console.assert(path === 'if', 'path should be "if"');
+
+
+console.log('-- end --');

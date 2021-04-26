@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const school = 'HackYourFuture';
 
@@ -13,3 +14,6 @@ for (_; _; _) {}
 // write this for loop as a while loop:
 
 while (_) {}
+
+
+console.log('-- end --');

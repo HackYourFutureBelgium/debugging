@@ -29,3 +29,6 @@ console.log(typeof thirdComparison, thirdComparison);
 'value 2' = variable; // uncomment this line for an error
 
 
+
+
+console.log('-- end --');

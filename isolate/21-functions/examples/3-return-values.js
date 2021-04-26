@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // PS. study this in JS Tutor!
 
@@ -25,3 +26,6 @@ console.log('returned4:', returned4);
 
 const returned5 = findTheType();
 console.log('returned5:', returned5);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* !
   the not operator does evaluate to true or false
@@ -32,3 +33,6 @@ console.log(typeof not8, not8);
 
 const not9 = !1;
 console.log(typeof not9, not9);
+
+
+console.log('-- end --');

@@ -1,11 +1,12 @@
 'use strict';
+console.log('-- begin --');
 
 // PS. study this in JS Tutor!
 
 // functions allow you to reuse the same code with different values
 //  PARAMETERS declare variables available inside your function
 //  they are assigned a value when you EXECUTE the function
-const logTheParameter = (parameter) => {
+const logTheParameter = parameter => {
   console.log(typeof parameter, parameter);
 };
 
@@ -27,3 +28,6 @@ logTheParameter(arg3);
 
 // if no argument is passed, parameters will be undefined
 logTheParameter();
+
+
+console.log('-- end --');

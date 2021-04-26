@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Default Parameters
 
@@ -78,3 +79,6 @@ console.log('-- repeated6:', typeof repeated6, repeated6);
 // passing the wrong type for both parameters
 const repeated7 = repeater(true, undefined);
 console.log('-- repeated7:', typeof repeated7, repeated7);
+
+
+console.log('-- end --');

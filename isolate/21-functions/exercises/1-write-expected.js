@@ -1,8 +1,8 @@
 'use strict';
+console.log('-- begin --');
 
 // fill in the blanks to pass the assertions
 // fill in the documentation to describe the function
-
 
 const scramble = (param1, param2, param3) => {
   const result = param3 + param1 + param2;
@@ -39,3 +39,5 @@ const _6_actual = scramble('c', 'a', 'b');
 const _6_test = _6_actual === _6_expect;
 console.assert(_6_test, 'Test 6');
 
+
+console.log('-- end --');

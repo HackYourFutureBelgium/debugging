@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Arithmetic Edge Cases
 
@@ -14,8 +15,6 @@
 
 */
 
-
-
 /* NaN
   using NaN in an operation will make the result NaN
   careful, this is also true of values that coerce to NaN!
@@ -24,7 +23,6 @@
 const NaN_1 = NaN - 12;
 const NaN_2 = 'e' * 1;
 const NaN_3 = undefined / 18;
-
 
 /* 0 / 0
   0 / 0 === NaN
@@ -35,7 +33,6 @@ const zeroDividedByZero_1 = 0 / 0;
 const zeroDividedByZero_2 = false / null;
 const zeroDividedByZero_3 = 0 / '0';
 const zeroDividedByZero_4 = '0.0' / 0.0;
-
 
 /* x / 0
   anything (except 0 or NaN) divided by 0 will give Infinity
@@ -50,7 +47,6 @@ const divideByZero_4 = 18 / '0';
 const divideByZero_5 = NaN / 0;
 const divideByZero_6 = 0 / 0;
 
-
 /* 0 / x
   zero divided by anything (except NaN) is 0
   careful, this is also true of values that coerce to 0!
@@ -62,7 +58,6 @@ const zeroDivided_3 = 0 / '-12';
 const zeroDivided_4 = 0 / Infinity;
 // exception
 const zeroDivided_5 = 0 / NaN;
-
 
 /* Dividing by Infinity
   anything (except Infinity or NaN) divided by Infinity will give 0
@@ -76,7 +71,9 @@ const divideByInfinity_3 = -12 / '-Infinity';
 const divideByInfinity_4 = Infinity / Infinity;
 const divideByInfinity_5 = NaN / Infinity;
 
-
 /* And there's certainly more
   send a PR if you know of another good edge case!
 */
+
+
+console.log('-- end --');

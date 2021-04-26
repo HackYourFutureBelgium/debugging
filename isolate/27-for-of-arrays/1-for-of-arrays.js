@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const trees = ['birch', 'larch', 'oak'];
 
@@ -36,3 +37,6 @@ for (const number of allNumbers) {
   allNumbers.push(number + 1);
   console.log(allNumbers);
 }
+
+
+console.log('-- end --');

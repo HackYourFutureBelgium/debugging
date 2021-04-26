@@ -1,8 +1,9 @@
 'use strict';
+console.log('-- begin --');
 
 /* &&
   the and operator does not evaluate to true or false!
-  it reads from left to right and evaluates to the first falsy value 
+  it reads from left to right and evaluates to the first falsy value
   (if there is a falsy value)
   - if the left is falsy, it evaluates to the left value
   - if the left is truthy, it evaluates to the right value
@@ -35,3 +36,6 @@ console.log(typeof and8, and8);
 
 const and9 = 'poiu' && 'asdf';
 console.log(typeof and9, and9);
+
+
+console.log('-- end --');

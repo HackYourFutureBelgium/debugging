@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const word = 'pitsicola';
 
@@ -16,3 +17,6 @@ while (index < _._) {
 }
 
 console.assert(_ === _._, 'index should be the same as the word length');
+
+
+console.log('-- end --');

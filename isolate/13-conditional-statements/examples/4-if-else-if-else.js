@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* if / else if / else
 
@@ -19,26 +20,21 @@
 
 */
 
-
 const value = null;
 let path = '';
 
 if (typeof value === 'number') {
   console.log('value is a number');
   path = 'if';
-
 } else if (typeof value === 'boolean') {
   console.log('value is a boolean');
   path = 'else if 1';
-
 } else if (typeof value === 'string') {
   console.log('value is a string');
   path = 'else if 2';
-
 } else if (typeof value === 'undefined') {
   console.log('value is undefined');
   path = 'else if 3';
-
 } else {
   console.log('value is an object');
   path = 'else';
@@ -46,3 +42,5 @@ if (typeof value === 'number') {
 
 console.log(path);
 
+
+console.log('-- end --');

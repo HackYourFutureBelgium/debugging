@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Literals
 
@@ -29,7 +30,9 @@ console.assert(step2 === expected, 'Step 2');
 const step3 = '55';
 console.assert(step3 === expected, 'Step 3');
 
-
 /* remember short-circuiting, all the way back in "Logical Operators"
   the || operator will continue to evaluate the right side if the left is falsy
 */
+
+
+console.log('-- end --');

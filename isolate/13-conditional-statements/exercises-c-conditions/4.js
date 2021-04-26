@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write a condition to take the correct path
 //  use value1, value2 & value3 in your expressions
@@ -8,20 +9,20 @@
 
 const value1 = '200';
 const value2 = 200;
-const value3 = false
+const value3 = false;
 let path = '';
 
 if (_) {
   path = 'if';
-
 } else if (_) {
   path = 'else if 1';
-
 } else if (_) {
   path = 'else if 2';
-
 } else {
   path = 'else';
 }
 
 console.assert(path === 'else if 2', 'path should be "else if 2"');
+
+
+console.log('-- end --');

@@ -1,5 +1,6 @@
 // 1: use strict
 'use strict';
+console.log('-- begin --');
 
 /*
 
@@ -31,3 +32,6 @@ for (
   // 4, 7, 10: log the current value of `step`
   console.log(step);
 }
+
+
+console.log('-- end --');

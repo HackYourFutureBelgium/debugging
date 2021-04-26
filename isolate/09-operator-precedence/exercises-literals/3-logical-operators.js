@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write lots of comments!  explain your thinking at each step
 
@@ -25,3 +26,6 @@ console.assert(step2 === expected, 'Step 2');
 */
 const step3 = _;
 console.assert(step3 === expected, 'Step 3');
+
+
+console.log('-- end --');

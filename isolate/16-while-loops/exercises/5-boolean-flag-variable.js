@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Boolean Flag Variable
 
@@ -31,5 +32,10 @@ while (_) {
   }
 }
 
+console.assert(
+  paddedString === 'hi.:..:..:..:.',
+  '"hi" should have 12 padding characters'
+);
 
-console.assert(paddedString === 'hi.:..:..:..:.', '"hi" should have 12 padding characters');
+
+console.log('-- end --');

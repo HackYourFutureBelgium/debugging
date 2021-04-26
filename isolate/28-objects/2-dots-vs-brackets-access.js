@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -39,3 +40,6 @@ console.log(greetings.concerned); // undefined
 
 // https://github.com/HackYourFutureBelgium/just-javascript/tree/master/07-Properties
 // https://github.com/janke-learning/dots-vs-brackets
+
+
+console.log('-- end --');

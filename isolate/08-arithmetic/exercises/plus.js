@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* adding different types
 
@@ -11,13 +12,12 @@
 
 */
 
-
 const _1_expect = _;
 const _1_native = '1' + 1;
 console.assert(Object.is(_1_expect, _1_native), 'Test 1');
 
 const _2_expect = Infinity;
-const _2_native = _ + null
+const _2_native = _ + null;
 console.assert(Object.is(_2_expect, _2_native), 'Test 2');
 
 const _3_expect = _;
@@ -47,3 +47,6 @@ console.assert(Object.is(_8_expect, _8_native), 'Test 8');
 const _9_expect = _;
 const _9_native = undefined + '';
 console.assert(Object.is(_9_expect, _9_native), 'Test 9');
+
+
+console.log('-- end --');

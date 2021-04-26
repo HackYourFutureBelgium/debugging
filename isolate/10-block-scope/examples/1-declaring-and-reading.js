@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
 
@@ -42,3 +43,6 @@
   }
   console.log('3 c. ', tree); // oak
 }
+
+
+console.log('-- end --');

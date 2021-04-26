@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   for...of loops make it very easy to iterate through an array
@@ -37,3 +38,6 @@ for (let i = 1; i <= trees.length - 1; i += 2) {
 console.log('-- every other item: for-of ');
 for (const tree of trees) {
 }
+
+
+console.log('-- end --');

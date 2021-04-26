@@ -1,5 +1,6 @@
 // 1: use strict
 'use strict';
+console.log('-- begin --');
 
 /* anatomy of a while loop: https://javascript.info/while-for#the-while-loop
   while (condition) {
@@ -38,3 +39,6 @@ console.assert(a === 4, 'a should be 4');
 
   this is a simple analysis, what would you want to add?
 */
+
+
+console.log('-- end --');

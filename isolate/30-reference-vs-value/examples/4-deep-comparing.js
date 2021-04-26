@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* to test if two arrays contain the same entries
   you need to check each and every entry separately!
@@ -53,3 +54,6 @@ console.assert(deepCompareFirst, 'Compare first (with function)'); // break poin
 
 const deepCompareSecond = deepCompare(secondArr, expected);
 console.assert(deepCompareSecond, 'Compare second (with function)'); // break point here
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Reverse strings
 
@@ -14,7 +15,6 @@ console.log('originalString:', originalString);
 let reversedString = '';
 
 for (_; _; _) {
-
   const nextLetter = _;
   reversedString = _;
 
@@ -22,4 +22,10 @@ for (_; _; _) {
   console.log('reversedString:', reversedString);
 }
 
-console.assert(reversedString === 'edcba', 'reversed string is the original reversed');
+console.assert(
+  reversedString === 'edcba',
+  'reversed string is the original reversed'
+);
+
+
+console.log('-- end --');

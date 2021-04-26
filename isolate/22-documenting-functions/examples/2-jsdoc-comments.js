@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* there is a conventional way to describe your functions with a comment
 
@@ -56,3 +57,6 @@ const reverseString = (str = '') => {
     .reverse()
     .join('');
 };
+
+
+console.log('-- end --');

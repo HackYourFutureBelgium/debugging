@@ -47,3 +47,6 @@ console.log('ternary1:', typeof ternary1, ternary1);
 
 const ternary2 = false ? one === one : two === two;
 console.log('ternary2:', typeof ternary2, ternary2);
+
+
+console.log('-- end --');

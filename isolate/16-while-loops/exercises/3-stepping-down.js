@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Stepping Down
 
@@ -13,7 +14,6 @@
   fill in the loop condition and update the stepper variable
 
 */
-
 
 const holiday = 'winter solstice';
 const message = ' days remaining until ' + holiday;
@@ -34,3 +34,5 @@ console.log(finalTweet);
 
 console.assert(daysRemaining === 0, 'there are 0 days remaining');
 
+
+console.log('-- end --');

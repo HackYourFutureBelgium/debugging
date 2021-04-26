@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // casting to string is the simplest coercion
 //  it's (almost ;) as simple as putting quotes around the previous value
@@ -38,3 +39,6 @@ console.log(8, typeof _8_toCast, _8_toCast, '->', typeof _8_string, _8_string);
 const _9_toCast = NaN;
 const _9_string = String(_9_toCast);
 console.log(9, typeof _9_toCast, _9_toCast, '->', typeof _9_string, _9_string);
+
+
+console.log('-- end --');

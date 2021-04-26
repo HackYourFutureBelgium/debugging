@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Iterating Strings
 
@@ -42,3 +43,6 @@ for (let index = aString.length - 1; index >= 0; index--) {
   const nextCharacter = aString[index];
   console.log(index, nextCharacter);
 }
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Reversicasify
 
@@ -13,8 +14,12 @@ let reverseUpperCase = '';
 
 for (_; _; _) {
   // a blank canvas :)
-
-
 }
 
-console.assert(reverseUpperCase === 'EDCBA', 'reversed string is the original reversed');
+console.assert(
+  reverseUpperCase === 'EDCBA',
+  'reversed string is the original reversed'
+);
+
+
+console.log('-- end --');

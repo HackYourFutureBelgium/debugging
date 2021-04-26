@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   all variables used inside this function's body are declared as parameters
@@ -14,3 +15,6 @@ console.log('fromParams1:', fromParams1);
 
 const fromParams2 = usesParameters('a', 'b');
 console.log('fromParams2:', fromParams2);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // replace the _'s to complete the challenges
 //  you know it's right when your log matches the one below it
@@ -42,3 +43,6 @@ console.log('-- challenge7 --');
 const challenge7 = NaN;
 console.log(_, _);
 console.log(typeof challenge7, challenge7);
+
+
+console.log('-- end --');

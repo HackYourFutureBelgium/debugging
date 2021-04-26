@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -21,3 +22,6 @@ const findLast = 'lastName';
 
 const firstNameBracket = lukesFather[findFirst];
 const lastNameBracket = lukesFather[findLast];
+
+
+console.log('-- end --');

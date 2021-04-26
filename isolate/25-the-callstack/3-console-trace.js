@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* console.trace
 
@@ -11,23 +12,20 @@
 
 let depth = 0;
 
-
 const func1 = () => {
   depth++;
-  console.trace("depth:", depth);
+  console.trace('depth:', depth);
   depth--;
 };
 
 console.trace('depth:', depth);
 func1();
 
-
-
 const func2 = () => {
   depth++;
-  console.trace("depth:", depth);
+  console.trace('depth:', depth);
   func1();
-  console.trace("depth:", depth);
+  console.trace('depth:', depth);
   depth--;
 };
 
@@ -36,15 +34,16 @@ const func2 = () => {
 console.trace('depth:', depth);
 func2();
 
-
-
 const func3 = () => {
   depth++;
-  console.trace("depth:", depth);
+  console.trace('depth:', depth);
   func2();
-  console.trace("depth:", depth);
+  console.trace('depth:', depth);
   depth--;
 };
 
 console.trace('depth:', depth);
 func3();
+
+
+console.log('-- end --');

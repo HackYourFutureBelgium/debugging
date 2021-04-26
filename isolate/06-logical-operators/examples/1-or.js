@@ -34,3 +34,6 @@ console.log(typeof or8, or8);
 
 const or9 = "poiu" || "asdf";
 console.log(typeof or9, or9);
+
+
+console.log('-- end --');

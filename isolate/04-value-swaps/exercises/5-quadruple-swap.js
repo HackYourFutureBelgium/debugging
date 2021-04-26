@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 let a = 'y';
 let b = 'w';
@@ -24,3 +25,6 @@ console.assert(isTrue4, 'Test 4');
 
 const isTrue5 = temp === _;
 console.assert(isTrue5, 'Test 5');
+
+
+console.log('-- end --');

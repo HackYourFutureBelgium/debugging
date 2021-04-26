@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Infinite For Loops
 
@@ -46,3 +47,6 @@ for (let i = 0; i > -1; i++) {
   console.log('c, looping:', typeof c, c);
 }
 console.log('- c, after:', typeof c, c);
+
+
+console.log('-- end --');

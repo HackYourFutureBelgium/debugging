@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // cast to the same number
 //  remember: Object.is returns true when it compares NaN and NaN
@@ -13,3 +14,6 @@ console.log(result);
 {
   // 1. _
 }
+
+
+console.log('-- end --');

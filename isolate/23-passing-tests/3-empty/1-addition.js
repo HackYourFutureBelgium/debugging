@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /**
  * adds two numbers together
@@ -32,3 +33,6 @@ console.assert(_5_actual === _5_expect, 'Test 5: second default parameter');
 const _6_expect = 0;
 const _6_actual = add();
 console.assert(_6_actual === _6_expect, 'Test 6: both default parameters');
+
+
+console.log('-- end --');

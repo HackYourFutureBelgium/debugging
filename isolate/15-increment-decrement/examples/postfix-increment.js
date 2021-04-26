@@ -1,6 +1,7 @@
 'use strict';
+console.log('-- begin --');
 
-console.log('postfix increment: x++')
+console.log('postfix increment: x++');
 
 /* two things happen when you use x++ (in this order!)
   a. return the value stored by x
@@ -30,3 +31,5 @@ const _4_new_x = x;
 console.log('4. return:', typeof _4_return, _4_return);
 console.log('4. new x:', typeof _4_new_x, _4_new_x, '\n');
 
+
+console.log('-- end --');

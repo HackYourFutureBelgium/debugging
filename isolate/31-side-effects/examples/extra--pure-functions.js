@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* pure functions:
   only uses variables that are:
@@ -42,3 +43,6 @@ const addEntry = (arr, index) => {
 // helpful links
 //  https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array/
 //  https://futurestud.io/tutorials/clone-copy-an-array-in-javascript-and-node-js
+
+
+console.log('-- end --');

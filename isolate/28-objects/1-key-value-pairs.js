@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -39,3 +40,6 @@ console.log(foods.milk); // 'goat or cow?'
 // and can remove key/value pairs like so:
 delete foods.chili;
 console.log(foods.chili); // undefined
+
+
+console.log('-- end --');

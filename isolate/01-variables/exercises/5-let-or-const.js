@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* declare and assign variables as described in the comments
 
@@ -36,3 +37,6 @@ console.log(_); // should log 'table'
 
 _;
 console.log(_); // should log 'apple, pear'
+
+
+console.log('-- end --');

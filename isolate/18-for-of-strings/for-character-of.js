@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   the `for...of` loop is a simple syntax for iterating a string one character at a time
@@ -23,3 +24,6 @@ for (let character of color) {
   character = 'hello!'; // no error
   console.log(character);
 }
+
+
+console.log('-- end --');

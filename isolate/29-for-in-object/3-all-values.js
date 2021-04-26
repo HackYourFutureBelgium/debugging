@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // you can use a for ... in loop to get all the values from an object
 const menagerie = {
@@ -16,3 +17,6 @@ for (let key in menagerie) {
 }
 
 console.log(menagerieValues);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Comparing Booleans
 
@@ -38,3 +39,6 @@ const _4_a_implicit = true <= true;
 const _4_b_explicit = Number(true) <= Number(true);
 console.log('_4_a_implicit:', typeof _4_a_implicit, _4_a_implicit);
 console.log('_4_b_explicit:', typeof _4_b_explicit, _4_b_explicit);
+
+
+console.log('-- end --');

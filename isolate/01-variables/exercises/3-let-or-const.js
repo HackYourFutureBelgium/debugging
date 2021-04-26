@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* declare and assign variables as described in the comments
 
@@ -29,7 +30,7 @@ console.log(turtle);
 
 // reassign aTree to "aspen"
 _;
-console.log(aTree)
+console.log(aTree);
 
 // declare a variable named aColor with the value "blue"
 _;
@@ -45,3 +46,6 @@ console.log(aTree);
 // reassign aColor to "orange"
 _;
 console.log(aColor);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // passing arrays to functions actually passes a reference!
 //  there is no new array created in memory
@@ -23,3 +24,6 @@ furniture.push('dresser');
 
 const thirdEntryAfterPush = returnAnEntry(furniture, 3);
 console.assert(thirdEntryAfterPush === 'dresser', 'Test 4');
+
+
+console.log('-- end --');

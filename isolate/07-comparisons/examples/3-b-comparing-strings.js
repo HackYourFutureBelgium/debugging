@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Comparing Strings
 
@@ -44,3 +45,6 @@ console.log(
   typeof _5_differentLengths,
   _5_differentLengths
 );
+
+
+console.log('-- end --');

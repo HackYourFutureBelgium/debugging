@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // refactor this code to use a _?_:_ instead of a conditional
 
@@ -14,3 +15,6 @@ if (isLoggedIn) {
   toDisplay = warningMessage;
 }
 console.log(toDisplay);
+
+
+console.log('-- end --');

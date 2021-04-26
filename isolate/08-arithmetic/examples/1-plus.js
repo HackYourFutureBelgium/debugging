@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* +
 
@@ -21,28 +22,28 @@
 
 */
 
-
 // try different values to see what happens
 let a = _;
 let b = _;
 
-
 const realPlus = a + b;
-
 
 let fakePlus;
 
-if (typeof a === "string" || typeof b === "string") {
+if (typeof a === 'string' || typeof b === 'string') {
   const aStr = String(a);
   const bStr = String(b);
   fakePlus = aStr + bStr;
-
 } else {
   const aNum = Number(a);
   const bNum = Number(b);
   fakePlus = aNum + bNum;
-
 }
 
+console.assert(
+  realPlus === fakePlus,
+  'fakePlus and realPlus will always be the same'
+);
 
-console.assert(realPlus === fakePlus, 'fakePlus and realPlus will always be the same');
+
+console.log('-- end --');

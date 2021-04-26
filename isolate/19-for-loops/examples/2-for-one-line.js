@@ -1,6 +1,6 @@
 // 1: use strict
 'use strict';
-
+console.log('-- begin --');
 
 /* anatomy of a for loop: https://javascript.info/while-for#the-for-loop
 
@@ -41,3 +41,6 @@ for (let step = 0; step < 3; step++) {
 
   this is a simple analysis, what would you want to add?
 */
+
+
+console.log('-- end --');

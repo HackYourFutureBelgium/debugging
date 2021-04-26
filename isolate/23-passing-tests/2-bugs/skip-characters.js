@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /**
  * removes characters from a string based on their index
@@ -54,3 +55,6 @@ console.assert(_7_actual === _7_expect, 'Test 7: second default parameter');
 const _8_expect = '';
 const _8_actual = skipCharacters();
 console.assert(_8_actual === _8_expect, 'Test 8: both default parameters');
+
+
+console.log('-- end --');

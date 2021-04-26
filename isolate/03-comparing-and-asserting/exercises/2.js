@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // replace the _ to pass the asserts
 
@@ -10,7 +11,7 @@ const comparison2 = Infinity === 'Infinity';
 const test2 = comparison2 === _;
 console.assert(test2, 'Test 2');
 
-const comparison3 = "x" === `x`;
+const comparison3 = 'x' === `x`;
 const test3 = comparison3 === _;
 console.assert(test3, 'Test 3');
 
@@ -30,3 +31,5 @@ const comparison7 = null === undefined;
 const test7 = comparison7 === _;
 console.assert(test7, 'Test 7');
 
+
+console.log('-- end --');

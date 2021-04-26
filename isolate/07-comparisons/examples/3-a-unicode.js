@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Unicode & .charCodeAt()
 
@@ -54,3 +55,6 @@ console.log(
   typeof spaceUnicodeNumber,
   spaceUnicodeNumber
 );
+
+
+console.log('-- end --');

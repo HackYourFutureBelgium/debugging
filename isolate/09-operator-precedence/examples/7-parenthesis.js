@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Parenthesis
 
@@ -11,3 +12,6 @@
 
 const value = 3 - 2 + (6 / 2) * 4;
 console.log(typeof value, value);
+
+
+console.log('-- end --');

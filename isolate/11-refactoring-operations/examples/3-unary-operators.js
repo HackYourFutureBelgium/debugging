@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // unary operators (!, +, -, ++, --) are higher precedence than operators with 2 arguments (+, &&, *, )
 //  PS. none of these exercises will have ++ or --
@@ -55,3 +56,6 @@ console.log(result);
   const result = step5;
   console.log(result);
 }
+
+
+console.log('-- end --');

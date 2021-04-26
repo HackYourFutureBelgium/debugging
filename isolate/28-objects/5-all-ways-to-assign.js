@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -39,3 +40,6 @@ const es6Shorthand = {
   firstName,
   lastName,
 };
+
+
+console.log('-- end --');
