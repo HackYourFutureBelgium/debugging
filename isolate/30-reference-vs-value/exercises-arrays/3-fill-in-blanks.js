@@ -1,6 +1,6 @@
 'use strict';
 
-// two different arrays with the same values
+// two different arrays with different values
 //  how many solutions can you find?
 // psst.  use JS Tutor & the debugger
 
