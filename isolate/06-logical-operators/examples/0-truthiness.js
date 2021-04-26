@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* truthiness is whether a value coerces to `true` or `false
   truthiness is simple to test, just cast the value with Boolean
@@ -47,3 +48,4 @@ const truthiness9 = Boolean(value9);
 console.log(typeof value9, value9, '->', truthiness9);
 
 
+console.log('-- end --');

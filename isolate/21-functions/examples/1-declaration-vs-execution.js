@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // Be sure to study this in JS Tutor or debugger
 
@@ -17,3 +18,6 @@ iExist();
 // there are 3 logs, and one console.log in the source code
 //  console.log is not run when the function is DECLARED
 //  but it is run each time the function is EXECUTED
+
+
+console.log('-- end --');

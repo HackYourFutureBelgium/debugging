@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   for...of loops make it very easy to iterate through an array
@@ -10,20 +11,33 @@
     or go backwards through the array
   you will need a normal for loop
 
-  these two loops are harder to write using for...of
+  the two examples below are written with normal for loops
+  can you figure out how to get the same logs using a for...of loop?
 
 */
 
 const trees = ['birch', 'larch', 'oak', 'maple'];
+console.log(trees);
 
-// log the array items in reverse order
+console.log('-- reverse order: for ');
 for (let i = trees.length - 1; i >= 0; i--) {
   const tree = trees[i];
   console.log('- ' + tree);
 }
 
-// log every other item in the array
+console.log('-- reverse order: for-of ');
+for (const tree of trees) {
+}
+
+console.log('-- every other item: for ');
 for (let i = 1; i <= trees.length - 1; i += 2) {
   const tree = trees[i];
   console.log('- ' + tree);
 }
+
+console.log('-- every other item: for-of ');
+for (const tree of trees) {
+}
+
+
+console.log('-- end --');

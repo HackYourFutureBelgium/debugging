@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // There are many kinds of numbers in JS
 // instead of guessing, use typeof!
@@ -20,3 +21,6 @@ console.log(typeof numE, numE);
 
 const numF = 1e3;
 console.log(typeof numF, numF);
+
+
+console.log('-- end --');

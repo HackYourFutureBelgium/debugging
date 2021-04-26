@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // this file shows the final line of code, with all tests passing
 
@@ -26,3 +27,6 @@ console.assert(testingB, 'b should store "y"');
 
 const testingTemp = temp === 'y';
 console.assert(testingTemp, 'temp should store "y"');
+
+
+console.log('-- end --');

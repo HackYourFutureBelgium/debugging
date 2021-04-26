@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /**
  * reverses a string
@@ -27,3 +28,6 @@ const _3_expected = 'racecar';
 const _3_actual = reverser('racecar');
 const _3_test = _3_actual === _3_expected;
 console.assert(_3_test, 'Test 3');
+
+
+console.log('-- end --');

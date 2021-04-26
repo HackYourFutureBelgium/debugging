@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // strs are anything between quotations
 
@@ -23,17 +24,17 @@ console.log(typeof str6, str6);
 const str7 = 'number';
 console.log(typeof str7, str7);
 
-
 // you can concatenate strings with +
 const abc = 'a' + 'b' + 'c';
 console.log(typeof abc, abc);
 
-const cba = "c" + "b" + "a";
+const cba = 'c' + 'b' + 'a';
 console.log(typeof cba, cba);
-
 
 // if you use ``, strings can be built using ${}
 // this is called "template literals"
 const allOfThem = `${str1}, ${str2}, ${str3}, ${str4}, ${str5}`;
 console.log(typeof allOfThem, allOfThem);
 
+
+console.log('-- end --');

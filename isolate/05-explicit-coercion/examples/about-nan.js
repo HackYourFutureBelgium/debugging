@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // NaN is a strange thing in JavaScript
 //  if you are not careful about types in your programs ...
@@ -69,3 +70,6 @@ console.log(typeof isNanC, isNanC);
 const numD = Number('4');
 const isNanD = isNaN(numD);
 console.log(typeof isNanD, isNanD);
+
+
+console.log('-- end --');

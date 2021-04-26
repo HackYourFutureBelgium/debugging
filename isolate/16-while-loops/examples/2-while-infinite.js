@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Infinite While Loops
 
@@ -46,3 +47,6 @@ while (-1 < c) {
   console.log('c, looping:', typeof c, c);
 }
 console.log('- c, after:', typeof c, c);
+
+
+console.log('-- end --');

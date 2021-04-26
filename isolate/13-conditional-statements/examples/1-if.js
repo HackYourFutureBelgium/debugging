@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* if
 
@@ -35,3 +36,6 @@ if (conditionIsTruthy) {
 }
 
 console.log(path);
+
+
+console.log('-- end --');

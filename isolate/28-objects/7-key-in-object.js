@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   the best way for now to check if a key exists in an object is to use `in`
@@ -32,3 +33,6 @@ console.log('rice:', fridge.rice, 'rice in fridge:', riceInFridge);
 
 const pastaInFridge = 'pasta' in fridge;
 console.log('pasta:', fridge.pasta, 'pasta in fridge:', pastaInFridge);
+
+
+console.log('-- end --');

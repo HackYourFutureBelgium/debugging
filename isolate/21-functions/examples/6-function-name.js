@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* function name
 
@@ -25,3 +26,6 @@ throwsAnError();
     don't worry about that just yet
 
 */
+
+
+console.log('-- end --');

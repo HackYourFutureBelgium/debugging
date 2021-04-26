@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Unreachable Paths
 
@@ -16,7 +17,6 @@
 
 */
 
-
 const value = true;
 
 // unreachable because the condition is impossible
@@ -25,16 +25,13 @@ let path1 = '';
 
 if (value && !value) {
   path1 = 'unreachable!';
-
 } else if (value) {
   path1 = 'else if';
-
 } else {
   path2 = 'else';
 }
 
 console.log('path1:', typeof path1, path1);
-
 
 // unreachable because a previous condition is equivalent
 //  they will always evaluate to the same truthiness
@@ -44,12 +41,13 @@ let path2 = '';
 
 if (value) {
   path2 = 'if';
-
 } else if (value) {
   path2 = 'unreachable!';
-
 } else {
   path2 = 'else';
 }
 
 console.log('path2:', typeof path2, path2);
+
+
+console.log('-- end --');

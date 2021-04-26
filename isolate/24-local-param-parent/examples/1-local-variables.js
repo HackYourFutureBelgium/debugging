@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   all variables used inside this function's body are declared locally
@@ -16,3 +17,6 @@ console.log('fromLocals1:', fromLocals1);
 
 const fromLocals2 = usesLocals();
 console.log('fromLocals2:', fromLocals2);
+
+
+console.log('-- end --');

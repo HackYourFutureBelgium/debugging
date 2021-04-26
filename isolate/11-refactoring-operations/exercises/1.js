@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // same type
 
@@ -11,3 +12,6 @@ console.log(result);
 {
   // 1. _
 }
+
+
+console.log('-- end --');

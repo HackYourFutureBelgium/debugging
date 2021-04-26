@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // some more math
 
@@ -12,3 +13,6 @@ console.log(result);
 {
   // 1. _
 }
+
+
+console.log('-- end --');

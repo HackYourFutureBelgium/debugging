@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -22,3 +23,6 @@ console.assert(colors[3] === 'purple', 'Test 5: new item');
 colors[0] = 'green';
 console.assert(colors.length === 4, 'Test 5: same length');
 console.assert(colors[0] === 'green', 'Test 6: new item');
+
+
+console.log('-- end --');

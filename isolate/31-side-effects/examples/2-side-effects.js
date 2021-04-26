@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // a side effect is when the function scope modifies data used somewhere else
 //  modifying an array argument does exactly this!
@@ -22,3 +23,6 @@ console.assert(furniture[3] === undefined, 'Test 3');
 modifyTheArray(furniture, 3, 'lamp');
 
 console.assert(furniture[3] === 'lamp', 'Test 4');
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Comparing Numbers
 
@@ -41,3 +42,6 @@ console.log(
   typeof zeroIsLessThanOrEqualToNegativeOne,
   zeroIsLessThanOrEqualToNegativeOne
 );
+
+
+console.log('-- end --');

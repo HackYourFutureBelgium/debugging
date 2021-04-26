@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // primitives are stored "by value", connected to 1 variable
 //  assigning a primitive to a other variable makes a copy of it
@@ -11,7 +12,6 @@ primitive2 += 1;
 console.log('primitive1:', typeof primitive1, primitive1);
 console.log('primitive2:', typeof primitive2, primitive2);
 
-
 // arrays are stored by reference
 //  both variables reference the same array in memory
 //  modifying on variable changes what both store
@@ -23,7 +23,6 @@ array1[1] = 'bye!';
 console.log('array1', typeof array1, array1);
 console.log('array2', typeof array2, array2);
 
-
 // you can "delete" an array by removing all references
 //  the JS engine will "garbage collect" it behind the scenes
 
@@ -31,3 +30,6 @@ array1 = null;
 array2 = null;
 console.log('array1:', typeof array1, array1);
 console.log('array2:', typeof array2, array2);
+
+
+console.log('-- end --');

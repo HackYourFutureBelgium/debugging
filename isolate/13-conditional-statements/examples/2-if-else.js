@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* if / else
 
@@ -16,17 +17,18 @@
 
 */
 
-
 const value = '123';
 let path = '';
 
 if (typeof value === 'number') {
   console.log('value is a number');
   path = 'if';
-
 } else {
-  console.log('value is not a number')
+  console.log('value is not a number');
   path = 'else';
 }
 
 console.log(path);
+
+
+console.log('-- end --');

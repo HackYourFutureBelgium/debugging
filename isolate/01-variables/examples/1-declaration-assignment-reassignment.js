@@ -1,4 +1,5 @@
-'use strict';
+'use strict'
+console.log('-- begin --')
 
 // Psst ... "open in JS Tutor" might be helpful
 
@@ -22,3 +23,6 @@ console.log(anotherVariable);
 // this variable can also be reassigned:
 anotherVariable = 'bye!';
 console.log(anotherVariable);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* fill in the blanks to pass the assertions */
 
@@ -13,3 +14,5 @@ while (numberOfEggs !== oneDozen) {
 
 console.assert(numberOfEggs === 12, 'there should be a dozen eggs');
 
+
+console.log('-- end --');

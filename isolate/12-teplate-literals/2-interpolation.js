@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* interpolation!
 
@@ -47,3 +48,6 @@ const listOfThingsConcat =
   '3. ' +
   ('i love ' + secondThing);
 console.log(listOfThingsConcat);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /**
  * checks is a string is a palindrome
@@ -11,7 +12,7 @@ const isPalindrome = (toCheck = '') => {
   for (const character of toCheck) {
     reversed += character + reversed;
   }
-  return toCheck = reversed;
+  return (toCheck = reversed);
 };
 
 const _1_expect = false;
@@ -34,3 +35,6 @@ console.assert(_4_actual === _4_expect, 'Test 4');
 const _5_expect = true;
 const _5_actual = isPalindrome();
 console.assert(_5_actual === _5_expect, 'Test 5: default parameter');
+
+
+console.log('-- end --');

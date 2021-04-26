@@ -13,3 +13,6 @@
 
   if you run or trace this snippet nothing will happen
 */
+
+
+console.log('-- end --');

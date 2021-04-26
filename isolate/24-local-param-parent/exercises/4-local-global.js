@@ -1,9 +1,10 @@
 'use strict';
+console.log('-- begin --');
 
 let global = 'awesome';
 
 const funk = () => {
-  const local = 'funky'
+  const local = 'funky';
   global = `#${global}`;
   return `${local} ${global}`;
 };
@@ -43,3 +44,6 @@ global = 'bye!';
 
 const globalTest6 = global === _;
 console.assert(globalTest6, 'Test 9: global');
+
+
+console.log('-- end --');

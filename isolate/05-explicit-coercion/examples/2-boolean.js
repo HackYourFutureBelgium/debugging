@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // casting to boolean is key to mastering JavaScript
 //  it's the heart of TRUTHINESS, a key JS concept
@@ -103,3 +104,6 @@ console.log(
   typeof _9_boolean,
   _9_boolean
 );
+
+
+console.log('-- end --');

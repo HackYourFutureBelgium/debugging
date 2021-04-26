@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* declare and assign variables as described in the comments
 
@@ -14,7 +15,6 @@
     the variable is declared with a value and never reassigned
 
 */
-
 
 _;
 console.log(x); // should print 'a'
@@ -36,3 +36,6 @@ _;
 console.log(y); // should print 'bd'
 
 console.log(x); // should print 'a'
+
+
+console.log('-- end --');

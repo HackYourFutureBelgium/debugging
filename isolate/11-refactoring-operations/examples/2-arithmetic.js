@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const a = 2;
 const b = 3;
@@ -29,3 +30,6 @@ const result = (a * (b + b)) / a;
   const result = step3;
   console.log(result);
 }
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // practice using variables declared with let
 //  fill in the blanks to log the commented values
@@ -17,3 +18,6 @@ console.log(desert); // should log 'chocolate cake with frosting'
 
 _;
 console.log(desert); // should log 'chocolate cake with frosting and banana'
+
+
+console.log('-- end --');

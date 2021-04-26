@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // refactor this code to use && instead of a conditional
 
@@ -11,3 +12,6 @@ if (isValidPassword) {
   isValidPassword = input === password;
 }
 console.log(isValidPassword);
+
+
+console.log('-- end --');

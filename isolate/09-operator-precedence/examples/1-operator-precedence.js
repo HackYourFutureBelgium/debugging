@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Operator Precedence
 
@@ -10,3 +11,6 @@ const expected = 13;
 
 const actual = 3 - 2 + (6 / 2) * 4;
 console.assert(actual === expected, 'it should be 13');
+
+
+console.log('-- end --');

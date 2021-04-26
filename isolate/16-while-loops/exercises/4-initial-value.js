@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Initial Value
 
@@ -10,7 +11,6 @@
 
 */
 
-
 /* fill in the initial value to pass the assertion
   there are more than 1 correct answer!
   how many can you find?
@@ -19,11 +19,9 @@
 let sum = _;
 
 while (sum < 100) {
-
   if (sum % 2 === 0) {
     sum += sum;
     console.log('if path:', sum);
-
   } else {
     sum += 1;
     console.log('else path:', sum);
@@ -32,3 +30,5 @@ while (sum < 100) {
 
 console.assert(sum === 128, 'the sum should be 128');
 
+
+console.log('-- end --');

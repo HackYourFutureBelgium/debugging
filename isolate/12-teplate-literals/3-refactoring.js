@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* refactoring template strings
 
@@ -31,3 +32,6 @@ const storyConcat =
   ',\nand had a dog named ' +
   myDog;
 console.log(storyConcat);
+
+
+console.log('-- end --');

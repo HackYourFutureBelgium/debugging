@@ -1,8 +1,9 @@
 'use strict';
+console.log('-- begin --');
 
 let global = '.';
 
-const funk = (parameter) => {
+const funk = parameter => {
   const local = `funky ${global}`;
   global = `${global} ${global}`;
   return `${parameter} ${local} ${global}`;
@@ -34,3 +35,6 @@ global = `${global} bye.`;
 
 const globalTest5 = global === _;
 console.assert(globalTest5, 'Test 7: global');
+
+
+console.log('-- end --');

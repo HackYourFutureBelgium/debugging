@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Literals
 
@@ -32,3 +33,6 @@ console.assert(step3 === expected, 'Step 3');
 // evaluate the comparison
 const step4 = true;
 console.assert(step4 === expected, 'Step 4');
+
+
+console.log('-- end --');

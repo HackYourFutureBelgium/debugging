@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // there may be more than one correct answer
 //  try finding as many as you can
@@ -11,9 +12,11 @@ let path = '';
 
 if (value1 && !value2) {
   path = 'if';
-
 } else if (!value1 || !value2) {
   path = 'else if';
 }
 
 console.assert(path === 'else if');
+
+
+console.log('-- end --');

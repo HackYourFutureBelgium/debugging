@@ -1,7 +1,7 @@
 'use strict';
+console.log('-- begin --');
 
 // const is short for "constant".  a variable that never changes
-
 
 // const variables cannot be declared without assigning a value
 // this will throw an error
@@ -18,7 +18,6 @@
 const constantVariable2 = 'constant value';
 constantVariable2 = 'new value';
 console.log(constantVariable2);
-
 
 // all of these things are possible with let
 
@@ -42,3 +41,6 @@ console.log(letVariable2);
   it will take some practice to write code like this, but is worth it.
   programs with only const are easier to understand and debug
 */
+
+
+console.log('-- end --');

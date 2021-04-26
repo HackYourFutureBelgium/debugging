@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   all variables used inside this function's body are declared in the parent scope
@@ -36,3 +37,6 @@ parent2 = `${parent2}|`;
 
 console.log('parent1:', parent1);
 console.log('parent2:', parent2);
+
+
+console.log('-- end --');

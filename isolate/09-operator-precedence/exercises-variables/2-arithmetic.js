@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write lots of comments!  explain your thinking at each step
 
@@ -9,7 +10,10 @@ const c = '12';
 const expected = -1;
 
 // the original expression
-const step0 = -a / b * +c;
+const step0 = (-a / b) * +c;
 console.assert(step0 === expected, 'Step 0');
 
 // how many steps are there?
+
+
+console.log('-- end --');

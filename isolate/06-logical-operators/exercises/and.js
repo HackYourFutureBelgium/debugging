@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // fill in the blanks to pass the assertions
 //  there is sometimes more than one correct answer
@@ -38,3 +39,6 @@ console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 const _9_expect = 'asdf';
 const _9_actual = Infinity && _;
 console.assert(_9_actual === _9_expect, 'Test 9');
+
+
+console.log('-- end --');

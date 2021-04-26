@@ -1,11 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 // write the expected values
 
-
 // Boolean then Number
 const _1_expect = _;
-const _1_boolean = Boolean(undefined)
+const _1_boolean = Boolean(undefined);
 const _1_number = Number(_1_boolean);
 console.assert(_1_number === _1_expect, 'Test 1');
 
@@ -18,7 +18,6 @@ const _3_expect = _;
 const _3_boolean = Boolean('false');
 const _3_number = Number(_3_boolean);
 console.assert(_3_number === _3_expect, 'Test 3');
-
 
 // Number then Boolean
 const _4_expect = _;
@@ -35,7 +34,6 @@ const _6_expect = _;
 const _6_number = Number('  ');
 const _6_boolean = Boolean(_6_number);
 console.assert(_6_boolean === _6_expect, 'Test 6');
-
 
 // String then Number
 const _7_expect = _;
@@ -54,3 +52,5 @@ const _9_string = String(Infinity);
 const _9_number = Number(_9_string);
 console.assert(_9_number === _9_expect, 'Test 9');
 
+
+console.log('-- end --');

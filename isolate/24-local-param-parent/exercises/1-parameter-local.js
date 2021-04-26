@@ -1,6 +1,7 @@
 'use strict';
+console.log('-- begin --');
 
-const funk = (parameter) => {
+const funk = parameter => {
   const local = `funky`;
   return `${local} ${parameter}`;
 };
@@ -17,9 +18,7 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === _;
 console.assert(funk3, 'Test 3: funk');
 
-
-
-const jazz = (parameter) => {
+const jazz = parameter => {
   const local = `jazzy`;
   return `${local} ${parameter}`;
 };
@@ -35,3 +34,6 @@ console.assert(jazz2, 'Test 2: jazz');
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === _;
 console.assert(jazz3, 'Test 3: jazz');
+
+
+console.log('-- end --');

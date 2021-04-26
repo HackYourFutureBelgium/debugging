@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* to understand function scope, you need to ask one simple question:
 
@@ -45,3 +46,6 @@ const returned3 = findTheType(arg3);
 console.log(typeof returned3, returned3);
 // console.log(typeof param, param);
 // console.log(typeof result, result);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // casting to number is the most complicated coercion
 //  but it's understandable!  you'll just need to learn a few rules
@@ -38,3 +39,6 @@ console.log(8, typeof _8_toCast, _8_toCast, '->', typeof _8_number, _8_number);
 const _9_toCast = 'four';
 const _9_number = Number(_9_toCast);
 console.log(9, typeof _9_toCast, _9_toCast, '->', typeof _9_number, _9_number);
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write code to pass asserts a and b
 // fill in the blanks for c and temp
@@ -26,3 +27,6 @@ console.assert(isTrue3, 'Test 3');
 
 const isTrue4 = temp === _;
 console.assert(isTrue4, 'Test 4');
+
+
+console.log('-- end --');

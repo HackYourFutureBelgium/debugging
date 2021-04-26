@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* break
 
@@ -8,12 +9,10 @@
 
 */
 
-
 const max = 6;
 
 let iterations = 0;
 while (true) {
-
   console.log('begin loop');
 
   iterations = iterations + 1;
@@ -26,5 +25,7 @@ while (true) {
   console.log(iterations);
 
   console.log('end loop');
-
 }
+
+
+console.log('-- end --');

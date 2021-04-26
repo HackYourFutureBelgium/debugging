@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
 
@@ -24,3 +25,6 @@
   let color = 'red';
   console.log(color);
 }
+
+
+console.log('-- end --');

@@ -1,10 +1,10 @@
 'use strict';
+console.log('-- begin --');
 
 /* error messages printed to the console log the callstack
   study this example in the debugger
   compare what you see in the "callstack" tab to what's logged
 */
-
 
 let depth = 0;
 
@@ -21,7 +21,6 @@ const func1 = () => {
 console.log('this callstack is 1 call deep');
 func1();
 
-
 const func2 = () => {
   console.log('entering func 2');
   depth++;
@@ -35,8 +34,6 @@ const func2 = () => {
 console.log('this callstack is 2 calls deep');
 func2();
 
-
-
 const func3 = () => {
   console.log('entering func 3');
   depth++;
@@ -47,3 +44,6 @@ const func3 = () => {
 
 console.log('this callstack is 3 calls deep');
 func3();
+
+
+console.log('-- end --');

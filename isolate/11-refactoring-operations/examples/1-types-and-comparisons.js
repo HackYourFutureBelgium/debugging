@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 const a = undefined;
 
@@ -29,3 +30,6 @@ console.log(result);
   const result = step3;
   console.log(result);
 }
+
+
+console.log('-- end --');

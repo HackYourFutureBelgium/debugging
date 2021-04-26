@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* console.assert takes two arguments
 
@@ -19,3 +20,5 @@ In the console, only failing asserts are printed.
   these slides display passing assert to help you study
 */
 
+
+console.log('-- end --');

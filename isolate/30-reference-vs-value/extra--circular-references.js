@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Circular References
 
@@ -63,3 +64,6 @@
   console.assert(b.a === a);
   console.assert(a[0] !== b.a);
 }
+
+
+console.log('-- end --');

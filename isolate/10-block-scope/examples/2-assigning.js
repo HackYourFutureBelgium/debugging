@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
 
@@ -38,3 +39,6 @@
   }
   console.log('2 d.', food); // cheese
 }
+
+
+console.log('-- end --');

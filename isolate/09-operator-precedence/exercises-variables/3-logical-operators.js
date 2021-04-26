@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // write lots of comments!  explain your thinking at each step
 
@@ -13,3 +14,5 @@ console.assert(step0 === expected, 'Step 0');
 
 // how many steps are there?
 
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* back-ticks
 
@@ -35,3 +36,6 @@ second line
    fourth line
  fifth line`;
 console.log(indentedText);
+
+
+console.log('-- end --');

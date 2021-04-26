@@ -1,10 +1,11 @@
 'use strict';
+console.log('-- begin --');
 
 // PS. study this in JS Tutor!
 
 // variables declared in a function body are SCOPED to that function
 //  this includes parameters and locally declared variables
-const findTheType = (param) => {
+const findTheType = param => {
   const result = typeof param;
   return result;
 };
@@ -31,3 +32,6 @@ const returned3 = findTheType(arg3);
 console.log(typeof returned3, returned3);
 // console.log(typeof param, param);
 // console.log(typeof result, result);
+
+
+console.log('-- end --');

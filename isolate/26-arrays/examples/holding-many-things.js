@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /*
   hint: use JS Tutor
@@ -24,3 +25,6 @@ console.assert(coaches.length === 3, 'Test 4: length');
 // beware!  array indices & array lengths are off by 1:
 console.assert(coaches[3] === undefined, 'Test 5: too far!');
 console.assert(coaches[2] === 'gregory', 'Test 6: just right');
+
+
+console.log('-- end --');

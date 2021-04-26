@@ -1,8 +1,8 @@
 'use strict';
+console.log('-- begin --');
 
 // a * b
 // cast both values to Number and do multiplication
-
 
 const _1_expect = _;
 const _1_native = '1' * 1;
@@ -39,3 +39,6 @@ console.assert(Object.is(_8_expect, _8_native), 'Test 8');
 const _9_expect = _;
 const _9_native = undefined * '';
 console.assert(Object.is(_9_expect, _9_native), 'Test 9');
+
+
+console.log('-- end --');

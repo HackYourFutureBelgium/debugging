@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // PURE FUNCTIONS are a habit, not a language feature:
 //  - only use LOCAL VARIABLES and PARAMETERS in your function body
@@ -19,13 +20,13 @@ const a = () => {
   return x + y;
 };
 
-const b = (y) => {
+const b = y => {
   result = x + y;
   return result;
 };
 
 const c = (y, x) => {
-  const m = y - x
+  const m = y - x;
   return x + m;
 };
 
@@ -39,6 +40,9 @@ const e = (x, y) => {
   return z + y;
 };
 
-const f = (p) => {
+const f = p => {
   return p * 2;
 };
+
+
+console.log('-- end --');

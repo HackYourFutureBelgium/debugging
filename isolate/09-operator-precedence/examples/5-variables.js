@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Variables
 
@@ -30,8 +31,10 @@ console.assert(step2 === expected, 'Step 2');
 const step3 = false;
 console.assert(step3 === expected, 'Step 3');
 
-
 /* remember short-circuiting, all the way back in "Logical Operators"
   because the left side of && is falsy, the right side will not be executed
   so we can clear out the && without doing any extra steps
 */
+
+
+console.log('-- end --');

@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 // you can use values stored in one variable to assign a value to another
 
@@ -12,3 +13,6 @@ console.log(furniture);
 
 furniture = furniture + ' frame';
 console.log(furniture);
+
+
+console.log('-- end --');

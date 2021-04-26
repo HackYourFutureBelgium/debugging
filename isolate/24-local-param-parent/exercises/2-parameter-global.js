@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* using global scope variables in your functions is a VERY BAD IDEA
 
@@ -11,7 +12,7 @@
 
 let global = '';
 
-const funk = (parameter) => {
+const funk = parameter => {
   global = `${global}funky`;
   return `${global} ${parameter}`;
 };
@@ -32,3 +33,5 @@ const funkReturn3 = funk('tree');
 const funk3 = funkReturn3 === _;
 console.assert(funk3, 'Test 3: funk');
 
+
+console.log('-- end --');

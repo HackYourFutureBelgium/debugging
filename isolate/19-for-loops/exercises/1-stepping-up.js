@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 /* Stepping Up
 
@@ -22,11 +23,15 @@ const totalRepetitions = 4;
 
 let repeatedString = '';
 
-
 for (_; i < _; _) {
   repeatedString += _;
   console.log(repeatedString);
 }
 
-console.assert(repeatedString === 'howdyhowdyhowdyhowdy', '"howdy" should be repeated 4 times');
+console.assert(
+  repeatedString === 'howdyhowdyhowdyhowdy',
+  '"howdy" should be repeated 4 times'
+);
 
+
+console.log('-- end --');

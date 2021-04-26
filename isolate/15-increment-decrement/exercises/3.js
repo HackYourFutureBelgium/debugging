@@ -1,4 +1,5 @@
 'use strict';
+console.log('-- begin --');
 
 let x = 0;
 
@@ -19,3 +20,6 @@ _ = --z;
 console.assert(x === 1, 'Test 4 x');
 console.assert(y === -1, 'Test 4 y');
 console.assert(z === -1, 'Test 4 z');
+
+
+console.log('-- end --');

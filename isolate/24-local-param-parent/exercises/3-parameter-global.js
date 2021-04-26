@@ -1,8 +1,9 @@
 'use strict';
+console.log('-- begin --');
 
 let global = '<3';
 
-const jazz = (parameter) => {
+const jazz = parameter => {
   global = `${global} jazzy`;
   return `${global} ${parameter}`;
 };
@@ -22,3 +23,6 @@ global = ':(';
 const jazzReturn3 = jazz('tree');
 const jazz3 = jazzReturn3 === _;
 console.assert(jazz3, 'Test 3: jazz');
+
+
+console.log('-- end --');
