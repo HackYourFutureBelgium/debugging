@@ -15,7 +15,7 @@ console.log(menagerie);
 // for...in with `const`
 for (const key in menagerie) {
   console.log(key);
-  // character = 'hello!'; // will throw an error
+  // key = 'hello!'; // will throw an error
 }
 
 // for...in with `let`
