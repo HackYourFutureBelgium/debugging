@@ -37,7 +37,7 @@ const userGuess = prompt('enter phrase number ' + randomPhraseNumber);
 
 const guessIsCorrect = userGuess === phraseToGuess;
 
-if (guessMessage) {
+if (guessIsCorrect) {
   alert('correct! phrase ' + randomPhraseNumber + ' was "' + phraseToGuess + '"');
 } else {
   alert('nope :(');
