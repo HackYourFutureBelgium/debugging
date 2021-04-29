@@ -506,3 +506,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
 3. Week 3:
    - [Part 1](https://vimeo.com/538659747)
    - [Part 2](https://vimeo.com/538671285)
+
+4. Week 4:
+   - [Part 1](https://vimeo.com/543077287)
+   - [Part 2](https://vimeo.com/543087934)
