@@ -55,7 +55,7 @@ Logs are like one-way windows. They help you see into your program without chang
   ```js
   let input = prompt('enter something');
   // this will print "string" even if the user cancels, so the input was null
-  console.log(typeof 'the user input was ' + input);
+  console.log('the user input was', typeof input, input);
 
   alert(input);
   ```
