@@ -82,7 +82,6 @@ if (userInput === '-h') {
       }
     }
   }
-  console.log(winner);
   alert('game over. the winner is: ' + winner);
 } else if (userInput === null) {
   alert('good bye');
