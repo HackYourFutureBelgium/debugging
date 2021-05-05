@@ -8,8 +8,8 @@ let userInput = prompt(
 if (userInput === '-h') {
   alert(
     'This is a two player game.\n\n' +
-      'Player 1: enters a secret number, and then a clue.\n' +
-      'Player 2: is shown the clue and must guess the number.\n\n' +
+      'Player 1: enters a secret phrase, and then a clue.\n' +
+      'Player 2: is shown the clue and must guess the phrase.\n\n' +
       'you can end the game at any point by canceling'
   );
 } else if (userInput === 'play') {
@@ -19,15 +19,15 @@ if (userInput === '-h') {
 
   let secretPhrase = '';
   while (secretPhrase === '') {
-    prompt('Player 1: enter a secret phrase');
+    secretPhrase = prompt('Player 1: enter a secret phrase');
   }
 
-  if (secretPhraseInput === null) {
+  if (secretPhrase === null) {
     alert('good bye');
   } else {
     let clue = '';
     while (clue === '') {
-      clue = prompt('Player 1: enter a clue to help guess your number');
+      clue = prompt('Player 1: enter a clue to help guess your phrase');
     }
 
     if (clue === null) {
@@ -35,8 +35,8 @@ if (userInput === '-h') {
     } else {
       alert(
         'Player 1: you entered ...\n\n' +
-          '- number: ' +
-          secretPhrase +
+          '- phrase: "' +
+          secretPhrase +  '"' +
           '\n' +
           '- clue: "' +
           clue +
@@ -56,7 +56,7 @@ if (userInput === '-h') {
         );
       }
 
-      if (guessInput === null) {
+      if (guess === null) {
         alert('good bye');
       } else if (guess === secretPhrase) {
         winner = 'Player 2';
@@ -71,8 +71,8 @@ if (userInput === '-h') {
         if (revealTheSecret) {
           alert(
             'The secret was:\n\n' +
-              '- ' +
-              secretPhrase +
+              '- ' + '"' +
+              secretPhrase + '"' +
               '\n\n' +
               'thanks for playing, see ya'
           );
@@ -82,8 +82,7 @@ if (userInput === '-h') {
       }
     }
   }
-
-  alert('game over. the winner is: ', winner);
+  alert('game over. the winner is: ' + winner);
 } else if (userInput === null) {
   alert('good bye');
 } else {

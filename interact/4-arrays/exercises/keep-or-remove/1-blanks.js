@@ -24,7 +24,7 @@ while (!donePushing) {
   // -- validate the input --
   if (input === _) {
     // -- check if the user is done --
-    donePushing = false;
+    donePushing = true;
   } else if (input === _) {
     // -- check if the user input nothing --
     alert('nothing is not allowed');
@@ -37,9 +37,9 @@ while (!donePushing) {
 // -- allow the user to filter their inputs --
 const keepThese = [];
 for (let i = _; i < _; _) {
-  const keepIt = _(`do you want to keep "${text}"?`);
+  const keepIt = _(`do you want to keep "${allInputs[i]}"?`);
   if (keepIt) {
-    keepThese.push(text);
+    keepThese.push(allInputs[i]);
   }
 }
 
