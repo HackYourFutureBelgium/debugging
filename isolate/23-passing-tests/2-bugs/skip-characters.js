@@ -23,6 +23,8 @@ const skipCharacters = (text = '', toSkip = 1) => {
   return skipified;
 };
 
+// the test cases are correct!
+//  You need to fix the function to pass the tests
 const _1_expect = 'abcdefghijkl';
 const _1_actual = skipCharacters('abcdefghijkl', 0);
 console.assert(_1_actual === _1_expect, 'Test 1');
@@ -55,6 +57,5 @@ console.assert(_7_actual === _7_expect, 'Test 7: second default parameter');
 const _8_expect = '';
 const _8_actual = skipCharacters();
 console.assert(_8_actual === _8_expect, 'Test 8: both default parameters');
-
 
 console.log('-- end --');

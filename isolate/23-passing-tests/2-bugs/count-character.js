@@ -19,6 +19,8 @@ const countCharacter = (text = "", toCount = "") => {
   return count;
 };
 
+// the test cases are correct!
+//  You need to fix the function to pass the tests
 const _1_expect = 1;
 const _1_actual = countCharacter("aA", "a");
 console.assert(_1_actual === _1_expect, "Test 1");

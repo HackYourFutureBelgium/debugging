@@ -20,6 +20,8 @@ const sumOfDigits = (toSum = 0) => {
   return toSum > 0 ? +sum : sum;
 };
 
+// the test cases are correct!
+//  You need to fix the function to pass the tests
 const _1_expect = 6;
 const _1_actual = sumOfDigits(123);
 console.assert(_1_actual === _1_expect, 'Test 1');
@@ -48,6 +50,5 @@ console.assert(_6_actual === _6_expect, 'Test 6');
 const _7_expect = 0;
 const _7_actual = sumOfDigits();
 console.assert(_7_actual === _7_expect, 'Test 7: default parameter');
-
 
 console.log('-- end --');

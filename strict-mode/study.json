@@ -1,0 +1,12 @@
+{
+  "study": {
+    "environment": true,
+    "eval": true,
+    "trace": false,
+    "variables": true,
+    "flowchart": false,
+    "blanks": false,
+    "table": false,
+    "ask": false
+  }
+}

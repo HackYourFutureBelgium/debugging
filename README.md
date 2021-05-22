@@ -219,14 +219,49 @@ Helpful resources for this module
 
 ### In this Repo
 
-- 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
-- 🥚 **[./describing-errors](./describing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
-- 🥚 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
-- 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
-- 🥚 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
-- 🐣 **[./interact](./interact)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
-- 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions to organize and and reuse your code.
-- 🐥 **[./throw-and-catch](./throw-and-catch)**: Go deeper into errors and error handling by throwing and catching your own errors.
+- 🥚 **[./strict-mode](./strict-mode)**: a quick read and a couple examples. long story short: always use strict mode.
+- **Skills**: you don't need to finish all of the exercises in these folders, just enough to get comfortable with the processes
+  - 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
+  - 🥚 **[./describing-errors](./describing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
+  - 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
+  - 🐣 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
+- **Practice**
+  - 🐣 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
+  - 🐣 **[./fixing-bugs](./fixing-bugs)**: some small exercises to learn a structured approach to describing, finding and fixing bugs in your code.
+  - 🐣 **[./integrate](./integrate)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
+  - 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions to organize and and reuse your code.
+
+### Reference vs. Values
+
+- [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
+- [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
+- [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
+- [Janke Learning](https://github.com/janke-learning/reference-vs-value)
+- [javascript.info](https://javascript.info/object-copy#comparison-by-reference)
+
+#### Arrays
+
+- [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
+- [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
+- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/05_Day/05_day_arrays.md) (stop at array methods)
+- [javascript.info](https://javascript.info/array) (just the beginning)
+- `for of` loops
+  - [javascript.info](https://javascript.info/array#loops)
+  - [Coding Train](https://www.youtube.com/watch?v=Y8sMnRQYr3c)
+
+#### Objects
+
+- [javascript.info](https://javascript.info/object)
+- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/07-Properties)
+- [dots vs brackets](https://www.youtube.com/watch?v=7lQ31dJEYoM) (video)
+- [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets) (example)
+- `for ... in`
+  - [javascript.info](https://javascript.info/object#the-for-in-loop)
+  - [`for in`, vs `for of`](https://alligator.io/js/for-of-for-in-loops/)
+  - [a video](https://www.youtube.com/watch?v=prl73KRkB34)
+  - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+  - [w3schools](https://www.w3schools.com/jsref/jsref_forin.asp)
 
 ### More Examples and Exercises
 
@@ -281,7 +316,7 @@ You don't need to understand this material perfectly, it's just important you ar
 Practice using the debugger and JS Tutor to step through small programs.
 
 - [./stepping-through](./stepping-through)
-- [./interact](./interact): Input/Output Loops
+- [./integrate](./integrate): Input/Output Loops
 
 #### After Break
 
@@ -293,11 +328,17 @@ Dig deeper into program execution and the debugger by learning how to describe e
 
 Learning to program with JavaScript is a marathon. This week you can keep working through your favorite tutorials, and be sure make time to get comfortable stepping through and predicting small programs in your debugger. Try starting with:
 
-- 🥚 [./stepping-through](./stepping-through)
-- 🥚 [./describing-errors](./describing-errors): until it's _almost_ easy
-- 🐣 [./isolate](./isolate): through conditionals
-- 🥚 [./logging](./logging): until it starts to make sense, you'll get plenty of time to practice in /interact
-- 🐣 [./interact](./interact): through conditionals
+- 🥚 [./strict-mode](./strict-mode): a quick read
+- **Skills**: you're not expected to master these skills in one week, but starting to learn them in week 1 will make everything else easier. Practicing a little bit every day is the best way to learn a skill.
+  - 🥚 [./stepping-through](./stepping-through)
+  - 🥚 [./describing-errors](./describing-errors)
+  - 🥚 [./logging](./logging)
+  - 🐣 [./naming-variables](./naming-variables)
+- **Practice**
+  - 🐣 [./isolate](./isolate): through conditionals
+    - it's ok if you haven't mastered coercion or operator precedence this week, but you should start them
+  - 🐣 [./fixing-bugs](./fixing-bugs): through conditionals
+  - 🐣 [./integrate](./integrate): through conditionals
 
 Isolate goes in depth on type coercion and primitive operators. You aren't expected to master these topics in one week, it will take lots of practice for this to sink in.
 
@@ -333,7 +374,7 @@ The topics for this Sunday will be `while` and `for` loops, and a little bit of 
   - [javascript.info](https://javascript.info/while-for)
   - [Mosh](https://www.youtube.com/watch?v=s9wW2PpJsmQ)
   - [./isolate](./isolate): while loops and for loops
-- [./interact](./interact): numbers (examples)
+- [./integrate](./integrate): numbers (examples)
 
 ### During Class
 
@@ -344,13 +385,15 @@ The topics for this Sunday will be `while` and `for` loops, and a little bit of 
 #### After Break
 
 - Practice debugging programs that use numbers
-  - [./interact](./interact): numbers
+  - [./integrate](./integrate): numbers
 
 ### After Class
 
-- 🥚 [./isolate](./isolate): through Refactoring Loops
-- 🐣 [./naming-variables](./naming-variables): until it starts to make sense, you'll get plenty of time to practice in /interact
-- 🐣 [./interact](./interact): through Numbers
+- **Skills**: continue studying the coding skills
+- **Practice**:
+  - 🥚 [./isolate](./isolate): through Refactoring Loops
+  - 🐣 [./fixing-bugs](./fixing-bugs): through loops
+  - 🐣 [./integrate](./integrate): through Numbers
 
 Keep working your way through your favorite tutorials and the exercises in this repository.
 
@@ -405,6 +448,7 @@ Prep work:
 Keep working your way through your favorite tutorials and the exercises in this repository. If you haven't already, take a look at:
 
 - 🥚 [./isolate](./isolate): through The Callstack
+- 🐣 [./fixing-bugs](./fixing-bugs): through Functions
 - 🐣 [./using-functions](./using-functions): through Refactor Logic
 
 Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
@@ -429,6 +473,10 @@ Reference vs. Value! This week you will learn about arrays, objects and side-eff
 This week's class will focus almost entirely on how arrays/objects are stored in memory, and how to use them as arguments to functions. Take a look through the examples in these folders to be ready for class:
 
 - [./isolate](./isolate): reference vs. value, side-effects
+- references
+  - [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
+  - [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
+  - [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
 
 ### During Class
 
@@ -443,7 +491,8 @@ This week's class will focus almost entirely on how arrays/objects are stored in
 ### After Class
 
 - 🥚 [./isolate](./isolate): through Side Effects. Reference vs. Value and Side Effects are another "invisible" thing about JS, you can't see it in the source code! You need to understand how JS program memory works and to learn how debugging tools can help you see this
-- 🐣 [./interact](./interact): Arrays
+- 🐣 [./fixing-bugs](./fixing-bugs): Arrays & Objects
+- 🐣 [./integrate](./integrate): Arrays
 - 🐣 [./using-functions](./using-functions): Avoid Side-Effects
 
 Keep working through your favorite tutorials and the exercises in this repository. It's important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
@@ -500,6 +549,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
    - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
    - [Describing Errors](https://vimeo.com/530238051)
 2. Week 2:
+
    - Part 1 hasn't been recorded due to a technical issue. Our apologies.
    - [Part 2](https://vimeo.com/535777690)
 

@@ -2,8 +2,8 @@
 console.log('-- begin --');
 
 /**
- * checks is a string is a palindrome
- *  palindrome: the same thing forwards and backwards
+ * checks if a string is a palindrome
+ *  palindrome: a string that is the same forwards or backwards
  * @param {string} toCheck - the string that might be a palindrome
  * @returns {boolean} is the string a palindrome?
  */
@@ -15,6 +15,8 @@ const isPalindrome = (toCheck = '') => {
   return (toCheck = reversed);
 };
 
+// the test cases are correct!
+//  You need to fix the function to pass the tests
 const _1_expect = false;
 const _1_actual = isPalindrome('Racecar');
 console.assert(_1_actual === _1_expect, 'Test 1');
@@ -35,6 +37,5 @@ console.assert(_4_actual === _4_expect, 'Test 4');
 const _5_expect = true;
 const _5_actual = isPalindrome();
 console.assert(_5_actual === _5_expect, 'Test 5: default parameter');
-
 
 console.log('-- end --');

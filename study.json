@@ -1,20 +1,33 @@
 {
   "--port": 4002,
+  "--force": true,
   "study": {
     "eval": true,
     "trace": true,
     "save": true,
     "variables": true,
-    "flowchart": true
+    "flowchart": true,
+    "blanks": true,
+    "table": true,
+    "ask": true
   },
   "highlight": {
     "eval": true,
     "trace": true,
     "flowchart": true,
-    "variables": true
+    "variables": true,
+    "table": true,
+    "ask": true
   },
   "variables": {
     "trace": true,
-    "eval": true
+    "eval": true,
+    "ask": true
+  },
+  "parsons": {
+    "study": true,
+    "table": true,
+    "trace": true,
+    "run": true
   }
 }
