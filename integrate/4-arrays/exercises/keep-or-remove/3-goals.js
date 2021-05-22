@@ -49,4 +49,4 @@ let message = '';
 alert(message);
 
 // -- log for the developer --
-console.log(strings, filtered);
+console.log(strings, saved);
