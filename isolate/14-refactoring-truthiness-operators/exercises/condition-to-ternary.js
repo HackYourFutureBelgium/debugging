@@ -3,6 +3,7 @@ console.log('-- begin --');
 
 // refactor this code to use a _?_:_ instead of a conditional
 
+// try different values
 const isLoggedIn = _;
 const secretInformation = _;
 const warningMessage = _;
@@ -15,6 +16,5 @@ if (isLoggedIn) {
   toDisplay = warningMessage;
 }
 console.log(toDisplay);
-
 
 console.log('-- end --');

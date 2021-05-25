@@ -9,6 +9,12 @@ console.log('-- begin --');
 */
 
 const color = 'red';
+const color = 'orange';
+const color = 'yellow';
+const color = 'green';
+const color = 'blue';
+const color = 'indigo';
+const color = 'violet';
 
 // for...of with `const`
 
@@ -24,6 +30,5 @@ for (let character of color) {
   character = 'hello!'; // no error
   console.log(character);
 }
-
 
 console.log('-- end --');

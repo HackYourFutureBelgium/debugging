@@ -8,6 +8,12 @@ console.log('-- begin --');
 const a = 2;
 const b = 3;
 
+// const a = 1;
+// const b = -1;
+
+// const a = 3;
+// const b = 1;
+
 // 0: original expression
 const result = (a * -(b + b)) / -a;
 console.log(result);
@@ -56,6 +62,5 @@ console.log(result);
   const result = step5;
   console.log(result);
 }
-
 
 console.log('-- end --');

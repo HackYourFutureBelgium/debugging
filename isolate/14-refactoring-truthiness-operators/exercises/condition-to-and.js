@@ -3,6 +3,7 @@ console.log('-- begin --');
 
 // refactor this code to use && instead of a conditional
 
+// try different values
 const input = _;
 const password = 'pickles';
 console.log(input, password);
@@ -12,6 +13,5 @@ if (isValidPassword) {
   isValidPassword = input === password;
 }
 console.log(isValidPassword);
-
 
 console.log('-- end --');

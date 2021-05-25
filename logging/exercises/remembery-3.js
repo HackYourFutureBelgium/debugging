@@ -11,9 +11,9 @@ alert(`Guess 3 inputs in 3 tries
 
 alert('Player 2: go hide');
 
-let input1 = prompt('Player 1, enter your first input:');
-let input2 = prompt('Player 1, enter your second input:');
-let input3 = prompt('Player 1, enter your third input:');
+const input1 = prompt('Player 1, enter your first input:');
+const input2 = prompt('Player 1, enter your second input:');
+const input3 = prompt('Player 1, enter your third input:');
 
 alert('Player 2, get back here');
 
@@ -32,17 +32,17 @@ alert(
 
 let tally = 0;
 
-let guess1 = prompt('Player 1, guess the first input:');
+const guess1 = prompt('Player 1, guess the first input:');
 if (guess1 === input1) {
   tally = tally + 1;
 }
 
-let guess2 = prompt('Player 1, guess the second input:');
+const guess2 = prompt('Player 1, guess the second input:');
 if (guess2 === input2) {
   tally = tally + 1;
 }
 
-let guess3 = prompt('Player 1, guess the third input:');
+const guess3 = prompt('Player 1, guess the third input:');
 if (guess3 === input3) {
   tally = tally + 1;
 }

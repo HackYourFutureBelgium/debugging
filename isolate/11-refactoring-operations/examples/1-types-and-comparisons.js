@@ -2,6 +2,10 @@
 console.log('-- begin --');
 
 const a = undefined;
+// const a = true;
+// const a = 'hello';
+// const a = 12;
+// const a = null;
 
 // 0: original expression
 const result = Number(Boolean(a) === true);
@@ -30,6 +34,5 @@ console.log(result);
   const result = step3;
   console.log(result);
 }
-
 
 console.log('-- end --');

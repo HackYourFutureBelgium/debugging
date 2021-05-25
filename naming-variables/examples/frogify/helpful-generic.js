@@ -26,7 +26,7 @@ while (input === null) {
 
 let output = '';
 
-for (let next of input) {
+for (const next of input) {
   if (next === 'f') {
     output = output + 'frog';
   } else if (next === 'F') {

@@ -18,7 +18,14 @@ console.log('-- begin --');
 
 */
 
-const value = null;
+const value = 123;
+// const value = '123';
+// const value = true;
+// const value = undefined;
+// const value = null;
+// const value = 'hello';
+// const value = NaN;
+
 let path = '';
 
 if (typeof value === 'number') {
@@ -30,6 +37,5 @@ if (typeof value === 'number') {
 }
 
 console.log(path);
-
 
 console.log('-- end --');

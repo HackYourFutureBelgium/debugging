@@ -4,6 +4,12 @@ console.log('-- begin --');
 const a = 2;
 const b = 3;
 
+// const a = 1;
+// const b = -1;
+
+// const a = 3;
+// const b = 3;
+
 // 0: original expression
 const result = (a * (b + b)) / a;
 
@@ -30,6 +36,5 @@ const result = (a * (b + b)) / a;
   const result = step3;
   console.log(result);
 }
-
 
 console.log('-- end --');

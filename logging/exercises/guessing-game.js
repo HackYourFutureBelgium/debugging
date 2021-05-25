@@ -1,4 +1,4 @@
-let userInput = prompt(
+const userInput = prompt(
   'Welcome!\n\n' +
     '"play": begin the game\n' +
     '"-h": read the instructions\n' +
@@ -36,7 +36,8 @@ if (userInput === '-h') {
       alert(
         'Player 1: you entered ...\n\n' +
           '- phrase: "' +
-          secretPhrase +  '"' +
+          secretPhrase +
+          '"' +
           '\n' +
           '- clue: "' +
           clue +
@@ -64,15 +65,17 @@ if (userInput === '-h') {
       } else {
         winner = 'Player 1';
 
-        let revealTheSecret = confirm(
+        const revealTheSecret = confirm(
           'Nope, not correct.\n\n' + 'do you want to know the secret?'
         );
 
         if (revealTheSecret) {
           alert(
             'The secret was:\n\n' +
-              '- ' + '"' +
-              secretPhrase + '"' +
+              '- ' +
+              '"' +
+              secretPhrase +
+              '"' +
               '\n\n' +
               'thanks for playing, see ya'
           );

@@ -5,11 +5,11 @@ while (_a === null) {
   );
 }
 
-let _b = 'aeiou';
+const _b = 'aeiou';
 
 let _c = false;
-for (let _d of _a) {
-  let _e = _d.toLowerCase();
+for (const _d of _a) {
+  const _e = _d.toLowerCase();
   if (_b.includes(_e)) {
     _c = true;
     break;

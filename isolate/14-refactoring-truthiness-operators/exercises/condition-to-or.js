@@ -3,6 +3,7 @@ console.log('-- begin --');
 
 // refactor this code to use || instead of a conditional
 
+// try different values
 const isAfterFive = _;
 const isTheWeekend = _;
 console.log(isAfterFive, isTheWeekend);
@@ -12,6 +13,5 @@ if (!stopWorking) {
   stopWorking = isTheWeekend === true;
 }
 console.log(stopWorking);
-
 
 console.log('-- end --');

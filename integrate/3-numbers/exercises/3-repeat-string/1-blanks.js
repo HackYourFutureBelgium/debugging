@@ -36,7 +36,9 @@ while (_) {
 let repeatedInput = '';
 
 /* repeat the user input `repetitions` number of times */
-for (_; _; _) {}
+for (_; _; _) {
+  repeatedInput = _;
+}
 
 const finalMessage = `"${userInput}" -> "${repeatedInput}"`;
 alert(finalMessage);

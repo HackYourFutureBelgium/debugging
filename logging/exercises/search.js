@@ -10,7 +10,7 @@ while (!userConfirmedPhrase) {
   userConfirmedPhrase = confirm('is this correct: "' + phrase + '"');
 }
 
-let caseSensitive = confirm('do you want a case-sensitive search?');
+const caseSensitive = confirm('do you want a case-sensitive search?');
 
 let query = '';
 

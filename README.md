@@ -222,13 +222,13 @@ Helpful resources for this module
 - 🥚 **[./strict-mode](./strict-mode)**: a quick read and a couple examples. long story short: always use strict mode.
 - **Skills**: you don't need to finish all of the exercises in these folders, just enough to get comfortable with the processes
   - 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
-  - 🥚 **[./describing-errors](./describing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
+  - 🥚 **[./fixing-errors](./fixing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
   - 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
+  - 🐣 **[./fixing-bugs](./fixing-bugs)**: Learn a structured approach to
   - 🐣 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
 - **Practice**
   - 🐣 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
-  - 🐣 **[./fixing-bugs](./fixing-bugs)**: some small exercises to learn a structured approach to describing, finding and fixing bugs in your code.
-  - 🐣 **[./integrate](./integrate)**: Learn to work with _primitive types_, _control flow_ and _functions_ by writing small interactive programs. Code in this folder uses `prompt`, `alert`, and `confirm` for handling user interactions, but still have no user interface (HTML/CSS).
+  - 🐣 **[./integrate](./integrate)**: Integrate all the skills and knowledge you've gained. You will read, debug, complete, and write full programs.
   - 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions to organize and and reuse your code.
 
 ### Reference vs. Values
@@ -295,7 +295,7 @@ You can get by without them, but when they're helpful they're very helpful.
 
 ## Week 1
 
-Use debuggers to step through your code one instruction at a time. Along the way you'll learn how to visualize _program memory_ and how to fix errors in your code.
+Use debuggers to step through your code one instruction at a time. Along the way you'll see how to visualize _program memory_, describe errors in your code, and start fixing bugs in a program.
 
 <details>
 <summary>expand/collapse</summary>
@@ -303,41 +303,42 @@ Use debuggers to step through your code one instruction at a time. Along the way
 
 ### Before Class
 
-#### Coding Prep
-
 You don't need to understand this material perfectly, it's just important you aren't seeing it for the first time in class on Sunday.
 
+- [./strict-mode](./strict-mode) (a quick read)
 - [./stepping-through](./stepping-through)
+  - skim these videos: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
+- [./isolate](./isolate): Variables
+  - so you're familiar with `const` vs. `let`
 
 ### During Class
 
 #### Before Break
 
-Practice using the debugger and JS Tutor to step through small programs.
+Dig deeper into program execution and the debugger:
 
 - [./stepping-through](./stepping-through)
-- [./integrate](./integrate): Input/Output Loops
+- [./fixing-errors](./fixing-errors)
 
 #### After Break
 
-Dig deeper into program execution and the debugger by learning how to describe errors in your program:
+A method for finding and fixing bugs in your code
 
-- [./describing-errors](./describing-errors)
+- [./fixing-bugs](./fixing-bugs)
 
 ### After Class
 
 Learning to program with JavaScript is a marathon. This week you can keep working through your favorite tutorials, and be sure make time to get comfortable stepping through and predicting small programs in your debugger. Try starting with:
 
 - 🥚 [./strict-mode](./strict-mode): a quick read
-- **Skills**: you're not expected to master these skills in one week, but starting to learn them in week 1 will make everything else easier. Practicing a little bit every day is the best way to learn a skill.
+- **Skills**: you're not expected to master these skills in one week, but starting to practice the them in week 1 will make everything else easier. Practicing a little bit every day is the best way to build a skill.
   - 🥚 [./stepping-through](./stepping-through)
-  - 🥚 [./describing-errors](./describing-errors)
+  - 🥚 [./fixing-errors](./fixing-errors)
   - 🥚 [./logging](./logging)
-  - 🐣 [./naming-variables](./naming-variables)
+  - 🐣 [./fixing-bugs](./fixing-bugs)
 - **Practice**
   - 🐣 [./isolate](./isolate): through conditionals
-    - it's ok if you haven't mastered coercion or operator precedence this week, but you should start them
-  - 🐣 [./fixing-bugs](./fixing-bugs): through conditionals
+    - you're not expected to master coercion or operator precedence this week, but you should start them
   - 🐣 [./integrate](./integrate): through conditionals
 
 Isolate goes in depth on type coercion and primitive operators. You aren't expected to master these topics in one week, it will take lots of practice for this to sink in.
@@ -355,8 +356,8 @@ Your class repository has a folder called `/javascript` and a project board for 
 
 ## Week 2
 
+- Naming Variables
 - Numbers and `NaN`
-- User numbers
 - `for` loops
 
 <details>
@@ -365,39 +366,42 @@ Your class repository has a folder called `/javascript` and a project board for 
 
 ### Before Class
 
-The topics for this Sunday will be `while` and `for` loops, and a little bit of type casting. Got a suggestion for this list? send a PR!
+The main topics for this Sunday will be naming variables and writing programs. To come prepared you should study up on these JS language features:
 
-- Type Conversion
+- Type Conversions
   - [javascript.info](https://javascript.info/type-conversions)
   - [./isolate](./isolate): explicit coercion
 - Loops
   - [javascript.info](https://javascript.info/while-for)
   - [Mosh](https://www.youtube.com/watch?v=s9wW2PpJsmQ)
-  - [./isolate](./isolate): while loops and for loops
-- [./integrate](./integrate): numbers (examples)
+  - [./isolate](./isolate): for loops
 
 ### During Class
 
 #### Before Break
 
-- [./isolate](./isolate): explicit coercion
+- [./isolate](./isolate) - review `let` vs. `const`
+  - why does JavaScript have both?
+  - what are the conventions for using `let` and `const`?
+- [./naming-variables](./naming-variables)
 
 #### After Break
 
-- Practice debugging programs that use numbers
-  - [./integrate](./integrate): numbers
+- [./integrate](./integrate):
+  - `numbers/repeat-string`
+  - maybe also `numbers/repeat-characters`
 
 ### After Class
 
-- **Skills**: continue studying the coding skills
+- **Skills**: continue studying all the coding skills
+  - 🐣 [./naming-variables](./naming-variables)
 - **Practice**:
   - 🥚 [./isolate](./isolate): through Refactoring Loops
-  - 🐣 [./fixing-bugs](./fixing-bugs): through loops
   - 🐣 [./integrate](./integrate): through Numbers
 
-Keep working your way through your favorite tutorials and the exercises in this repository.
+Keep working your way through your favorite tutorials.
 
-Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
+Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
 
 </details>
 <br>
@@ -437,21 +441,26 @@ Prep work:
 
 #### Before Break
 
-- [./isolate](./isolate): functions, the basics
+- [./isolate](./isolate):
+  - `/documenting-functions`
+  - `/passing-tests`
 
 #### After Break
 
-- [./isolate](./isolate): functions, the basics + documenting
+- [./using-functions](./using-functions)
+  - `/refactor-logic`
 
 ### After Class
 
 Keep working your way through your favorite tutorials and the exercises in this repository. If you haven't already, take a look at:
 
-- 🥚 [./isolate](./isolate): through The Callstack
-- 🐣 [./fixing-bugs](./fixing-bugs): through Functions
-- 🐣 [./using-functions](./using-functions): through Refactor Logic
+- **Skills**: keep practicing all those coding skills
+- **Practice**
+  - 🥚 [./isolate](./isolate): through The Callstack
+  - 🐣 [./fixing-bugs](./fixing-bugs): through Functions
+  - 🐣 [./using-functions](./using-functions): through Refactor Logic
 
-Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
+Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
 
 </details>
 <br>
@@ -497,7 +506,7 @@ This week's class will focus almost entirely on how arrays/objects are stored in
 
 Keep working through your favorite tutorials and the exercises in this repository. It's important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
 
-Try make at least one contribution per day to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
+Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
 
 </details>
 <br>
@@ -554,6 +563,7 @@ Try make at least one contribution per day to the class `/javascript` study guid
    - [Part 2](https://vimeo.com/535777690)
 
 3. Week 3:
+
    - [Part 1](https://vimeo.com/538659747)
    - [Part 2](https://vimeo.com/538671285)
 

@@ -4,7 +4,7 @@ while (_a === null) {
 }
 
 let _b = '';
-for (let _c of _a) {
+for (const _c of _a) {
   if ('aeiou'.includes(_c)) {
     _b = _b + _c.toUpperCase();
   } else if ('AEIOU'.includes(_c)) {

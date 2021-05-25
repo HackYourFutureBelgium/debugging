@@ -17,7 +17,13 @@ console.log('-- begin --');
 
 */
 
-const value = true;
+const value = 123;
+// const value = '123';
+// const value = true;
+// const value = undefined;
+// const value = null;
+// const value = 'hello';
+// const value = NaN;
 
 // unreachable because the condition is impossible
 //  it's impossible for a value to be truthy AND falsy
@@ -48,6 +54,5 @@ if (value) {
 }
 
 console.log('path2:', typeof path2, path2);
-
 
 console.log('-- end --');

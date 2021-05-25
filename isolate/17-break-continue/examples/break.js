@@ -9,7 +9,11 @@ console.log('-- begin --');
 
 */
 
-const max = 6;
+const max = 0;
+// const max = 1;
+// const max = 2;
+// const max = 3;
+// const max = 4;
 
 let iterations = 0;
 while (true) {
@@ -26,6 +30,5 @@ while (true) {
 
   console.log('end loop');
 }
-
 
 console.log('-- end --');

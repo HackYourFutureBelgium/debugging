@@ -11,6 +11,12 @@ console.log('-- begin --');
 const x = null;
 const y = 100;
 
+// const x = true;
+// const y = false;
+
+// const x = 'hello';
+// const y = '';
+
 const expected = false;
 
 // the original expression
@@ -35,6 +41,5 @@ console.assert(step3 === expected, 'Step 3');
   because the left side of && is falsy, the right side will not be executed
   so we can clear out the && without doing any extra steps
 */
-
 
 console.log('-- end --');

@@ -1,6 +1,6 @@
-# Interact
+# Integrate
 
-Practice using the debugger to study, fix, and write interactive programs. There are 5 sets of exercises in this chapter, each building on top of the last.
+Pull together all the skills and JavaScript you've learned so far. Practice using the debugger to study, fix, and write interactive programs. There are 5 sets of exercises in this chapter, each building on top of the last.
 
 > PS. These exercises won't work in JS Tutor. JS Tutor does not support `prompt`, `alert` or `confirm`.
 

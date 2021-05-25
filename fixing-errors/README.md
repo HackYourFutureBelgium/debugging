@@ -1,4 +1,4 @@
-# Describing Errors
+# Fixing Errors
 
 Program life cycle is the air JavaScript breaths, you may not notice it but it's always there and it's pretty darned important. Taking the time to become familiar with the life-cycle of JS program will make it easier to debug your code and to learn the tricker topics everyone's talking about; scope, errors, hoisting, strict mode, you name it.
 

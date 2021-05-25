@@ -8,7 +8,11 @@ console.log('postfix increment: x++');
   b. reassign x to it's current value plus 1
 */
 
-let x = 0;
+let x = -2;
+// let x = -1;
+// let x = 0;
+// let x = 1;
+// let x = 2;
 console.log('initial x:', typeof x, x, '\n');
 
 const _1_return = x++;
@@ -30,6 +34,5 @@ const _4_return = x++;
 const _4_new_x = x;
 console.log('4. return:', typeof _4_return, _4_return);
 console.log('4. new x:', typeof _4_new_x, _4_new_x, '\n');
-
 
 console.log('-- end --');

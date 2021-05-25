@@ -12,6 +12,10 @@ console.log('-- begin --');
 */
 
 const aString = 'wxyz';
+// const aString = 'x';
+// const aString = '    !';
+// const aString = 'Hello';
+// const aString = '';
 console.log('aString:', typeof aString, aString);
 console.log('aString.length:', typeof aString.length, aString.length);
 
@@ -43,6 +47,5 @@ for (let index = aString.length - 1; index >= 0; index--) {
   const nextCharacter = aString[index];
   console.log(index, nextCharacter);
 }
-
 
 console.log('-- end --');

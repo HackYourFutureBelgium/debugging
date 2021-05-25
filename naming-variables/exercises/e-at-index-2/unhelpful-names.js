@@ -8,7 +8,7 @@ while (true) {
   let _c = prompt('input a string with "e" at index ' + _a);
 
   if (_c === null) {
-    let _d = confirm('are you sure you want to _d?');
+    const _d = confirm('are you sure you want to _d?');
     if (_d) {
       break;
     } else {

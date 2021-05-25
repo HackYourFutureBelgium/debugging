@@ -4,8 +4,8 @@ while (_a === null) {
 }
 
 let _b = '';
-for (let _c of _a) {
-  let _d = 'aeiou'.includes(_c.toLowerCase());
+for (const _c of _a) {
+  const _d = 'aeiou'.includes(_c.toLowerCase());
   if (!_d) {
     _b = _b + _c;
   }

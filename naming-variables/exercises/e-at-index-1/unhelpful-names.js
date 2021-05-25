@@ -6,7 +6,7 @@ let _b = 'entries:';
 
 let _c = true;
 while (_c) {
-  let _d = prompt('_d a string with "e" at index ' + _a);
+  const _d = prompt('_d a string with "e" at index ' + _a);
 
   if (_d === null) {
     _c = !confirm('are you sure you want to exit?');

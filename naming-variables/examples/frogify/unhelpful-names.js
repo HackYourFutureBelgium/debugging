@@ -52,7 +52,7 @@ let _b = '';
 
 // _c: declare, string
 // _a: read
-for (let _c of _a) {
+for (const _c of _a) {
   // _c: read
   if (_c === 'f') {
     // _b: read

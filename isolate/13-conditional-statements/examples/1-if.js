@@ -18,6 +18,12 @@ console.log('-- begin --');
 
 // try changing this variable's value and see what happens
 const value = 123;
+// const value = '123';
+// const value = true;
+// const value = undefined;
+// const value = null;
+// const value = 'hello';
+// const value = NaN;
 
 let path = '';
 
@@ -32,10 +38,8 @@ const valueIsANumber = typeof value === 'number';
 const conditionIsTruthy = valueIsANumber === true;
 if (conditionIsTruthy) {
   console.log(' value is a number (step-by-step)');
-  path = 'if';
 }
 
 console.log(path);
-
 
 console.log('-- end --');

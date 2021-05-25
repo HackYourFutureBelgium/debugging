@@ -8,7 +8,7 @@ let mediumStrings = 'medium:';
 let longStrings = 'long:';
 
 while (true) {
-  let input = prompt('enter something');
+  const input = prompt('enter something');
 
   if (input === null) {
     break;

@@ -4,8 +4,8 @@ while (_a === null) {
 }
 
 let _b = '';
-for (let _c of _a) {
-  let _d = _b.includes(_c);
+for (const _c of _a) {
+  const _d = _b.includes(_c);
   if (_d) {
     break;
   }

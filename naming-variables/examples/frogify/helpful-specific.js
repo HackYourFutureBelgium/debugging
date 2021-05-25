@@ -27,7 +27,7 @@ while (toBeFrogged === null) {
 
 let frogged = '';
 
-for (let maybeF of toBeFrogged) {
+for (const maybeF of toBeFrogged) {
   /* -- append to new string -- */
   if (maybeF === 'f') {
     frogged = frogged + 'frog';

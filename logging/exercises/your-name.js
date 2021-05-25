@@ -7,7 +7,7 @@ while (true) {
     continue;
   }
 
-  let userDidConfirm = confirm('is this your name: "' + userInput + '"');
+  const userDidConfirm = confirm('is this your name: "' + userInput + '"');
   if (userDidConfirm) {
     break;
   }

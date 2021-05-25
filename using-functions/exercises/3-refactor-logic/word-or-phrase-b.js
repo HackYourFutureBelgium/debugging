@@ -8,21 +8,17 @@
 
 /* ===== declare functions ===== */
 
-// write documentation for your function
-
 /**
  *
  */
-
-// name and write your function
 const _ = () => {};
 
 // test your function
-console.assert(_() === _, 'Test 1');
-console.assert(_() === _, 'Test 2');
-console.assert(_() === _, 'Test 3');
-console.assert(_() === _, 'Test 4');
-console.assert(_() === _, 'Test 5');
+console.assert(_('') === '', 'Test 1');
+console.assert(_('123') === '321', 'Test 2');
+console.assert(_('(-*-)') === ')-*-(', 'Test 3');
+console.assert(_(' yo!') === '!oy ', 'Test 4');
+console.assert(_('wizard') === 'draziw', 'Test 5');
 
 /* ===== main program (use functions) ===== */
 

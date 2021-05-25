@@ -3,11 +3,11 @@ while (_a === null) {
   _a = prompt('enter some text, the program will check if it is only vowels');
 }
 
-let _b = 'aeiou';
+const _b = 'aeiou';
 
 let _c = true;
-for (let _d of _a) {
-  let _e = _b.includes(_d.toLowerCase());
+for (const _d of _a) {
+  const _e = _b.includes(_d.toLowerCase());
   if (!_e) {
     _c = false;
     break;
