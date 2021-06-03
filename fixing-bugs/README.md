@@ -11,7 +11,7 @@ Here are the questions you should practice asking and answering. If you can't an
 3. how _does_ it work? ("zooming in": reading, tracing, describing, stepping through, ...)
 4. which line(s) are surprising?
 
-Once you've answered these 3 questions you are ready to experiment with changes that might fix your program.
+Once you've answered these questions you are ready to experiment with changes that might fix your program.
 
 ---
 
