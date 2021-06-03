@@ -1,11 +1,14 @@
 'use strict';
 
-/* actual behavior
+/* try something
 
-  before looking too closely at the code, take some time to understand what it DOES do
+  make a change and see what happens!
+  try making one small change, predicting what will happen, then checking
 
-  a good way to explain what the code DOES do is to see which test cases fail
-  so run the program a few times trying out each test case
+  you don't need to fix everything in one experiment
+    it's better to do many small, reversible changes than one huge one
+  fixing bugs is not about flashes of brilliance
+    it's about small and careful experimentation
 
 */
 
@@ -28,11 +31,12 @@
 
   --- experiments ---
 
-  1. FAILING: 'abcd' -> 'too short'. it should output 'perfect!'
-    TRY:
-    PREDICT:
-    IT DID:
-    EXPLAIN:
+  1. FAILING: 'abcd' -> 'perfect!'
+      strings with length 4 should output 'perfect!'
+    TRY: replacing <= with < because it's also checking if the length is equal to 4
+    PREDICT: input with length 4 will not enter the first path, it will be perfect
+    IT DID: skip the first path, but went to the second instead
+    EXPLAIN: the second condition is also wrong
 
   --- lessons learned ---
 
@@ -44,7 +48,9 @@ let message;
 if (input === null) {
   message = 'you canceled :(';
 } else {
-  if (input.length <= 4) {
+  // 1. I thought this would be 'false' for input with length 4
+  // if (input.length <= 4) {
+  if (input.length < 4) {
     message = 'too short';
   } else if (input.length >= 4) {
     message = 'too long';

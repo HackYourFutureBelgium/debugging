@@ -1,5 +1,14 @@
 'use strict';
 
+/* one failing test
+
+  after you have an idea which cases pass and which ones fail
+  pick one test case to focus on
+
+  you will focus on fixing ONLY that test case for now
+
+*/
+
 /* exactly 4
 
   a user can enter a number and know if it is 4 characters long
@@ -14,13 +23,19 @@
     'ab' -> 'too short'
     'abc' -> 'too short'
     'abcd' -> 'perfect!'
-          -> 'too short'
     'abcde' -> 'too long'
     'abcdef' -> 'too long'
 
-  the bug: the program says that a string with 4 characters is too short
+  --- experiments ---
 
-  your fix:
+  1. FAILING: 'abcd' -> 'too short'.
+      strings with length 4 should output 'perfect!'
+    TRY:
+    PREDICT:
+    IT DID:
+    EXPLAIN:
+
+  --- lessons learned ---
 
 */
 
@@ -30,9 +45,7 @@ let message;
 if (input === null) {
   message = 'you canceled :(';
 } else {
-  // ! i thought this would be 'false' for input with length 4
-  // 1. replaced <= with <
-  if (input.length < 4) {
+  if (input.length <= 4) {
     message = 'too short';
   } else if (input.length >= 4) {
     message = 'too long';
@@ -42,14 +55,3 @@ if (input === null) {
 }
 
 alert(message);
-
-/* experiments
-
-  1. first comparison seems wrong
-    predict: the first condition is evaluating true when it should not (input is 4 characters long)
-      if i replace the first condition with < the failing test case should pass
-    actual: 'abcd' -> 'too long'
-    why: this didn't pass but is a step in the right direction
-      instead of going to the else path, it followed the second path
-
-*/

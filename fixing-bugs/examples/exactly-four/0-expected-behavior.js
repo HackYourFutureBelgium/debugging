@@ -1,5 +1,19 @@
 'use strict';
 
+/* expected behavior
+
+  before trying to find out what's wrong, you need to know what "right" is!
+  take some time understand what the program is SUPPOSED to do before running it
+
+  some common ways to explain how a program should work are:
+  - user stories
+  - test cases (input/output pairs)
+
+  the exercises in this folder all have user stories and test cases
+  in other folders you will need to write these yourself
+
+*/
+
 /* exactly 4
 
   a user can enter a number and know if it is 4 characters long
@@ -14,13 +28,18 @@
     'ab' -> 'too short'
     'abc' -> 'too short'
     'abcd' -> 'perfect!'
-          -> 'too short'
     'abcde' -> 'too long'
     'abcdef' -> 'too long'
 
-  the bug: the program says that a string with 4 characters is too short
+  --- experiments ---
 
-  your fix:
+  1. FAILING:
+    TRY:
+    PREDICT:
+    IT DID:
+    EXPLAIN:
+
+  --- lessons learned ---
 
 */
 
@@ -40,12 +59,3 @@ if (input === null) {
 }
 
 alert(message);
-
-/* experiments
-
-  name
-    predict:
-    actual:
-    why:
-
-*/

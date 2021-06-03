@@ -65,7 +65,7 @@ By taking notes on all the little experiments you make and what happened you can
 
 ## The Exercises
 
-The exercises in this folder are all short programs with a bug or two.  Each exercise will also have some comments to help guide you through the debugging process.  Take a look at the [./examples](./examples) to see how you can study these exercises.
+The exercises in this folder are all short programs with a bug or two. Each exercise will also have some comments to help guide you through the debugging process. Take a look at the [./examples](./examples) to see how you can study these exercises.
 
 ```js
 'use strict';
@@ -79,23 +79,21 @@ The exercises in this folder are all short programs with a bug or two.  Each exe
     input -> expected output
       -> actual output, if it's different than the expected
 
-  the bug: (describe what the program does wrong. by running it, not looking at the code!)
+  --- experiments ---
 
-  your fix: (describe how you fixed the bug)
+  1. FAILING: (which failing test cases will you try to fix?)
+    TRY: (how will you try to fix the bug?)
+    PREDICT: (how do you expect the program to behave after your change?)
+    IT DID: (what actually happened after your change?)
+    EXPLAIN: (explain why your change did what it did. was your prediction correct?)
+
+  --- lessons learned ---
+
 
 */
 
-// ! what?  this line is surprising because ...
+// 1. ! what?  this line is surprising because ...
 const someBuggyCode = 'goes here';
-
-/* experiments
-
-  (give a good name to your experiment)
-    predict: (predict how this change will make the program behave)
-    actual: (describe how the program actually behaves)
-    why: (describe why your change did what it did)
-
-*/
 ```
 
 ---

@@ -1,5 +1,16 @@
 'use strict';
 
+/* surprising lines
+
+  step through the code in the debugger with your chosen test case
+  do this a few times trying to predict what will happen before stepping
+
+  take note of the lines that surprise you
+    the lines you can't predict or explain
+  those lines are probably part of the bug
+
+*/
+
 /* exactly 4
 
   a user can enter a number and know if it is 4 characters long
@@ -14,13 +25,19 @@
     'ab' -> 'too short'
     'abc' -> 'too short'
     'abcd' -> 'perfect!'
-          -> 'too short'
     'abcde' -> 'too long'
     'abcdef' -> 'too long'
 
-  the bug: the program says that a string with 4 characters is too short
+  --- experiments ---
 
-  your fix:
+  1. FAILING: 'abcd' -> 'too short'.
+      strings with length 4 should output 'perfect!'
+    TRY:
+    PREDICT:
+    IT DID:
+    EXPLAIN:
+
+  --- lessons learned ---
 
 */
 
@@ -30,7 +47,7 @@ let message;
 if (input === null) {
   message = 'you canceled :(';
 } else {
-  // ! i thought this would be 'false' for input with length 4
+  // 1. i thought this would evaluate to false when the input is 4 long
   if (input.length <= 4) {
     message = 'too short';
   } else if (input.length >= 4) {
@@ -41,12 +58,3 @@ if (input === null) {
 }
 
 alert(message);
-
-/* experiments
-
-  name
-    predict:
-    actual:
-    why:
-
-*/
