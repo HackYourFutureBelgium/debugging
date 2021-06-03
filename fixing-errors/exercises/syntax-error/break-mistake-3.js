@@ -25,4 +25,4 @@ while (true) {
   }
 }
 
-console.log(iterations);
+console.assert(iterations === 9);
