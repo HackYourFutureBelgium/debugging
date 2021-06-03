@@ -3,7 +3,7 @@
 /* Life Cycle
 
   this part of the error description can be tricky to wrap your head around
-  take a minute to read through Program Life-Cycle in the /fixing-errors README if you haven't yet
+  take a minute to read through Program Life-Cycle in the README if you haven't yet
     ...
   done?  good, moving on.
 

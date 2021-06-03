@@ -556,3 +556,9 @@ Try make at least one contribution per week to the class `/javascript` study gui
 4. Week 4:
    - [Part 1](https://vimeo.com/543077287)
    - [Part 2](https://vimeo.com/543087934)
+  
+  ### [Class 15](https://github.com/hackyourfuturebelgium/class-15)
+  
+  > [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+  
+  1. [Week 1](https://vimeo.com/557135966)
