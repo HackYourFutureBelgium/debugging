@@ -1,3 +1,5 @@
+'use strict';
+
 /* A suggested workflow for studying code in your DevTools' debugger
 
   Getting Ready
@@ -36,10 +38,14 @@
 
 */
 
-let hello = 'world';
-console.assert(hello === 'world', 'hello should be "world"');
+const input = prompt('enter "hello"');
 
-hello = 'good bye';
-console.assert(hello === 'good bye', 'hello should be "good bye"');
+let didOrNot;
+if (input === 'hello') {
+  didOrNot = 'did';
+} else {
+  didOrNot = 'did not';
+}
 
-console.log('world');
+const message = `you ${didOrNot} enter "hello"`;
+alert(message);

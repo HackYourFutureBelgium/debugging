@@ -1,3 +1,5 @@
+'use strict';
+
 /* A suggested workflow for studying code in VSCode's debugger
 
   Getting Ready
@@ -36,4 +38,8 @@ console.assert(hello === 'world', 'hello should be "world"');
 hello = 'good bye';
 console.assert(hello === 'good bye', 'hello should be "good bye"');
 
-console.log('world');
+if (hello === 'world') {
+  console.log('path 1');
+} else {
+  console.log('path 2');
+}
