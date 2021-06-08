@@ -131,3 +131,13 @@ console.assert(
 <br>
 
 [TOP](for-loops)
+
+---
+
+## References
+
+- [Samir!](https://www.youtube.com/watch?v=fz2Uvf1ui-M)
+- [programiz](https://www.programiz.com/javascript/for-loop)
+- [HYF](https://hackyourfuture.github.io/study/#/javascript/loops?id=for)
+- [javascript.info](https://javascript.info/while-for#the-for-loop)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)

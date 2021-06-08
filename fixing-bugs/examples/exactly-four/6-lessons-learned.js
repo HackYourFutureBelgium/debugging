@@ -15,13 +15,18 @@
   - given the input is exactly 4 characters, it's perfect
 
   test cases:
+  - given the input is null
     null -> 'you canceled :('
+  - given the input is shorter than 4
     '' -> 'too short'
     'ab' -> 'too short'
     'abc' -> 'too short'
+  - given the input is exactly 4
     'abcd' -> 'perfect!'
+  - given the input is longer than 4
     'abcde' -> 'too long'
     'abcdef' -> 'too long'
+
 
   --- experiments ---
 
