@@ -265,6 +265,7 @@ Helpful resources for this module
 
 ### More Examples and Exercises
 
+- [CodeAcademy Projects JavaScript](https://github.com/brezich/Codecademy-Projects-JavaScript) +1 (through #10)
 - HackYourFuture Amsterdam: [JS module](https://github.com/HackYourFuture/JavaScript), [1-JavaScript homework](https://github.com/HackYourFuture/Homework)
 - CodeYourFuture JS Core: [week 1](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1), [week 2](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week2), [week 3](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week3)
 - [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone)
@@ -556,9 +557,9 @@ Try make at least one contribution per week to the class `/javascript` study gui
 4. Week 4:
    - [Part 1](https://vimeo.com/543077287)
    - [Part 2](https://vimeo.com/543087934)
-  
-  ### [Class 15](https://github.com/hackyourfuturebelgium/class-15)
-  
-  > [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
-  
-  1. [Week 1](https://vimeo.com/557135966)
+
+### [Class 15](https://github.com/hackyourfuturebelgium/class-15)
+
+> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+
+1. [Week 1](https://vimeo.com/557135966)
