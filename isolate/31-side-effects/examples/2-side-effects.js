@@ -6,7 +6,7 @@ console.log('-- begin --');
 //  the variable referencing this array outside the function will be effected
 // Psst. Use JS tutor for this example
 
-const modifyTheArray = (array, index, value) => {
+const modifyTheArray = (array = [], index = 0, value = '') => {
   array[index] = value;
 };
 
@@ -23,6 +23,5 @@ console.assert(furniture[3] === undefined, 'Test 3');
 modifyTheArray(furniture, 3, 'lamp');
 
 console.assert(furniture[3] === 'lamp', 'Test 4');
-
 
 console.log('-- end --');

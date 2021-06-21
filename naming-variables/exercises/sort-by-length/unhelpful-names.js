@@ -9,7 +9,7 @@ let _c = 'long:';
 
 let _d = true;
 while (_d) {
-  const _e = prompt('enter something');
+  let _e = prompt('enter something');
 
   if (_e === null) {
     _d = false;

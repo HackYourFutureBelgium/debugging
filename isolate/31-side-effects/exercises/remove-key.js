@@ -2,7 +2,7 @@
 console.log('-- begin --');
 
 /**
- * removes a specific key from an object without modifying the original object
+ * Removes a specific key from an object without modifying the original object.
  *
  */
 const removeKey = (obj = {}, key = '') => {};

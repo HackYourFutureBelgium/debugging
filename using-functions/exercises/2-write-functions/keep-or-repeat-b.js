@@ -12,10 +12,11 @@
 /* ===== declare functions ===== */
 
 /**
- * returns a new string with only the given characters left in it
- * @param {*} text - some text
- * @param {*} toKeep - the characters to keep
- * @returns {string} text with only the given characters still in it
+ * Returns a new string with only the given characters left in it.
+ *
+ * @param {_} [_=_] - Some text to remove characters from.
+ * @param {_} [_=_] - The characters to keep.
+ * @returns {_} Text with only the given characters still in it.
  */
 const keepCharacters = () => {};
 
@@ -27,10 +28,11 @@ console.assert(keepCharacters('', 'asdf') === '', 'Test 5: keep');
 console.assert(keepCharacters('asdf', '') === '', 'Test 6: keep');
 
 /**
- * returns a new string like the original one but with each character repeated
- * @param {string} text - a string to repeat each character
- * @param {number} repetitions - how many times to repeat each character
- * @returns {string} the original text with each character repeated
+ * Returns a new string like the original one but with each character repeated.
+ *
+ * @param {_} [_=_] - A string to repeat each character.
+ * @param {_} [_=_] - How many times to repeat each character.
+ * @returns {_} The original text with each character repeated.
  */
 const repeatCharacters = () => {};
 

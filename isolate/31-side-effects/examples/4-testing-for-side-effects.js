@@ -7,7 +7,7 @@ console.log('-- begin --');
 
 */
 
-const noSideEffect = (oldArray, index, newValue) => {
+const noSideEffect = (oldArray = [], index = 0, newValue = '') => {
   const newArray = [];
   for (const item of oldArray) {
     newArray.push(item);

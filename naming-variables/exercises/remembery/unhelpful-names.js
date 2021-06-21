@@ -5,13 +5,13 @@ alert(
     'if you enter it exactly, you win!'
 );
 
-const _a = prompt('enter your first secret phrase:');
-const _b = prompt('enter your second secret phrase:');
-const _c = prompt('enter your third secret phrase:');
+let _a = prompt('enter your first secret phrase:');
+let _b = prompt('enter your second secret phrase:');
+let _c = prompt('enter your third secret phrase:');
 
 alert('all saved! get ready to remember');
 
-const _d = Math.round(Math.random() * 2) + 1;
+let _d = Math.round(Math.random() * 2) + 1;
 
 let _e = '';
 if (_d === 1) {
@@ -22,7 +22,7 @@ if (_d === 1) {
   _e = _c;
 }
 
-const _f = prompt('enter phrase number ' + _d);
+let _f = prompt('enter phrase number ' + _d);
 
 if (_f === _e) {
   alert('correct! phrase ' + _d + ' was "' + _e + '"');

@@ -2,10 +2,11 @@
 console.log('-- begin --');
 
 /**
- * add together all the digits in a number
- * if the number is negative, the sum will be negative
- * @param {number} toSum - the number who's digits will be summed
- * @returns {number} the sum of all digits in toSum
+ * Add together all the digits in a number.
+ * If the number is negative, the sum will be negative.
+ *
+ * @param {number} [toSum=0] - The number who's digits will be summed.
+ * @returns {number} The sum of all digits in toSum.
  */
 const sumOfDigits = (toSum = 0) => {
   const digitsToSum = String(toSum);

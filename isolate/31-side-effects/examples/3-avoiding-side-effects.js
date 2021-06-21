@@ -6,7 +6,7 @@ console.log('-- begin --');
 //  3. read from the old array
 //  4. write values to a new array
 
-const createModifiedCopy = (oldArray, index, newValue) => {
+const createModifiedCopy = (oldArray = [], index = 0, newValue = '') => {
   const newArray = [];
   for (const item of oldArray) {
     newArray.push(item);
@@ -33,6 +33,5 @@ console.assert(furniture[3] === undefined, 'Test 3 b');
 // we chose a loop to show the idea of creating and filling a new array
 //  https://www.samanthaming.com/tidbits/35-es6-way-to-clone-an-array/
 //  https://futurestud.io/tutorials/clone-copy-an-array-in-javascript-and-node-js
-
 
 console.log('-- end --');

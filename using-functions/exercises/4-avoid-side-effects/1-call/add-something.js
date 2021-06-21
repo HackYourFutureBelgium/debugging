@@ -8,11 +8,12 @@
 /* ===== declare functions ===== */
 
 /**
- * creates a new array with the same length as the argument
- * `toAdd` has been added to each element in the new array
- * @param {number[]} numbers - an array of numbers
- * @param {number} toAdd - the number to add to each array item
- * @returns a new array with one entry per `numbers`
+ * Creates a new array with the same length as the argument
+ *  `toAdd` has been added to each element in the new array.
+ *
+ * @param {number[]} [numbers=[]] - An array of numbers.
+ * @param {number} [toAdd=0] - The number to add to each array item.
+ * @returns {number[]} A new array with one entry per `numbers`.
  */
 const addToNumbers = (numbers = [], toAdd = 0) => {
   const result = [];

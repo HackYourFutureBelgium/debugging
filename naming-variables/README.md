@@ -68,6 +68,8 @@ alert(_a);
 
 ## Name the Variable
 
+> Which variables can you change to `const`?
+
 Now you understand how the variable is used in the program, it's time to give it a name! In these exercises you'll need to give two different names to each variable, one _generic_ name and one _specific_ name:
 
 - **Generic**: Generic names that describe the variables' roles in the program. A generic names could be used in any program with similar logic.

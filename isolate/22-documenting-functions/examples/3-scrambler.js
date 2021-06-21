@@ -2,12 +2,13 @@
 console.log('-- begin --');
 
 /**
- * this returns a single string containing it's parameters
- * but rearranged into a different order
- * @param {string} param1 - becomes the last string in the result
- * @param {string} param2 - becomes the first string in the result
- * @param {string} param3 - becomes the second string in the result
- * @returns {string} a string with p1 -> r3, p2 -> r1, p3 -> r2
+ * This returns a single string containing it's parameters,
+ * but rearranged into a different order.
+ *
+ * @param {string} [param1=''] - Becomes the last string in the result.
+ * @param {string} [param2=''] - Becomes the first string in the result.
+ * @param {string} [param3=''] - Becomes the second string in the result.
+ * @returns {string} A string with p1 -> r3, p2 -> r1, p3 -> r2.
  */
 const scramble = (param1 = '', param2 = '', param3 = '') => {
   const result = param2 + param3 + param1;
@@ -33,6 +34,5 @@ const _4_expected = 'zyx';
 const _4_actual = scramble('y', 'x', 'z');
 const _4_test = _4_actual === _4_expected;
 console.assert(_4_test, 'Test 4');
-
 
 console.log('-- end --');

@@ -2,9 +2,10 @@
 console.log('-- begin --');
 
 /**
- * reverses a string
- * @param {string} text - the string to reverse
- * @returns {string} the original string, backwards
+ * Reverses a string.
+ *
+ * @param {string} [text=''] - The string to reverse.
+ * @returns {string} The original string, backwards.
  */
 const reverser = (text = '') => {
   let reversedText = '';
@@ -28,6 +29,5 @@ const _3_expected = 'racecar';
 const _3_actual = reverser('racecar');
 const _3_test = _3_actual === _3_expected;
 console.assert(_3_test, 'Test 3');
-
 
 console.log('-- end --');

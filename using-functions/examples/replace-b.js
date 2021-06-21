@@ -9,11 +9,12 @@
 /* ===== declare functions ===== */
 
 /**
- * returns a new string with all instances of the old thing replaced by the new thing
- * @param {string} text - the original text to modify
- * @param {string} oldThing - what to replace in the text
- * @param {string} newThing - what should replace the old thing
- * @returns {string} text with the old is replaced by the new
+ * Returns a new string with all instances of the old thing replaced by the new thing.
+ *
+ * @param {string} [text=''] - The original text to modify.
+ * @param {string} [oldThing=''] - What to replace in the text.
+ * @param {string} [newThing=''] - What should replace the old thing.
+ * @returns {string} Text with the old is replaced by the new.
  */
 const replace = (text = '', oldThing = '', newThing = '') => {
   const oldThingRegex = new RegExp(oldThing, 'g');

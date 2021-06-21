@@ -2,10 +2,11 @@
 console.log('-- begin --');
 
 /**
- * adds two numbers together
- * @param {number} x - the left left
- * @param {number} y - the right number
- * @returns {number} the sum of x and y
+ * Adds two numbers together.
+ *
+ * @param {number} [x=_] - The left left.
+ * @param {number} [y=_] - The right number.
+ * @returns {number} The sum of x and y.
  */
 const add = () => {};
 
@@ -33,6 +34,5 @@ console.assert(_5_actual === _5_expect, 'Test 5: second default parameter');
 const _6_expect = 0;
 const _6_actual = add();
 console.assert(_6_actual === _6_expect, 'Test 6: both default parameters');
-
 
 console.log('-- end --');

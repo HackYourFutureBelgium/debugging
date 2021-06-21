@@ -1,10 +1,12 @@
 'use strict';
+console.log('-- begin --');
 
 /**
- * checks if a string is a palindrome
- *  palindrome: a string that is the same forwards or backwards
- * @param {string} toCheck - the string that might be a palindrome
- * @returns {boolean} is the string a palindrome?
+ * Checks if a string is a palindrome.
+ * Palindrome: a string that is the same forwards or backwards.
+ *
+ * @param {string} [toCheck=''] - The string that might be a palindrome.
+ * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
   let itIs = _;

@@ -2,11 +2,12 @@
 console.log('-- begin --');
 
 /**
- * removes characters from a string based on their index
- *  it starts with index 0 then removes characters at a regular interval
- * @param {string} text - the text with characters to remove
- * @param {number} toSkip - how often to skip a character
- * @returns {string} the text with missing characters
+ * Removes characters from a string based on their index.
+ * It starts with index 0 then removes characters at a regular interval.
+ *
+ * @param {string} [text=''] - The text with characters to remove.
+ * @param {number} [toSkip=1] - How often to skip a character.
+ * @returns {string} The text with missing characters.
  */
 const skipCharacters = (text = '', toSkip = 1) => {
   if (toSkip < 1) {
