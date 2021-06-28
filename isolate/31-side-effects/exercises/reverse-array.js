@@ -5,16 +5,16 @@ console.log('-- begin --');
  * Reverses an array without modifying the parameter.
  *
  */
-const reverseArray = (arr = [], index = 0) => {};
+const reverseArray = (arr = []) => {};
 
 const arr1 = [1, 2, 3];
-const arr2 = reverseArray(arr1, 'a');
+const arr2 = reverseArray(arr1);
 console.assert(arr1 !== arr2, '1');
 console.assert(deepCompare(arr2, [3, 2, 1]), '2');
 console.assert(deepCompare(arr1, [1, 2, 3]), '3: arr1 was not modified');
 
 const arr3 = ['a', 'b', 'c'];
-const arr4 = reverseArray(arr3, 'x');
+const arr4 = reverseArray(arr3);
 console.assert(arr3 !== arr4, '4');
 console.assert(deepCompare(arr4, ['c', 'b', 'a']), '5');
 console.assert(deepCompare(arr3, ['a', 'b', 'c']), '6: arr3 was not modified');

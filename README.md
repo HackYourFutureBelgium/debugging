@@ -560,7 +560,7 @@ Try make at least one contribution per week to the class `/javascript` study gui
 
 ### [Class 15](https://github.com/hackyourfuturebelgium/class-15)
 
-> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb)
+> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb), [Unmesh](unmeshvrije)
 
 1. [Week 1](https://vimeo.com/557135966)
 2. [Week 3](https://vimeo.com/565725450)
