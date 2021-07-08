@@ -31,7 +31,7 @@ while (original === null) {
   original = prompt('enter the text to reverse');
 }
 
-const reverseWords = confirm(`what do you want to remove?
+const reverseWords = confirm(`what do you want to reverse?
 
 - each word: "ok"
 - whole thing: "cancel"`);
