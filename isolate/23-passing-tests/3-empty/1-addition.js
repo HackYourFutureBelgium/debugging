@@ -4,7 +4,7 @@ console.log('-- begin --');
 /**
  * Adds two numbers together.
  *
- * @param {number} [x=_] - The left left.
+ * @param {number} [x=_] - The left number.
  * @param {number} [y=_] - The right number.
  * @returns {number} The sum of x and y.
  */
