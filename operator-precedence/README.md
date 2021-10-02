@@ -22,3 +22,4 @@ know what to do.
 - [MDN precedence table](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
 - [dummies.com](https://www.dummies.com/web-design-development/javascript-operator-precedence/)
 - [scripting master](http://www.scriptingmaster.com/javascript/operator-precedence.asp)
+- [how `&&` and `||` really work](https://dmitripavlutin.com/javascript-and-or-logical-operators/)
