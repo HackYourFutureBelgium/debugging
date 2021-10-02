@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -9,15 +11,18 @@ console.log('-- begin --');
  * @returns {boolean} Is the string a palindrome?
  */
 const isPalindrome = (toCheck = '') => {
-  let reversed = ' ';
-  for (const character of toCheck) {
-    reversed += character + reversed;
+  let itIs = _;
+  for (let i = 0; i <= toCheck.length / 2; i++) {
+    const left = toCheck[i];
+    const right = toCheck[toCheck.length - 1 - i];
+    if (_) {
+      itIs = _;
+      break;
+    }
   }
-  return (toCheck = reversed);
+  return itIs;
 };
 
-// the test cases are correct!
-//  You need to fix the function to pass the tests
 const _1_expect = false;
 const _1_actual = isPalindrome('Racecar');
 console.assert(_1_actual === _1_expect, 'Test 1');

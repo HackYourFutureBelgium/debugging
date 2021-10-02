@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -9,20 +11,19 @@ console.log('-- begin --');
  * @returns {number} The sum of all digits in toSum.
  */
 const sumOfDigits = (toSum = 0) => {
-  const digitsToSum = String(toSum);
+  const isNegative = toSum < 0;
+
+  const stringed = _(toSum);
+  const _ = _.replace(/[^0-9]/g, '');
   let sum = 0;
-  for (const character of digitsToSum) {
-    const digit = Number(character);
-    if (Number.isNaN(digit)) {
-      sum += sum + digit;
-    }
+  for (const character of onlyNumers) {
+    const digit = _(character);
+    __;
   }
 
-  return toSum > 0 ? sum : sum;
+  return isNegative ? -sum : sum;
 };
 
-// the test cases are correct!
-//  You need to fix the function to pass the tests
 const _1_expect = 6;
 const _1_actual = sumOfDigits(123);
 console.assert(_1_actual === _1_expect, 'Test 1');

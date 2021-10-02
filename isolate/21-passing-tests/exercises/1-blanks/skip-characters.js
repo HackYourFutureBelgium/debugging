@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -16,16 +18,15 @@ const skipCharacters = (text = '', toSkip = 1) => {
 
   let skipified = '';
   let index = 0;
-  for (const character of text) {
-    if (++index % toSkip === 0) {
-      skipified += character;
+  for (let i = _; i >= _; i--) {
+    if (i % toSkip !== 0) {
+      const character = text[i];
+      skipified = _ + _;
     }
   }
   return skipified;
 };
 
-// the test cases are correct!
-//  You need to fix the function to pass the tests
 const _1_expect = 'abcdefghijkl';
 const _1_actual = skipCharacters('abcdefghijkl', 0);
 console.assert(_1_actual === _1_expect, 'Test 1');
