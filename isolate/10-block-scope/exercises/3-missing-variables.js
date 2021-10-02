@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -8,6 +10,5 @@ let b = 3;
   b = a;
 }
 console.assert(_ === 5, 'Test 1');
-
 
 console.log('-- end --');

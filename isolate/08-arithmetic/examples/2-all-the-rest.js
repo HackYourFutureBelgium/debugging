@@ -30,5 +30,4 @@ const fakeSubtraction = aNum - bNum;
 
 console.assert(realSubtraction === fakeSubtraction, 'always the same!');
 
-
 console.log('-- end --');

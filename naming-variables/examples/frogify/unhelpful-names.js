@@ -1,3 +1,5 @@
+'use strict';
+
 /*
 
   _a: stores the user input, important for control flow
@@ -43,7 +45,7 @@ while (_a === null) {
   _a = prompt(
     'enter some text to frogify.\n' +
       '- "f" will be replaced with "frog"\n' +
-      '- "F" will be replaced with "FROG"'
+      '- "F" will be replaced with "FROG"',
   );
 }
 
@@ -52,7 +54,7 @@ let _b = '';
 
 // _c: declare, string
 // _a: read
-for (const _c of _a) {
+for (let _c of _a) {
   // _c: read
   if (_c === 'f') {
     // _b: read

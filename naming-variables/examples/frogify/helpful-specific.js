@@ -1,3 +1,5 @@
+'use strict';
+
 /* specific
 
   specific names that relate to the program's use case
@@ -21,13 +23,13 @@ while (toBeFrogged === null) {
   toBeFrogged = prompt(
     'enter some text to frogify.\n' +
       '- "f" will be replaced with "frog"\n' +
-      '- "F" will be replaced with "FROG"'
+      '- "F" will be replaced with "FROG"',
   );
 }
 
 let frogged = '';
 
-for (const maybeF of toBeFrogged) {
+for (let maybeF of toBeFrogged) {
   /* -- append to new string -- */
   if (maybeF === 'f') {
     frogged = frogged + 'frog';

@@ -21,24 +21,17 @@
 
 */
 
-
 // the code to investigate
 undefined = 4;
 
-
 // to see how the code behaves in normal mode, paste it in here & run in console
 (() => {
-
   undefined = 4;
-
 })();
-
 
 // to see how the code behaves in strict mode, paste it in here & run in console
 (() => {
   'use strict';
 
   undefined = 4;
-
 })();
-

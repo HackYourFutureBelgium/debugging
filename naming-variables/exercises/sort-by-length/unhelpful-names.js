@@ -1,6 +1,10 @@
+// #todo
+
+'use strict';
+
 alert(
   'enter many strings, they will be sorted by length.\n\n' +
-    'when you are done entering strings you can "cancel" or "escape"'
+    'when you are done entering strings you can "cancel" or "escape"',
 );
 
 let _a = 'short:';
@@ -17,7 +21,6 @@ while (_d) {
     _a = _a + '\n- "' + _e + '"';
   } else if (_e.length < 10) {
     _b = _b + '\n- "' + _e + '"';
-    ('');
   } else {
     _c = _c + '\n- "' + _e + '"';
   }

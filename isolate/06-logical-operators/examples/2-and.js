@@ -37,5 +37,4 @@ console.log(typeof and8, and8);
 const and9 = 'poiu' && 'asdf';
 console.log(typeof and9, and9);
 
-
 console.log('-- end --');

@@ -1,8 +1,12 @@
+// #todo
+
+'use strict';
+
 alert(
   'Remembery, the game of remembering.\n\n' +
     'You will be prompted to enter 3 phrases.\n' +
     'next you will be prompted to remember one of them\n\n' +
-    'if you enter it exactly, you win!'
+    'if you enter it exactly, you win!',
 );
 
 let _a = prompt('enter your first secret phrase:');

@@ -28,5 +28,4 @@ console.assert(testingB, 'b should store "y"');
 const testingTemp = temp === 'y';
 console.assert(testingTemp, 'temp should store "y"');
 
-
 console.log('-- end --');

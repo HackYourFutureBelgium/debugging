@@ -27,12 +27,12 @@ const _undefined_explicit = Number(undefined) <= -3;
 console.log(
   '_undefined_implicit:',
   typeof _undefined_implicit,
-  _undefined_implicit
+  _undefined_implicit,
 );
 console.log(
   '_undefined_explicit:',
   typeof _undefined_explicit,
-  _undefined_explicit
+  _undefined_explicit,
 );
 
 // NaN is already type 'number', so there is no implicit coercion
@@ -47,6 +47,5 @@ console.log(NaN >= 'hello');
 console.log(NaN <= 'good bye');
 console.log(NaN < false);
 console.log(NaN < true);
-
 
 console.log('-- end --');

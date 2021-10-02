@@ -1,7 +1,11 @@
+// #todo
+
+'use strict';
+
 alert(
   'this is a two-player game:\n\n' +
     '- player 1: enters an animal\n' +
-    '- player 2: says something cool about it'
+    '- player 2: says something cool about it',
 );
 
 let _a = null;

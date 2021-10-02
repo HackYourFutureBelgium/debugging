@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* reverse text or words
@@ -23,7 +25,7 @@ console.assert(_('wizard') === 'draziw', 'Test 5');
 /* ===== main program (use functions) ===== */
 
 alert(
-  'enter some text, then decide if you want to reverse the whole thing or each word'
+  'enter some text, then decide if you want to reverse the whole thing or each word',
 );
 
 let original = null;

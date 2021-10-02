@@ -1,51 +1,123 @@
 # Debugging
 
-> If debugging is the process of removing software bugs, then programming must be the process of putting them in.
->
-> - [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)
-
-[![Debugging Tactics](./assets/faasandfurious-debugging.png)](https://faasandfurious.com/71)
-
-## Contents
-
-- [Getting Started](#getting-started)
-- [Study Tips](#study-tips)
-- [Learning Objectives](#learning-objectives)
-- [Suggested Study](#suggested-study)
-- Break-Down
-  - [Week 1](#week-1)
-  - [Week 2](#week-2)
-  - [Week 3](#week-3)
-  - [Week 4](#week-4)
-- [Class Recordings](#class-recordings)
-- [study.hackyourfuture.be](https://study.hackyourfuture.be)
-- [home.hackyourfuture.be](https://home.hackyourfuture.be/)
-
----
+Examples, exercises and guides for the
+[Debugging module](https://home.hackyourfuture.be/curriculum/debugging)
 
 ## Getting Started
 
-> You will need [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer to study this material
+> You will need
+> [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and
+> [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) on your computer
+> to study this material
 >
-> Using a browser with good DevTools will make your life easier: [Chromium](http://www.chromium.org/getting-involved/download-chromium), [FireFox](https://www.mozilla.org/en-US/firefox/new/), [Edge](https://www.microsoft.com/edge), [Chrome](https://www.google.com/chrome/)
+> Using a browser with good DevTools will make your life easier:
+> [Chromium](http://www.chromium.org/getting-involved/download-chromium),
+> [FireFox](https://www.mozilla.org/en-US/firefox/new/),
+> [Edge](https://www.microsoft.com/edge),
+> [Chrome](https://www.google.com/chrome/)
 
-1. Install or update the `study-lenses` package globally
-   - `$ npm install -g study-lenses` (if you do not have it already)
+1. Install o update the `study-lenses` package globally
+   - `$ npm install -g study-lenses` (if you do not have it installed)
    - `$ npm update -g study-lenses` (if you already have it installed)
-   - if you're having trouble on Linux or Mac, try running `$ sudo npm ...`
-2. Clone this repository
-   - `$ git clone git@github.com:HackYourFutureBelgium/debugging.git`
-3. `cd` into the repository
+   - Didn't work? you may need to try:
+     - (mac) `$ sudo npm install -g study-lenses`
+   - having trouble updating?
+     - try this:
+       `$ npm uninstall -g study-lenses && npm install -g study-lenses`
+2. Fork and clone this repository:
+   1. fork the HackYourFuture repository to your personal account
+      - `git@github.com:HackYourFutureBelgium/debugging.git`
+   2. clone your fork to your computer
+   3. when there are updates to the module:
+      1. update your fork with a PR
+      2. pull the changes from your fork to your computer
+3. Navigate to the module repository in terminal
    - `$ cd debugging`
-4. Open the repository using `study`
+4. Run the `study` command from your CLI
    - `$ study`
 5. The material will open in your default browser, you're good to go!
+   - you can read the `study-lenses` user guide from your browser by navigating
+     to `localhost:xxxx?--help`
 
 > If you have a windows computer and get this error:
 >
 > - `... /study.ps1 cannot be loaded because running scripts ...`
 >
-> follow the instructions in [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should take care of it ; )
+> follow the instructions in
+> [this StackOverflow answer](https://stackoverflow.com/a/63424744), that should
+> take care of it ; )
+
+---
+
+## Materials
+
+🥚🐣🐥 **[./isolate](./isolate)**: Practice the foundations of JavaScript in
+isolation. Learn to step through and predict your program's execution using the
+_debugger_ and _JS Tutor_. These examples and exercises have no user input.
+
+- 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the
+  debugger and JS Tutor, two tools that will help you understand _program
+  memory_ and how JS follows your instructions one step at a time. Learn to use
+  _breakpoints_ and the `debugger` statement to pause your program on specific
+  lines.
+- 🥚 **[./linting](./linting)**: Practice using feedback from ESLint to write
+  code that uses consistent style and best practices.
+- 🥚 **[./fixing-errors](./fixing-errors)**: JavaScript errors! - get over the
+  initial fear by learning to find and describe errors in your code. Then learn
+  how to pause on errors in the debugger and to read callstack messages.
+- 🥚 **[./logging](./logging)**: Learn how to create your own trace of a
+  program's execution using `console.log`. Practice tracing different aspects of
+  the same program's execution.
+- 🐣 **[./fixing-bugs](./fixing-bugs)**: Learn a structured approach to finding,
+  describing and fixing bugs.
+- 🐣 **[./naming-variables](./naming-variables)**: Code should be written for
+  people first, computers second. Learn to give helpful names to your variables
+  that describe what data they store and how they are used in your program.
+- 🐣 **[./interact](./interact)**: Practice all the skills and knowledge you've
+  gained. You will read, debug, complete, and write full programs.
+- 🐣 **[./operator-precedence](./operator-precedence)**: Learn how to understand
+  and work with expressions that have 2 or more operators.
+- 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions
+  to organize and and reuse your code.
+- 🐥 **[./hoisting](./hoisting)**: That famous thing about JS! It's not so bad
+  once you get it, the key to understanding hoisting is to understand the
+  program life-cycle: _creation phase_ and _execution phase_. This chapter is
+  more abstract, hoisting is something "invisible" about JavaScript program
+  execution. What's most important is that you are comfortable stepping through
+  code that uses hoisting.
+
+### Chapter 1
+
+You're not expected to master this material in one week, but starting to
+practice in week 1 will make everything else easier. Practicing a little bit
+every day is the best way to improve.
+
+- 🥚 **[./stepping-through](./stepping-through)**
+- 🥚 **[./linting](./linting)**
+- 🥚 **[./fixing-errors](./fixing-errors)**:
+- 🥚 **[./logging](./logging)**
+- 🥚🐣 **[./isolate](./isolate)**: through _conditionals_
+- 🐣 **[./operator-precedence](./operator-precedence)**: _tracing_
+
+### Chapter 2
+
+- 🐣 **[./fixing-bugs](./fixing-bugs)**
+- 🐣 **[./naming-variables](./naming-variables)**
+- 🥚🐣 **[./isolate](./isolate)**: through _refactoring loops_
+- 🐣 **[./interact](./interact)**: through _numbers_
+- 🐣 **[./operator-precedence](./operator-precedence)**: _evaluating_
+
+### Chapter 3
+
+- 🥚🐣 **[./isolate](./isolate)**: through _the callstack_
+- 🐣 **[./using-functions](./using-functions)**: through _write functions_
+- 🐣 **[./operator-precedence](./operator-precedence)**: _expanding_
+
+### Chapter 4
+
+- 🥚🐣 **[./isolate](./isolate)**: all the rest
+- 🐣 **[./interact](./interact)**: _arrays_
+- 🐣 **[./using-functions](./using-functions)**: through _avoid side-effects_
 
 [TOP](#debugging)
 
@@ -53,515 +125,124 @@
 
 ## Study Tips
 
+<details>
+<summary>expand/collapse</summary>
+<br>
+
 - Don't rush, understand! Programming is hard.
   - The examples and exercises will still be there to study later.
-  - It's better to fail tests slowly and learn from your mistakes than to pass tests quickly and not understand why.
-- Don't skip the examples! Understanding and experimenting with working code is a very effective way to learn programming.
-- Practice Pair Programming: two people, one computer.
-- Read the code out loud
-- Take a look through the [HYF Study Tips](https://home.hackyourfuture.be/students/study-tips) for more inspiration
+  - It's better to fail tests slowly and learn from your mistakes than to pass
+    tests quickly and not understand why.
+- Don't skip the examples! Understanding and experimenting with working code is
+  a very effective way to learn programming.
+- Write lots of comments in the examples and exercises. The code in this
+  repository is yours to study, modify and re-use in projects.
+- Practice
+  [Pair Programming](https://home.hackyourfuture.be/students/study-tips/pair-programming):
+  two people, one computer.
+- Take a look through the
+  [Learning From Code](https://home.hackyourfuture.be/students/study-tips/learning-from-code)
+  guide for more study tips
 
 ### Priorities
 
-If you can't finish all the material in this repository, that's expected! Anything you don't finish now will always be waiting for you to review when you need it. These 3 emoji's will help you prioritize your study time and to measure your progress:
+If you can't finish all the material in this repository, that's expected!
+Anything you don't finish now will always be waiting for you to review when you
+need it. These 4 emoji's will help you prioritize your study time and to measure
+your progress:
 
-- 🥚 `:egg:` - Understanding this material is required, it covers the base skills you'll need for this module and the next. You do not need to finish all of them but should feel comfortable that you could with enough time.
-- 🐣 `:hatching_chick:` - Do your best to start this material. you don't need to master it or finish it but getting the main idea will be helpful for taking the next steps.
-- 🐥 `:hatched_chick:` - Have you finished all the 🥚's and started all the 🐣's? push yourself with these challenges.
+- 🥚: Understanding this material is required, it covers the base skills you'll
+  need for this module and the next. You do not need to finish all of them but
+  should feel comfortable that you could with enough time.
+- 🐣: You have started all of these exercises and feel you could complete them
+  all if you just had more time. It may not be easy for you but with effort you
+  can make it through.
+- 🐥: You have studied the examples and started some exercises if you had time.
+  You should have a big-picture understanding of these concepts/skills, but may
+  not be confident completing the exercises.
+- 🐔: These concepts or skills are not necessary but are related to this module.
+  If you are finished with 🥚, 🐣 and 🐥 you can use the 🐔 exercises to push
+  yourself without getting distracted from the module's main objectives.
 
 ### Hashtags
 
-There's sooo many examples and exercises in this repository, it's easy to forget of what you still need to finish or what you want to review again. Luckily VSCode is really good at searching through folders of code.
+There's so many examples and exercises in this repository, it's easy to forget
+of what you still need to finish or what you want to review again. Luckily
+VSCode is really good at searching through folders of code.
 
-You can write hashtags in your comments while you're studying, then search for those hashtags later so you don't miss anything. Here's some ideas:
+You can write hashtags in your comments while you're studying, then search for
+those hashtags later so you don't miss anything. Here's some ideas:
 
-- `// #not-done, still a few blanks left` - search for `#not-done` in VScode to find all the exercises you've started and not finished
-- `// coercion is confusing, #review this again next week` - search for `#review` to find the files you need to study again
+- `// #todo, still a few blanks left` - search for `#todo` in Study Lenses or
+  VScode to find all the exercises you still need to study
+- `// #review, coercion is confusing this again next week` - search for
+  `#review` to find the files you need to study again
 - ... anything goes! Find the hashtags that work for you
 
-[TOP](#debugging)
+### Study Board
 
----
+Creating a project board on your GitHub account for tracking your study at HYF
+can help you keep track of everything you're learning. You can create the board
+at this link: `https://github.com/your_user_name?tab=projects`.
 
-## Learning Objectives
+These 4 columns may be helpful:
 
-What can you expect to learn in this module?
-
-<details>
-<summary>expand/collapse</summary>
-
-### Programming Skills
-
-- [Learning from Code](https://study.hackyourfuture.be/learning/learning-from-code)
-  - Reading & understanding source code
-  - Making small, incremental experiments
-  - Copying & modifying others' code
-- Tracing Program Execution
-  - Stepping through code with JS Tutor, DevTools & VSC debugger
-  - Tracing values manually with pencil & paper
-  - Using the `debugger` statement & break points to explore your code
-- Using `console.assert` for small inline tests
-  - Learn to _predict_ what _will happen_ using `console.assert`
-  - Instead of only _describing_ what _did happen_ using `console.log`
-- Debugging:
-  - Bugs are when you don't understand what your code is doing, not when your code doesn't understand what you want it to do! The computer is always right :)
-  - Identify the line(s) of code that are not doing what you expect
-  - Find several other ways of writing that line
-  - Replace with the one that works and that you understand best
-- Errors:
-  - _Syntax vs. Semantic_: Some errors happen because you wrote JavaScript that the interpreter couldn't interpret (syntax), other errors happen when you try to do something that isn't allowed (semantic).
-  - _Creation vs. Execution_: Some errors are thrown before the program actually becomes a process (creation phase), others are thrown during program execution when a line of code is reached (execution phase).
-
-### Isolating JavaScript
-
-- Primitives Types & Strict Comparison
-  - _types_: find the type of a primitive using `typeof`
-  - _strict comparison_: compare the type _and_ value of two primitives using `===` & `!==`
-  - _explicit coercion_: casting between primitive types
-- Explicit Type Coercion
-  - `Boolean`, `String`, `Number`
-- Operators & Comparisons
-  - `===`, `!==`
-  - `isNaN` and `Number.isNaN`
-  - `>`, `<`, `>=`, `<=`
-  - `&&`, `||`, `??`, `!`
-  - `x++`, `++x`, `x--`, `--x`
-  - `+`, `*`, `/`, `-`, `%`
-  - `x ? y : z`
-- Variables:
-  - `let` & `const`
-  - Declaration, Assignment & Re-Assignment.
-  - Block Scope
-- Functions
-  - `() => {}`:
-  - Declaring vs. Calling
-  - Arguments vs. Parameters
-  - Return Values
-  - Lexical scope
-- Control Flow
-  - Conditionals
-  - Loops
-  - `break`, `continue`
-- `prompt`, `alert`, and `confirm`
-  - Validating user input
-  - Providing helpful feedback
-
-### Debugging Skills
-
-- `console.log`
-  - Printing values to understand what _did_ happen in your code
-  - _Always print the **type** AND the **value**_
-- `console.assert`
-  - Asserting values to _predict_ what will happen in your code
-  - Practice how to use all comparison operators to assert values in memory
-- Stepping through code execution
-  - Using debugging tools to execute your code one step at a time
-  - Predict which line of code will execute next
-  - Explain and understand how each line of code changes what is in memory
-  - Predict what will change in memory after each step of execution
-- The `debugger` statement
-- Using professional JS debugging tools
-  - Browser Debugger
-  - VSCode Debugger
-- Using learning-focused debugging tools
-  - JS Tutor
-
-### JS Program Life-Cycle:
-
-1. _Source code_: The `.js` text file you write. These are just instructions saved as text in your computer, not a live process (a process is an active instance of a program)!
-2. _Creation Phase_: When the JavaScript interpreter first reads your instructions from the program. At this point it will load the program into memory (thus making a process) and check for some types of errors.
-3. _Execution Phase_: This is the real deal! The JavaScript interpreter will now step through your instructions _one line at a time_, updating the (process) memory according to your instructions.
-
-### Integrating JavaScript
-
-- Document Life-Cycle
-  - `<head>`: Scripts & styles are loaded top to bottom, before the `<body>`
-  - `<body>`: Everything is executed/loaded top to bottom
-- Event-Driven Programming (Handling user input)
-  - HTML `onclick` attribute
-  - well-organized source files
+- **todo**: material you have not studied yet
+- **studying**: material you are currently studying
+- **to review**: material you want to review again in the future
+- **learned**: material you know well enough that you could help your classmates
+  learn it
 
 </details>
-<br>
 
 [TOP](#debugging)
 
 ---
 
-## Suggested Study
-
-Helpful resources for this module
+## Code Quality Scripts
 
 <details>
 <summary>expand/collapse</summary>
 <br>
 
-> [hackyourfuture.github.io/study](https://hackyourfuture.github.io/study)
+This repository comes with some scripts to check the quality of this code. You
+can run these scripts to check the code provided by HYF, and to check the code
+you write when experiment with the examples and complete the exercises.
 
-### Statements vs. Expressions
+### `npm run format`
 
-- [codeexpanse](https://www.youtube.com/watch?v=WVyCrI1cHi8)
+This script will format all of the code in this repository making sure that all
+the indentations are correct, the code is easy to read, and letting you know if
+there are any syntax errors.
 
-### Debugging Tools
+### `npm run spell-check`
 
-- [Errors & Debugging](https://education.launchcode.org/intro-to-professional-web-dev/chapters/errors-and-debugging/index.html)
-- [Developer Console](https://javascript.info/devtools)
-- [Debugging in Chrome](https://javascript.info/debugging-chrome)
-  - [definitive: 2021](https://dev.to/atapas/the-definitive-guide-to-javascript-debugging-2021-edition-116n)
-  - [breakpoints](https://developers.google.com/web/tools/chrome-devtools/javascript/reference)
-- [Debugging in FireFox](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
-- [pythontutor.com](http://pythontutor.com/) -> [JS Tutor](http://pythontutor.com/javascript.html)
-- [VSCode](https://code.visualstudio.com/Docs/editor/debugging)
+This script will check all of the files in your repository for spelling
+mistakes. Spelling is not just a detail, is important! Good spelling helps
+others read and understand your programs with less effort.
 
-### Tutorials
+`spell-check` is not so clever though, it doesn't have _all_ possible words in
+it's dictionary and it won't know if you _wanted_ to spell a word incorrectly.
+If you think one of it's "Unknown word"s is not a problem, you can either ignore
+the suggestion or add the word to the `"words": [ ... ],` list in
+[.cspell.json](./.cspell.json).
 
-- [watchAndCode Programming Foundations](https://watchandcode.com/) - sign up for the free Programming Foundations course, it's awesome. You can stop when he starts explaining `this`.
+### `npm run lint:md`
 
-### In this Repo
+This script will [lint](https://en.wikipedia.org/wiki/Lint_%28software%29) all
+the Markdown files in this repository, checking for syntax mistakes and other
+bad practices. Fixing linting errors will help you learn to write better code by
+pointing out your mistakes _before_ they cause problems in your program.
 
-- 🥚 **[./strict-mode](./strict-mode)**: a quick read and a couple examples. long story short: always use strict mode.
-- **Skills**: you don't need to finish all of the exercises in these folders, just enough to get comfortable with the processes
-  - 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the debugger and JS Tutor, two tools that will help you understand _program memory_ and how JS follows your instructions one step at a time. Learn to use _breakpoints_ and the `debugger` statement to pause your program on specific lines.
-  - 🥚 **[./fixing-errors](./fixing-errors)**: JavaScript errors! - get over the initial fear by learning to find and describe errors in your code. Then learn how to pause on errors in the debugger and to read callstack messages.
-  - 🥚 **[./logging](./logging)**: Learn how to create your own trace of a program's execution using `console.log`. Practice tracing different aspects of the same program's execution.
-  - 🐣 **[./fixing-bugs](./fixing-bugs)**: Learn a structured approach to
-  - 🐣 **[./naming-variables](./naming-variables)**: Code should be written for people first, computers second. Learn to give helpful names to your variables that describe what data they store and how they are used in your program.
-- **Practice**
-  - 🐣 **[./isolate](./isolate)**: Practice the foundations of JavaScript in isolation. Learn to step through and predict your program's execution using the _debugger_ and _JS Tutor_. These examples and exercises have no user input.
-  - 🐣 **[./integrate](./integrate)**: Integrate all the skills and knowledge you've gained. You will read, debug, complete, and write full programs.
-  - 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions to organize and and reuse your code.
+Some linting errors will take some practice to understand and fix, but it will
+be a good use of time.
 
-### Reference vs. Values
+### `npm run lint:js -- ./path/to/code`
 
-- [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
-- [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
-- [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
-- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/06-Equality-of-Values)
-- [Janke Learning](https://github.com/janke-learning/reference-vs-value)
-- [javascript.info](https://javascript.info/object-copy#comparison-by-reference)
-
-#### Arrays
-
-- [JS Tutor Video](https://www.youtube.com/watch?v=W1NTK09o-vM)
-- [Coding with Mosh](https://www.youtube.com/watch?v=oigfaZ5ApsM)
-- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript/blob/master/05_Day/05_day_arrays.md) (stop at array methods)
-- [javascript.info](https://javascript.info/array) (just the beginning)
-- `for of` loops
-  - [javascript.info](https://javascript.info/array#loops)
-  - [Coding Train](https://www.youtube.com/watch?v=Y8sMnRQYr3c)
-
-#### Objects
-
-- [javascript.info](https://javascript.info/object)
-- [Just JavaScript](https://github.com/HackYourFutureBelgium/just-javascript/tree/master/07-Properties)
-- [dots vs brackets](https://www.youtube.com/watch?v=7lQ31dJEYoM) (video)
-- [dots vs brackets](https://github.com/janke-learning/dots-vs-brackets) (example)
-- `for ... in`
-  - [javascript.info](https://javascript.info/object#the-for-in-loop)
-  - [`for in`, vs `for of`](https://alligator.io/js/for-of-for-in-loops/)
-  - [a video](https://www.youtube.com/watch?v=prl73KRkB34)
-  - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
-  - [w3schools](https://www.w3schools.com/jsref/jsref_forin.asp)
-
-### More Examples and Exercises
-
-- [CodeAcademy Projects JavaScript](https://github.com/brezich/Codecademy-Projects-JavaScript) +1 (through #10)
-- HackYourFuture Amsterdam: [JS module](https://github.com/HackYourFuture/JavaScript), [1-JavaScript homework](https://github.com/HackYourFuture/Homework)
-- CodeYourFuture JS Core: [week 1](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week1), [week 2](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week2), [week 3](https://github.com/CodeYourFuture/JavaScript-Core-1-Coursework-Week3)
-- [JavaScript for Everyone](https://github.com/Asabeneh/JavaScript-for-Everyone)
-- [30 Days of JavaScript](https://github.com/Asabeneh/30DaysOfJavaScript)
-- dinanathsj29: [Tutorial](https://github.com/dinanathsj29/javascript-beginners-tutorial), [Exercises](https://github.com/dinanathsj29/javascript-exercise-beginners)
-- [deep-js-foundations](https://github.com/valterex/deep-js-foundations)
+Just like `lint:md`, but for `.js` files. This script will lint all of the JS
+files in this repository, letting you know if there are any syntax errors or bad
+practices.
 
 </details>
-<br>
 
 [TOP](#debugging)
-
----
-
-## Week 1
-
-Use debuggers to step through your code one instruction at a time. Along the way you'll see how to visualize _program memory_, describe errors in your code, and start fixing bugs in a program.
-
-<details>
-<summary>expand/collapse</summary>
-<br>
-
-### Before Class
-
-You don't need to understand this material perfectly, it's just important you aren't seeing it for the first time in class on Sunday.
-
-- [./strict-mode](./strict-mode) (a quick read)
-- [./stepping-through](./stepping-through)
-  - skim these videos: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
-- [./isolate](./isolate): Variables
-  - so you're familiar with `const` vs. `let`
-
-### During Class
-
-#### Before Break
-
-Dig deeper into program execution and the debugger:
-
-- [./stepping-through](./stepping-through)
-- [./fixing-errors](./fixing-errors)
-
-#### After Break
-
-A method for finding and fixing bugs in your code
-
-- [./fixing-bugs](./fixing-bugs)
-
-### After Class
-
-Learning to program with JavaScript is a marathon. This week you can keep working through your favorite tutorials, and be sure make time to get comfortable stepping through and predicting small programs in your debugger. Try starting with:
-
-- 🥚 [./strict-mode](./strict-mode): a quick read
-- **Skills**: you're not expected to master these skills in one week, but starting to practice the them in week 1 will make everything else easier. Practicing a little bit every day is the best way to build a skill.
-  - 🥚 [./stepping-through](./stepping-through)
-  - 🥚 [./fixing-errors](./fixing-errors)
-  - 🥚 [./logging](./logging)
-  - 🐣 [./fixing-bugs](./fixing-bugs)
-- **Practice**
-  - 🐣 [./isolate](./isolate): through conditionals
-    - you're not expected to master coercion or operator precedence this week, but you should start them
-  - 🐣 [./integrate](./integrate): through conditionals
-
-Isolate goes in depth on type coercion and primitive operators. You aren't expected to master these topics in one week, it will take lots of practice for this to sink in.
-
-Study together! Working in small groups and taking turns to predict and explain what is happening with the code is a nice way to spend a few hours. Teaching is a great way to learn.
-
-Your class repository has a folder called `/javascript` and a project board for tracking your issues & PRs. Over the next four weeks you and your classmates will start your own JS Study Guide. This is just the start! Learning JS is a never-ending story, you will keep building this study guide for the rest of your time at HYF.
-
-</details>
-<br>
-
-[TOP](#debugging)
-
----
-
-## Week 2
-
-- Naming Variables
-- Numbers and `NaN`
-- `for` loops
-
-<details>
-<summary>expand/collapse</summary>
-<br>
-
-### Before Class
-
-The main topics for this Sunday will be naming variables and writing programs. To come prepared you should study up on these JS language features:
-
-- Type Conversions
-  - [javascript.info](https://javascript.info/type-conversions)
-  - [./isolate](./isolate): explicit coercion
-- Loops
-  - [javascript.info](https://javascript.info/while-for)
-  - [Mosh](https://www.youtube.com/watch?v=s9wW2PpJsmQ)
-  - [./isolate](./isolate): for loops
-
-### During Class
-
-#### Before Break
-
-- [./isolate](./isolate) - review `let` vs. `const`
-  - why does JavaScript have both?
-  - what are the conventions for using `let` and `const`?
-- [./naming-variables](./naming-variables)
-
-#### After Break
-
-- [./integrate](./integrate):
-  - `numbers/repeat-string`
-  - maybe also `numbers/repeat-characters`
-
-### After Class
-
-- **Skills**: continue studying all the coding skills
-  - 🐣 [./naming-variables](./naming-variables)
-- **Practice**:
-  - 🥚 [./isolate](./isolate): through Refactoring Loops
-  - 🐣 [./integrate](./integrate): through Numbers
-
-Keep working your way through your favorite tutorials.
-
-Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
-
-</details>
-<br>
-
-[TOP](#debugging)
-
----
-
-## Week 3
-
-Learn to trace function execution, and to use function in small programs.
-
-<details>
-<summary>expand/collapse</summary>
-<br>
-
-### Before Class
-
-The examples and exercises in this repository all use `() => {}` functions, while many resources online cover `function` functions. This repository focuses on arrow functions because:
-
-- the syntax is cleaner and less distracting to read
-- `this` and `arguments` are less distracting with arrow functions (more on those things later)
-- function expressions are easier to study in the debugger since they are not hoisted
-
-Prep work:
-
-- [Functions in 90 Seconds](https://www.youtube.com/watch?v=UY182o4J5_Y)
-- [javascript.info](https://javascript.info/function-basics)
-- Coding Train:
-  - [Function Basics](https://www.youtube.com/watch?v=wRHAitGzBrg)
-  - [Parameters & Arguments](https://www.youtube.com/watch?v=zkc417YapfE)
-  - [Functions & Return](https://www.youtube.com/watch?v=qRnUBiTJ66Y)
-- Examples
-  - [./isolate](./isolate): functions, the basics
-
-### During Class
-
-#### Before Break
-
-- [./isolate](./isolate):
-  - `/documenting-functions`
-  - `/passing-tests`
-
-#### After Break
-
-- [./using-functions](./using-functions)
-  - `/refactor-logic`
-
-### After Class
-
-Keep working your way through your favorite tutorials and the exercises in this repository. If you haven't already, take a look at:
-
-- **Skills**: keep practicing all those coding skills
-- **Practice**
-  - 🥚 [./isolate](./isolate): through The Callstack
-  - 🐣 [./fixing-bugs](./fixing-bugs): through Functions
-  - 🐣 [./using-functions](./using-functions): through Refactor Logic
-
-Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
-
-</details>
-<br>
-
-[TOP](#debugging)
-
----
-
-## Week 4
-
-Reference vs. Value! This week you will learn about arrays, objects and side-effects.
-
-<details>
-<summary>expand/collapse</summary>
-<br>
-
-### Before Class
-
-This week's class will focus almost entirely on how arrays/objects are stored in memory, and how to use them as arguments to functions. Take a look through the examples in these folders to be ready for class:
-
-- [./isolate](./isolate): reference vs. value, side-effects
-- references
-  - [Academind](https://www.youtube.com/watch?v=9ooYYRLdg_g)
-  - [Mosh video](https://www.youtube.com/watch?v=fD0t_DKREbE)
-  - [CodeBurst article](https://codeburst.io/javascript-passing-by-value-vs-reference-explained-in-plain-english-8d00fd06a47c)
-
-### During Class
-
-#### Before Break
-
-- [./isolate](./isolate): reference vs. value
-
-#### After Break
-
-- [./isolate](./isolate): side-effects
-
-### After Class
-
-- 🥚 [./isolate](./isolate): through Side Effects. Reference vs. Value and Side Effects are another "invisible" thing about JS, you can't see it in the source code! You need to understand how JS program memory works and to learn how debugging tools can help you see this
-- 🐣 [./fixing-bugs](./fixing-bugs): Arrays & Objects
-- 🐣 [./integrate](./integrate): Arrays
-- 🐣 [./using-functions](./using-functions): Avoid Side-Effects
-
-Keep working through your favorite tutorials and the exercises in this repository. It's important to come prepared for the first Sunday of Behavior, Strategy, Implementation so be sure to make time for the prep work!
-
-Try make at least one contribution per week to the class `/javascript` study guide. It doesn't need to be anything fancy! Reviewing a PR or adding a new link is helpful.
-
-</details>
-<br>
-
-[TOP](#debugging)
-
----
-
-## Class Recordings
-
-- **Students**: Here you can find recordings of this module from past classes. Enjoy!
-- **Coaches**: When sending your PR's with links please ...
-  - Indicate which class you were teaching
-  - Which week it was (if the module is more than 1 week)
-  - Give your name
-  - and a helpful description
-
-### [class-9-10](https://github.com/hackyourfuturebelgium/class-9-10)
-
-> [Maël](https://github.com/maeligg), [Unmesh](https://github.com/unmeshvrije), [Evan](https://github.com/colevandersWands)
-
-1. Week 1:
-   1. [Functions, Primitive Types, Coercion](https://vimeo.com/428979153)
-   2. [`onclick`, Prompt, Alert, Confirm](https://vimeo.com/428982613)
-   3. [Wrap-up & Homework](https://vimeo.com/428992050)
-2. Week 2:
-   1. [`for` and `while` loops](https://vimeo.com/431703195)
-   2. [Shared Script Variables](https://vimeo.com/431703540)
-3. Process week:
-   - [Sunday Review Call with Unmesh](https://vimeo.com/433635577)
-
-### [Class-11-12](https://github.com/hackyourfuturebelgium/class-11-12)
-
-> [Maël](https://github.com/maeligg), [Nawang](https://github.com/nawatend), [Thibault](https://github.com/ThibaultLesuisse)
-
-1. Week 1:
-   - [Part 1](https://vimeo.com/472213092)
-   - [Part 2](https://vimeo.com/472190972)
-2. Week 2:
-   - [Loops, I/O & iterating data](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604228270944)
-3. Week 3:
-   - [functions and structured programs](https://meet.openknowledge.be/playback/presentation/2.0/playback.html?meetingId=48966e92bc14f80c53d450f9e59dc77e812b2f8b-1604832955426)
-
-### [Class-13-14](https://github.com/hackyourfuturebelgium/class-13-14)
-
-> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb), [Emilien](https://github.com/EmilienD)
-
-1. Week 1:
-   - Stepping Through Code: [part 1](https://vimeo.com/530235541), [part 2](https://vimeo.com/530238311)
-   - [Describing Errors](https://vimeo.com/530238051)
-2. Week 2:
-
-   - Part 1 hasn't been recorded due to a technical issue. Our apologies.
-   - [Part 2](https://vimeo.com/535777690)
-
-3. Week 3:
-
-   - [Part 1](https://vimeo.com/538659747)
-   - [Part 2](https://vimeo.com/538671285)
-
-4. Week 4:
-   - [Part 1](https://vimeo.com/543077287)
-   - [Part 2](https://vimeo.com/543087934)
-
-### [Class 15](https://github.com/hackyourfuturebelgium/class-15)
-
-> [Maël](https://github.com/maeligg), [Yildiray](https://github.com/yildiraykoyuncu), [Razvan](https://github.com/razvanbrb), [Unmesh](unmeshvrije)
-
-1. [Week 1](https://vimeo.com/557135966)
-2. [Week 2](https://vimeo.com/566111424)
-2. [Week 3](https://vimeo.com/565725450)

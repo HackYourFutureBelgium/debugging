@@ -1,0 +1,99 @@
+{
+  "plugins": ["prettier", "jsdoc", "prefer-arrow", "sonarjs"],
+  "env": {
+    "browser": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "script"
+  },
+  "globals": {
+    "prompt": false,
+    "alert": false,
+    "confirm": false,
+    "console": false
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier",
+    "airbnb-base",
+    "plugin:sonarjs/recommended"
+  ],
+  "rules": {
+    "no-var": 1,
+    "prefer-const": 0,
+    "no-extra-parens": 1,
+    "no-unreachable-loop": 1,
+    "eqeqeq": 1,
+    "no-implicit-coercion": 1,
+    "no-implicit-globals": 1,
+    "no-lone-blocks": 1,
+    "no-return-assign": 1,
+    "no-unused-expressions": 1,
+    "no-useless-computed-key": 1,
+    "no-useless-rename": 1,
+    "no-label-var": 1,
+    "no-shadow": 1,
+    "no-undefined": 1,
+    "arrow-parens": 1,
+    "arrow-body-style": 0,
+    "no-confusing-arrow": 1,
+    "vars-on-top": 0,
+    "no-plusplus": 0,
+    "guard-for-in": 0,
+    "no-unmodified-loop-condition": 0,
+    "no-warning-comments": 1,
+    "prefer-destructuring": 1,
+    "no-nested-ternary": 0,
+    "no-empty": 0,
+    "no-constant-condition": 0,
+    "no-alert": 0,
+    "no-console": 0,
+    "no-continue": 0,
+    "no-underscore-dangle": 0,
+    "strict": [2, "global"],
+    "no-restricted-syntax": [
+      0,
+      {
+        "selector": "ForInStatement"
+      },
+      {
+        "selector": "ForOfStatement"
+      }
+    ],
+    "camelcase": [2, { "properties": "never" }],
+
+    "prettier/prettier": ["error"],
+
+    "sonarjs/prefer-immediate-return": 0,
+
+    "jsdoc/check-alignment": 1,
+    "jsdoc/check-indentation": 1,
+    "jsdoc/check-line-alignment": 1,
+    "jsdoc/check-param-names": 1,
+    "jsdoc/check-syntax": 1,
+    "jsdoc/check-tag-names": 1,
+    "jsdoc/check-types": 1,
+    "jsdoc/check-values": 1,
+    "jsdoc/empty-tags": 1,
+    "jsdoc/newline-after-description": 1,
+    "jsdoc/no-bad-blocks": 1,
+    "jsdoc/no-undefined-types": 1,
+    "jsdoc/require-description": 1,
+    "jsdoc/require-description-complete-sentence": 1,
+    "jsdoc/require-hyphen-before-param-description": 1,
+    "jsdoc/require-jsdoc": 1,
+    "jsdoc/require-param": 1,
+    "jsdoc/require-param-description": 1,
+    "jsdoc/require-param-name": 1,
+    "jsdoc/require-param-type": 1,
+    "jsdoc/require-returns": 1,
+    "jsdoc/require-returns-check": 1,
+    "jsdoc/require-returns-description": 1,
+    "jsdoc/require-returns-type": 1,
+    "jsdoc/require-throws": 1,
+    "jsdoc/require-yields": 1,
+    "jsdoc/require-yields-check": 1,
+    "jsdoc/valid-types": 1
+  }
+}

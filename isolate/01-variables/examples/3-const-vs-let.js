@@ -42,5 +42,4 @@ console.log(letVariable2);
   programs with only const are easier to understand and debug
 */
 
-
 console.log('-- end --');

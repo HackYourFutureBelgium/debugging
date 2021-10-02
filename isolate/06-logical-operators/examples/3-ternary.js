@@ -35,5 +35,4 @@ console.log(ternary8);
 const ternary9 = NaN ? 'A' : 'B';
 console.log(ternary9);
 
-
 console.log('-- end --');

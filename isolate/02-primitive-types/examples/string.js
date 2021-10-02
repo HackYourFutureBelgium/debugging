@@ -36,5 +36,4 @@ console.log(typeof cba, cba);
 const allOfThem = `${str1}, ${str2}, ${str3}, ${str4}, ${str5}`;
 console.log(typeof allOfThem, allOfThem);
 
-
 console.log('-- end --');

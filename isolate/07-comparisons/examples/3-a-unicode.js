@@ -39,7 +39,7 @@ console.log(
   hashtag,
   '->',
   typeof hashtagUnicodeNumber,
-  hashtagUnicodeNumber
+  hashtagUnicodeNumber,
 );
 
 const two = '2';
@@ -53,8 +53,7 @@ console.log(
   space,
   '->',
   typeof spaceUnicodeNumber,
-  spaceUnicodeNumber
+  spaceUnicodeNumber,
 );
-
 
 console.log('-- end --');

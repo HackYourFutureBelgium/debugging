@@ -42,8 +42,7 @@ if (typeof a === 'string' || typeof b === 'string') {
 
 console.assert(
   realPlus === fakePlus,
-  'fakePlus and realPlus will always be the same'
+  'fakePlus and realPlus will always be the same',
 );
-
 
 console.log('-- end --');

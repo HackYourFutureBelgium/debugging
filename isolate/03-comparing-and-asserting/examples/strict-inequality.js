@@ -40,5 +40,4 @@ console.log('-- NaN is weird --');
 const huh = NaN !== NaN;
 console.log(typeof huh, huh);
 
-
 console.log('-- end --');

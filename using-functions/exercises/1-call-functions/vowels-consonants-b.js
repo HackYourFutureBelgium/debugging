@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* remove vowels or consonants
@@ -35,7 +37,7 @@ console.assert(removeCharacters('asdf', '') === 'asdf', 'Test 6');
 /* ===== main program (use functions) ===== */
 
 alert(
-  'enter some text, then decide if you want to remove the vowels or the consonants'
+  'enter some text, then decide if you want to remove the vowels or the consonants',
 );
 
 let original = null;

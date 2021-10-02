@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -20,6 +22,5 @@ console.log(firstFiveLetters); // should log "abcd"
 
 firstFiveLetters = _ + _;
 console.log(firstFiveLetters); // should log "abcde"
-
 
 console.log('-- end --');

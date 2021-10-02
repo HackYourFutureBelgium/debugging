@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* longer than 4
@@ -31,7 +33,7 @@ let input = '';
 let prompting = true;
 while (prompting) {
   let input = prompt(
-    'enter something longer than 4 characters, or "cancel" to leave'
+    'enter something longer than 4 characters, or "cancel" to leave',
   );
   if (input === null) {
     prompting = false;

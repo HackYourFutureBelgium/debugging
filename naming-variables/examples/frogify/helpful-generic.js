@@ -1,3 +1,5 @@
+'use strict';
+
 /* generic
 
   generic names that describe the variables' roles in the program
@@ -20,13 +22,13 @@ while (input === null) {
   input = prompt(
     'enter some text to frogify.\n' +
       '- "f" will be replaced with "frog"\n' +
-      '- "F" will be replaced with "FROG"'
+      '- "F" will be replaced with "FROG"',
   );
 }
 
 let output = '';
 
-for (const next of input) {
+for (let next of input) {
   if (next === 'f') {
     output = output + 'frog';
   } else if (next === 'F') {

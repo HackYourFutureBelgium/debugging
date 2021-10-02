@@ -40,5 +40,4 @@ const _9_toCast = 'four';
 const _9_number = Number(_9_toCast);
 console.log(9, typeof _9_toCast, _9_toCast, '->', typeof _9_number, _9_number);
 
-
 console.log('-- end --');

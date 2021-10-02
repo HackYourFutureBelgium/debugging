@@ -34,5 +34,4 @@ const comparison5 = typeof 4 === typeof '4';
 const test5 = comparison5 === false; // solution
 console.assert(test5, 'Assertion 5');
 
-
 console.log('-- end --');

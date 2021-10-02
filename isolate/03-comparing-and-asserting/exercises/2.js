@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -30,6 +32,5 @@ console.assert(test6, 'Test 6');
 const comparison7 = null === undefined;
 const test7 = comparison7 === _;
 console.assert(test7, 'Test 7');
-
 
 console.log('-- end --');

@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /*
@@ -38,7 +40,7 @@ const filterByLength = (strings = [], goodLength = 0) => {
   filterByLength(argument, 0);
   console.assert(
     deepCompare(argument, ['x', 'yz', 'abc']),
-    'Test 3: no side effects'
+    'Test 3: no side effects',
   );
 }
 
@@ -48,7 +50,7 @@ alert(
   `enter as many strings as you want
 
 then enter a desired length
--> only strings of this length will be kept`
+-> only strings of this length will be kept`,
 );
 
 // -- gather numbers --
@@ -99,4 +101,5 @@ console.log(allInputs, lengthToKeep, filtered);
 /* ========== hoisted testing dependency ========== */
 
 // prettier-ignore
+/* eslint-disable */
 function deepCompare (actual, expect) {  return actual === expect || Object.is(actual, expect)|| (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))|| Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every((key) => deepCompare(actual[key], expect[key])));}

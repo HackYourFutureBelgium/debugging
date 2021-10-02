@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -36,6 +38,5 @@ _;
 console.log(y); // should print 'bd'
 
 console.log(x); // should print 'a'
-
 
 console.log('-- end --');

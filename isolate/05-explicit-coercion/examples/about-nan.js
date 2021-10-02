@@ -36,7 +36,7 @@ const numIsNan4 = Number.isNaN('4');
 console.log(typeof numIsNan4, numIsNan4);
 
 console.log(
-  '--- isNaN(x) returns true if a the converted number value equals to NaN '
+  '--- isNaN(x) returns true if a the converted number value equals to NaN ',
 );
 // isNaN() method first converts any value provided to a number
 // and then checks if it is NaN.
@@ -70,6 +70,5 @@ console.log(typeof isNanC, isNanC);
 const numD = Number('4');
 const isNanD = isNaN(numD);
 console.log(typeof isNanD, isNanD);
-
 
 console.log('-- end --');

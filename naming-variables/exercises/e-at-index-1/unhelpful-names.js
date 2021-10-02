@@ -1,3 +1,7 @@
+// #todo
+
+'use strict';
+
 alert('you will need to _d strings with "e" in the right place');
 
 let _a = 0;

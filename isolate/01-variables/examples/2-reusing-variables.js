@@ -14,5 +14,4 @@ console.log(furniture);
 furniture = furniture + ' frame';
 console.log(furniture);
 
-
 console.log('-- end --');

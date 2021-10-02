@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -37,6 +39,5 @@ console.log(_); // should log 'table'
 
 _;
 console.log(_); // should log 'apple, pear'
-
 
 console.log('-- end --');

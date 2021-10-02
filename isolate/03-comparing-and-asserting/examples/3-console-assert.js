@@ -20,5 +20,4 @@ In the console, only failing asserts are printed.
   these slides display passing assert to help you study
 */
 
-
 console.log('-- end --');

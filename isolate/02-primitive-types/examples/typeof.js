@@ -42,5 +42,4 @@ console.log(typeof typeofTypeofUndefined, typeofTypeofUndefined);
 const typeofTypeofNull = typeof typeof null;
 console.log(typeof typeofTypeofNull, typeofTypeofNull);
 
-
 console.log('-- end --');

@@ -47,5 +47,4 @@ const value9 = -1; // any other number
 const truthiness9 = Boolean(value9);
 console.log(typeof value9, value9, '->', truthiness9);
 
-
 console.log('-- end --');

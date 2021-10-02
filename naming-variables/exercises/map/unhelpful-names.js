@@ -1,3 +1,7 @@
+// #todo
+
+'use strict';
+
 let _a = null;
 while (_a === null) {
   _a = prompt('enter some text, can you guess what the program does?');

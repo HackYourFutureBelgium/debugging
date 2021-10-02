@@ -26,5 +26,4 @@ console.log('-- begin --');
   console.log(color);
 }
 
-
 console.log('-- end --');

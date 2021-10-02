@@ -1,3 +1,7 @@
+// #todo
+
+'use strict';
+
 /* generic
 
 */

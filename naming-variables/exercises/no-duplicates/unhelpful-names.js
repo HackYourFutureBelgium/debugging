@@ -1,3 +1,7 @@
+// #todo
+
+'use strict';
+
 let _a = null;
 while (_a === null) {
   _a = prompt('enter something with no duplicate characters');

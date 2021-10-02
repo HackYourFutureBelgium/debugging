@@ -22,5 +22,4 @@ console.log(typeof numE, numE);
 const numF = 1e3;
 console.log(typeof numF, numF);
 
-
 console.log('-- end --');

@@ -75,5 +75,4 @@ const divideByInfinity_5 = NaN / Infinity;
   send a PR if you know of another good edge case!
 */
 
-
 console.log('-- end --');

@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* is excited
@@ -30,7 +32,7 @@
 let input = null;
 while (input === null) {
   input = prompt(
-    'enter some text, the program will check if it has any spaces'
+    'enter some text, the program will check if it has any spaces',
   );
 }
 

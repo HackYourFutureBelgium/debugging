@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /*
@@ -44,7 +46,7 @@ alert(
   `enter as many numbers as you want
 
 then enter another number
--> your new number will be added to each entry`
+-> your new number will be added to each entry`,
 );
 
 // -- gather numbers --
@@ -105,4 +107,5 @@ console.log(original, numberToAdd, addified);
 /* ========== hoisted testing dependency ========== */
 
 // prettier-ignore
+/* eslint-disable */
 function deepCompare (actual, expect) {  return actual === expect || Object.is(actual, expect)|| (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))|| Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every((key) => deepCompare(actual[key], expect[key])));}

@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /*
@@ -26,3 +28,5 @@ if (userName.length < 3) {
 } else {
   console.log('too long');
 }
+
+

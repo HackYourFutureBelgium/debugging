@@ -1,7 +1,11 @@
+// #todo
+
+'use strict';
+
 let _a = null;
 while (_a === null) {
   _a = prompt(
-    'enter some text, the program will check if it contains any vowels'
+    'enter some text, the program will check if it contains any vowels',
   );
 }
 

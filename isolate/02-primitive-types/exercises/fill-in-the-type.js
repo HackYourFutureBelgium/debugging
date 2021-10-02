@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -43,6 +45,5 @@ console.log('-- challenge7 --');
 const challenge7 = NaN;
 console.log(_, _);
 console.log(typeof challenge7, challenge7);
-
 
 console.log('-- end --');

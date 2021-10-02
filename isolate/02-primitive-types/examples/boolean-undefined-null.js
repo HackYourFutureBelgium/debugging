@@ -19,5 +19,4 @@ console.log(typeof undefinedUndefined, undefinedUndefined);
 const objectNull = null;
 console.log(typeof objectNull, objectNull);
 
-
 console.log('-- end --');

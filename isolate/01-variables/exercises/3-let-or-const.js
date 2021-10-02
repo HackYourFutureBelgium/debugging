@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -46,6 +48,5 @@ console.log(aTree);
 // reassign aColor to "orange"
 _;
 console.log(aColor);
-
 
 console.log('-- end --');

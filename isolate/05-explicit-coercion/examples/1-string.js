@@ -40,5 +40,4 @@ const _9_toCast = NaN;
 const _9_string = String(_9_toCast);
 console.log(9, typeof _9_toCast, _9_toCast, '->', typeof _9_string, _9_string);
 
-
 console.log('-- end --');

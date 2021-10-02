@@ -1,5 +1,5 @@
 {
-  "--port": 4002,
+  "--port": 4006,
   "--force": true,
   "study": {
     "eval": true,
@@ -9,7 +9,8 @@
     "flowchart": true,
     "blanks": true,
     "table": true,
-    "ask": true
+    "ask": true,
+    "eslint": true
   },
   "highlight": {
     "eval": true,

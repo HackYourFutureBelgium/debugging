@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 
 /* remove or repeat
@@ -41,7 +43,7 @@ console.assert(repeatCharacters('asdf', 1) === 'asdf', 'Test 2: repeat');
 console.assert(repeatCharacters('asdf', 2) === 'aassddff', 'Test 3: repeat');
 console.assert(
   repeatCharacters('asdf', 3) === 'aaasssdddfff',
-  'Test 4: repeat'
+  'Test 4: repeat',
 );
 
 /* ===== main program (use functions) ===== */

@@ -1,3 +1,5 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
@@ -18,6 +20,5 @@ console.log(desert); // should log 'chocolate cake with frosting'
 
 _;
 console.log(desert); // should log 'chocolate cake with frosting and banana'
-
 
 console.log('-- end --');

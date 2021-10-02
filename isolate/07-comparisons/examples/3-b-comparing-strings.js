@@ -43,8 +43,7 @@ const _5_differentLengths = 'abc' < 'abcd';
 console.log(
   '_5_differentLengths:',
   typeof _5_differentLengths,
-  _5_differentLengths
+  _5_differentLengths,
 );
-
 
 console.log('-- end --');
