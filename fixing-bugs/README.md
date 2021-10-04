@@ -108,7 +108,6 @@ these exercises.
 
   test cases:
     input -> expected output
-      -> actual output, if it's different than the expected
 
   --- experiments ---
 
