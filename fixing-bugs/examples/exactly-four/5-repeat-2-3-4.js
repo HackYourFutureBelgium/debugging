@@ -45,14 +45,14 @@
     IT DID: skip the first path, but went to the second instead
     EXPLAIN: the first condition is now correct, but the second condition is wrong
 
-  1. FAILING: 'abcd'
+  2. FAILING: 'abcd'
       EXPECT: 'perfect!'
       ACTUAL: 'too long'
 
     TRY: replacing >= with > so it does not check if the input is 4 characters long
     PREDICT: skip over this condition and go to the else when the input is 4 characters
-    IT DID: go to the else
-    EXPLAIN: both of the first conditions are now correct so they evaluate to `false` when the string is length 4
+    IT DID: skip over the `else-if` and into the `else`
+    EXPLAIN: the condition checks for values that are only longer than 4, so 4 reaches the `else`
 
   --- lessons learned ---
 

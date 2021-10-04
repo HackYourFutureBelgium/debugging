@@ -39,7 +39,7 @@
     IT DID: skip the first path, but went to the second instead
     EXPLAIN: the second condition is also wrong
 
-  1. FAILING: 'abcd'
+  2. FAILING: 'abcd'
       EXPECT: 'perfect!'
       ACTUAL: 'too long'
 
