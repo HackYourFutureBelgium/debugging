@@ -35,8 +35,10 @@
 
   --- experiments ---
 
-  1. FAILING: 'abcd' -> 'too short'.
-      strings with length 4 should output 'perfect!'
+  1. FAILING: 'abcd'
+      EXPECT: 'perfect!'
+      ACTUAL: 'too short'
+
     TRY:
     PREDICT:
     IT DID:

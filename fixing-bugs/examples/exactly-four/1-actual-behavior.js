@@ -33,7 +33,10 @@
 
   --- experiments ---
 
-  1. FAILING: 'abcd' -> 'too short'. it should output 'perfect!'
+  1. FAILING: 'abcd'
+      EXPECT: 'perfect!'
+      ACTUAL: 'too short'
+
     TRY:
     PREDICT:
     IT DID:

@@ -36,12 +36,14 @@
 
   --- experiments ---
 
-  1. FAILING: 'abcd' -> 'perfect!'
-      strings with length 4 should output 'perfect!'
+  1. FAILING: 'abcd'
+      EXPECT: 'perfect!'
+      ACTUAL: 'too short'
+
     TRY: replacing <= with < because it's also checking if the length is equal to 4
     PREDICT: input with length 4 will not enter the first path, it will be perfect
     IT DID: skip the first path, but went to the second instead
-    EXPLAIN: the second condition is also wrong
+    EXPLAIN: the second condition is also wrong, checking for >= 4
 
   --- lessons learned ---
 

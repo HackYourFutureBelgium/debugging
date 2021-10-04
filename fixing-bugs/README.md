@@ -113,6 +113,9 @@ these exercises.
   --- experiments ---
 
   1. FAILING: (which failing test cases will you try to fix?)
+      EXPECT: (what value should the program output)
+      ACTUAL: (what value does the program actually output)
+
     TRY: (how will you try to fix the bug?)
     PREDICT: (how do you expect the program to behave after your change?)
     IT DID: (what actually happened after your change?)

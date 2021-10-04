@@ -19,6 +19,9 @@
   --- experiments ---
 
   1. FAILING:
+      EXPECT:
+      ACTUAL:
+
     TRY:
     PREDICT:
     IT DID:
