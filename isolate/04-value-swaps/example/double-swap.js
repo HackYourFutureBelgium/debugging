@@ -1,14 +1,15 @@
+// #todo
+
 'use strict';
 console.log('-- begin --');
 
-// this file shows the final line of code, with all tests passing
+// --- declare & initialize variables ---
 
-// declare & assign variables
 let a = 'y';
 let b = 'x';
 let temp;
 
-// swap the values stored by a and b ...
+// --- swap the values stored by a and b ---
 
 // 1: store a's value for later
 temp = a;
@@ -17,7 +18,7 @@ a = b;
 // 3: assign the saved value to b
 b = temp;
 
-// assert expected values
+// --- assert expected values ---
 
 const testingA = a === 'x';
 console.assert(testingA, 'a should store "x"');

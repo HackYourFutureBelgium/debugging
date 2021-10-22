@@ -73,8 +73,8 @@ _debugger_ and _JS Tutor_. These examples and exercises have no user input.
 - 🐣 **[./naming-variables](./naming-variables)**: Code should be written for
   people first, computers second. Learn to give helpful names to your variables
   that describe what data they store and how they are used in your program.
-- 🐣 **[./interact](./interact)**: Practice all the skills and knowledge you've
-  gained. You will read, debug, complete, and write full programs.
+- 🐣 **[./integrate](./integrate)**: Practice all the skills and knowledge
+  you've gained. You will read, debug, complete, and write full programs.
 - 🐣 **[./operator-precedence](./operator-precedence)**: Learn how to understand
   and work with expressions that have 2 or more operators.
 - 🐣 **[./using-functions](./using-functions)**: Learn how you can use functions
@@ -104,7 +104,7 @@ every day is the best way to improve.
 - 🐣 **[./fixing-bugs](./fixing-bugs)**
 - 🐣 **[./naming-variables](./naming-variables)**
 - 🥚🐣 **[./isolate](./isolate)**: through _refactoring loops_
-- 🐣 **[./interact](./interact)**: through _numbers_
+- 🐣 **[./integrate](./integrate)**: through _numbers_
 - 🐣 **[./operator-precedence](./operator-precedence)**: _evaluating_
 
 ### Chapter 3
@@ -116,7 +116,7 @@ every day is the best way to improve.
 ### Chapter 4
 
 - 🥚🐣 **[./isolate](./isolate)**: all the rest
-- 🐣 **[./interact](./interact)**: _arrays_
+- 🐣 **[./integrate](./integrate)**: _arrays_
 - 🐣 **[./using-functions](./using-functions)**: through _avoid side-effects_
 
 [TOP](#debugging)
