@@ -29,7 +29,11 @@ for (initialization; condition; finalExpression) {
 <summary>explanation</summary>
 <br>
 
-The correct answer is `2`.
+The correct answer is `2`:
+
+- **declare a variable**: What needs to be initialized before the loop?
+- **check a condition**: What condition must be true for the loop to repeat?
+- **update the variable**: What will change so that the loop eventually ends?
 
 ```js
 for (
@@ -45,6 +49,8 @@ for (
 }
 ```
 
+<!-- questions from: https://runestone.academy/runestone/books/published/py4e-int/iterations/pogil.html -->
+
 </details>
 <br>
 
@@ -58,20 +64,37 @@ Js Tutor. `stepWhile` is available to the entire script, `stepFor` is only
 available inside the for loop:
 
 ```js
-// these two loops will behave the same
-// which do you find easier to read?
+// these two loops will take the same steps
+//  which do you find easier to read?
+//  do both loops' `step` variables have the same scope?
 
-let maximum = 3;
+let max = 3;
 
-let stepWhile = 0;
-while (stepWhile < maximum) {
-  console.log('stepWhile:', stepWhile);
-  stepWhile++;
+// initialization
+let step = 0;
+// condition
+while (step < max) {
+  console.log(step);
+  // final expression
+  step = step + 1;
 }
 
-for (let stepFor = 0; stepFor < maximum; stepFor++) {
-  console.log('stepFor:', stepFor);
+// initialization; condition; finalExpression
+for (let step = 0; step < max; step = step + 1) {
+  console.log(step);
 }
+```
+
+There is one important difference! `step` in the `for` loop is _block scoped_,
+trying to access it outside the loop will throw an error (hint: try the
+_variables_ button):
+
+```js
+for (let step = 0; step < 3; step = step + 1) {
+  console.log(step);
+}
+
+step; // ReferenceError
 ```
 
 [TOP](for-loops)

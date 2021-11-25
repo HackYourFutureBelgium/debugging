@@ -55,8 +55,8 @@ Examples, exercises and guides for the
 isolation. Learn to step through and predict your program's execution using the
 _debugger_ and _JS Tutor_. These examples and exercises have no user input.
 
-- 🥚 **[./stepping-through](./stepping-through)**: Take a quick tour of the
-  debugger and JS Tutor, two tools that will help you understand _program
+- 🥚 **[./predicting-execution](./predicting-execution)**: Take a quick tour of
+  the debugger and JS Tutor, two tools that will help you understand _program
   memory_ and how JS follows your instructions one step at a time. Learn to use
   _breakpoints_ and the `debugger` statement to pause your program on specific
   lines.
@@ -65,14 +65,8 @@ _debugger_ and _JS Tutor_. These examples and exercises have no user input.
 - 🥚 **[./fixing-errors](./fixing-errors)**: JavaScript errors! - get over the
   initial fear by learning to find and describe errors in your code. Then learn
   how to pause on errors in the debugger and to read callstack messages.
-- 🥚 **[./logging](./logging)**: Learn how to create your own trace of a
-  program's execution using `console.log`. Practice tracing different aspects of
-  the same program's execution.
 - 🐣 **[./fixing-bugs](./fixing-bugs)**: Learn a structured approach to finding,
   describing and fixing bugs.
-- 🐣 **[./naming-variables](./naming-variables)**: Code should be written for
-  people first, computers second. Learn to give helpful names to your variables
-  that describe what data they store and how they are used in your program.
 - 🐣 **[./integrate](./integrate)**: Practice all the skills and knowledge
   you've gained. You will read, debug, complete, and write full programs.
 - 🐣 **[./operator-precedence](./operator-precedence)**: Learn how to understand
@@ -92,7 +86,7 @@ You're not expected to master this material in one week, but starting to
 practice in week 1 will make everything else easier. Practicing a little bit
 every day is the best way to improve.
 
-- 🥚 **[./stepping-through](./stepping-through)**
+- 🥚 **[./predicting-execution](./predicting-execution)**
 - 🥚 **[./linting](./linting)**
 - 🥚 **[./fixing-errors](./fixing-errors)**:
 - 🥚 **[./logging](./logging)**
