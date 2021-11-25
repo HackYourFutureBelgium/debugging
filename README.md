@@ -89,14 +89,12 @@ every day is the best way to improve.
 - 🥚 **[./predicting-execution](./predicting-execution)**
 - 🥚 **[./linting](./linting)**
 - 🥚 **[./fixing-errors](./fixing-errors)**:
-- 🥚 **[./logging](./logging)**
 - 🥚🐣 **[./isolate](./isolate)**: through _conditionals_
 - 🐣 **[./operator-precedence](./operator-precedence)**: _tracing_
 
 ### Chapter 2
 
 - 🐣 **[./fixing-bugs](./fixing-bugs)**
-- 🐣 **[./naming-variables](./naming-variables)**
 - 🥚🐣 **[./isolate](./isolate)**: through _refactoring loops_
 - 🐣 **[./integrate](./integrate)**: through _numbers_
 - 🐣 **[./operator-precedence](./operator-precedence)**: _evaluating_
