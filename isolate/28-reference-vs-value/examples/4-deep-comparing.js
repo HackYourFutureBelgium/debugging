@@ -34,22 +34,76 @@ console.assert(manualCheckSecond, 'Compare second (manual)');
 
 /* more commonly you will use a function that does this for you
   the function below will compare each item in an array
-    returns true if the arrays are deeply equal
+    returns true if the arguments are deeply equal
     returns false if they are not
-  don't worry about understanding this function, just use it for now
-    it's written for (relatively) easy studying in debugger & js tutor
-    HINT: use breakpoints to skip past lines that call deepCompare
-  soon you'll learn to deep compare with a professional assertion library (chai)
+  the function is written more clearly so you can understand it better
+    in later exercises you will use a different deepCompare
+    it will be smaller so it takes up less space in the file
+    but the logic will be the same
+  soon you'll learn to deep compare with a professional assertion library
 */
-// prettier-ignore
-/* eslint-disable */
+
 const deepCompare = (actual, expect) => {
-  // are they the same thing?
-  return actual === expect || Object.is(actual, expect)
-    // compare arrays
-    || (Object(actual) === actual && Object(expect) === expect) && (Array.isArray(actual) && Array.isArray(expect) && actual.length === expect.length && expect.every((expect, index) => deepCompare(actual[index], expect))
-      // compare objects
-      || Object.keys(actual).length === Object.keys(expect).length && Object.keys(expect).every((key) => deepCompare(actual[key], expect[key])));
+  // --- compare primitives and references ---
+
+  // return true if they are the same primitive value
+  //  or if they are a reference to the same object/array
+  if (actual === expect || Object.is(actual, expect)) {
+    return true;
+  }
+
+  // return false if either one is not a reference type
+  if (Object(actual) !== actual || Object(expect) !== expect) {
+    return false;
+  }
+
+  // --- if both are arrays, compare the lengths and entries ---
+
+  if (Array.isArray(actual) && Array.isArray(expect)) {
+    // return false if the arrays are not the same length
+    if (!actual.length === expect.length) {
+      return false;
+    }
+
+    // compare every entry in both arrays
+    for (let index = 0; index < expected.length; index++) {
+      const entriesAreDeeplyEqual = deepCompare(actual[index], expect[index]);
+
+      // return false if any of the entries are not deeply equal
+      if (!entriesAreDeeplyEqual) {
+        return false;
+      }
+    }
+
+    // return true if both arrays:
+    //  are the same length
+    //  have deeply equal entries
+    return true;
+  }
+
+  // --- otherwise compare them as objects ---
+
+  // return false if the objects have different numbers of keys
+  const sameNumberOfKeys =
+    Object.keys(actual).length === Object.keys(expect).length;
+  if (!sameNumberOfKeys) {
+    return false;
+  }
+
+  // compare every value in both objects
+  for (const key of expect) {
+    const valuesAreDeeplyEqual = deepCompare(actual[key], expect[key]);
+
+    // return false if any values are not deeply equal
+    if (!valuesAreDeeplyEqual) {
+      return false;
+    }
+  }
+
+  // return true if both objects:
+  //  have the same number of keys
+  //  all key/value pairs are deeply equal
+  return true;
 };
 
 const deepCompareFirst = deepCompare(firstArr, expected);
