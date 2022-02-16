@@ -2,6 +2,8 @@
 
 // 1: use strict
 'use strict';
+
+// 2: log "begin"
 console.log('-- begin --');
 
 /*
@@ -24,15 +26,16 @@ console.log('-- begin --');
 */
 
 for (
-  // 2: declare and assign the `step` variable
+  // 3: declare and assign the `step` variable
   let step = 0; // begin
-  // 3, 6, 9, 12: check if `step` is less than 3
+  // 4, 7, 10, 113: check if `step` is less than 3
   step < 3; // condition
-  // 5, 8, 11: add 1 to `step`
+  // 6, 9, 12: add 1 to `step`
   step++ // step
 ) {
-  // 4, 7, 10: log the current value of `step`
+  // 5, 8, 11: log the current value of `step`
   console.log(step);
 }
 
+// 12: log "end"
 console.log('-- end --');
