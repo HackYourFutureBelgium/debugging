@@ -9,35 +9,38 @@
 
 // 1: use strict
 'use strict';
+
+// 2: log "begin"
 console.log('-- begin --');
 
-// 2: declare variable flipper and declare the function assigned to it
+// 3: declare variable flipper and declare the function assigned to it
 const flipper = (param1, param2) => {
-  // 4, 11: a return value is generated
+  // 5, 12: a return value is generated
   return param2 + param1;
-  // 5, 12: parent result variable is declared & assigned
+  // 6, 13: parent result variable is declared & assigned
 };
 
-// 3: flipper is executed, creating a new frame
+// 4: flipper is executed, creating a new frame
 //    parameters are assigned values using 'a' & 'b'
 const result1 = flipper('a', 'b');
-// 6: the value of result1 is compared to the expected value
+// 7: the value of result1 is compared to the expected value
 const test1 = result1 === 'ba';
-// 7: the first assertion is evaluated
+// 8: the first assertion is evaluated
 console.assert(test1, 'Test 1');
 
-// 8: variable is declared & assigned
-const arg1 = 'x';
 // 9: variable is declared & assigned
+const arg1 = 'x';
+// 10: variable is declared & assigned
 const arg2 = 'y';
 
-// 10: flipper is executed, creating a new frame
+// 11: flipper is executed, creating a new frame
 //    parameters are assigned values from arg1 & arg2
 const result2 = flipper(arg1, arg2);
 
-// 13: the value of result2 is compared to the expected value
+// 14: the value of result2 is compared to the expected value
 const test2 = result2 === 'yx';
-// 14: the second assertion is evaluated
+// 15: the second assertion is evaluated
 console.assert(test2, 'Test 2');
 
+// 16: log "end"
 console.log('-- end --');
